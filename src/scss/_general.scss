@@ -1,0 +1,115 @@
+// pre {
+//     margin-top:0px;
+//     margin-bottom:20px;
+// }
+// h1 {
+//     color:$darkblue;
+//     font-weight: 700;
+//     font-size: 70px;
+//     line-height: 80px;
+// }
+// h2 {
+//     color:$darkblue;
+//     font-weight: 700;
+//     font-size: 55px;
+//     line-height: 80px;
+// }
+// h3 {
+//     color:$darkblue;
+//     font-weight: 700;
+//     font-size:42px;
+//     line-height:44px;
+// }
+// h4 {
+//     color:$darkblue;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 26px;    
+// }
+// h5 { 
+//     color:$darkblue;
+//     font-weight: 700;
+//     font-size: 22px;
+//     line-height: 35px;
+// }
+// h6 {
+//     color:$darkblue;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 35px;
+// }
+// p {
+//     color: $darkblue;
+//     font-size: 22px;
+//     line-height: 36px;
+// }
+
+// ul {
+//     li {  
+//         @include responsive(lg){
+//             font-size: 16px;
+//         }
+//         font-size: 18px;
+//         font-weight: normal;
+//         font-stretch: normal;
+//         font-style: normal;
+//         line-height: 26px;
+//         letter-spacing: 1px;
+//         padding-bottom:14px;
+//     }
+// }
+// a {
+//     color:$yellow;
+//     text-decoration:none;
+//     &:hover {
+//         text-decoration:underline;
+//     }
+// }
+// .button {
+//     display: table;
+//     color: #000;
+//     padding: 12px 35px 13px 35px;
+//     background-color: $yellow;
+//     font-size: 16px;
+//     line-height: 25px;
+//     letter-spacing: 0.53px;
+//     text-transform: uppercase;  
+//     font-weight: bold;
+//     border-radius: 5px;
+//     text-decoration: none;
+//     text-align: center;
+//     @include transition(all 250ms ease);
+//     cursor:pointer;
+//     &:hover {
+//         text-decoration: none;
+//     }
+// }
+// .dark {
+//     h1 {       
+//         color:#fff; 
+//     }
+//     h2 {
+//         color:#fff;
+//     }
+//     h4 {
+//         color:#fff;
+//     }
+//     h5, h6 {
+//         color:#fff;
+//     }
+//     p {
+//         color:#fff;
+//     }
+//     ul {
+//         li {
+//             color:#fff;
+//         }
+//     }
+// }
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+.m-0{
+    margin:0;
+}

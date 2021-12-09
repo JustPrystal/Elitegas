@@ -1,0 +1,63 @@
+{
+    "key": "group_5e337c6f1ba65",
+    "title": "Blocks",
+    "fields": [
+        {
+            "key": "field_5e337c7407471",
+            "label": "Blocks",
+            "name": "blocks",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e3396eb3c452": {
+                    "key": "layout_5e3396eb3c452",
+                    "name": "fullwidth_text",
+                    "label": "Fullwidth Text",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Block",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "globalblock"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "Block Chooser for all content types that will have blocks.",
+    "modified": 1637951300
+}

@@ -1,0 +1,12 @@
+# remove modules folder
+node_modules
+
+# hid env file
+.env
+
+# other files for reference
+_ref
+
+*.css
+*.map
+report.20210423.111519.10024.0.001.json

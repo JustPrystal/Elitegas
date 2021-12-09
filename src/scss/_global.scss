@@ -1,0 +1,84 @@
+
+* {
+    outline:none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+  }
+  sub { 
+    top: 0.4em; 
+  }
+
+html, body { 
+    margin:0;
+    padding:0;
+    
+    background-color:$primary;
+    overflow-x:hidden;
+}
+body {
+    position:relative;
+    
+    &:before {
+        height:90px;
+        display:block;
+        content:" ";
+        width:100%;
+        position:relative;
+        @include responsive(lg){
+            height:59px;
+        }
+    }
+    @include responsive(md){
+        &:before {
+            height:0;
+        }
+        overflow:hidden;
+        height:100%;
+    }
+    &.hide_nav {
+        &:before {
+            height:0;
+        }
+    }
+    .all {
+        @include responsive(md){
+            &:before {
+                height:70px;
+                display:block;
+                content:" ";
+                width:100%;
+                position:relative;
+            }
+            overflow-y:scroll;
+            overflow-x:hidden;
+            height:100%;
+        }
+    }    
+}
+
+// normal h1-h6 styles etc
+@import 'general';
+
+.container {    
+    max-width:$maxSiteSize;
+    width:$maxSiteSize;
+    margin: 0 auto;
+    display:table;
+    position:relative;
+    
+    @include responsive(lg){
+        max-width: auto;
+        width:auto;
+        padding:0 40px;
+    }
+    
+    @include responsive(sm){
+        padding:0 5vw;
+        box-sizing: border-box;
+    }
+}
