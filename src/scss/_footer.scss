@@ -42,12 +42,46 @@
                             }
                             
                         }
+                        .mc4wp-form-fields{
+                            .mc4wp_newsletter_wrap{
+                                display:flex;
+                                width:100%;
+                                input[type="email"]{
+                                    background: #fff;
+                                    color: #67727A;
+                                    padding: 5px 10px;
+                                    height: 48px;
+                                    font-size: 16px;
+                                    border:0;
+                                    font-family:$arial;
+                                }
+                                input[type="submit"]{
+                                    background-color:$orange;
+                                    color:#fff;
+                                    font-family:$arial;
+                                    height:48px;
+                                    border:0;
+                                    position: relative;
+                                    display: inline-block;
+                                    padding: 0 30px;
+                                    line-height: 48px;
+                                    border-radius: 2px;
+                                    text-align: center;
+                                    font-weight: 500;
+                                    cursor: pointer;
+                                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                                    font-size: 16px;
+                                    border: 0;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }   
     }
     .footer-bottom-wrap{
+        padding-bottom:20px;
         .container{
             display: flex;
             flex-wrap: wrap;
