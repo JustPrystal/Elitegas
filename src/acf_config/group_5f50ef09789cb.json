@@ -1,7 +1,60 @@
 {
     "key": "group_5f50ef09789cb",
     "title": "Navigation",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_61b2908e8277f",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61b2909f82780",
+            "label": "Navigation",
+            "name": "navigation",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_61b2913a82781",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +72,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637951043
+    "modified": 1639092648
 }

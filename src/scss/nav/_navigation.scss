@@ -1,0 +1,226 @@
+.header{
+    .inner-wrap-top{
+        
+        background-color:#a09e94;
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .header-left{
+                display:flex;
+                align-items: center;
+                .logo{
+                    width:160px;
+                    margin-right:20px;
+                    img{
+                        width:100%;
+                        height:auto;
+                    }
+                }
+                .search-wrap{
+                    position: relative;
+                    display: flex;
+                    height: 35px;
+                    align-items: center;
+                    border-radius: 3px;
+                    background: #ffffff;
+                    color: #677279;
+                    z-index: 1;
+                    margin: 8px 0;
+                        .searchandfilter{
+                            height:100%;
+                            ul{
+                                height:100%;
+                                display: flex;
+                                flex-direction: row-reverse;
+                                padding:0;
+                                li{
+                                    padding:0;
+                                    &.sf-field-taxonomy-product_cat{
+                                        padding-right:7px;
+                                        label{
+                                            height:100%;
+                                            select{
+                                                height:100%;
+                                                border:0;
+                                                padding-left:10px;
+                                                color:#677279;
+                                            }
+                                        }
+                                    }
+                                    &.sf-field-search{
+                                        min-width:600px;
+                                        width:auto;
+                                        label{
+                                            width:100%;
+                                            input{
+                                                width:100%;
+                                                margin-top:5px;
+                                                height:25px;
+                                                border-right:0;
+                                                border-bottom:0;
+                                                border-top:0;
+                                                padding:0px 10px;
+                                                border-left:1px solid #a09e94;
+                                            }
+                                        }
+                                    }
+                                    &.sf-field-submit{
+                                        input{
+                                            width: 50px;
+                                            color: #fff;
+                                            background: #df7800;
+                                            border-radius: 0px;
+                                            font-family:FontAwesome;
+                                            font-weight: 700;
+                                            transform: rotateY(180deg);
+                                            height: 100%;
+                                            border: 0;
+                                           
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+            .header-right{
+                display:flex;
+                align-items:center;
+                .user-detail-wrap{
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    padding-right:35px;
+                    br{
+                        display:none;
+                    }
+                    .login-signup{
+                        padding: 0 15px 0 40px;
+                        line-height: 1;
+                        font-size: 14px;
+                        margin: 5px 0;
+                        position: relative;
+                        font-weight: 600;
+                        text-align: center;
+                        .name{
+                            strong{
+                                color: #ffddb6;
+                                display: block;
+                                font-weight: 500;
+                                font-size: 15px;
+                                font-family: $arial;
+                                margin: 0;
+                            }
+                        }
+                        a{
+                            color: #fff;
+                            letter-spacing: -0.2px;     
+                            text-decoration: none;  
+                            font-family: $arial;
+                            &:hover{
+                                color:$orange;
+                            }
+                        }
+                    }
+                    .profile-img{
+                        width:45px;
+                        border-radius:5px;
+                        height:auto;
+                        position:relative;
+                        &:before{
+                            position: absolute;
+                            content: "";
+                            right: -4px;
+                            bottom:0;
+                            background: #df7800;
+                            height: 20px;
+                            border-radius: 50%;
+                            width: 20px;
+                            border: 4px solid #a09e94;
+                        }
+                        img{
+                            width:100%;
+                            height:auto;
+                        }
+                    }
+                }
+                .cart-icon{
+                    position:relative;
+                    padding-left:35px;
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        right: 0;
+                        top:50%;
+                        transform:translateY(-50%);
+                        background: rgba(255, 221, 182, 0.3);
+                        height: 34px;
+                        left:0;
+                        width: 1px;
+                    }
+                    .header__action-item-link{
+                        color:#fff;
+                        text-decoration: none;
+                        .header__action-item-content{
+                            display:flex;
+                            align-items:center;
+                            .header__cart-icon{
+                                width: 27px;
+                                position: relative;
+                                height: 24px;
+                                
+                                color:#fff;
+                                .header__cart-count{
+                                    position: absolute;
+                                    background: #df7800;
+                                    height: 20px;
+                                    width: 20px;
+                                    display: block;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    border-radius: 100%;
+                                    top: -8px;
+                                    right: -12px;
+                                    font-size: 13px;
+                                }
+                                
+                            }
+                            .hidden-lap{
+                                font-family: $arial;
+                                font-size: 16px;
+                                display: inline-block;
+                                font-weight: 600;
+                                margin-left:20px;
+                             
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+    .inner-wrap-bottom{
+        background-color: #ececea;
+        padding:9px 0px;
+        .container{
+            display:flex;
+            .nav-link{
+                padding-right:42px;
+                &:last-child{
+                    padding-right:0;
+                }
+                a{
+                    color:$dgray;
+                    font-family:$arial;
+                    text-decoration:none;
+                    font-size: 15px;
+                    font-weight: 600;
+                    &:hover{
+                        color:$orange;
+                    }
+                }
+            }
+        }
+    }
+}

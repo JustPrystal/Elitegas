@@ -1,7 +1,7 @@
 {
-  "name": "district_hut_wordpresstemplate",
+  "name": "elitegas_wordpresstemplate",
   "version": "1.0.0",
-  "description": "Theme for DistrictHut Website",
+  "description": "Theme for Elitegas Website",
   "scripts": {
     "watch": "node watcher.js",
     "acf:import": "node acf_import.js",

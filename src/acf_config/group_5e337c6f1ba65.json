@@ -21,7 +21,27 @@
                     "name": "fullwidth_text",
                     "label": "Fullwidth Text",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_61b27c82163b1",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -59,5 +79,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1637951300
+    "modified": 1639087603
 }

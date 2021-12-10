@@ -6,6 +6,8 @@ Description: THEME_DESCRIPTION
 Version: THEME_VERSION
 */
 
+
+
 @import 'vars'; 
 @import 'debug'; 
 @import 'mixins';
@@ -13,7 +15,7 @@ Version: THEME_VERSION
 @import 'footer';
 
 // Navigation
-// @import 'nav/navigation';
+@import 'nav/navigation';
 
 // 404
 // @import '404';

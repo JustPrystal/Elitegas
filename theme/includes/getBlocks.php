@@ -20,10 +20,7 @@
             case 'fullwidth_text':
               include 'blocks/fullwidth_text.php';
               break;
-            case 'test':
-              include 'blocks/test.php';
-              break;  
-              
+                
           }
         }
       }
