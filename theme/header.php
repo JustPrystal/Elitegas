@@ -22,13 +22,14 @@
     <meta name="author" content="<?php bloginfo('name'); ?>" />
     
   </head>
-  <body class="<?php 
+  <body class="<?php
   
   $current_user = wp_get_current_user();
     if (user_can( $current_user, 'administrator' )) {
         echo ' adminbar';
     }
+
   ?>">
 
-  <div class="all">
+  <div <?php body_class('all'); ?> class="all">
   <?php require_once( get_template_directory() . '/navigation.php' ); ?>

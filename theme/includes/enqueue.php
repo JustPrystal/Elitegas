@@ -7,8 +7,8 @@
 			[
 				"name" => 'FontAwesome.css', 
 				"type" => 'css',
-				"path" => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-				"version" => '4.7.0_defer'
+				"path" => '"https://use.fontawesome.com/releases/v5.15.4/css/all.css',
+				"version" => '5.15.4'
 			],
 			[
 				"name" => 'style.css', 
