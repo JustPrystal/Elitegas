@@ -110,3 +110,31 @@
         }
     }
 }
+.footer-top-wrapper{
+    padding:70px 0px 20px 0px;
+    .container{
+        display:flex;
+        .footer-top-item{
+            flex: 0 0 25%;
+            padding:0px 10px;
+            display:flex;
+            .icon-wrap{
+               padding-right:20px;
+            }
+            .text-wrapper{
+                font-family:$arial;
+                .headline{
+                    color: #4b4b4b;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+                .description{
+                    font-size: 15px;
+                    font-weight: 300;
+                    padding-top: 15px;
+                    color:$dgray;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,23 @@
 <?php 
-
+    $footer_top = $footer = get_field("footer_top","option");
     $footer = get_field("footer_items","option");
     $footer_b = get_field("footer_bottom","option")
 ?>
+    <div class="footer-top-wrapper">
+        <div class="container">
+            <?php foreach($footer_top as $item){?>
+                <div class="footer-top-item">
+                    <div class="icon-wrap">
+                       <img src="<?php echo $item['icon']['url'] ?>">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="headline"><?php echo $item['headline']?></div>
+                        <div class="description"><?php echo $item['description']?></div>
+                    </div>
+                </div>
+            <?php }?>
+        </div>
+    </div>
     <div class="footer">
         <div class="footer-top-wrap">
             <div class="container">

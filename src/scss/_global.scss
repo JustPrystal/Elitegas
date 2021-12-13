@@ -24,13 +24,7 @@ html, body {
 }
 body {
     position:relative;
-    @include responsive(md){
-        &:before {
-            height:0;
-        }
-        overflow:hidden;
-        height:100%;
-    }
+   
     &.hide_nav {
         &:before {
             height:0;
