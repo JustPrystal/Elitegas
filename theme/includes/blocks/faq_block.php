@@ -39,6 +39,7 @@
        }
        else{
         $(this).removeClass('active');
+        $(this).find($(".item-content")).slideUp();
        }
 
     });
