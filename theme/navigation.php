@@ -24,14 +24,22 @@
                         <?php }	?>
                     </div>
                     <div class="profile-img">
-                        <?php
-                            $user = "user_".$user_ID;
-                            $badge = get_field('user_profile_image', $user);
-                            if($badge['url']){ ?>
-                                <img class="online-indicator" src="<?php echo $badge['url']; ?>" alt="<?php echo $badge['alt']; ?>" />
+                    <?php				
+                        $badge = get_field('user_profile_image', 'user_'.get_current_user_id());
+                        $img_swap = get_field('default_profile_pictures',9);			
+                        if($badge == 'a'){ ?> 	
+                        <img class="online-indicator" src="<?php echo $img_swap[0]['image']['url']; ?>" alt="<?php echo $img_swap[0]['image']['alt']; ?>" /> 
+                        <?php } else if($badge == 'b'){ ?> 
+                        <img class="online-indicator" src="<?php echo $img_swap[1]['image']['url']; ?>" alt="<?php echo $img_swap[1]['image']['alt']; ?>" /> 
+                        <?php } else if($badge == 'c'){ ?> 
+                        <img class="online-indicator" src="<?php echo $img_swap[2]['image']['url']; ?>" alt="<?php echo $img_swap[2]['image']['alt']; ?>" />
+                        <?php } else if($badge == 'd'){ ?> 
+                        <img class="online-indicator" src="<?php echo $img_swap[3]['image']['url']; ?>" alt="<?php echo $img_swap[3]['image']['alt']; ?>" /> 
+                        <?php } else if($badge == 'e'){ ?>
+                        <img class="online-indicator" src="<?php echo $img_swap[4]['image']['url']; ?>" alt="<?php echo $img_swap[4]['image']['alt']; ?>" /> 
                         <?php } else { ?>
-                            <img class="online-indicator" src="/wp-content/uploads/2021/12/Default_Avatar-1.png" alt="" />				
-                        <?php }?>
+                        <img class="online-indicator" src="/wp-content/uploads/2021/12/Default_Avatar-1.png" alt="" />				
+                        <?php }?>	
                     </div>
                 </div>
                 <div class="cart-icon">
