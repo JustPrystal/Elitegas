@@ -20,6 +20,18 @@
             case 'fullwidth_text':
               include 'blocks/fullwidth_text.php';
               break;
+            case 'faq_block':
+                include 'blocks/faq_block.php';
+                break;
+            case 'about_block':
+                include 'blocks/about_block.php';
+                break;
+            case 'affiliat':
+              include 'blocks/affiliat_block.php';
+              break;
+            case 'contact_us':
+              include 'blocks/contact_us_block.php';
+              break;
                 
           }
         }

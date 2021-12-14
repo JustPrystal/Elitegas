@@ -1,0 +1,45 @@
+.About-Page {
+  margin: 20px 0;
+  .container {
+    .wrapper {
+      .heading {
+        text-align: center;
+        font-size: 29px;
+        color: #4b4b4b;
+        font-weight: 800;
+        font-family: $arial;
+      }
+      .wrapper-content{
+            .section-parent{
+              margin:20px 0;
+              display:flex;
+              align-items: center;
+              &:nth-child(even){
+                flex-direction: row-reverse;
+                .content-parent{
+                    padding-left: 0;
+                }
+            }
+              img{
+                  flex: 0 0 55%;
+              }
+              .content-parent{
+                  padding-left: 50px;
+                  h2{
+                    font-family: $arial;
+                    color: #4b4b4b;
+                    font-weight: 800;
+                    font-size: 22px;
+                  }
+                  p{
+                    font-family: $arial;
+                    line-height: 1.5;
+                    font-size: 16px;
+                    color: #677279;
+                  }
+              }
+          }
+      }
+    }
+  }
+}

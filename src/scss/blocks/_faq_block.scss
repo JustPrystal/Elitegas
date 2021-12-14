@@ -1,0 +1,77 @@
+.Faq-Group-Page {
+  margin-bottom: 80px;
+  .container {
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      color: #4b4b4b;
+      font-weight: 800;
+      font-family: $arial;
+    }
+    .wrapper-Accordions-main {
+      display: flex;
+      flex-wrap: wrap;
+      .wrapper-Accordions {
+        &:nth-child(n + 3) {
+          margin-top: 20px;   
+        }
+        flex: 0 0 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        .Accordion-Heading-wrap {
+          h2 {
+            color: #df7800;
+            text-align: center;
+            font-family: $arial;
+            font-size: 26px;
+            font-weight: 800;
+          }
+        }
+        .Accordion-Items {
+          .items-wrap {
+            &.active {
+              .box-one-wrap {
+                i:before {
+                  content: "\f077";
+                }
+              }
+            }
+            border: 1px solid #ececea;
+            .box-one-wrap {
+              padding: 25px 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .item-heading {
+                font-size: 19px;
+                font-weight: 700;
+                font-family: $arial;
+                color: rgb(75, 75, 75);
+              }
+              i:before {
+                font-style: normal;
+                content: "\f078";
+                font-family: "FontAwesome";
+              }
+            }
+            .item-content {
+              display: none;
+              padding: 0px 40px 20px;
+              font-family: $arial;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.5;
+              color: $dgray;
+              a {
+                text-decoration: none;
+                strong {
+                  color: #df7800;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
