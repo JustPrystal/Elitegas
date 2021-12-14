@@ -1,5 +1,5 @@
 <?php 
-    $footer_top = get_field("footer_tops","option");
+    $footer_top = get_field("footer_top","option");
     $footer = get_field("footer_items","option");
     $footer_b = get_field("footer_bottom","option")
 ?>

@@ -133,7 +133,7 @@
         {
             "key": "field_61b7b8f0d3034",
             "label": "Footer Top",
-            "name": "footer_tops",
+            "name": "footer_top",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -448,5 +448,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "Adding a theme options fields for the overall theme",
-    "modified": 1639505051
+    "modified": 1639505551
 }
