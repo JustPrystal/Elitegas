@@ -29,7 +29,7 @@
                         }
                     }
                     a{
-                        padding: 10px 5px;
+                        padding: 13px 5px;
                         display: flex;
                         font-size: 15px;
                         text-decoration: none;
@@ -52,136 +52,410 @@
                     }
           
                 }
-            }
-        }
-.woocommerce-MyAccount-content{
-            margin-left: 5%;
-            width: calc(80% - 5% );
-            .dash-wrapper{
-                font-size: 15px;
-                font-family: $arial;
-                font-weight: 400;
-                color: #fff;
-                background-color: #df7800;
-                text-align: center;
-                padding: 10px 0px;
-                margin-bottom: 0px;
-                margin-top: 0;
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover{
-                        color: #fff;
-                    }
-                }
-            }
-            p{
-                font-size: 15px;
-                font-family: $arial;
-                color: #677279;
-                margin-top: 0;
-                a{
-                    text-decoration: none;
-                    color: #df7800;
-                    &:hover{
-                        color: #5d5e5e;
-                    }
-                }
-            }
-            .woocommerce-orders-table {
-                border: 1px solid rgba(0,0,0,.1);
-                margin: 0 -1px 24px 0;
-                text-align: left;
-                width: 100%;
-                border-collapse: separate;
-                border-radius: 5px;
-                font-size: 15px;
-                thead{
-                    .woocommerce-orders-table__header{
-                        font-size: 15px;
-                        font-family: $arial;
-                        font-weight: 700;
-                        padding: 5px 8px;
-                        vertical-align: middle;
-                        color: #677279;
-                        text-align: right;
-                  
-                    }
-                }
-                tbody{
-                    .woocommerce-orders-table__row{
-                        .woocommerce-orders-table__cell{
-                            text-align: right;
-                            font-family: $arial;
-                            color: #677279;
-                            border-top: 1px solid rgba(0,0,0,.1);
-                            padding: 4px 8px;
-                            a{
-                                text-decoration: none;
-                                color: #df7800;
-                            }
-                            .woocommerce-button {
-                                border-radius: 0;
-                                line-height: 50px;
-                                background: #df7800;
-                                color: #fff;
-                                height: 50px;
-                                text-transform: uppercase;
-                                font-weight: 400;
-                                padding: 0 15px;
-                                display: inline-block;
-                            }
+
+                // my account icon css
+                .woocommerce-MyAccount-navigation-link--dashboard{
+                    a{
+                        &:before{
+                            content: "\f0e4";
                         }
                     }
                 }
-            }
-            
-            .woocommerce-Message{
-                font-size: 16px;
-                margin-top: 0;
-                border-radius: 3px;
-                border-top-color: #222222;
-                padding: 1em 2em 1em 3.5em;
-                margin: 0 0 2em;
-                position: relative;
-                background-color: #f7f6f7;
-                color: #515151;
-                border-top: 3px solid #222222;
-                list-style: none outside;
-                font-family: $arial;
-                width: auto;
-                word-wrap: break-word;
-                .woocommerce-Button{
-                    border-radius: 0;
-                    line-height: 50px;
-                    background: #df7800;
-                    font-family: $arial;
-                    color: #fff;
-                    height: 50px;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    padding: 0 15px;
-                    display: inline-block;
-                    text-decoration: none;
-                    &:hover{
-                        background-color: #dfdcde;
-                        text-decoration: none;
-                        background-image: none;
-                        color: #515151;
+                .woocommerce-MyAccount-navigation-link--orders{
+                    a{
+                        &:before{
+                            content: "\f291";
+                        }
                     }
                 }
-            }
-            p{
-                &.woocommerce-info{
-                    color: #fff;
-                    background-color: #df7800;
+                .woocommerce-MyAccount-navigation-link--downloads{
+                    a{
+                        &:before{
+                            content: "\f1c6";
+                        }
+                    }
                 }
-            }
+                .woocommerce-MyAccount-navigation-link--edit-address{
+                    a{
+                        &:before{
+                            content: "\f015";
+                        }
+                    }
+                }
+                .woocommerce-MyAccount-navigation-link--payment-methods{
+                    a{
+                        &:before{
+                            content: "\f09d";
+                        }
+                    }
+                }
+                .woocommerce-MyAccount-navigation-link--edit-account{
+                    a{
+                        &:before{
+                            content: "\f007";
+                        }
+                    }
+                }
+                .woocommerce-MyAccount-navigation-link--customer-logout{
+                    a{
+                        &:before{
+                            content: "\f08b";
+                        }
+                    }
+                }
 
-       
-         
+                 // my account icon css end
+            }
         }
-    }
+        .woocommerce-MyAccount-content{
+                
+                    br{
+                        display: none;
+                    }
+                    
+            
+                    margin-left: 5%;
+                    width: calc(80% - 5% );
+                    .dash-wrapper{
+                        font-size: 15px;
+                        font-family: $arial;
+                        font-weight: 400;
+                        color: #fff;
+                        background-color: #df7800;
+                        text-align: center;
+                        padding: 10px 0px;
+                        margin-bottom: 0px;
+                        margin-top: 0;
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        font-family: $arial;
+                        color: #677279;
+                        margin-top: 0;
+                        a{
+                            text-decoration: none;
+                            color: #df7800;
+                            &:hover{
+                                color: #5d5e5e;
+                            }
+                        }
+                    }
+                    .woocommerce-orders-table {
+                        border: 1px solid rgba(0,0,0,.1);
+                        margin: 0 -1px 24px 0;
+                        text-align: left;
+                        width: 100%;
+                        border-collapse: separate;
+                        border-radius: 5px;
+                        font-size: 15px;
+                        thead{
+                            .woocommerce-orders-table__header{
+                                font-size: 15px;
+                                font-family: $arial;
+                                font-weight: 700;
+                                padding: 5px 8px;
+                                vertical-align: middle;
+                                color: #677279;
+                                text-align: right;
+                        
+                            }
+                        }
+                        tbody{
+                            .woocommerce-orders-table__row{
+                                .woocommerce-orders-table__cell{
+                                    text-align: right;
+                                    font-family: $arial;
+                                    color: #677279;
+                                    border-top: 1px solid rgba(0,0,0,.1);
+                                    padding: 4px 8px;
+                                    a{
+                                        text-decoration: none;
+                                        color: #df7800;
+                                    }
+                                    .woocommerce-button {
+                                        border-radius: 0;
+                                        background: #df7800;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        font-weight: 400;
+                                        padding: 10px 15px;
+                                        display: inline-block;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .woocommerce-Message{
+                        font-size: 16px;
+                        margin-top: 0;
+                        border-radius: 3px;
+                        border-top-color: #222222;
+                        padding: 1em 2em 1em 3.5em;
+                        margin: 0 0 2em;
+                        position: relative;
+                        background-color: #f7f6f7;
+                        color: #515151;
+                        border-top: 3px solid #222222;
+                        list-style: none outside;
+                        font-family: $arial;
+                        width: auto;
+                        word-wrap: break-word;
+                        .woocommerce-Button{
+                            border-radius: 0;
+                            background: #df7800;
+                            font-family: $arial;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            text-decoration: none;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #dfdcde;
+                                text-decoration: none;
+                                background-image: none;
+                                color: #515151;
+                            }
+                        }
+                    }
+                    p{
+                        &.woocommerce-info{
+                            color: #fff;
+                            background-color: #df7800;
+                        }
+                    }
+
+                    .wc-notice{
+                        border: 2px solid #f1f1f1;
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        .text-wrap{
+                            .instruct-text{
+                                color: red;
+                                font-size: 15px;
+                                font-family: $arial;
+                                line-height: 1.5;
+                                padding-right: 25px;
+                            }
+                        }
+                        .button-wrap{
+                            a{
+                                border-radius: 0;
+                                line-height: 1.5;
+                                background: #df7800;
+                                font-family: $arial;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-weight: 400;
+                                padding: 8px 10px;
+                                display: inline-block;
+                                text-decoration: none;
+                                border: 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: #dfdcde;
+                                    text-decoration: none;
+                                    background-image: none;
+                                    color: #515151;
+                                }
+                            }
+                        }
+                    }
+                    .ocwma_table_custom{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .billing-button-wrap{
+                            margin-bottom: 10px;
+                            button{
+                                border: 0;
+                                cursor: pointer;
+                                background-color: $orange;
+                                font-size: 15px;
+                                text-transform: uppercase;
+                                color: #ffffff;
+                                padding: 8px 10px;
+                                &:hover{
+                                    background-color: #dfdcde;
+                                    color: #515151;
+                                }
+                            }
+
+                        }
+                        .ocwma_table_bill{
+                            flex: 100%;
+                            padding: 20px;
+                            background-color: white;
+                            border: 2px solid #f1f1f1;
+                            margin-bottom: 10px;
+                            .billing-heading{
+                                font-size: 28px;
+                                font-family: $arial;
+                                color: #000000;
+                                font-weight: 500;
+                                margin-top: 0;
+                                
+                            }
+                            .billing_addresses_wrap{
+                                .billing_address{
+                                    .inner-wrap{
+                                        .default-add-wrap{
+                                            button{
+                                                opacity: 1;
+                                                color: $dgray;
+                                                position: static;
+                                                font-size: 11px;
+                                                visibility: visible;
+                                                padding: 0px;
+                                                font-weight: 700;
+                                                line-height: 100%;
+                                                margin-bottom: 20px;
+                                                border: 0;
+                                                cursor: pointer;
+                                                &.checkeddd{
+                                                    color: $orange;
+                                                }
+                                            }
+                                        }
+                                        .billing-btn-wrapper{
+                                            display: inline-grid;
+                                            float: right;
+                                            .form_option_edit{
+                                                font-size: 11px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                border: 0;
+                                                cursor: pointer;
+                                                text-align: right;
+                                            }
+                                            .delete_bill_address{
+                                                a{
+                                                    font-size: 11px;
+                                                    font-family: $arial;
+                                                    color: $dgray;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                        .billing_address_inner{
+                                        
+                                            
+                                                font-size: 16px;
+                                                color: #677279;
+                                                font-family: $arial;
+                                                line-height: 1.5;
+                                            
+                                                strong{
+                                                    font-size: 16px;
+                                                    font-family: $arial;
+                                                    color: $dgray;
+                                                }
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        
+                        }
+                        .ocwma_table_ship{
+                            flex: 100%;
+                            padding: 20px;
+                            background-color: white;
+                            border: 2px solid #f1f1f1;
+                            margin-bottom: 10px;
+                            .shipping-heading{
+                                font-size: 28px;
+                                font-family: $arial;
+                                color: #000000;
+                                font-weight: 500;
+                                margin-top: 0;
+                                
+                            }
+                            .default-add-wrap{
+                                button{
+                                    opacity: 1;
+                                    color: $dgray;
+                                    position: static;
+                                    font-size: 11px;
+                                    visibility: visible;
+                                    padding: 0px;
+                                    font-weight: 700;
+                                    line-height: 100%;
+                                    margin-bottom: 20px;
+                                    border: 0;
+                                    cursor: pointer;
+                                    &.checkeddd{
+                                        color: $orange;
+                                    }
+                                }
+                            }
+                            .shipping-btn-wrapper{
+                                display: inline-grid;
+                                float: right;
+                                .form_option_ship_edit{
+                                    font-size: 11px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                    cursor: pointer;
+                                    border: 0;
+                                    text-align: right;
+                                }
+                                .delete_ship_address{
+                                    a{
+                                        font-size: 11px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            .shipping_address_inner{
+                                font-size: 16px;
+                                color: #677279;
+                                font-family: $arial;
+                                line-height: 1.5;
+                            
+                                strong{
+                                    font-size: 16px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                }
+                            }
+                           
+                        }
+                        .cus_menu{
+                            margin-bottom: 10px;
+                            .shipping-button{
+                                width: 100%;
+                                
+                                .form_option_shipping{
+                                    border: 0;
+                                    cursor: pointer;
+                                    background-color: $orange;
+                                    font-size: 15px;
+                                    text-transform: uppercase;
+                                    color: #ffffff;
+                                    padding: 8px 10px;
+                                    &:hover{
+                                        background-color: #dfdcde;
+                                        color: #515151;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                }
+        }
 }
 
 .woocommerce-edit-account{
@@ -189,11 +463,84 @@
         display: flex;
         flex-wrap: wrap;
         .woocommerce-EditAccountForm{
-            flex: 60%;
+            flex: 50%;
+            padding-right: 5%;
+            margin-bottom: 5%;
+            .woocommerce-form-row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                .wrap-label{
+                    flex: 100%;
+                    margin-bottom: 10px;
+                    label{
+                        font-size: 15px;
+                        font-family: $arial;
+                        color: $dgray;
+                       
+                    }
+                }
+                .wrap-input-field{
+                    flex: 100%;
+                    .woocommerce-Input{
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        font-size: 16px;
+                        padding: 15px 10px;
+                        border-radius: 5px;
+                    }
+                    span{
+                        color: $dgray;
+                        font-family: $arial;
+                        font-size: 15px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            fieldset{
+                border: 0;
+                padding: 0;
+                margin-top: 20px;
+                legend{
+                    font-size: 24px;
+                    font-family: $arial;
+                    color: $dgray;
+                    margin-bottom: 20px;
+                }
+            }
+            .save-changes-btn{
+                .wrap-button{
+                    .button{
+                        border-radius: 0;
+                        background: #df7800;
+                        font-family: $arial;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #dfdcde;
+                            text-decoration: none;
+                            background-image: none;
+                            color: #515151;
+                        }
+                    }
+                   
+                }
+            }
         }
         .woocommerce-form-row{
-            flex: 40%;
-
+            flex: 50%;
+            .profile-pic-heading{
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-family: $arial;
+                color: $dgray;
+            }
             .profile-pictures-wrap{
                 display: flex;
                 .profile-image-wrap{
@@ -213,16 +560,25 @@
                 #acf-form-data{
                     display: none;
                 }
+                .acf-form-fields{
+                    position: relative;
+                    .acf-field-619c056ba4305{
+                        display: none;
+                    }
+                }
                 .acf-form-submit{
-                    border-radius: 0;
-                    line-height: 50px;
-                    background: #df7800;
-                    color: #fff;
-                    height: 50px;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    padding: 0 15px;
-                    display: inline-block;
+                    .acf-button{
+                        border-radius: 0;
+                        background: #df7800;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        border: 0;
+                        cursor: pointer;
+                    }
+                  
                 }
             }
            
@@ -231,3 +587,152 @@
     }
 }
 
+
+// location billing popup css
+
+#ocwma_billing_popup{
+    .ocwma_modal-content{
+        #oc_add_billing_form{
+            .ocwma_woocommerce-address-fields{
+                .ocwma_woocommerce-address-fields_field-wrapper{
+                    .form-row{
+                        label{
+                            display: block;
+                            color: $dgray;
+                            font-size: 16px;
+                            font-family: $arial;
+                          
+
+                        }
+                        .woocommerce-input-wrapper{
+                            input{
+                                width: 100%;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;
+                                &::placeholder{
+                                    color: #67727950;
+                                    font-size: 14px;
+                                }
+                            }
+                            select{
+                                width: 100%;
+                                font-size: 16px;
+                                color: #4f4f4f;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;   
+                            }
+                        }
+                        &.form-row-first{
+                            width: calc(50% - 10px);
+                            float: left;
+                            padding-right: 10px;
+                        }
+                        &.form-row-last{
+                            width: calc(50% - 10px);
+                            float: right;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                .wrap-btn{
+                    .button{
+                        border-radius: 0;
+                        background: #df7800;
+                        font-family: $arial;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #dfdcde;
+                            text-decoration: none;
+                            background-image: none;
+                            color: #515151;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// location shipping popup css
+
+#ocwma_shipping_popup{
+    .ocwma_modal-content{
+        #oc_add_shipping_form{
+            .ocwma_woocommerce-address-fields{
+                .ocwma_woocommerce-address-fields_field-wrapper{
+                    .form-row{
+                        label{
+                            display: block;
+                            color: $dgray;
+                            font-size: 16px;
+                            font-family: $arial;
+                          
+
+                        }
+                        .woocommerce-input-wrapper{
+                            input{
+                                width: 100%;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;
+                                &::placeholder{
+                                    color: #67727950;
+                                    font-size: 14px;
+                                }
+                            }
+                            select{
+                                width: 100%;
+                                font-size: 16px;
+                                color: #4f4f4f;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;   
+                            }
+                        }
+                        &.form-row-first{
+                            width: calc(50% - 10px);
+                            float: left;
+                            padding-right: 10px;
+                        }
+                        &.form-row-last{
+                            width: calc(50% - 10px);
+                            float: right;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                .wrap-btn{
+                    .button{
+                        border-radius: 0;
+                        background: #df7800;
+                        font-family: $arial;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #dfdcde;
+                            text-decoration: none;
+                            background-image: none;
+                            color: #515151;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
