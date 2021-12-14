@@ -18,13 +18,23 @@
 	} else {
 		$pmpro_checkout_gateway_class = 'pmpro_checkout_gateway-' . $default_gateway;
 	}
+
+$cra_heading = get_field('cra_heading','option');
+$cra_text = get_field('cra_text','option');
 ?>
 
 <?php do_action('pmpro_checkout_before_form'); ?>
 
 <div id="pmpro_level-<?php echo $pmpro_level->id; ?>" class="<?php echo pmpro_get_element_class( $pmpro_checkout_gateway_class, 'pmpro_level-' . $pmpro_level->id ); ?>">
 <div class="container">
+
+
 <form id="pmpro_form" class="<?php echo pmpro_get_element_class( 'pmpro_form' ); ?>" action="<?php if(!empty($_REQUEST['review'])) echo pmpro_url("checkout", "?level=" . $pmpro_level->id); ?>" method="post">
+
+		<div class="cra_wrap_text">
+				<h2 class="heading"><?php echo $cra_heading?></h2>
+				<p class="text"><?php echo $cra_text?></p>
+		</div>
 
 	<input type="hidden" id="level" name="level" value="<?php echo esc_attr($pmpro_level->id) ?>" />
 	<input type="hidden" id="checkjavascript" name="checkjavascript" value="1" />
@@ -116,11 +126,7 @@
 		$discount_code_link = !empty( $discount_code) ? '&discount_code=' . $discount_code : ''; 
 	?>
 	<div id="pmpro_user_fields" class="<?php echo pmpro_get_element_class( 'pmpro_checkout', 'pmpro_user_fields' ); ?>">
-		<hr />
-		<h3>
-			<span class="<?php echo pmpro_get_element_class( 'pmpro_checkout-h3-name' ); ?>"><?php _e('Account Information', 'paid-memberships-pro' );?></span>
-			<span class="<?php echo pmpro_get_element_class( 'pmpro_checkout-h3-msg' ); ?>"><?php _e('Already have an account?', 'paid-memberships-pro' );?> <a href="<?php echo wp_login_url( apply_filters( 'pmpro_checkout_login_redirect', pmpro_url("checkout", "?level=" . $pmpro_level->id . $discount_code_link) ) ); ?>"><?php _e('Log in here', 'paid-memberships-pro' );?></a></span>
-		</h3>
+		
 		<div class="<?php echo pmpro_get_element_class( 'pmpro_checkout-fields' ); ?>">
 			<div class="<?php echo pmpro_get_element_class( 'pmpro_checkout-field pmpro_checkout-field-username', 'pmpro_checkout-field-username' ); ?>">
 				<label for="username"><?php _e('Username', 'paid-memberships-pro' );?></label>
@@ -147,7 +153,9 @@
         <li id="length" class="invalid"><strong>Must be 8 characters or more</strong></li>
     </ul>
 </div>
+
 <script>
+
 $(document).ready(function() {
 	 
 	document.getElementById('telephone').addEventListener('input', function (e) {
@@ -616,7 +624,6 @@ list-style-type:circle;
 	<?php do_action("pmpro_checkout_before_submit_button"); ?>
 
 	<div class="<?php echo pmpro_get_element_class( 'pmpro_submit' ); ?>">
-		<hr />
 <!-- 		<?php if ( $pmpro_msg ) { ?>
 			<div id="pmpro_message_bottom" class="<?php echo pmpro_get_element_class( 'pmpro_message ' . $pmpro_msgt, $pmpro_msgt ); ?>"><?php echo $pmpro_msg; ?></div>
 		<?php } else { ?>
@@ -649,14 +656,21 @@ list-style-type:circle;
 
 		<?php } ?>
 
+		<h3>
+			<span class="<?php echo pmpro_get_element_class( 'pmpro_checkout-h3-msg' ); ?>"><?php _e('Already have an account?', 'paid-memberships-pro' );?> <a href="<?php echo wp_login_url( apply_filters( 'pmpro_checkout_login_redirect', pmpro_url("checkout", "?level=" . $pmpro_level->id . $discount_code_link) ) ); ?>"><?php _e('Log in here', 'paid-memberships-pro' );?></a></span>
+		</h3>
+
 		<span id="pmpro_processing_message" style="visibility: hidden;">
 			<?php
 				$processing_message = apply_filters("pmpro_processing_message", __("Processing...", 'paid-memberships-pro' ));
 				echo $processing_message;
 			?>
 		</span>
+	
 	</div>
+
 	</div>
+
 </form>
 
 <?php do_action('pmpro_checkout_after_form'); ?>
