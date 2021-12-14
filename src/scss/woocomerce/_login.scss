@@ -35,14 +35,12 @@
             .login-submit{
                 .button{
                     border-radius: 0;
-                    line-height: 50px;
                     background: #df7800;
                     font-family: $arial;
                     color: #fff;
-                    height: 50px;
                     text-transform: uppercase;
                     font-weight: 400;
-                    padding: 0 15px;
+                    padding: 10px 15px;
                     display: inline-block;
                     text-decoration: none;
                     width: 100%;
@@ -72,3 +70,5 @@
         }
     }
 }
+
+

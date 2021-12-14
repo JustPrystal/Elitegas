@@ -181,14 +181,13 @@
                                     }
                                     .woocommerce-button {
                                         border-radius: 0;
-                                        line-height: 50px;
                                         background: #df7800;
                                         color: #fff;
-                                        height: 50px;
                                         text-transform: uppercase;
                                         font-weight: 400;
-                                        padding: 0 15px;
+                                        padding: 10px 15px;
                                         display: inline-block;
+                                        cursor: pointer;
                                     }
                                 }
                             }
@@ -212,16 +211,15 @@
                         word-wrap: break-word;
                         .woocommerce-Button{
                             border-radius: 0;
-                            line-height: 50px;
                             background: #df7800;
                             font-family: $arial;
                             color: #fff;
-                            height: 50px;
                             text-transform: uppercase;
                             font-weight: 400;
-                            padding: 0 15px;
+                            padding: 10px 15px;
                             display: inline-block;
                             text-decoration: none;
+                            cursor: pointer;
                             &:hover{
                                 background-color: #dfdcde;
                                 text-decoration: none;
@@ -263,6 +261,7 @@
                                 display: inline-block;
                                 text-decoration: none;
                                 border: 0;
+                                cursor: pointer;
                                 &:hover{
                                     background-color: #dfdcde;
                                     text-decoration: none;
@@ -321,6 +320,7 @@
                                                 line-height: 100%;
                                                 margin-bottom: 20px;
                                                 border: 0;
+                                                cursor: pointer;
                                                 &.checkeddd{
                                                     color: $orange;
                                                 }
@@ -334,6 +334,7 @@
                                                 font-family: $arial;
                                                 color: $dgray;
                                                 border: 0;
+                                                cursor: pointer;
                                                 text-align: right;
                                             }
                                             .delete_bill_address{
@@ -391,6 +392,7 @@
                                     line-height: 100%;
                                     margin-bottom: 20px;
                                     border: 0;
+                                    cursor: pointer;
                                     &.checkeddd{
                                         color: $orange;
                                     }
@@ -403,6 +405,7 @@
                                     font-size: 11px;
                                     font-family: $arial;
                                     color: $dgray;
+                                    cursor: pointer;
                                     border: 0;
                                     text-align: right;
                                 }
@@ -427,63 +430,7 @@
                                     color: $dgray;
                                 }
                             }
-                            // .shipping_addresses_wrap{
-                            //     .shipping_address{
-                            //         .inner-wrap{
-                            //             .default-add-wrap{
-                            //                 button{
-                            //                     opacity: 1;
-                            //                     color: $dgray;
-                            //                     position: static;
-                            //                     font-size: 11px;
-                            //                     visibility: visible;
-                            //                     padding: 0px;
-                            //                     font-weight: 700;
-                            //                     line-height: 100%;
-                            //                     margin-bottom: 20px;
-                            //                     border: 0;
-                            //                     &.checkeddd{
-                            //                         color: $orange;
-                            //                     }
-                            //                 }
-                            //             }
-                            //             .shipping-btn-wrapper{
-                            //                 display: inline-grid;
-                            //                 float: right;
-                            //                 .form_option_edit{
-                            //                     font-size: 11px;
-                            //                     font-family: $arial;
-                            //                     color: $dgray;
-                            //                     border: 0;
-                            //                     text-align: right;
-                            //                 }
-                            //                 .delete_ship_address{
-                            //                     a{
-                            //                         font-size: 11px;
-                            //                         font-family: $arial;
-                            //                         color: $dgray;
-                            //                         text-decoration: none;
-                            //                     }
-                            //                 }
-                            //             }
-                            //             .shipping_address_inner{
-                                        
-                                            
-                            //                     font-size: 16px;
-                            //                     color: #677279;
-                            //                     font-family: $arial;
-                            //                     line-height: 1.5;
-                                            
-                            //                     strong{
-                            //                         font-size: 16px;
-                            //                         font-family: $arial;
-                            //                         color: $dgray;
-                            //                     }
-                                        
-                            //             }
-                            //         }
-                            //     }
-                            // }
+                           
                         }
                         .cus_menu{
                             margin-bottom: 10px;
@@ -565,17 +512,16 @@
                 .wrap-button{
                     .button{
                         border-radius: 0;
-                        line-height: 50px;
                         background: #df7800;
                         font-family: $arial;
                         color: #fff;
-                        height: 50px;
                         text-transform: uppercase;
                         font-weight: 400;
-                        padding: 0 15px;
+                        padding: 10px 15px;
                         display: inline-block;
                         text-decoration: none;
                         border: 0;
+                        cursor: pointer;
                         &:hover{
                             background-color: #dfdcde;
                             text-decoration: none;
@@ -623,15 +569,14 @@
                 .acf-form-submit{
                     .acf-button{
                         border-radius: 0;
-                        line-height: 50px;
                         background: #df7800;
                         color: #fff;
-                        height: 50px;
                         text-transform: uppercase;
                         font-weight: 400;
-                        padding: 0 15px;
+                        padding: 10px 15px;
                         display: inline-block;
                         border: 0;
+                        cursor: pointer;
                     }
                   
                 }
@@ -642,3 +587,152 @@
     }
 }
 
+
+// location billing popup css
+
+#ocwma_billing_popup{
+    .ocwma_modal-content{
+        #oc_add_billing_form{
+            .ocwma_woocommerce-address-fields{
+                .ocwma_woocommerce-address-fields_field-wrapper{
+                    .form-row{
+                        label{
+                            display: block;
+                            color: $dgray;
+                            font-size: 16px;
+                            font-family: $arial;
+                          
+
+                        }
+                        .woocommerce-input-wrapper{
+                            input{
+                                width: 100%;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;
+                                &::placeholder{
+                                    color: #67727950;
+                                    font-size: 14px;
+                                }
+                            }
+                            select{
+                                width: 100%;
+                                font-size: 16px;
+                                color: #4f4f4f;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;   
+                            }
+                        }
+                        &.form-row-first{
+                            width: calc(50% - 10px);
+                            float: left;
+                            padding-right: 10px;
+                        }
+                        &.form-row-last{
+                            width: calc(50% - 10px);
+                            float: right;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                .wrap-btn{
+                    .button{
+                        border-radius: 0;
+                        background: #df7800;
+                        font-family: $arial;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #dfdcde;
+                            text-decoration: none;
+                            background-image: none;
+                            color: #515151;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// location shipping popup css
+
+#ocwma_shipping_popup{
+    .ocwma_modal-content{
+        #oc_add_shipping_form{
+            .ocwma_woocommerce-address-fields{
+                .ocwma_woocommerce-address-fields_field-wrapper{
+                    .form-row{
+                        label{
+                            display: block;
+                            color: $dgray;
+                            font-size: 16px;
+                            font-family: $arial;
+                          
+
+                        }
+                        .woocommerce-input-wrapper{
+                            input{
+                                width: 100%;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;
+                                &::placeholder{
+                                    color: #67727950;
+                                    font-size: 14px;
+                                }
+                            }
+                            select{
+                                width: 100%;
+                                font-size: 16px;
+                                color: #4f4f4f;
+                                border: 1px solid #e0e0dd;
+                                padding: 10px;   
+                            }
+                        }
+                        &.form-row-first{
+                            width: calc(50% - 10px);
+                            float: left;
+                            padding-right: 10px;
+                        }
+                        &.form-row-last{
+                            width: calc(50% - 10px);
+                            float: right;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                .wrap-btn{
+                    .button{
+                        border-radius: 0;
+                        background: #df7800;
+                        font-family: $arial;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #dfdcde;
+                            text-decoration: none;
+                            background-image: none;
+                            color: #515151;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
