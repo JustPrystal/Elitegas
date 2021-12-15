@@ -123,6 +123,7 @@
             }
             .text-wrapper{
                 font-family:$arial;
+                padding: 0 15px;
                 .headline{
                     color: #4b4b4b;
                     font-weight: 500;
@@ -133,6 +134,16 @@
                     font-weight: 300;
                     padding-top: 15px;
                     color:$dgray;
+                    line-height: 1.5;
+                    p{
+                        margin: 0;
+                    }
+                    strong{
+                        font-weight: normal;
+                    }
+                    a{
+                        color: $orange;
+                    }
                 }
             }
         }
