@@ -6,7 +6,7 @@
     <div class="inner-wrap-top ">
         <div class="container">
             <div class="header-left ">
-                <div class="logo"><img src="<?php echo $logo['url'] ?>"> </div>
+                <a href="<?php echo get_site_url(); ?>"><div class="logo"><img src="<?php echo $logo['url'] ?>"> </div></a>
                 <div class="search-wrap">
                     <?php echo do_shortcode('[searchandfilter id="48"]'); ?>
                 </div>
