@@ -109,8 +109,11 @@ $cra_text = get_field('cra_text','option');
 					<input type="button" name="other_discount_code_button" id="other_discount_code_button" value="<?php _e('Apply', 'paid-memberships-pro' );?>" />
 				</div>
 				<?php } ?>
-			</div> <!-- end pmpro_checkout-fields -->
-		</div> <!-- end pmpro_pricing_fields -->
+			</div>
+			 <!-- end pmpro_checkout-fields -->
+
+		</div> 
+		<!-- end pmpro_pricing_fields -->
 		<?php
 		} // if ( $include_pricing_fields )
 	?>
