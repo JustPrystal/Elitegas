@@ -6,6 +6,7 @@ $product_meta = get_post_meta($productID);
 $upc = get_field('product_upc', $productID);
 $msrp = get_field('msrp_price', $productID);
 $current_tag = get_the_terms( $productID, 'product_tag' );
+// var_dump($data);
 ?>
 <section class="Featured-Product-Block">
     <div class="container">
@@ -89,11 +90,11 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                         </div>
 
                         <div class="tab-safely-safely">
-                            <p>Hamza</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat, reprehenderit molestiae ipsa officia vitae cupiditate! Aut dolorum ea non eligendi, et laborum veritatis. Quasi, molestiae eligendi delectus, nostrum numquam a commodi cupiditate natus saepe cumque excepturi repellat! Consequatur facilis dolorem asperiores cupiditate eveniet dolorum deleniti, nam libero ratione id?</p>
                         </div>
 
                         <div class="tab-technical-technical">
-                            <p>Siddiqui</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo dicta eos porro optio delectus atque ipsam nesciunt velit nulla? Veritatis inventore voluptatibus quisquam cupiditate. Necessitatibus voluptatum nulla blanditiis obcaecati maiores, in libero quidem illum reprehenderit rerum sunt et facere? Assumenda dignissimos iste sed aspernatur ipsum deserunt qui temporibus eligendi!</p>
                         </div>
                     </div>
                 </div>
