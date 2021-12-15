@@ -1,0 +1,113 @@
+.Featured-Product-Block {
+  .container {
+    .wrapper {
+      margin: 50px 0px;
+      .inline {
+        display: flex;
+        justify-content: space-between;
+        .heading {
+          color: #4b4b4b;
+          font-weight: 800;
+          font-family: $arial;
+          font-size: 22px;
+        }
+      }
+      .Product-Part {
+        display: flex;
+        .image-wrap {
+          flex: 0 0 50%;
+          padding: 30px;
+          border: 1px solid #ececea;
+          img {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+        .content-wrap {
+          flex: 0 0 50%;
+          padding: 30px;
+          border: 1px solid #ececea;
+          .heading {
+            font-size: 1.75rem;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: $arial;
+            color: #677279;
+          }
+          .info {
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 20px;
+            align-items: center;
+            .tag-wrapper {
+              a {
+                text-transform: uppercase;
+                font-family: $arial;
+                text-decoration: none;
+                color: #df7927;
+              }
+            }
+            p {
+              font-family: $arial;
+              color: #677279;
+              text-transform: capitalize;
+            }
+          }
+          .stock-status{
+            font-family: $arial;
+            color: #677279;
+          }
+          .tab-part {
+            border: 1px solid #ececea;
+            margin: 5px 0px;
+            padding: 8px 8px 0px 8px;
+            .head {
+              display: flex;
+              justify-content: space-around;
+              margin: 0px 15px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-bottom: 1px solid #ececea;
+              p {
+                margin: 0;
+                font-weight: 400;
+                font-size: 15px;
+                font-family: $arial;
+                color: #677279;
+                &.active {
+                  color: #df7800;
+                }
+              }
+            }
+            .tab-desc-content {
+              padding: 10px 15px 10px 15px;
+              font-weight: 400;
+              font-size: 15px;
+              font-family: $arial;
+              line-height: 1.5;
+              color: #677279;
+            }
+            .tab-safely-safely {
+              padding: 10px 15px 10px 15px;
+              display: none;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 1.5;
+              font-family: $arial; 
+              color: #677279;
+            }
+            .tab-technical-technical {
+              padding: 10px 15px 10px 15px;
+              display: none;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 1.5;
+              font-family: $arial;
+              color: #677279;
+            }
+          }
+        }
+      }
+    }
+  }
+}

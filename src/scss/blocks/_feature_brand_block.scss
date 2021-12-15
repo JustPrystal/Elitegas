@@ -1,0 +1,30 @@
+.Featured-Brand-Block {
+  .container {
+    .wrapper {
+      margin: 50px 0px;
+      .heading {
+        color: #4b4b4b;
+        font-weight: 800;
+        font-family: $arial;
+        font-size: 22px;
+      }
+      .image-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .image {
+          border: 1px solid #ececea;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          width: 100%;
+          img {
+            width: 210px;
+          }
+        }
+      }
+    }
+  }
+}

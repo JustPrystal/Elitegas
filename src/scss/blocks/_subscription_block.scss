@@ -1,0 +1,49 @@
+.Subcription-Block {
+  .container {
+    display: flex;
+    justify-content: center;
+    .wrapper {
+      margin: 40px 0px;
+      max-width: 574px;
+      .heading {
+        text-align: center;
+        font-family: $arial;
+        font-weight: 800;
+        color: #4b4b4b;
+        font-size: 20px !important;
+      }
+      .text {
+        text-align: center;
+        font-family: $arial;
+        font-weight: 400;
+        color: #677279;
+        font-size: 15px;
+        margin: 20px 0px 30px 0px;
+      }
+      .News-Letter {
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+        input {
+          padding: 15px 13px;
+        }
+        input[type="submit"] {
+          background: #df7800;
+          padding: 0 30px;
+          transition: background 0.25s ease-in-out, color 0.25s ease-in-out,
+            box-shadow 0.25s ease-in-out;
+          font-size: 16px;
+          font-family: $arial;
+          color: white;
+          font-weight: 500;
+          border-radius: 0px;
+          border: 0;
+        }
+        input[type="email"] {
+          border: 1px solid #ddd;
+          width: 350px;
+        }
+      }
+    }
+  }
+}

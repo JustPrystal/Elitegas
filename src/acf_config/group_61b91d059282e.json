@@ -1,0 +1,65 @@
+{
+    "key": "group_61b91d059282e",
+    "title": "Featured Product Block",
+    "fields": [
+        {
+            "key": "field_61b91d0f8ad22",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b92ec7ed95d",
+            "label": "Featured Product",
+            "name": "featured_product",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1639527170
+}

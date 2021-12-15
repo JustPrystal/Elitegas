@@ -32,6 +32,18 @@
             case 'contact_us':
               include 'blocks/contact_us_block.php';
               break;
+            case 'home_slider':
+              include 'blocks/home_slider.php';
+              break;
+            case 'subscription_block':
+              include 'blocks/subscription_block.php';
+              break;
+            case 'feature_brand_block':
+              include 'blocks/feature_brand_block.php';
+              break;
+            case 'featured_product_block':
+              include 'blocks/featured_product_block.php';
+              break;
                 
           }
         }
