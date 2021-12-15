@@ -6,7 +6,6 @@ $product_meta = get_post_meta($productID);
 $upc = get_field('product_upc', $productID);
 $msrp = get_field('msrp_price', $productID);
 $current_tag = get_the_terms( $productID, 'product_tag' );
-var_dump($data);
 ?>
 <section class="Featured-Product-Block">
     <div class="container">
