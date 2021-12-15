@@ -1,3 +1,4 @@
+<?php acf_form_head(); ?>
 <!DOCTYPE html>
 <html id="no" <?php language_attributes(); ?>>
   <head>
