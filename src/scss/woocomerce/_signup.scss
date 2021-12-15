@@ -28,6 +28,7 @@
                 display: none;
             }
             #pmpro_user_fields{
+                display: inline-block;
                 .pmpro_checkout-field{
                     width: 50%;
                     float: left;
@@ -111,6 +112,55 @@
                     }
                 }
         
+            }
+            #pmpro_checkout_box-checkout_boxes{
+                display: inline-block;
+                .pmpro_checkout-field{
+                    width: 50%;
+                    float: left;
+                    label{
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-family: $algrey;
+                        color: $dgray;
+                        display: block;
+                    }
+                    input{
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 12px 15px;
+                        font-size: 16px;
+                        max-width: 100%;
+                    
+                    }
+                    .pmpro_asterisk{
+                        position: absolute;
+                        top: 2px;
+                        left: 120px;
+                        abbr{
+                            color: #df7800;
+                        }
+                    }
+
+                }
+                .pmpro_checkout-field-select{
+                    label{
+                        font-size: 16px;
+                        font-weight: 700;
+                        font-family: $algrey;
+                        color: $dgray;
+                        display: block;
+                    }
+                    select{
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 12px 15px;
+                        font-size: 16px;
+                        max-width: 100%;
+                        color: #677279;
+                        font-family: $arial;
+                    }
+                }
             }
             .pmpro_submit{
                 margin-top: 30px;
