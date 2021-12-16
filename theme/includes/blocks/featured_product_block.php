@@ -65,7 +65,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                                 <button type="submit" class="single_add_to_cart_button button alt"> Add to cart</button>
                             </form>
                         <?php }  ?>
-
+                        
                         <?php if(!(is_user_logged_in())){ ?>
                         <div class="Product-Pricing-Box">
                             <div class="Not-Logined-Box-Wrap">
@@ -79,22 +79,18 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                     <?php } ?>
 
                     <div class="tab-part">
-                        <div class="head">
-                            <p class="tab-desc" onclick="DescBoxShow()">Description</p>
-                            <p class="tab-safely" onclick="SafelyBoxShow()">Safely Information</p>
-                            <p class="tab-technical" onclick="TechnicalBoxShow()">Technical Specifications</p>
-                        </div>
-                        <div class="tab-desc-content">
-                            <p><?php echo $product->get_description() ?></p>
-                        </div>
-
-                        <div class="tab-safely-safely">
-                            <p>Hamza</p>
-                        </div>
-
-                        <div class="tab-technical-technical">
-                            <p>Siddiqui</p>
-                        </div>
+                       <div class="tab-wrap">
+                            <div class="tab-header">
+                                <div class="tab-heading">Abc</div>
+                                <div class="tab-heading">DEF</div>
+                                <div class="tab-heading">EFG</div>
+                            </div>
+                            <div class="tab-body">
+                                <div class="tab-content">Hamza</div>
+                                <div class="tab-content">SUper </div>
+                                <div class="tab-content">Hai</div>
+                            </div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -103,35 +99,16 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
 </section>
 <script>
     //tab Javascript
-    $('.tab-desc').addClass('active');
-    function Hideall(){
-        $('.tab-desc-content').css("display" , "none");
-        $('.tab-safely-safely').css("display" , "none");
-        $('.tab-technical-technical').css("display" , "none");
-    }
-    function RemoceallClass(){
-        $('.tab-desc').removeClass('active');
-        $('.tab-safely').removeClass('active');
-        $('.tab-technical').removeClass('active');
-    }
-    function DescBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-desc-content').css("display" , "block");
-        $('.tab-desc').addClass('active');
-    }
-    function SafelyBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-safely-safely').css("display" , "block");
-        $('.tab-safely').addClass('active');
-    }
-    function TechnicalBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-technical-technical').css("display" , "block");
-        $('.tab-technical').addClass('active');
-    }
+    $('.tab-content:eq(0)').addClass('active');
+    $(".tab-heading").click(function(){
+        var index = $(this).index();
+        if($(".tab-content:eq("+index+")").hasClass("active")){
+            $(".tab-content:eq("+index+")").removeClass("active");
+        }else{
+            $(".tab-content").removeClass("active");
+            $(".tab-content:eq("+index+")").addClass("active");
+        }
+    })
     //tab Javascript End
     
     function Plus(){

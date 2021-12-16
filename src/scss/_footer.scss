@@ -1,151 +1,151 @@
-.footer{
-    background-color: #a09e94;
-    .footer-top-wrap{
-        .container{
-            display:flex;
-            .footer-item{
-                padding:20px 30px;
-                flex: 0 0 21%;
-                &:first-child{
-                    flex: 0 0 34%;
-                    padding-left:15px;
-                }
-                &:last-child{
-                    flex: 0 0 24%;
-                    padding-right:15px;
-                }
-                .inner-wrap{
-                    .heading{
-                        font-weight: 800;
-                        font-size: 14px;
-                        font-family:$arial;
-                        color:#fff;
-                        margin-bottom:0.5rem;
-                    }
-                    .item-body{
-                        p{
-                            margin:0;
-                            font-size: 14px;
-                            color:#fff;
-                            font-family:$arial;
-                            margin-bottom: 1rem;
-                        }
-                        .footer-link-item{
-                            a{
-                                color: #fff;
-                                font-weight: 400;
-                                line-height: 1.7;
-                                font-size: 14px;
-                                text-decoration: none;
-                                font-family: $arial;
-                                cursor:pointer;
-                            }
-                            
-                        }
-                        .mc4wp-form-fields{
-                            .mc4wp_newsletter_wrap{
-                                display:flex;
-                                width:100%;
-                                input[type="email"]{
-                                    background: #fff;
-                                    color: #67727A;
-                                    padding: 5px 10px;
-                                    height: 48px;
-                                    font-size: 16px;
-                                    border:0;
-                                    font-family:$arial;
-                                }
-                                input[type="submit"]{
-                                    background-color:$orange;
-                                    color:#fff;
-                                    font-family:$arial;
-                                    height:48px;
-                                    border:0;
-                                    position: relative;
-                                    display: inline-block;
-                                    padding: 0 30px;
-                                    line-height: 48px;
-                                    border-radius: 2px;
-                                    text-align: center;
-                                    font-weight: 500;
-                                    cursor: pointer;
-                                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
-                                    font-size: 16px;
-                                    border: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }   
-    }
-    .footer-bottom-wrap{
-        padding-bottom:20px;
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-            .copyright-wrap{
-                flex: 76%;
-                font-family: $arial;
-                font-size: 14px;
-                color: #fff;
-                padding: 0px 15px;
-            }
-            .payments-wrap{
-                flex: 20%;
-                .heading{
-                    font-family: $arial;
-                    font-size: 14px;
-                    color: #fff;
-                }
-                .payments{
-                    display: flex;
-                    flex-wrap: wrap;
-                    .payment-item{
-                        margin-right:5px;
-                    }
-                }
-            }
-        }
-    }
-}
-.footer-top-wrapper{
-    padding:70px 0px 20px 0px;
-    .container{
-        display:flex;
-        .footer-top-item{
-            flex: 0 0 25%;
-            padding:0px 10px;
-            display:flex;
-            .icon-wrap{
-               padding-right:20px;
-            }
-            .text-wrapper{
-                font-family:$arial;
-                padding: 0 15px;
-                .headline{
-                    color: #4b4b4b;
-                    font-weight: 500;
-                    font-size: 16px;
-                }
-                .description{
-                    font-size: 15px;
-                    font-weight: 300;
-                    padding-top: 15px;
-                    color:$dgray;
-                    line-height: 1.5;
-                    p{
-                        margin: 0;
-                    }
-                    strong{
-                        font-weight: normal;
-                    }
-                    a{
-                        color: $orange;
-                    }
-                }
-            }
-        }
-    }
+.footer{ 
+    background-color: #a09e94; 
+    .footer-top-wrap{ 
+        .container{ 
+            display:flex; 
+            .footer-item{ 
+                padding:20px 30px; 
+                flex: 0 0 21%; 
+                &:first-child{ 
+                    flex: 0 0 34%; 
+                    padding-left:15px; 
+                } 
+                &:last-child{ 
+                    flex: 0 0 24%; 
+                    padding-right:15px; 
+                } 
+                .inner-wrap{ 
+                    .heading{ 
+                        font-weight: 800; 
+                        font-size: 14px; 
+                        font-family:$arial; 
+                        color:#fff; 
+                        margin-bottom:0.5rem; 
+                    } 
+                    .item-body{ 
+                        p{ 
+                            margin:0; 
+                            font-size: 14px; 
+                            color:#fff; 
+                            font-family:$arial; 
+                            margin-bottom: 1rem; 
+                        } 
+                        .footer-link-item{ 
+                            a{ 
+                                color: #fff; 
+                                font-weight: 400; 
+                                line-height: 1.7; 
+                                font-size: 14px; 
+                                text-decoration: none; 
+                                font-family: $arial; 
+                                cursor:pointer; 
+                            } 
+                             
+                        } 
+                        .mc4wp-form-fields{ 
+                            .mc4wp_newsletter_wrap{ 
+                                display:flex; 
+                                width:100%; 
+                                input[type="email"]{ 
+                                    background: #fff; 
+                                    color: #67727A; 
+                                    padding: 5px 10px; 
+                                    height: 48px; 
+                                    font-size: 16px; 
+                                    border:0; 
+                                    font-family:$arial; 
+                                } 
+                                input[type="submit"]{ 
+                                    background-color:$orange; 
+                                    color:#fff; 
+                                    font-family:$arial; 
+                                    height:48px; 
+                                    border:0; 
+                                    position: relative; 
+                                    display: inline-block; 
+                                    padding: 0 30px; 
+                                    line-height: 48px; 
+                                    border-radius: 2px; 
+                                    text-align: center; 
+                                    font-weight: 500; 
+                                    cursor: pointer; 
+                                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out; 
+                                    font-size: 16px; 
+                                    border: 0; 
+                                } 
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        }    
+    } 
+    .footer-bottom-wrap{ 
+        padding-bottom:20px; 
+        .container{ 
+            display: flex; 
+            flex-wrap: wrap; 
+            .copyright-wrap{ 
+                flex: 76%; 
+                font-family: $arial; 
+                font-size: 14px; 
+                color: #fff; 
+                padding: 0px 15px; 
+            } 
+            .payments-wrap{ 
+                flex: 20%; 
+                .heading{ 
+                    font-family: $arial; 
+                    font-size: 14px; 
+                    color: #fff; 
+                } 
+                .payments{ 
+                    display: flex; 
+                    flex-wrap: wrap; 
+                    .payment-item{ 
+                        margin-right:5px; 
+                    } 
+                } 
+            } 
+        } 
+    } 
+} 
+.footer-top-wrapper{ 
+    padding:70px 0px 20px 0px; 
+    .container{ 
+        display:flex; 
+        .footer-top-item{ 
+            flex: 0 0 25%; 
+            padding:0px 10px; 
+            display:flex; 
+            .icon-wrap{ 
+               padding-right:20px; 
+            } 
+            .text-wrapper{ 
+                font-family:$arial; 
+                padding: 0 15px; 
+                .headline{ 
+                    color: #4b4b4b; 
+                    font-weight: 500; 
+                    font-size: 16px; 
+                } 
+                .description{ 
+                    font-size: 15px; 
+                    font-weight: 300; 
+                    padding-top: 15px; 
+                    color:$dgray; 
+                    line-height: 1.5; 
+                    p{ 
+                        margin: 0; 
+                    } 
+                    strong{ 
+                        font-weight: normal; 
+                    } 
+                    a{ 
+                        color: $orange; 
+                    } 
+                } 
+            } 
+        } 
+    } 
 }
