@@ -24,24 +24,27 @@
         display: flex;
         justify-content: center;
         column-gap: 5px;
-        input {
-          padding: 15px 13px;
-        }
-        input[type="submit"] {
-          background: #df7800;
-          padding: 0 30px;
-          transition: background 0.25s ease-in-out, color 0.25s ease-in-out,
-            box-shadow 0.25s ease-in-out;
-          font-size: 16px;
-          font-family: $arial;
-          color: white;
-          font-weight: 500;
-          border-radius: 0px;
-          border: 0;
-        }
-        input[type="email"] {
-          border: 1px solid #ddd;
-          width: 350px;
+        form {
+          input {
+            padding: 15px 13px;
+          }
+          input[type="submit"] {
+            background: #df7800;
+            padding: 15px 30px;
+            transition: background 0.25s ease-in-out, color 0.25s ease-in-out,
+              box-shadow 0.25s ease-in-out;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: $arial;
+            color: white;
+            font-weight: 500;
+            border-radius: 0px;
+            border: 0;
+          }
+          input[type="email"] {
+            border: 1px solid #ddd;
+            width: 350px;
+          }
         }
       }
     }

@@ -1,5 +1,6 @@
 <?php 
 $productID = $block['featured_product'];
+$tabs = get_field('all_tabs', $productID);
 $product = wc_get_product($productID);
 $data = $product->get_data();
 $product_meta = get_post_meta($productID);
@@ -55,9 +56,9 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                         <?php if(is_user_logged_in()){ ?>
                             <form class="cart" method="post" enctype="multipart/form-data">
                                 <div class="quantity">
-                                    <button class="Minus" onclick="Minus()">-</button>
+                                    <div class="Minus" onclick="Minus()">-</div>
                                     <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-                                    <button class="plus" onclick="Plus()">+</button>
+                                    <div class="plus" onclick="Plus()">+</div>
                                 </div>
                                 
                                 <input type="hidden" name="add-to-cart" value="<?php echo $productID; ?>">
@@ -79,18 +80,17 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                     <?php } ?>
 
                     <div class="tab-part">
-                       <div class="tab-wrap">
+                        <div class="tab-wrap">
                             <div class="tab-header">
-                                <div class="tab-heading">Abc</div>
-                                <div class="tab-heading">DEF</div>
-                                <div class="tab-heading">EFG</div>
+                                <?php foreach($tabs as $tab_heading){ ?>
+                                    <div class="tab-heading"><?php echo $tab_heading['tab_heading']?></div>
+                                <?php } ?>
                             </div>
-                            <div class="tab-body">
-                                <div class="tab-content">Hamza</div>
-                                <div class="tab-content">SUper </div>
-                                <div class="tab-content">Hai</div>
-                            </div>
-                       </div>
+                        <div class="tab-body">
+                            <?php foreach($tabs as $tab_content){ ?>
+                                    <div class="tab-content"><?php echo $tab_content['tab_content']?></div>
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,13 +100,15 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
 <script>
     //tab Javascript
     $('.tab-content:eq(0)').addClass('active');
+    $('.tab-heading:eq(0)').addClass('active-head');
     $(".tab-heading").click(function(){
         var index = $(this).index();
         if($(".tab-content:eq("+index+")").hasClass("active")){
-            $(".tab-content:eq("+index+")").removeClass("active");
         }else{
             $(".tab-content").removeClass("active");
+            $(".tab-heading").removeClass("active-head");
             $(".tab-content:eq("+index+")").addClass("active");
+            $(".tab-heading:eq("+index+")").addClass("active-head");
         }
     })
     //tab Javascript End
