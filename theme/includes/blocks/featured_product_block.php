@@ -1,12 +1,12 @@
 <?php 
 $productID = $block['featured_product'];
+$tabs = get_field('all_tabs', $productID);
 $product = wc_get_product($productID);
 $data = $product->get_data();
 $product_meta = get_post_meta($productID);
 $upc = get_field('product_upc', $productID);
 $msrp = get_field('msrp_price', $productID);
 $current_tag = get_the_terms( $productID, 'product_tag' );
-// var_dump($data);
 ?>
 <section class="Featured-Product-Block">
     <div class="container">
@@ -56,9 +56,9 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                         <?php if(is_user_logged_in()){ ?>
                             <form class="cart" method="post" enctype="multipart/form-data">
                                 <div class="quantity">
-                                    <button class="Minus" onclick="Minus()">-</button>
+                                    <div class="Minus" onclick="Minus()">-</div>
                                     <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-                                    <button class="plus" onclick="Plus()">+</button>
+                                    <div class="plus" onclick="Plus()">+</div>
                                 </div>
                                 
                                 <input type="hidden" name="add-to-cart" value="<?php echo $productID; ?>">
@@ -80,21 +80,16 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                     <?php } ?>
 
                     <div class="tab-part">
-                        <div class="head">
-                            <p class="tab-desc" onclick="DescBoxShow()">Description</p>
-                            <p class="tab-safely" onclick="SafelyBoxShow()">Safely Information</p>
-                            <p class="tab-technical" onclick="TechnicalBoxShow()">Technical Specifications</p>
-                        </div>
-                        <div class="tab-desc-content">
-                            <p><?php echo $product->get_description() ?></p>
-                        </div>
-
-                        <div class="tab-safely-safely">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quaerat, reprehenderit molestiae ipsa officia vitae cupiditate! Aut dolorum ea non eligendi, et laborum veritatis. Quasi, molestiae eligendi delectus, nostrum numquam a commodi cupiditate natus saepe cumque excepturi repellat! Consequatur facilis dolorem asperiores cupiditate eveniet dolorum deleniti, nam libero ratione id?</p>
-                        </div>
-
-                        <div class="tab-technical-technical">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo dicta eos porro optio delectus atque ipsam nesciunt velit nulla? Veritatis inventore voluptatibus quisquam cupiditate. Necessitatibus voluptatum nulla blanditiis obcaecati maiores, in libero quidem illum reprehenderit rerum sunt et facere? Assumenda dignissimos iste sed aspernatur ipsum deserunt qui temporibus eligendi!</p>
+                        <div class="tab-wrap">
+                            <div class="tab-header">
+                                <?php foreach($tabs as $tab_heading){ ?>
+                                    <div class="tab-heading"><?php echo $tab_heading['tab_heading']?></div>
+                                <?php } ?>
+                            </div>
+                        <div class="tab-body">
+                            <?php foreach($tabs as $tab_content){ ?>
+                                    <div class="tab-content"><?php echo $tab_content['tab_content']?></div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -104,35 +99,18 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
 </section>
 <script>
     //tab Javascript
-    $('.tab-desc').addClass('active');
-    function Hideall(){
-        $('.tab-desc-content').css("display" , "none");
-        $('.tab-safely-safely').css("display" , "none");
-        $('.tab-technical-technical').css("display" , "none");
-    }
-    function RemoceallClass(){
-        $('.tab-desc').removeClass('active');
-        $('.tab-safely').removeClass('active');
-        $('.tab-technical').removeClass('active');
-    }
-    function DescBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-desc-content').css("display" , "block");
-        $('.tab-desc').addClass('active');
-    }
-    function SafelyBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-safely-safely').css("display" , "block");
-        $('.tab-safely').addClass('active');
-    }
-    function TechnicalBoxShow(){
-        Hideall();
-        RemoceallClass();
-        $('.tab-technical-technical').css("display" , "block");
-        $('.tab-technical').addClass('active');
-    }
+    $('.tab-content:eq(0)').addClass('active');
+    $('.tab-heading:eq(0)').addClass('active-head');
+    $(".tab-heading").click(function(){
+        var index = $(this).index();
+        if($(".tab-content:eq("+index+")").hasClass("active")){
+        }else{
+            $(".tab-content").removeClass("active");
+            $(".tab-heading").removeClass("active-head");
+            $(".tab-content:eq("+index+")").addClass("active");
+            $(".tab-heading:eq("+index+")").addClass("active-head");
+        }
+    })
     //tab Javascript End
     
     function Plus(){

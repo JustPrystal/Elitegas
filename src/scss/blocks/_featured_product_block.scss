@@ -18,14 +18,33 @@
           font-family: $arial;
           color: #df7800;
           font-weight: 400;
-          transition: transform 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: all 0.8s;
+          &:after {
+            content: "\f061";
+            font-weight: 100;
+            font-family: "FontAwesome";
+            margin: 0 0 0 10px;
+            transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+            right: 0;
+            opacity: 0;
+            position: relative;
+            display: none;
+          }
+          &:hover {
+            transform: translateX(-10px);
+            &:after {
+              opacity: 1;
+              display: inline-block;
+            }
+          }
         }
       }
       .Product-Part {
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
         .image-wrap {
-          flex: 0 0 50%;
+          flex: 0 0 51%;
           padding: 30px;
           border: 1px solid #ececea;
           border-right: none;
@@ -70,6 +89,7 @@
               }
             }
             div {
+              cursor: pointer;
               margin: 0px 4px;
               width: 30px;
               height: 30px;
@@ -89,7 +109,7 @@
           }
         }
         .content-wrap {
-          flex: 0 0 50%;
+          flex: 0 0 49%;
           padding: 30px;
           border: 1px solid #ececea;
           .heading {
@@ -102,7 +122,6 @@
           .info {
             display: flex;
             justify-content: flex-start;
-            column-gap: 20px;
             align-items: center;
             .tag-wrapper {
               a {
@@ -110,15 +129,19 @@
                 font-family: $arial;
                 text-decoration: none;
                 color: #df7927;
+                font-size: 14px;
               }
             }
             p {
               font-family: $arial;
               color: #677279;
               text-transform: capitalize;
+              font-size: 14px;
+              margin: 8px 0px 8px 12px;
               strong {
                 span {
                   font-weight: 400;
+                  font-size: 14px;
                 }
               }
             }
@@ -127,15 +150,18 @@
             font-family: $arial;
             color: #677279;
             text-transform: capitalize;
+            font-size: 14px;
           }
           .cart {
             display: flex;
-            margin: 16px 0px;
+            margin: 16px 0px 20px 0px;
+            column-gap: 4px;
             .quantity {
-              flex: 0 0 25%;
+              flex: 0 0 18%;
               display: flex;
               border: 1px solid #ddd;
-              button {
+              div {
+                cursor: pointer;
                 background: none;
                 border: none;
                 width: 65px;
@@ -143,20 +169,41 @@
                 width: 40px;
                 font-weight: 700;
                 color: #c7c7c7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
               }
               input {
                 width: 50%;
                 padding: 15px;
                 border: none;
+                text-align: center;
+                font-family: $arial;
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+                &::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
               }
             }
             .single_add_to_cart_button {
+              cursor: pointer;
               padding: 15px;
               font-family: $arial;
               font-size: 16px;
               background: #df7800;
               color: #fff;
               border: none;
+              text-transform: uppercase;
               &:hover {
                 background-color: #dfdcde !important;
                 color: #515151;
@@ -165,7 +212,7 @@
           }
           .Logined-Box-Wrap {
             margin-top: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             .head {
               display: flex;
               justify-content: space-between;
@@ -225,59 +272,43 @@
             border: 1px solid #ececea;
             margin: 5px 0px;
             padding: 8px 8px 0px 8px;
-            .head {
-              display: flex;
-              justify-content: space-around;
-              margin: 0px 15px;
-              padding-top: 4px;
-              padding-bottom: 6px;
-              border-bottom: 1px solid #ececea;
-              p {
-                cursor: pointer;
-                margin: 0;
-                font-weight: 400;
-                font-size: 15px;
-                font-family: $arial;
-                color: #677279;
-                &.active {
-                  color: #df7800;
-                  transition: all 0.5s;
+            .tab-wrap {
+              .tab-header {
+                padding: 4px;
+                display: flex;
+                justify-content: space-around;
+                .tab-heading {
+                  cursor: pointer;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 1;
+                  font-family: $arial;
+                  color: #677279;
+                  transition: 0.3s;
+                  &.active-head {
+                    color: #df7800;
+                  }
                 }
               }
             }
-            .tab-desc-content,
-            .tab-safely-safely,
-            .tab-technical-technical {
-              a {
-                color: #df7800;
-                text-decoration: none;
+            .tab-body {
+              padding: 8px 8px 8px 8px;
+              .tab-content {
+                border-top: 1px solid #ececea;
+                display: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.5;
+                font-family: $arial;
+                color: #677279;
+                a {
+                  color: #df7800;
+                  text-decoration: none;
+                }
+                &.active {
+                  display: block;
+                }
               }
-            }
-            .tab-desc-content {
-              padding: 10px 15px 10px 15px;
-              font-weight: 400;
-              font-size: 15px;
-              font-family: $arial;
-              line-height: 1.5;
-              color: #677279;
-            }
-            .tab-safely-safely {
-              padding: 10px 15px 10px 15px;
-              display: none;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 1.5;
-              font-family: $arial;
-              color: #677279;
-            }
-            .tab-technical-technical {
-              padding: 10px 15px 10px 15px;
-              display: none;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 1.5;
-              font-family: $arial;
-              color: #677279;
             }
           }
         }
