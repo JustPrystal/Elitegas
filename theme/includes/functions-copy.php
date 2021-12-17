@@ -1205,10 +1205,9 @@ add_action( 'woocommerce_account_log-history_endpoint', 'misha_my_account_endpoi
 function misha_my_account_endpoint_content() {
 
 	// of course you can print dynamic content here, one of the most useful functions here is get_current_user_id()
-	$id=370; 
-	$post = get_post($id); 
-	$content = apply_filters('the_content', $post->post_content); 
-	echo $content;
+
+	echo get_field("imp_fullwidth_text","option");
+
 }
 
 

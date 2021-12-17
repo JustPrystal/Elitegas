@@ -66,7 +66,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                                 <button type="submit" class="single_add_to_cart_button button alt"> Add to cart</button>
                             </form>
                         <?php }  ?>
-
+                        
                         <?php if(!(is_user_logged_in())){ ?>
                         <div class="Product-Pricing-Box">
                             <div class="Not-Logined-Box-Wrap">

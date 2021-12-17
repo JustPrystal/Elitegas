@@ -122,6 +122,18 @@ if( function_exists('acf_add_options_page') ) {
       'icon_url' => 'dashicons-menu-alt',
       
   ));
+
+    // Important Information
+    acf_add_options_page(array(
+      'page_title'     => 'Important Information',
+      'menu_title'    => 'Important Information',
+      'menu_slug'     => 'important_information',
+      'capability'    => 'edit_posts',
+      'redirect'        => false,
+      'position' => '41',
+      'icon_url' => 'dashicons-format-aside',
+      
+  ));
 }
 
 
