@@ -19,6 +19,14 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+<div class="container">
+
+<div class="main-heading">
+	<h2 class="heading">
+	<?php the_title(); ?>
+	</h2>
+</div>
+
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
@@ -163,9 +171,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 
+</div>
+<div class="container">
 <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 
-<div class="cart-collaterals">
+ <div class="cart-collaterals">
 	<?php
 		/**
 		 * Cart collaterals hook.
@@ -175,6 +185,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 		 */
 		do_action( 'woocommerce_cart_collaterals' );
 	?>
-</div>
+</div> 
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
+
+</div>
