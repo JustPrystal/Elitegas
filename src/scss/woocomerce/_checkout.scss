@@ -1,4 +1,5 @@
 .container{
+ 
 
     .main-heading{
         .heading{
@@ -14,6 +15,7 @@
     .woocommerce-checkout{
         *{
             font-family: $arial;
+            font-size: 16px;
         }
         .wrap-checkout-box{
             display: flex;
@@ -22,6 +24,7 @@
             .wrap-shipping-billing-details{
                 flex: 50%;
                 .billing-address-details{
+                    display: inline-block;
                     .woocommerce-billing-fields{
                         h3{
                             font-size: 18px;
@@ -52,6 +55,54 @@
                             .form-row{
                                 padding: 3px;
                                 margin: 0 0 6px;
+                                width: 50%;
+                                float: left;
+                                &.form-row-wide{
+                                    width: 100%;
+                                }
+                                &#billing_company_field
+                                
+                                {
+                                    width: 50%;
+                                   
+                                }
+
+                                &#billing_location_contact_name_field
+                                {
+                                    width: 50%;
+                                   
+                                }
+                                &#billing_city_field
+                                {
+                                    width: 50%;
+                                   
+                                }
+                                &#billing_state_field
+                                {
+                                    width: 50%;
+                                   .select2-selection--single{
+                                       height: 50px;
+                                   }
+                                }
+                                &#billing_country_field
+                                {
+                                    width: 50%;
+                                    .select2-selection--single{
+                                        height: 50px;
+                                    }
+                                   
+                                }
+                                &#billing_loading_dock_field
+                                {
+                                    width: 50%;
+                                    .select2-selection--single{
+                                        height: 50px;
+                                    }
+                                    .select2-container--default{
+                                        width: 100% !important;
+                                    }
+                                   
+                                }
                                 label{
                                     font-size: 16px;
                                     color: $dgray;
@@ -65,10 +116,115 @@
                                     border-radius: 5px;
                                     padding: 15px;
                                     border: 1px solid #ddd;
+                                    width: 100%;
                                 }
                              
                             }
                         }
+                    }
+                }
+                .billing-address-details{
+                    display: inline-block;
+                    .woocommerce-shipping-fields{
+                        h3{
+                            font-size: 18px;
+                            margin: 20px 0 10px 0;
+                        } 
+
+                        .shipping_address{
+                            .ocwma_select{
+                                width: 100%;
+                                margin-bottom: 5px;
+                                line-height: 49px;
+                                color: #4e4e4e;
+                                font-weight: bold;
+                                padding: 15px;
+                                border: 1px solid lightgrey;
+                                border-radius: 5px;
+                            }  
+                            .form_option_billing{
+                                background-color: #df7800;
+                                color: #ffffff;
+                                padding: 8px 10px;
+                                font-size: 15px;
+                                border: 0px;
+                                &:hover{
+                                    background-color: #dfdcde;
+                                    color: #515151;
+                                }
+                            }
+                            .woocommerce-billing-fields__field-wrapper{
+                                .form-row{
+                                    padding: 3px;
+                                    margin: 0 0 6px;
+                                    width: 50%;
+                                    float: left;
+                                    &.form-row-wide{
+                                        width: 100%;
+                                    }
+                                    &#billing_company_field
+                                    
+                                    {
+                                        width: 50%;
+                                    
+                                    }
+
+                                    &#billing_location_contact_name_field
+                                    {
+                                        width: 50%;
+                                    
+                                    }
+                                    &#billing_city_field
+                                    {
+                                        width: 50%;
+                                    
+                                    }
+                                    &#billing_state_field
+                                    {
+                                        width: 50%;
+                                    .select2-selection--single{
+                                        height: 50px;
+                                    }
+                                    }
+                                    &#billing_country_field
+                                    {
+                                        width: 50%;
+                                        .select2-selection--single{
+                                            height: 50px;
+                                        }
+                                    
+                                    }
+                                    &#billing_loading_dock_field
+                                    {
+                                        width: 50%;
+                                        .select2-selection--single{
+                                            height: 50px;
+                                        }
+                                        .select2-container--default{
+                                            width: 100% !important;
+                                        }
+                                    
+                                    }
+                                    label{
+                                        font-size: 16px;
+                                        color: $dgray;
+                                        display: block;
+                                        .required{
+                                            color: red;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                    .input-text {
+                                        border-radius: 5px;
+                                        padding: 15px;
+                                        border: 1px solid #ddd;
+                                        width: 100%;
+                                    }
+                                
+                                }
+                            }
+                        }
+
                     }
                 }
             }
