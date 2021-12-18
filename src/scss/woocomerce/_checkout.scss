@@ -82,6 +82,12 @@
                                     width: 50%;
                                    .select2-selection--single{
                                        height: 50px;
+                                       line-height: 50px;
+                                       border: 1px solid #ddd;
+                                       span{
+                                        line-height: 50px;
+                                        height: 50px;
+                                    }
                                    }
                                 }
                                 &#billing_country_field
@@ -89,6 +95,12 @@
                                     width: 50%;
                                     .select2-selection--single{
                                         height: 50px;
+                                        line-height: 50px;
+                                        border: 1px solid #ddd;
+                                         span{
+                                            line-height: 50px;
+                                            height: 50px;
+                                        }
                                     }
                                    
                                 }
@@ -97,9 +109,20 @@
                                     width: 50%;
                                     .select2-selection--single{
                                         height: 50px;
+                                        line-height: 50px;
+                                        border: 1px solid #ddd;
+                                        span{
+                                            line-height: 50px;
+                                            height: 50px;
+                                        }
                                     }
                                     .select2-container--default{
                                         width: 100% !important;
+                                        line-height: 50px;
+                                        span{
+                                            line-height: 50px;
+                                            height: 50px;
+                                        }
                                     }
                                    
                                 }
@@ -123,8 +146,9 @@
                         }
                     }
                 }
-                .billing-address-details{
+                .shipping-address-details{
                     display: inline-block;
+                
                     .woocommerce-shipping-fields{
                         h3{
                             font-size: 18px;
@@ -132,7 +156,7 @@
                         } 
 
                         .shipping_address{
-                            .ocwma_select{
+                            .ocwma_select_shipping{
                                 width: 100%;
                                 margin-bottom: 5px;
                                 line-height: 49px;
@@ -142,7 +166,7 @@
                                 border: 1px solid lightgrey;
                                 border-radius: 5px;
                             }  
-                            .form_option_billing{
+                            .form_option_shipping{
                                 background-color: #df7800;
                                 color: #ffffff;
                                 padding: 8px 10px;
@@ -153,7 +177,7 @@
                                     color: #515151;
                                 }
                             }
-                            .woocommerce-billing-fields__field-wrapper{
+                            .woocommerce-shipping-fields__field-wrapper{
                                 .form-row{
                                     padding: 3px;
                                     margin: 0 0 6px;
@@ -162,46 +186,69 @@
                                     &.form-row-wide{
                                         width: 100%;
                                     }
-                                    &#billing_company_field
+                                    &#shipping_company_field
                                     
                                     {
                                         width: 50%;
                                     
                                     }
 
-                                    &#billing_location_contact_name_field
+                                    &#shipping_contact_name_field
                                     {
                                         width: 50%;
                                     
                                     }
-                                    &#billing_city_field
+                                    &#shipping_city_field
                                     {
                                         width: 50%;
                                     
                                     }
-                                    &#billing_state_field
+                                    &#shipping_state_field
                                     {
                                         width: 50%;
                                     .select2-selection--single{
                                         height: 50px;
+                                        line-height: 50px;
+                                        border: 1px solid #ddd;
+                                        span{
+                                            line-height: 50px;
+                                            height: 50px;
+                                        }
                                     }
                                     }
-                                    &#billing_country_field
+                                    &#shipping_country_field
                                     {
                                         width: 50%;
                                         .select2-selection--single{
                                             height: 50px;
+                                            line-height: 50px;
+                                            border: 1px solid #ddd;
+                                            span{
+                                                line-height: 50px;
+                                                height: 50px;
+                                            }
                                         }
                                     
                                     }
-                                    &#billing_loading_dock_field
+                                    &#shipping_loading_dock_field
                                     {
                                         width: 50%;
                                         .select2-selection--single{
                                             height: 50px;
+                                            line-height: 50px;
+                                            border: 1px solid #ddd;
+                                            span{
+                                                line-height: 50px;
+                                                height: 50px;
+                                            }
                                         }
                                         .select2-container--default{
                                             width: 100% !important;
+                                            line-height: 50px;
+                                            span{
+                                                line-height: 50px;
+                                                height: 50px;
+                                            }
                                         }
                                     
                                     }
@@ -226,11 +273,178 @@
                         }
 
                     }
+
+                    .woocommerce-additional-fields{
+                        display: inline-block;
+                        width: 100%;
+                        .woocommerce-additional-fields__field-wrapper{
+                            width: 100%;
+                            .notes{
+                                label{
+                                    font-size: 16px;
+                                    color: $dgray;
+                                    display: block;
+                                }
+                                .input-text {
+                                    width: 100%;
+                                    border: 1px solid #ddd;
+                                    border-radius: 5px;
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                 
+                    }
                 }
+
+
+
             }
             .wrap-order-details{
                 width: calc(50% - 5%);
                 margin-left: 5%;
+
+                #order_review{
+                    .shop_table{
+                        *{
+                            font-size: 13px;
+                            color: $dgray;
+                        }
+                        border: 1px solid rgba(0,0,0,.1);
+                        margin: 0 -1px 24px 0;
+                        text-align: left;
+                        width: 100%;
+                        border-collapse: separate;
+                        border-radius: 5px;
+                        th{
+                            font-weight: 700;
+                            padding: 9px 12px;
+                            line-height: 1.5em;
+                        }
+                        tr{
+                            border-top: 1px solid rgba(0,0,0,.1);
+                            &.woocommerce-shipping-totals{
+                                display: flex;
+                                flex-wrap: wrap;
+                                th{
+                                    flex: 50%;
+                                }
+                                td{
+                                    flex: 50%;
+                                    text-align: right;
+                                }
+                            }
+                        }
+
+                        td{
+                            
+                            // border-top: 1px solid rgba(0,0,0,.1);
+                            padding: 9px 12px;
+                            vertical-align: middle;
+                            line-height: 1.5em;
+                            .woocommerce-Price-amount{
+                               
+                               bdi{
+                                font-size: 20px;
+                               } 
+                            }
+                        }
+                        thead{
+                            .product-name{
+                                width: 85%;
+                            }
+                            .product-quantity{
+                                width: 15%;
+                            }
+                            .product-total{
+                                width: 22%;
+                            }
+                        }
+                    }
+
+                    .coupon-wrap{
+                        .woocommerce-form-coupon-toggle{
+                            .woocommerce-info{
+                                font-size: 16px;
+                                margin-top: 0;
+                                padding: 1em 2em 1em 3.5em;
+                                margin: 0 0 2em;
+                                position: relative;
+                                background-color: #f7f6f7;
+                                color: #515151;
+                                border-top: 3px solid #222222;
+                                border-radius: 3px;
+                                &:before{
+                                    font-family: 'FontAwesome';
+                                    content: "\f06b";
+                                    display: inline-block;
+                                    position: absolute;
+                                    top: 1em;
+                                    left: 1.5em;
+                                }
+                                a{
+                                    text-decoration: none;
+                                   color: #df7800;
+                                   &:hover{
+                                    color: #5d5e5e;
+                                   }
+                                }
+                            }
+                        }
+                    }
+                    .woocommerce-checkout-payment{
+                        .wc_payment_methods{
+                            padding: 0;
+                            list-style: none;
+                            .wc_payment_method{
+                                font-size: 15px;
+                                line-height: 3;
+                                text-align: left;
+                                margin: 0;
+                                font-weight: 400;
+                                label{
+                                    font-size: 15px;
+                                    color: $dgray;
+                                }
+                                .payment_box{
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    padding: 1em;
+                                    margin: 1em 0;
+                                    font-size: .92em;
+                                    border-radius: 2px;
+                                    line-height: 1.5;
+                                    background-color: #dfdcde;
+                                    color: #515151;
+                                    &:before{
+                                        content: "";
+                                        display: block;
+                                        border: 1em solid #dfdcde;
+                                        border-right-color: transparent;
+                                        border-left-color: transparent;
+                                        border-top-color: transparent;
+                                        position: absolute;
+                                        top: -0.75em;
+                                        left: 0;
+                                        margin: -1em 0 0 2em;
+                                    }
+                             
+                                }
+                            }
+                        }
+                        .place-order{
+                            padding: 25px 0 0 0;
+                            width: 100%;
+                            text-align: left;
+                            .woocommerce-terms-and-conditions-wrapper{
+                                .woocommerce-privacy-policy-text{
+                                    color: $d;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
        
