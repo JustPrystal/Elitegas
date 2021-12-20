@@ -183,7 +183,7 @@
                                         width: 100%;
                                         display: inline-block;
                                         clear: both;
-                                        ul{
+                                        .wc-tabs{
                                             margin: 0;
                                             padding: 10px 0;
                                             text-align: center;
@@ -226,6 +226,20 @@
                                                 color: $dgray; 
                                                 font-family: $arial;
                                                 line-height: 1.4em;
+                                                a{
+                                                    color: $orange;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                            ul{
+                                                padding-left: 2rem;
+                                                margin: 0 0 1rem;
+                                                li{
+                                                    display: list-item;
+                                                    font-family: $arial;
+                                                    color: $dgray;
+                                                    margin: 10px 0;
+                                                }
                                             }
                                         }
                                     }
