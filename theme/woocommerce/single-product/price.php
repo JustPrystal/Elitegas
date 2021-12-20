@@ -54,14 +54,14 @@ global $product;
      <?php } ?>	
 </div>
 
-<div class="product-share-items">
+<!-- <div class="product-share-items">
 <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i></a>
 <a class="pinterest" href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=&description=<?php the_title(); ?>"><i class="fab fa-pinterest"></i></a>
 <a class="twitter" href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>"><i class="fab fa-twitter"></i></a>
 <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>"><i class="fab fa-linkedin"></i></a>
 <a class="instagram" href="https://instagram.com/share?url=<?php the_permalink(); ?>"><i class="fab fa-instagram"></i></a>
 <a class="mailto" href="mailto:info@elitegas.com?&subject=&cc=&bcc=&body=<?php the_permalink(); ?>%0A<?php the_title(); ?>"><i class="fas fa-envelope"></i></a>
-</div>
+</div> -->
 
 </div>
 
