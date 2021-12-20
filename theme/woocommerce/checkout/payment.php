@@ -33,6 +33,8 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 
 <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
 
+	<div class="wrap-coupan-field">
+
 	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'woocommerce' ); ?></p>
 
 	<p class="form-row form-row-first">
@@ -43,6 +45,7 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 		<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?></button>
 	</p>
 
+	</div>
 	<div class="clear"></div>
 </form>
 </div>

@@ -29,6 +29,8 @@
                         h3{
                             font-size: 18px;
                             margin: 20px 0 10px 0;
+                            font-family: $arial;
+                            color: $dgray;
                         } 
                         .ocwma_select{
                             width: 100%;
@@ -148,11 +150,14 @@
                 }
                 .shipping-address-details{
                     display: inline-block;
+
                 
                     .woocommerce-shipping-fields{
                         h3{
                             font-size: 18px;
                             margin: 20px 0 10px 0;
+                            font-family: $arial;
+                            color: $dgray;
                         } 
 
                         .shipping_address{
@@ -304,6 +309,10 @@
                 width: calc(50% - 5%);
                 margin-left: 5%;
 
+                #order_review_heading{
+                    font-family: $arial;
+                    color: $dgray;
+                }
                 #order_review{
                     .shop_table{
                         *{
@@ -391,7 +400,54 @@
                                 }
                             }
                         }
+                        .wrap-coupan-field{
+                           
+                        border: 1px solid #d3ced2;
+                        padding: 20px;
+                        margin: 2em 0;
+                        text-align: left;
+                        border-radius: 5px;
+                        display: none;
+                        width: 100%;
+                            .form-row{
+                                padding: 3px;
+                                margin: 0 0 6px;
+                                &.form-row-first{
+                                    float: left;
+                                    width: 50%;
+                                    overflow: visible;   
+                                    .input-text{
+                                        height: 49px;
+                                        border-radius: 5px;
+                                        padding: 0 15px;
+                                        border: 1px solid #ddd;
+                                        width: 100%;
+                                    }
+                                }
+                                &.form-row-last{
+                                    float: right;
+                                    width: 50%;
+                                    text-align: center;
+                                    button{
+                                        background-color: #df7800;
+                                        color: #ffffff;
+                                        padding: 15px 15px;
+                                        font-size: 15px;
+                                        border: 0px;
+                                        text-transform: uppercase;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
                     }
+
+
                     .woocommerce-checkout-payment{
                         .wc_payment_methods{
                             padding: 0;
@@ -439,7 +495,34 @@
                             text-align: left;
                             .woocommerce-terms-and-conditions-wrapper{
                                 .woocommerce-privacy-policy-text{
-                                    color: $d;
+                                   p{
+                                    color: $dgray;
+                                    font-size: 14px;
+                                    line-height: 1.5;
+                                    a{
+                                        color: $orange;
+                                        text-decoration: none;
+                                        
+                                    }
+                                   }
+                                    
+                                }
+                            }
+                            #place_order{
+                               
+                                line-height: 50px;
+                                padding: 0 50px;
+                                display: block;
+                                margin: 30px 0px;
+                                background: $orange;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                border:0px;
+                                color: #ffffff;
+                                float: right;
+                                &:hover{
+                                    background-color: #dfdcde;
+                                    color: #515151;   
                                 }
                             }
                         }
