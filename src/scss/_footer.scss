@@ -1,6 +1,9 @@
 .footer{ 
     background-color: #a09e94; 
     .footer-top-wrap{ 
+        &.is_mobile{
+            display: none;
+        }
         .container{ 
             display:flex; 
             .footer-item{ 
@@ -112,6 +115,9 @@
 } 
 .footer-top-wrapper{ 
     padding:70px 0px 20px 0px; 
+    &.is_mobile{
+        display: none;
+    }
     .container{ 
         display:flex; 
         .footer-top-item{ 
@@ -149,3 +155,238 @@
         } 
     } 
 }
+
+
+
+
+// Mobile Footer responsive
+.mobile-responsive{
+    .footer{ 
+        background-color: #a09e94; 
+        .footer-top-wrap{ 
+            &.is_desktop{
+                display: none;
+            }
+            &.is_mobile{
+                display: block;
+                padding-top: 30px;
+            }
+            .container{ 
+                display:flex; 
+                max-width: 100%;
+                flex-wrap: wrap;
+                .footer-item{ 
+                    padding: 20px 0px 0px;
+                    flex: 0 0 100%; 
+                    &:first-child{ 
+                        flex: 0 0 100%; 
+                     
+                    } 
+                    &:last-child{ 
+                        flex: 0 0 100%;  
+                    } 
+                    .inner-wrap{ 
+                        .heading{ 
+                            font-weight: 800; 
+                            font-size: 14px; 
+                            font-family:$arial; 
+                            color:#fff; 
+                            margin-bottom:0.5rem;
+                            padding: 0px 20px 20px 0;
+                            border-bottom: 1px solid white;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &.accordion-footer-head:after {
+                                content: '\02795'; /* Unicode character for "plus" sign (+) */
+                                font-size: 12px;
+                                color: white;
+                                float: right;
+                                margin-left: 5px;
+                              }
+                              &.active:after {
+                                content: "\2796"; /* Unicode character for "minus" sign (-) */
+                                color: white;
+                              } 
+                        } 
+                        .item-body{ 
+                            &.accordion-footer-panel{
+                                padding: 0 20px 0 0;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out;
+                            }
+                            p{ 
+                                margin:0; 
+                                font-size: 14px; 
+                                color:#fff; 
+                                font-family:$arial; 
+                                margin-bottom: 1rem; 
+                            } 
+                            .footer-link-item{ 
+                                a{ 
+                                    color: #fff; 
+                                    font-weight: 400; 
+                                    line-height: 1.7; 
+                                    font-size: 14px; 
+                                    text-decoration: none; 
+                                    font-family: $arial; 
+                                    cursor:pointer; 
+                                } 
+                                
+                            } 
+                            .mc4wp-form-fields{ 
+                                .mc4wp_newsletter_wrap{ 
+                                    display:flex; 
+                                    width:100%; 
+                                    input[type="email"]{ 
+                                        background: #fff; 
+                                        color: #67727A; 
+                                        padding: 5px 10px; 
+                                        height: 48px; 
+                                        font-size: 16px; 
+                                        border:0; 
+                                        font-family:$arial; 
+                                    } 
+                                    input[type="submit"]{ 
+                                        background-color:$orange; 
+                                        color:#fff; 
+                                        font-family:$arial; 
+                                        height:48px; 
+                                        border:0; 
+                                        position: relative; 
+                                        display: inline-block; 
+                                        padding: 0 30px; 
+                                        line-height: 48px; 
+                                        border-radius: 2px; 
+                                        text-align: center; 
+                                        font-weight: 500; 
+                                        cursor: pointer; 
+                                        transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out; 
+                                        font-size: 16px; 
+                                        border: 0; 
+                                    } 
+                                } 
+                            } 
+                        } 
+                    } 
+                } 
+            }    
+        } 
+        .footer-bottom-wrap{ 
+            padding:20px 0 40px; 
+            .container{ 
+                display: flex; 
+                flex-wrap: wrap; 
+                .copyright-wrap{ 
+                    flex: 100%; 
+                    font-family: $arial; 
+                    font-size: 14px; 
+                    color: #fff; 
+                    padding: 0px; 
+                } 
+                .payments-wrap{ 
+                    flex: 100%; 
+                    .heading{ 
+                        padding: 0px 0 20px;
+                        font-family: $arial; 
+                        font-size: 14px; 
+                        color: #fff; 
+                    } 
+                    .payments{ 
+                        display: flex; 
+                        flex-wrap: wrap; 
+                        .payment-item{ 
+                            margin-right:5px; 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    } 
+    .footer-top-wrapper{ 
+        padding: 40px 10px 40px 10px;
+        &.is_desktop{
+            display: none;
+        }
+        &.is_mobile{
+            display: block;
+        }
+        .container{  
+            max-width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .footer-top-item{ 
+                flex: 0 0 100%; 
+                padding:0px 10px; 
+                display:flex;
+                &.fade{
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                    @-webkit-keyframes fade {
+                        from {opacity: .4} 
+                        to {opacity: 1}
+                      }
+                      
+                      @keyframes fade {
+                        from {opacity: .4} 
+                        to {opacity: 1}
+                      }
+                } 
+                .icon-wrap{ 
+                padding-right:0px; 
+                text-align: center;
+                padding-bottom: 20px;
+                img{
+                    width: 20%;
+                }
+                } 
+                .text-wrapper{ 
+                    font-family:$arial; 
+                    padding: 0 15px; 
+                    text-align: center;
+                    .headline{ 
+                        color: #4b4b4b; 
+                        font-weight: 500; 
+                        font-size: 16px; 
+                    } 
+                    .description{ 
+                        font-size: 15px; 
+                        font-weight: 300; 
+                        padding-top: 15px; 
+                        color:$dgray; 
+                        line-height: 1.5; 
+                        p{ 
+                            margin: 0; 
+                        } 
+                        strong{ 
+                            font-weight: normal; 
+                        } 
+                        a{ 
+                            color: $orange; 
+                        } 
+                    } 
+                } 
+            } 
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 15px 2px 0;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                &.active:hover{
+                    background-color: #717171;
+                }
+              }
+        } 
+    }
+}
+
+// Mobile Footer Responsive end

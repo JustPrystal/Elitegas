@@ -97,37 +97,3 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
         </div>
     </div>
 </section>
-<script>
-    //tab Javascript
-    $('.tab-content:eq(0)').addClass('active');
-    $('.tab-heading:eq(0)').addClass('active-head');
-    $(".tab-heading").click(function(){
-        var index = $(this).index();
-        if($(".tab-content:eq("+index+")").hasClass("active")){
-        }else{
-            $(".tab-content").removeClass("active");
-            $(".tab-heading").removeClass("active-head");
-            $(".tab-content:eq("+index+")").addClass("active");
-            $(".tab-heading:eq("+index+")").addClass("active-head");
-        }
-    })
-    //tab Javascript End
-    
-    function Plus(){
-        var a = $('.input-text').val();
-        a++;
-        ValueChange(a);
-        
-    }
-    function Minus(){
-        var a = $('.input-text').val();
-        a--;
-        if(a < 1){
-            a = 1;
-        }
-        ValueChange(a);
-    }
-    function ValueChange(CurrenttValue){
-        $('.input-text').val(CurrenttValue).change();
-    }
-</script>

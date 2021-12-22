@@ -16,7 +16,7 @@
 				"path" => $templatedir . '/style.css',
 				"version" => filemtime(get_theme_file_path('/style.css'))
 			],
-			
+
 			[
 				"name" => 'jquery.js', 
 				"type" => 'js',
@@ -38,6 +38,13 @@
 				"version" => '1.0.0',
 				"loadInFooter" => false
 			], 
+			[
+				"name" => 'custom.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/scripts/custom.js',
+				"version" => '1.0.0',
+				"loadInFooter" => true
+			]
 			// [
 			// 	"name" => 'TweenMax.js', 
 			// 	"type" => 'js',

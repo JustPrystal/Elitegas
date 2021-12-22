@@ -3,7 +3,7 @@
     $footer = get_field("footer_items","option");
     $footer_b = get_field("footer_bottom","option")
 ?>
-    <div class="footer-top-wrapper">
+    <div class="footer-top-wrapper is_desktop">
         <div class="container">
             <?php foreach($footer_top as $item){?>
                 <div class="footer-top-item">
@@ -18,8 +18,29 @@
             <?php }?>
         </div>
     </div>
+    <div class="footer-top-wrapper is_mobile">
+        <div class="container">
+            <?php foreach($footer_top as $item){?>
+                <div class="footer-top-item mobile-item fade">
+                    <div class="icon-wrap">
+                       <img src="<?php echo $item['icon']['url'] ?>">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="headline"><?php echo $item['headline']?></div>
+                        <div class="description"><?php echo $item['description']?></div>
+                    </div>
+                </div>
+            <?php }?>
+          <div style="text-align:center">
+             <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+             <span class="dot" onclick="currentSlide(3)"></span>
+             <span class="dot" onclick="currentSlide(4)"></span>  
+          </div>
+        </div>
+    </div>
     <div class="footer">
-        <div class="footer-top-wrap">
+        <div class="footer-top-wrap is_desktop">
             <div class="container">
                 <?php foreach($footer as $footer_item){ ?>
                     <div class="footer-item">
@@ -31,6 +52,30 @@
                                 </div>
                             <?php } elseif($footer_item['choose_type'] == "nav"){ ?>
                                 <div class="item-body">
+                                   <?php foreach($footer_item['navigation'] as $nav){?>
+                                        <div class="footer-link-item">
+                                            <a href="<?php echo $nav['link']['url'] ?>"><?php echo $nav['link']['title'] ?></a>
+                                        </div>
+                                   <?php }?>
+                                </div>    
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?> 
+            </div>
+        </div>
+        <div class="footer-top-wrap is_mobile">
+            <div class="container">
+                <?php foreach($footer as $footer_item){ ?>
+                    <div class="footer-item">
+                        <div class="inner-wrap">
+                            <div class="heading accordion-footer-head"><?php echo $footer_item['heading']?></div>
+                            <?php if($footer_item['choose_type'] == "text"){?>
+                                <div class="item-body accordion-footer-panel">
+                                    <?php echo $footer_item['text_area'] ?>
+                                </div>
+                            <?php } elseif($footer_item['choose_type'] == "nav"){ ?>
+                                <div class="item-body accordion-footer-panel">
                                    <?php foreach($footer_item['navigation'] as $nav){?>
                                         <div class="footer-link-item">
                                             <a href="<?php echo $nav['link']['url'] ?>"><?php echo $nav['link']['title'] ?></a>

@@ -1059,10 +1059,10 @@ add_action( 'widgets_init', 'dsk_widgets_init' );
  * @since DSK 1.0
  */
 
-function wpdocs_elite_scripts() {
-    wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', true );
-}
-add_action( 'wp_enqueue_scripts', 'wpdocs_elite_scripts' );
+// function wpdocs_elite_scripts() {
+//     wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'wpdocs_elite_scripts' );
 
 
 function dsk_remove_recent_comments_style() {
