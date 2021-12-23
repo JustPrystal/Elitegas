@@ -99,3 +99,20 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // Footer Nav Accordion end
+
+// Header mobile Search dropdown function
+
+$(".search-wrap").click(function () {
+  if ( $( ".search-drop" ).first().is( ":hidden" ) ) {
+    $( ".search-drop" ).slideDown( "slow" );
+  } else {
+    $( ".search-drop" ).hide();
+  }
+});
+
+// Header mobile search dropdown end
+
+// Header Hamburger
+
+
+//Header hamburger end

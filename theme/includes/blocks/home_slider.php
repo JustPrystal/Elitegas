@@ -1,10 +1,24 @@
-<section class="Home-Page-Slider">
+<section class="Home-Page-Slider is_desktop">
     <div class="wrapper">
         <div class="slider-main">
             <?php 
                 foreach($block['image_container'] as $image){ ?>
                 <div class="image-wrapper">
                     <img src="<?php echo $image['image']['url'] ?>">
+                </div>
+            <?php
+                }
+            ?>
+        </div>
+    </div>
+</section>
+<section class="Home-Page-Slider is_mobile">
+    <div class="wrapper">
+        <div class="slider-main">
+            <?php 
+                foreach($block['mobile_image_container'] as $image){ ?>
+                <div class="image-wrapper">
+                    <img src="<?php echo $image['mobile_image']['url'] ?>">
                 </div>
             <?php
                 }

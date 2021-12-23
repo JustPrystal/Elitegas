@@ -1,45 +1,117 @@
 $distanceBTWWallsAndButtons: 2%;
-.Home-Page-Slider{
-    .wrapper{
-        position: relative;
-        .slider-main{
-            button{
-                cursor:pointer;
-                position: absolute;
-                top:50%;
-                z-index: 10;
-                background: black;
-                opacity: 50%;
-                color: white;
-                border: none;
-                padding: 20px;
-                border-radius: 100%;
-                width: 30px;
-                height: 30px;
-                display: flex;
-                align-items:center;
-                justify-content: center;
-                &:hover{
-                    opacity: 100%;
-                }
-                i{
-                    &:before{
-                        font-size: 25px;
-                        font-weight: 700;
+.tablet-desktop-responsive{
+    .Home-Page-Slider{
+        min-width: 1024px;
+        &.is_mobile{
+            display: none;
+        }
+        .wrapper{
+            position: relative;
+            .slider-main{
+                button{
+                    cursor:pointer;
+                    position: absolute;
+                    top:50%;
+                    z-index: 10;
+                    background: black;
+                    opacity: 50%;
+                    color: white;
+                    border: none;
+                    padding: 20px;
+                    border-radius: 100%;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items:center;
+                    justify-content: center;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                    i{
+                        &:before{
+                            font-size: 25px;
+                            font-weight: 700;
+                        }
                     }
                 }
-            }
-            .slick-next{
-                right:$distanceBTWWallsAndButtons;
-            }
-            .slick-prev{
-                left:$distanceBTWWallsAndButtons;
-            }
-            .image-wrapper{
-                img{
-                    width: 100%;
+                .slick-next{
+                    right:$distanceBTWWallsAndButtons;
+                }
+                .slick-prev{
+                    left:$distanceBTWWallsAndButtons;
+                }
+                .image-wrapper{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
     }
 }
+
+
+
+// Home Slider Mobile Responsive
+
+.mobile-responsive{
+    .Home-Page-Slider{
+        min-width: auto;
+        &.is_mobile{
+            display: none;
+            @include responsive(sm){
+                display: block;
+            }
+        }
+        &.is_desktop{
+            display: block;
+            @include responsive(sm){
+                display: none;
+            }
+        }
+        .wrapper{
+            position: relative;
+            .slider-main{
+                button{
+                    cursor:pointer;
+                    position: absolute;
+                    top:50%;
+                    z-index: 10;
+                    background: black;
+                    opacity: 50%;
+                    color: white;
+                    border: none;
+                    padding: 20px;
+                    border-radius: 100%;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items:center;
+                    justify-content: center;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                    i{
+                        &:before{
+                            font-size: 25px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .slick-next{
+                    right:$distanceBTWWallsAndButtons;
+                }
+                .slick-prev{
+                    left:$distanceBTWWallsAndButtons;
+                }
+                .image-wrapper{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Slider Mobile Responsive end

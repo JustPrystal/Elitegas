@@ -1,314 +1,364 @@
-.archive{
-  min-width: 1460px;
-    .woocommerce{
-        .woocommerce-breadcrumb{
-          display: none;
-        }
-        .col-md-12{
-          .main-page-title{
-            h2{
-                margin-bottom: 0px;
-                font-family: $arial;
-                font-size: 35px;
-                font-weight: 500;
-                color: $dgray;
-                margin-top: 20px;
-              }
-           }
-        }  
-        .container{
-          max-width: 1460px;
-            .row{
-              display: flex;
-                .col-md-9{
-                  flex: 75%;
-                  margin-top: -40px;
-                    .woopage-content{
-                      position: relative;
-                        .woocommerce-result-count{
-                            position: absolute;
-                            right: 270px;
-                            margin: 0px;
-                            top: 10px;
-                            font-size: 18px;
-                            font-weight: 400;
-                            text-transform: capitalize;
-                            font-family: $arial;
-                            color: $dgray;
-                        }
-                        .woocommerce-ordering{
-                            float: right;
-                            width: min-content; 
-                            margin-bottom: 10px;
-                            select{
+.tablet-desktop-responsive{
+ .archive{
+    min-width: 1024px;
+      .woocommerce{
+          .woocommerce-breadcrumb{
+            display: none;
+          }
+          .col-md-12{
+            .main-page-title{
+              h2{
+                  margin-bottom: 0px;
+                  font-family: $arial;
+                  font-size: 35px;
+                  font-weight: 500;
+                  color: $dgray;
+                  margin-top: 20px;
+                }
+            }
+          }  
+          .container{
+              .row{
+                display: flex;
+                  .col-md-9{
+                    flex: 75%;
+                    margin-top: -40px;
+                      .woopage-content{
+                        position: relative;
+                          .yith-wcan-filters-opener{
+                              display: none !important;
+                          }
+                          .woocommerce-result-count{
+                              position: absolute;
+                              right: 270px;
+                              margin: 0px;
+                              top: 10px;
                               font-size: 18px;
                               font-weight: 400;
                               text-transform: capitalize;
-                              background: #eee;
-                              padding: 0 10px;
-                              height: 40px;
-                              border-radius: 5px;
-                              border: none;
+                              font-family: $arial;
                               color: $dgray;
-                            }
-                            input{
-                              color: $dgray;
-                            }
-                        }
-                        .mainloopproducts{
-                            border: 1px solid #ededed;
-                            padding: 0px 10px;
-                            display: flex;
-                            flex-wrap: wrap;
-                            width: 100%;
-                            .elitegas-shop{
-                              width: 33.3%;
-                              padding: 40px;
-                              height: 470px;
-                              margin: 0;
-                              display: block;
-                               a{
-                                  text-decoration: none;
-                                    img{
-                                        width: 100%;
-                                        height: auto;
-                                        display: block;  
+                          }
+                          .woocommerce-ordering{
+                              float: right;
+                              width: min-content; 
+                              margin-bottom: 10px;
+                              select{
+                                font-size: 18px;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                background: #eee;
+                                padding: 0 10px;
+                                height: 40px;
+                                border-radius: 5px;
+                                border: none;
+                                color: $dgray;
+                              }
+                              input{
+                                color: $dgray;
+                              }
+                          }
+                          .mainloopproducts{
+                              border: 1px solid #ededed;
+                              padding: 0px 10px;
+                              display: flex;
+                              flex-wrap: wrap;
+                              width: 100%;
+                              .elitegas-shop{
+                                width: 33.3%;
+                                padding: 40px;
+                                height: 470px;
+                                margin: 0;
+                                display: block;
+                                a{
+                                    text-decoration: none;
+                                      img{
+                                          width: 100%;
+                                          height: auto;
+                                          display: block;  
+                                        }
+                                        h2{
+                                          padding: 0;
+                                          color: #444;
+                                          font-size: 16px;
+                                          text-align: center;
+                                          padding-top: 20px;
+                                          display: flex;
+                                          flex-direction: column;
+                                          justify-content: center;
+                                          font-weight: 600;
+                                          font-family: $arial;
+                                          text-decoration: none;  
+                                          span{     
+                                              padding-top: 3px;
+                                              font-weight: 200;
+                                              color: $orange;
+                                            }
+                                        }
+                                      .price{
+                                          display: none;
                                       }
-                                      h2{
-                                        padding: 0;
-                                        color: #444;
-                                        font-size: 16px;
-                                        text-align: center;
-                                        padding-top: 20px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        font-weight: 600;
-                                        font-family: $arial;
-                                        text-decoration: none;  
-                                        span{     
-                                            padding-top: 3px;
-                                            font-weight: 200;
-                                            color: $orange;
-                                          }
-                                      }
-                                    .price{
-                                        display: none;
-                                    }
-                                }
-                                .button{
-                                    display: none;
-                                }
-                            }
-                        }    
-                    }    
-                }
-                #sidebar{
-                  flex: 25%;
-                  padding-left: 20px;
-                    .yith-wcan-filter{  
-                      margin-top: 20px;
-                        h4{
-                          font-size: 18px;
-                          font-weight: 600;
-                          font-family: $arial;
-                          margin: 0px 0px 10px;
-                        }
-                        ul{
-                          display: flex;
-                          flex-wrap: wrap;
-                          flex-direction: column-reverse;
-                          margin: 0;
-                          padding-left: 10px;
-                            li{
-                              line-height: 2px;
-                              &:nth-child(1){
-                                order: 2;
+                                  }
+                                  .button{
+                                      display: none;
+                                  }
                               }
-                              &:nth-child(2){
-                                order: 1;
-                              }
-                              &:nth-child(3){
-                                order: 3;
-                              }
-                              &:nth-child(4){
-                                order: 4;
-                              }
-                                label{
-                                  display: flex;
-                                  align-items: center;
-                                    a{
-                                      padding: 0px 15px;
-                                      display: block;
-                                      line-height: 1.4em;
-                                      font-family: $arial;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }   
-            }
-        }  
-    }
-}
-
-
-.archive{
-    .woocommerce{
-      min-width: 1460px;
-        .woocommerce-breadcrumb{
-          display: none;
-        }
-        .col-md-12{
-          .main-page-title{
-            h2{
-                margin-bottom: 0px;
-                font-family: $arial;
-                font-size: 35px;
-                font-weight: 500;
-                color: $dgray;
-                margin-top: 20px;
-              }
-           }
-        }  
-        .container{
-          max-width: 1460px;
-            .row{
-              display: flex;
-                .col-md-9{
-                  flex: 75%;
-                  margin-top: -40px;
-                    .woopage-content{
-                      position: relative;
-                        .woocommerce-result-count{
-                            position: absolute;
-                            right: 270px;
-                            margin: 0px;
-                            top: 10px;
+                          }    
+                      }    
+                  }
+                  #sidebar{
+                    flex: 25%;
+                    padding-left: 20px;
+                      .yith-wcan-filter{  
+                        margin-top: 20px;
+                          h4{
                             font-size: 18px;
-                            font-weight: 400;
-                            text-transform: capitalize;
+                            font-weight: 600;
                             font-family: $arial;
-                            color: $dgray;
-                        }
-                        .woocommerce-ordering{
-                            float: right;
-                            width: min-content; 
-                            margin-bottom: 10px;
-                            select{
-                              font-size: 18px;
-                              font-weight: 400;
-                              text-transform: capitalize;
-                              background: #eee;
-                              padding: 0 10px;
-                              height: 40px;
-                              border-radius: 5px;
-                              border: none;
-                              color: $dgray;
-                            }
-                            input{
-                              color: $dgray;
-                            }
-                        }
-                        .mainloopproducts{
-                            border: 1px solid #ededed;
-                            padding: 0px 10px;
+                            margin: 0px 0px 10px;
+                          }
+                          ul{
                             display: flex;
                             flex-wrap: wrap;
-                            width: 100%;
-                            .elitegas-shop{
-                              width: 33.3%;
-                              padding: 40px;
-                              height: 470px;
-                              margin: 0;
-                              display: block;
-                               a{
-                                  text-decoration: none;
-                                    img{
-                                        width: 100%;
-                                        height: auto;
-                                        display: block;  
-                                      }
-                                      h2{
-                                        padding: 0;
-                                        color: #444;
-                                        font-size: 16px;
-                                        text-align: center;
-                                        padding-top: 20px;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        font-weight: 600;
+                            flex-direction: column-reverse;
+                            margin: 0;
+                            padding-left: 10px;
+                              li{
+                                line-height: 2px;
+                                &:nth-child(1){
+                                  order: 2;
+                                }
+                                &:nth-child(2){
+                                  order: 1;
+                                }
+                                &:nth-child(3){
+                                  order: 3;
+                                }
+                                &:nth-child(4){
+                                  order: 4;
+                                }
+                                  label{
+                                    display: flex;
+                                    align-items: center;
+                                      a{
+                                        padding: 0px 15px;
+                                        display: block;
+                                        line-height: 1.4em;
                                         font-family: $arial;
-                                        text-decoration: none;  
-                                        span{     
-                                            padding-top: 3px;
-                                            font-weight: 200;
-                                            color: $orange;
-                                          }
                                       }
-                                    .price{
-                                        display: none;
-                                    }
-                                }
-                                .button{
-                                    display: none;
-                                }
-                            }
-                        }    
-                    }    
-                }
-                #sidebar{
-                  flex: 25%;
-                  padding-left: 20px;
-                    .yith-wcan-filter{  
-                      margin-top: 20px;
-                        h4{
-                          font-size: 18px;
-                          font-weight: 600;
-                          font-family: $arial;
-                          margin: 0px 0px 10px;
-                        }
-                        ul{
-                          display: flex;
-                          flex-wrap: wrap;
-                          flex-direction: column-reverse;
-                          margin: 0;
-                          padding-left: 10px;
-                            li{
-                              line-height: 2px;
-                              &:nth-child(1){
-                                order: 2;
+                                  }
                               }
-                              &:nth-child(2){
-                                order: 1;
-                              }
-                              &:nth-child(3){
-                                order: 3;
-                              }
-                              &:nth-child(4){
-                                order: 4;
-                              }
-                                label{
-                                  display: flex;
-                                  align-items: center;
-                                    a{
-                                      padding: 0px 15px;
-                                      display: block;
-                                      line-height: 1.4em;
-                                      font-family: $arial;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }   
-            }
-        }  
-    }
+                          }
+                      }
+                  }   
+              }
+          }  
+      }
+  }
 }
 
 
 
+// Shop Mobile responsive
+
+.mobile-responsive{
+ .archive{
+    min-width: auto;
+      .woocommerce{
+          .woocommerce-breadcrumb{
+            display: none;
+          }
+          .col-md-12{
+            .main-page-title{
+              h2{
+                  margin-bottom: 0px;
+                  font-family: $arial;
+                  font-size: 35px;
+                  font-weight: 500;
+                  color: $dgray;
+                  margin-top: 20px;
+                  @include responsive(sm){
+                    margin-bottom: 15px;
+                  }
+                }
+            }
+          }  
+          .container{
+              .row{
+                  .col-md-9{
+                    flex: 100%;
+                    margin-top: -40px;
+                    @include responsive(sm){
+                      margin: 0px;
+                    }
+                      .woopage-content{
+                        position: relative;
+                          .yith-wcan-filters-opener{
+                            font-size: 18px;
+                            float: right;
+                            width: 180px;
+                            border-radius: 5px;
+                            font-family: $arial;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            padding: 10px 45px;
+                            background: #eee;
+                            color: $dgray;
+                            border: none;
+                            margin-bottom: 20px;
+                            @include responsive(sm){
+                              font-size: 16px;
+                              width: 150px;
+                              padding: 10px 35px;
+                              margin-bottom: 15px;
+                            }
+                            .filter-icon{
+                              @include responsive(sm){
+                                height: 13px;
+                                width: 13px;
+                              }
+                            }
+                          }
+                          .woocommerce-result-count{
+                              position: absolute;
+                              right: 200px;
+                              margin: 0px;
+                              top: 10px;
+                              font-size: 18px;
+                              font-weight: 400;
+                              text-transform: capitalize;
+                              font-family: $arial;
+                              color: $dgray;
+                              @include responsive(sm){
+                                font-size: 12px;
+                                right: 0;
+                                left: 0;
+                                top: 14px;
+                              }
+                          }
+                          .woocommerce-ordering{
+                              float: right;
+                              width: min-content; 
+                              margin-bottom: 10px;
+                              display: none;
+                              select{
+                                font-size: 18px;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                background: #eee;
+                                padding: 0 10px;
+                                height: 40px;
+                                border-radius: 5px;
+                                border: none;
+                                color: $dgray;
+                              }
+                              input{
+                                color: $dgray;
+                              }
+                          }
+                          .mainloopproducts{
+                              border: 1px solid #ededed;
+                              padding: 0px 10px;
+                              display: flex;
+                              flex-wrap: wrap;
+                              width: 100%;
+                              justify-content: center;
+                              .elitegas-shop{
+                                width: 50%;
+                                padding: 40px;
+                                height: 470px;
+                                margin: 0;
+                                display: block;
+                                @include responsive(sm){
+                                  width: 100%;
+                                }
+                                a{
+                                    text-decoration: none;
+                                      img{
+                                          width: 100%;
+                                          height: auto;
+                                          display: block;  
+                                        }
+                                        h2{
+                                          padding: 0;
+                                          color: #444;
+                                          font-size: 16px;
+                                          text-align: center;
+                                          padding-top: 20px;
+                                          display: flex;
+                                          flex-direction: column;
+                                          justify-content: center;
+                                          font-weight: 600;
+                                          font-family: $arial;
+                                          text-decoration: none;  
+                                          span{     
+                                              padding-top: 3px;
+                                              font-weight: 200;
+                                              color: $orange;
+                                            }
+                                        }
+                                      .price{
+                                          display: none;
+                                      }
+                                  }
+                                  .button{
+                                      display: none;
+                                  }
+                              }
+                          }    
+                      }    
+                  }
+                  #sidebar{
+                    flex: 25%;
+                    padding-left: 20px;
+                      .yith-wcan-filter{  
+                        margin-top: 20px;
+                          h4{
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: $arial;
+                            margin: 0px 0px 10px;
+                          }
+                          ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: column-reverse;
+                            margin: 0;
+                            padding-left: 10px;
+                              li{
+                                line-height: 2px;
+                                &:nth-child(1){
+                                  order: 2;
+                                }
+                                &:nth-child(2){
+                                  order: 1;
+                                }
+                                &:nth-child(3){
+                                  order: 3;
+                                }
+                                &:nth-child(4){
+                                  order: 4;
+                                }
+                                  label{
+                                    display: flex;
+                                    align-items: center;
+                                      a{
+                                        padding: 0px 15px;
+                                        display: block;
+                                        line-height: 1.4em;
+                                        font-family: $arial;
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }   
+              }
+          }  
+      }
+  }
+}
+
+//Shop Mobile Responsive end
 
