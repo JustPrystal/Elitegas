@@ -1,282 +1,242 @@
-.page-id-9{
-  .woocommerce{
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        .dashboard-page-title{
-            width: 100%;
-            font-size: 35px;
-            font-family: $arial;
-            font-weight: 400;
-            margin: 30px 0 10px 0;
-            text-transform: capitalize;
-            color: #677279;
-        }
-            .woocommerce-MyAccount-navigation{
-                width: 20%;
-                ul{
-                    padding: 0;
-                    border-top: 1px solid #eee;
-                    margin-top: 0;
-                    .woocommerce-MyAccount-navigation-link{
-                        list-style: none;
-                        border-bottom: 1px solid #eee;
-                        padding-bottom: 0;
-                        &.is-active{
+ .tablet-desktop-responsive{   
+    .page-id-9{
+        min-width: 1024px;
+        .woocommerce{
+            .container{
+            display: flex;
+            flex-wrap: wrap;
+            .dashboard-page-title{
+                width: 100%;
+                font-size: 35px;
+                font-family: $arial;
+                font-weight: 400;
+                margin: 30px 0 10px 0;
+                text-transform: capitalize;
+                color: #677279;
+            }
+                .woocommerce-MyAccount-navigation{
+                    width: 20%;
+                    ul{
+                        padding: 0;
+                        border-top: 1px solid #eee;
+                        margin-top: 0;
+                        .woocommerce-MyAccount-navigation-link{
+                            list-style: none;
+                            border-bottom: 1px solid #eee;
+                            padding-bottom: 0;
+                            &.is-active{
+                                a{
+                                    &:before{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
                             a{
+                                padding: 13px 5px;
+                                display: flex;
+                                font-size: 15px;
+                                text-decoration: none;
+                                color: #df7800;
+                                font-family: $arial;
+                            
                                 &:before{
+                                    content: "\f3fd";
+                                    opacity: .25;
+                                    font-family: FontAwesome;
+                                    font-weight: 700;
+                                    width: 20px;
+                                    margin-right: 40px;
+                                
+                                
+                                }
+                                &:hover{
                                     opacity: 1;
                                 }
                             }
-                        }
-                        a{
-                            padding: 13px 5px;
-                            display: flex;
-                            font-size: 15px;
-                            text-decoration: none;
-                            color: #df7800;
-                            font-family: $arial;
-                        
-                            &:before{
-                                content: "\f3fd";
-                                opacity: .25;
-                                font-family: FontAwesome;
-                                font-weight: 700;
-                                width: 20px;
-                                margin-right: 40px;
-                            
-                            
-                            }
-                            &:hover{
-                                opacity: 1;
-                            }
-                        }
-            
-                    }
-
-                    // my account icon css
-                    .woocommerce-MyAccount-navigation-link--dashboard{
-                        a{
-                            &:before{
-                                content: "\f0e4";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--orders{
-                        a{
-                            &:before{
-                                content: "\f291";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--downloads{
-                        a{
-                            &:before{
-                                content: "\f1c6";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--edit-address{
-                        a{
-                            &:before{
-                                content: "\f015";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--payment-methods{
-                        a{
-                            &:before{
-                                content: "\f09d";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--log-history{
-                        a{
-                            &:before{
-                                content: "\f02d";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--boarding-info{
-                        a{
-                            &:before{
-                                content: "\f044";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--edit-account{
-                        a{
-                            &:before{
-                                content: "\f007";
-                            }
-                        }
-                    }
-                    .woocommerce-MyAccount-navigation-link--customer-logout{
-                        a{
-                            &:before{
-                                content: "\f08b";
-                            }
-                        }
-                    }
-
-                    // my account icon css end
-                }
-            }
-            .woocommerce-MyAccount-content{
-                    
-                        br{
-                            display: none;
-                        }
-                        
                 
-                        margin-left: 5%;
-                        width: calc(80% - 5% );
-                        .dash-wrapper{
-                            font-size: 15px;
-                            font-family: $arial;
-                            font-weight: 400;
-                            color: #fff;
-                            background-color: #df7800;
-                            text-align: center;
-                            padding: 10px 0px;
-                            margin-bottom: 0px;
-                            margin-top: 0;
+                        }
+
+                        // my account icon css
+                        .woocommerce-MyAccount-navigation-link--dashboard{
                             a{
-                                color: #fff;
-                                text-decoration: none;
-                                &:hover{
-                                    color: #fff;
+                                &:before{
+                                    content: "\f0e4";
                                 }
                             }
                         }
-                        p{
-                            font-size: 15px;
-                            font-family: $arial;
-                            color: #677279;
-                            margin-top: 0;
-                            line-height: 1.5;
+                        .woocommerce-MyAccount-navigation-link--orders{
                             a{
-                                text-decoration: none;
-                                color: #df7800;
-                                &:hover{
-                                    color: #5d5e5e;
+                                &:before{
+                                    content: "\f291";
                                 }
                             }
                         }
-                        .woocommerce-orders-table {
-                            border: 1px solid rgba(0,0,0,.1);
-                            margin: 0 -1px 24px 0;
-                            text-align: left;
-                            width: 100%;
-                            border-collapse: separate;
-                            border-radius: 5px;
-                            font-size: 15px;
-                            thead{
-                                .woocommerce-orders-table__header{
-                                    font-size: 15px;
-                                    font-family: $arial;
-                                    font-weight: 700;
-                                    padding: 5px 8px;
-                                    vertical-align: middle;
-                                    color: #677279;
-                                    text-align: right;
+                        .woocommerce-MyAccount-navigation-link--downloads{
+                            a{
+                                &:before{
+                                    content: "\f1c6";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--edit-address{
+                            a{
+                                &:before{
+                                    content: "\f015";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--payment-methods{
+                            a{
+                                &:before{
+                                    content: "\f09d";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--log-history{
+                            a{
+                                &:before{
+                                    content: "\f02d";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--boarding-info{
+                            a{
+                                &:before{
+                                    content: "\f044";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--edit-account{
+                            a{
+                                &:before{
+                                    content: "\f007";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--customer-logout{
+                            a{
+                                &:before{
+                                    content: "\f08b";
+                                }
+                            }
+                        }
+
+                        // my account icon css end
+                    }
+                }
+                .woocommerce-MyAccount-content{
+                        
+                            br{
+                                display: none;
+                            }
                             
+                    
+                            margin-left: 5%;
+                            width: calc(80% - 5% );
+                            .dash-wrapper{
+                                font-size: 15px;
+                                font-family: $arial;
+                                font-weight: 400;
+                                color: #fff;
+                                background-color: #df7800;
+                                text-align: center;
+                                padding: 10px 0px;
+                                margin-bottom: 0px;
+                                margin-top: 0;
+                                a{
+                                    color: #fff;
+                                    text-decoration: none;
+                                    &:hover{
+                                        color: #fff;
+                                    }
                                 }
                             }
-                            tbody{
-                                .woocommerce-orders-table__row{
-                                    .woocommerce-orders-table__cell{
-                                        text-align: right;
+                            p{
+                                font-size: 15px;
+                                font-family: $arial;
+                                color: #677279;
+                                margin-top: 0;
+                                line-height: 1.5;
+                                a{
+                                    text-decoration: none;
+                                    color: #df7800;
+                                    &:hover{
+                                        color: #5d5e5e;
+                                    }
+                                }
+                            }
+                            .woocommerce-orders-table {
+                                border: 1px solid rgba(0,0,0,.1);
+                                margin: 0 -1px 24px 0;
+                                text-align: left;
+                                width: 100%;
+                                border-collapse: separate;
+                                border-radius: 5px;
+                                font-size: 15px;
+                                thead{
+                                    .woocommerce-orders-table__header{
+                                        font-size: 15px;
                                         font-family: $arial;
+                                        font-weight: 700;
+                                        padding: 5px 8px;
+                                        vertical-align: middle;
                                         color: #677279;
-                                        border-top: 1px solid rgba(0,0,0,.1);
-                                        padding: 4px 8px;
-                                        a{
-                                            text-decoration: none;
-                                            color: #df7800;
-                                        }
-                                        .woocommerce-button {
-                                            border-radius: 0;
-                                            background: #df7800;
-                                            color: #fff;
-                                            text-transform: uppercase;
-                                            font-weight: 400;
-                                            padding: 10px 15px;
-                                            display: inline-block;
-                                            cursor: pointer;
+                                        text-align: right;
+                                
+                                    }
+                                }
+                                tbody{
+                                    .woocommerce-orders-table__row{
+                                        .woocommerce-orders-table__cell{
+                                            text-align: right;
+                                            font-family: $arial;
+                                            color: #677279;
+                                            border-top: 1px solid rgba(0,0,0,.1);
+                                            padding: 4px 8px;
+                                            a{
+                                                text-decoration: none;
+                                                color: #df7800;
+                                            }
+                                            .woocommerce-button {
+                                                border-radius: 0;
+                                                background: #df7800;
+                                                color: #fff;
+                                                text-transform: uppercase;
+                                                font-weight: 400;
+                                                padding: 10px 15px;
+                                                display: inline-block;
+                                                cursor: pointer;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-                        
-                        .woocommerce-Message{
-                            font-size: 16px;
-                            margin-top: 0;
-                            border-radius: 3px;
-                            border-top-color: #222222;
-                            padding: 1em 2em 1em 3.5em;
-                            margin: 0 0 2em;
-                            position: relative;
-                            background-color: #f7f6f7;
-                            color: #515151;
-                            border-top: 3px solid #222222;
-                            list-style: none outside;
-                            font-family: $arial;
-                            width: auto;
-                            word-wrap: break-word;
-                            .woocommerce-Button{
-                                border-radius: 0;
-                                background: #df7800;
+                            
+                            .woocommerce-Message{
+                                font-size: 16px;
+                                margin-top: 0;
+                                border-radius: 3px;
+                                border-top-color: #222222;
+                                padding: 1em 2em 1em 3.5em;
+                                margin: 0 0 2em;
+                                position: relative;
+                                background-color: #f7f6f7;
+                                color: #515151;
+                                border-top: 3px solid #222222;
+                                list-style: none outside;
                                 font-family: $arial;
-                                color: #fff;
-                                text-transform: uppercase;
-                                font-weight: 400;
-                                padding: 10px 15px;
-                                display: inline-block;
-                                text-decoration: none;
-                                cursor: pointer;
-                                &:hover{
-                                    background-color: #dfdcde;
-                                    text-decoration: none;
-                                    background-image: none;
-                                    color: #515151;
-                                }
-                            }
-                        }
-                        p{
-                            &.woocommerce-info{
-                                color: #fff;
-                                background-color: #df7800;
-                            }
-                        }
-
-                        .wc-notice{
-                            border: 2px solid #f1f1f1;
-                            padding: 20px;
-                            margin-bottom: 20px;
-                            .text-wrap{
-                                .instruct-text{
-                                    color: red;
-                                    font-size: 15px;
-                                    font-family: $arial;
-                                    line-height: 1.5;
-                                    padding-right: 25px;
-                                }
-                            }
-                            .button-wrap{
-                                a{
+                                width: auto;
+                                word-wrap: break-word;
+                                .woocommerce-Button{
                                     border-radius: 0;
-                                    line-height: 1.5;
                                     background: #df7800;
                                     font-family: $arial;
                                     color: #fff;
                                     text-transform: uppercase;
                                     font-weight: 400;
-                                    padding: 8px 10px;
+                                    padding: 10px 15px;
                                     display: inline-block;
                                     text-decoration: none;
-                                    border: 0;
                                     cursor: pointer;
                                     &:hover{
                                         background-color: #dfdcde;
@@ -286,174 +246,55 @@
                                     }
                                 }
                             }
-                        }
-                        .ocwma_table_custom{
-                            display: flex;
-                            flex-wrap: wrap;
-                            .billing-button-wrap{
-                                margin-bottom: 10px;
-                                button{
-                                    border: 0;
-                                    cursor: pointer;
-                                    background-color: $orange;
-                                    font-size: 15px;
-                                    text-transform: uppercase;
-                                    color: #ffffff;
-                                    padding: 8px 10px;
-                                    &:hover{
-                                        background-color: #dfdcde;
-                                        color: #515151;
-                                    }
+                            p{
+                                &.woocommerce-info{
+                                    color: #fff;
+                                    background-color: #df7800;
                                 }
-
                             }
-                            .ocwma_table_bill{
-                                flex: 100%;
-                                padding: 20px;
-                                background-color: white;
-                                border: 2px solid #f1f1f1;
-                                margin-bottom: 10px;
-                                .billing-heading{
-                                    font-size: 28px;
-                                    font-family: $arial;
-                                    color: #000000;
-                                    font-weight: 500;
-                                    margin-top: 0;
-                                    
-                                }
-                                .billing_addresses_wrap{
-                                    .billing_address{
-                                        .inner-wrap{
-                                            .default-add-wrap{
-                                                button{
-                                                    opacity: 1;
-                                                    color: $dgray;
-                                                    position: static;
-                                                    font-size: 11px;
-                                                    visibility: visible;
-                                                    padding: 0px;
-                                                    font-weight: 700;
-                                                    line-height: 100%;
-                                                    margin-bottom: 20px;
-                                                    border: 0;
-                                                    cursor: pointer;
-                                                    &.checkeddd{
-                                                        color: $orange;
-                                                    }
-                                                }
-                                            }
-                                            .billing-btn-wrapper{
-                                                display: inline-grid;
-                                                float: right;
-                                                .form_option_edit{
-                                                    font-size: 11px;
-                                                    font-family: $arial;
-                                                    color: $dgray;
-                                                    border: 0;
-                                                    cursor: pointer;
-                                                    text-align: right;
-                                                }
-                                                .delete_bill_address{
-                                                    a{
-                                                        font-size: 11px;
-                                                        font-family: $arial;
-                                                        color: $dgray;
-                                                        text-decoration: none;
-                                                    }
-                                                }
-                                            }
-                                            .billing_address_inner{
-                                            
-                                                
-                                                    font-size: 16px;
-                                                    color: #677279;
-                                                    font-family: $arial;
-                                                    line-height: 1.5;
-                                                
-                                                    strong{
-                                                        font-size: 16px;
-                                                        font-family: $arial;
-                                                        color: $dgray;
-                                                    }
-                                            
-                                            }
-                                        }
-                                    }
-                                }
-                            
+                            .col2-set{
+                                display: none;
                             }
-                            .ocwma_table_ship{
-                                flex: 100%;
-                                padding: 20px;
-                                background-color: white;
+                            .wc-notice{
                                 border: 2px solid #f1f1f1;
-                                margin-bottom: 10px;
-                                .shipping-heading{
-                                    font-size: 28px;
-                                    font-family: $arial;
-                                    color: #000000;
-                                    font-weight: 500;
-                                    margin-top: 0;
-                                    
-                                }
-                                .default-add-wrap{
-                                    button{
-                                        opacity: 1;
-                                        color: $dgray;
-                                        position: static;
-                                        font-size: 11px;
-                                        visibility: visible;
-                                        padding: 0px;
-                                        font-weight: 700;
-                                        line-height: 100%;
-                                        margin-bottom: 20px;
-                                        border: 0;
-                                        cursor: pointer;
-                                        &.checkeddd{
-                                            color: $orange;
-                                        }
-                                    }
-                                }
-                                .shipping-btn-wrapper{
-                                    display: inline-grid;
-                                    float: right;
-                                    .form_option_ship_edit{
-                                        font-size: 11px;
+                                padding: 20px;
+                                margin-bottom: 20px;
+                                .text-wrap{
+                                    .instruct-text{
+                                        color: red;
+                                        font-size: 15px;
                                         font-family: $arial;
-                                        color: $dgray;
-                                        cursor: pointer;
-                                        border: 0;
-                                        text-align: right;
+                                        line-height: 1.5;
+                                        padding-right: 25px;
                                     }
-                                    .delete_ship_address{
-                                        a{
-                                            font-size: 11px;
-                                            font-family: $arial;
-                                            color: $dgray;
+                                }
+                                .button-wrap{
+                                    a{
+                                        border-radius: 0;
+                                        line-height: 1.5;
+                                        background: #df7800;
+                                        font-family: $arial;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        font-weight: 400;
+                                        padding: 8px 10px;
+                                        display: inline-block;
+                                        text-decoration: none;
+                                        border: 0;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #dfdcde;
                                             text-decoration: none;
+                                            background-image: none;
+                                            color: #515151;
                                         }
                                     }
                                 }
-                                .shipping_address_inner{
-                                    font-size: 16px;
-                                    color: #677279;
-                                    font-family: $arial;
-                                    line-height: 1.5;
-                                
-                                    strong{
-                                        font-size: 16px;
-                                        font-family: $arial;
-                                        color: $dgray;
-                                    }
-                                }
-                            
                             }
-                            .cus_menu{
-                                margin-bottom: 10px;
-                                .shipping-button{
-                                    width: 100%;
-                                    
-                                    .form_option_shipping{
+                            .ocwma_table_custom{
+                                .billing-button-wrap{
+                                    margin-bottom: 10px;
+                                    button{
                                         border: 0;
                                         cursor: pointer;
                                         background-color: $orange;
@@ -466,155 +307,306 @@
                                             color: #515151;
                                         }
                                     }
-                                }
-                            }
-                        }
 
-                        .wrap-important-information{
-                        h2{
-                            text-align: center;
-                            font-size: 25px;
-                            font-weight: 600;
-                            margin: 15px 0;
-                            color: $dgray;
-                            font-family: $arial;
-                        }
-                        p{
-                            font-size: 15px;
-                            font-family: $arial;
-                            color: $dgray;
-                            margin-top: 0;
-                            line-height: 1.5;
-                        }
-                        ul{
-                            li{
-                                font-size: 16px;
-                                font-family: $arial;
-                                color: $dgray;
-                                line-height: 1.5;
-                            }
-                        }
-
-                        }
-                    #gform_wrapper_3{
-                        .gform_heading{
-                            display: none;
-                        }
-                   
-                   
-                        #gform_3{
-                            .gf_page_steps{
-                                display: flex;
-                               
-                                .gf_step_label{
-                                    font-size: 12px;
-                                    font-family: $arial;
-                                    color: $dgray;
                                 }
-                            }
-                            .gf_step_active{
-                                .gf_step_number{
-                                    border-color: $orange;
-                                }
-                                .gf_step_number{
-                                    background: #cfd3d9;
-                                    color: #607382;
-                                }
-                            }
-                            #field_3_24 {
-                                .gfield_label {
-                                    position: static;
-                                    left: 0;
-                                    transform: none;
-                                    font-size: 16px;
-                                    line-height: 1.5;
-                                    font-weight: 300;
-                                    margin: 15px 0px 0px;
-                                }
-                            }
-                            #field_3_124 {
-                                margin: 10px 0 30px;
-                                .gfield_label {
-                                    margin: 0px;
-                                    line-height: 1.5;
-                                }
-                            }
-                        }
-                              
-                        .gform_page_footer{
-                            input{
-                                background: #df7800;
-                                border: 0;
-                                color: #fff;
-                                padding: 0 50px;
-                                border-radius: 2px;
-                                height: 48px;
-                                font-size: 18px;
-                                transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
-                                cursor: pointer;
-                                &:hover{
-                                    background-color: #dfdcde;
-                                    color: #515151;
-                                }
-                            }
-                        }
-                        .field_description_above{
-
-                            legend{
-                                &.gfield_label{
-                                    position: relative ;
-                                    left: 0 ;
-                                    font-weight: 600 ;
-                                    transform: none ;
-                                    font-size: 16px ;
-                                    margin-bottom: 7px ;
-                                    font-family: $arial;
-                                    color: $dgray;
-                                    line-height: 48px;
-                                }
-                            }
-                            .gfield_checkbox{
-                                .gchoice{
-                                    label{
-                                        font-size: 15px;
+                                .ocwma_table_bill{
+                                    width: 100%;
+                                    padding: 20px;
+                                    background-color: white;
+                                    border: 2px solid #f1f1f1;
+                                    margin-bottom: 10px;
+                                    .billing-heading{
+                                        font-size: 28px;
                                         font-family: $arial;
-                                        color: $dgray;
-                                        line-height: 1.5;
+                                        color: #000000;
+                                        font-weight: 500;
+                                        margin-top: 0;
+                                        
+                                    }
+                                    .billing_addresses_wrap{
+                                        display: table;
+                                        width: 100%;
+                                        .billing_address{
+                                            padding: 0px;
+                                            background: transparent;
+                                            margin-bottom: 0;
+                                            position: relative;
+                                            &.active{
+                                                display: table-header-group;
+                                            }
+                                            .inner-wrap{
+                                                padding: 15px;
+                                                background-color: #f1f1f1;
+                                                margin-bottom: 10px;
+                                                .default-add-wrap{
+                                                    button{
+                                                        opacity: 1;
+                                                        color: $dgray;
+                                                        position: absolute;
+                                                        font-size: 11px;
+                                                        visibility: hidden;
+                                                        top: 50px;
+                                                        right: 15px;
+                                                        padding: 0px;
+                                                        font-weight: 400;
+                                                        line-height: 100%;
+                                                        margin-bottom: 20px;
+                                                        border: 0;
+                                                        cursor: pointer;
+                                                        &:hover{
+                                                            color: $orange;
+                                                        }
+                                                        &.checkeddd{
+                                                            color: $orange;
+                                                            visibility: visible;
+                                                            position: static;
+                                                            font-weight: 700;
+                                                        }
+                                                        &.checkeddd:after{
+                                                            content:"";
+                                                        }
+                                                        &:after{
+                                                            content: "Make Default";
+                                                            visibility: visible;
+                                                        }
+                                                    }
+                                                }
+                                                .billing-btn-wrapper{
+                                                    display: inline-grid;
+                                                    float: right;
+                                                    .form_option_edit{
+                                                        font-size: 11px;
+                                                        font-family: $arial;
+                                                        color: $dgray;
+                                                        border: 0;
+                                                        cursor: pointer;
+                                                        text-align: right;
+                                                        &:hover{
+                                                            color: $orange;
+                                                        }
+                                                    }
+                                                    .delete_bill_address{
+                                                        a{
+                                                            font-size: 11px;
+                                                            font-family: $arial;
+                                                            color: $dgray;
+                                                            text-decoration: none;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .billing_address_inner{
+                                                        font-size: 16px;
+                                                        color: #677279;
+                                                        font-family: $arial;
+                                                        line-height: 1.5;
+                                                    strong{
+                                                        font-size: 16px;
+                                                        font-family: $arial;
+                                                        color: $dgray;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .ocwma_table_ship{
+                                    width: 100%;
+                                    padding: 20px;
+                                    background-color: white;
+                                    border: 2px solid #f1f1f1;
+                                    margin-bottom: 10px;
+                                    .shipping-heading{
+                                        font-size: 28px;
+                                        font-family: $arial;
+                                        color: #000000;
+                                        font-weight: 500;
+                                        margin-top: 0;
+                                        
+                                    }
+                                    .shipping-addresses-wrap{
+                                        display: table;
+                                        width: 100%;
+                                        .shipping_address{
+                                            padding: 0px;
+                                            background: transparent;
+                                            margin-bottom: 0;
+                                            position: relative;
+                                            &.active{
+                                                display: table-header-group;
+                                            }
+                                            .inner-wrap{
+                                                padding: 15px;
+                                                background-color: #f1f1f1;
+                                                margin-bottom: 10px;
+                                                .default-add-wrap{
+                                                    button{
+                                                        opacity: 1;
+                                                        color: $dgray;
+                                                        position: absolute;
+                                                        font-size: 11px;
+                                                        visibility: hidden;
+                                                        top: 50px;
+                                                        right: 15px;
+                                                        padding: 0px;
+                                                        font-weight: 400;
+                                                        line-height: 100%;
+                                                        margin-bottom: 20px;
+                                                        border: 0;
+                                                        margin-right: 0px;
+                                                        cursor: pointer;
+                                                        &:hover{
+                                                            color: $orange;
+                                                        }
+                                                        &.checkeddd{
+                                                            color: $orange;
+                                                            visibility: visible;
+                                                            position: static;
+                                                            margin-right: 5px;
+                                                            font-weight: 700;
+                                                        }
+                                                        &.checkeddd:after{
+                                                            content:"";
+                                                        }
+                                                        &:after{
+                                                            content: "Make Default";
+                                                            visibility: visible;
+                                                        }
+                                                        &.checkeddd ~ .fa-question-circle{
+                                                            visibility: visible;
+                                                            display: inline-grid;
+                                                        }
+                                                        &.defalt_addd_shipping ~ .fa{
+                                                            display: none;
+                                                        }
+                                                    }
+                                                    .fa-question-circle{
+                                                        position: relative;
+                                                        display: inline-block;
+                                                        visibility: hidden;
+                                                        color: #c1c1c1;
+                                                        &:before{
+                                                            background-color: #677279;
+                                                            border-radius: 50%;
+                                                            font-size: 14px;
+                                                            width: 11px;
+                                                            height: 11px;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                        }
+                                                        .tooltiptext {
+                                                            visibility: hidden;
+                                                            width: 400px;
+                                                            background-color: #555;
+                                                            color: #fff;
+                                                            text-align: left;
+                                                            border-radius: 6px;
+                                                            padding: 15px 15px;
+                                                            position: absolute;
+                                                            z-index: 1;
+                                                            bottom: 125%;
+                                                            left: 50%;
+                                                            margin-left: -200px;
+                                                            margin-bottom: 5px;
+                                                            opacity: 0;
+                                                            transition: opacity 0.3s;
+                                                            font-weight: 500;
+                                                            font-family: $arial;
+                                                            font-size: 13px;
+                                                            &:after {
+                                                                content: "";
+                                                                position: absolute;
+                                                                top: 100%;
+                                                                left: 50%;
+                                                                margin-left: -5px;
+                                                                border-width: 5px;
+                                                                border-style: solid;
+                                                                border-color: #555 transparent transparent transparent;
+                                                            }
+                                                        }
+                                                        &:hover .tooltiptext {
+                                                            visibility: visible;
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                }
+                                                .shipping-btn-wrapper{
+                                                    display: inline-grid;
+                                                    float: right;
+                                                    .form_option_ship_edit{
+                                                        font-size: 11px;
+                                                        font-family: $arial;
+                                                        color: $dgray;
+                                                        cursor: pointer;
+                                                        border: 0;
+                                                        text-align: right;
+                                                        &:hover{
+                                                            color: $orange;
+                                                        }
+                                                    }
+                                                    .delete_ship_address{
+                                                        a{
+                                                            font-size: 11px;
+                                                            font-family: $arial;
+                                                            color: $dgray;
+                                                            text-decoration: none;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .shipping_address_inner{
+                                                    font-size: 16px;
+                                                    color: #677279;
+                                                    font-family: $arial;
+                                                    line-height: 1.5;
+                                                
+                                                    strong{
+                                                        font-size: 16px;
+                                                        font-family: $arial;
+                                                        color: $dgray;
+                                                    }
+                                                }
+                                            }
+                                        }    
+                                    }
+                                }
+                                .cus_menu{
+                                    margin-bottom: 10px;
+                                    .shipping-button{
+                                        width: 100%;
+                                        padding: 0px;
+                                        
+                                        .form_option_shipping{
+                                            border: 0;
+                                            cursor: pointer;
+                                            background-color: $orange;
+                                            font-size: 15px;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 8px 10px;
+                                            &:hover{
+                                                background-color: #dfdcde;
+                                                color: #515151;
+                                            }
+                                        }
                                     }
                                 }
                             }
-                            &#field_3_43{
-                                .gfield_label_before_complex{
-                                    visibility: hidden;
-                                }
-                            }
-                        
-                        }
 
-               
-                    .field_description_below{
-                          .termtexts-small{
-                              h3{
-                                font-size: 16px;
+                            .wrap-important-information{
+                            h2{
+                                text-align: center;
+                                font-size: 25px;
                                 font-weight: 600;
-                                margin-top: 0;
-                                margin-bottom: 5px;
-                              }
-                          }
-
-                      
-                         h3{
-                             font-size: 28px;
-                             font-family: $arial;
-                             color: $dgray;
-                             font-weight: 500;
-                             .ver-num {
-                                font-size: 14px;
-                                color: #707070;
-                                font-weight: 400;
-                                font-family: system-ui;
+                                margin: 15px 0;
+                                color: $dgray;
+                                font-family: $arial;
                             }
-                         }  
                             p{
                                 font-size: 15px;
                                 font-family: $arial;
@@ -622,8 +614,7 @@
                                 margin-top: 0;
                                 line-height: 1.5;
                             }
-                            
-                            ol{
+                            ul{
                                 li{
                                     font-size: 16px;
                                     font-family: $arial;
@@ -631,66 +622,85 @@
                                     line-height: 1.5;
                                 }
                             }
-                            .gfield_label{
-                                position: absolute;
-                                left: 13px;
-                                top: 0px;
-                                line-height: 48px;
-                                transform-origin: left top;
-                                transition: transform .2s ease-in-out;
-                                pointer-events: none;
-                                transform: translateY(-6px) scale(.8);
-                                width: 100%;
-                                color: $dgray;
-                                font-family: $arial;
+
                             }
-                            .ginput_container {
+                        #gform_wrapper_3{
+                            .gform_heading{
+                                display: none;
+                            }
+                    
+                    
+                            #gform_3{
+                                .gf_page_steps{
+                                    display: flex;
                                 
+                                    .gf_step_label{
+                                        font-size: 12px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                    }
+                                }
+                                .gf_step_active{
+                                    .gf_step_number{
+                                        border-color: $orange;
+                                    }
+                                    .gf_step_number{
+                                        background: #cfd3d9;
+                                        color: #607382;
+                                    }
+                                }
+                                #field_3_24 {
+                                    .gfield_label {
+                                        position: static;
+                                        left: 0;
+                                        transform: none;
+                                        font-size: 16px;
+                                        line-height: 1.5;
+                                        font-weight: 300;
+                                        margin: 15px 0px 0px;
+                                    }
+                                }
+                                #field_3_124 {
+                                    margin: 10px 0 30px;
+                                    .gfield_label {
+                                        margin: 0px;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                                
+                            .gform_page_footer{
                                 input{
-                                    padding: 25px 10px 5px 10px;
-                                    font-size: 16px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                    &#input_3_129{
-                                        color: transparent;
-                                    }
-                                    &#input_3_121{
-                                        color: transparent;
-                                    }
-                                    &#field_3_122{
-                                        color: transparent;
-                                    }
-                                    &#input_3_123{
-                                        color: transparent;
-                                    }
-                                
-                                }
-                                select{
-                                    padding: 25px 10px 5px 10px;
-                                    font-size: 16px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                }
-                                .gform_fileupload_rules{
-                                    position: absolute;
-                                    top: 13px;
-                                    left: 125px;
-                                    font-size: 13px;
-                                    color: #c1c1c1;
-                                    font-family: $arial;
-                                }
-                            
-                                .gfield_radio{
-                                    .gchoice{
-                                        label{
-                                            font-size: 15px;
-                                            font-family: $arial;
-                                            color: $dgray;
-                                            line-height: 1.5;
-                                        }
+                                    background: #df7800;
+                                    border: 0;
+                                    color: #fff;
+                                    padding: 0 50px;
+                                    border-radius: 2px;
+                                    height: 48px;
+                                    font-size: 18px;
+                                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background-color: #dfdcde;
+                                        color: #515151;
                                     }
                                 }
-                                
+                            }
+                            .field_description_above{
+
+                                legend{
+                                    &.gfield_label{
+                                        position: relative ;
+                                        left: 0 ;
+                                        font-weight: 600 ;
+                                        transform: none ;
+                                        font-size: 16px ;
+                                        margin-bottom: 7px ;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        line-height: 48px;
+                                    }
+                                }
                                 .gfield_checkbox{
                                     .gchoice{
                                         label{
@@ -701,94 +711,1299 @@
                                         }
                                     }
                                 }
-                        
-                            }
-                        
-                            &.field_sublabel_below{
-                                position: relative;
+                                &#field_3_43{
+                                    .gfield_label_before_complex{
+                                        visibility: hidden;
+                                    }
+                                }
+                            
                             }
 
-                            legend{
-                                &.gfield_label{
-                                    position: relative ;
-                                    left: 0 ;
-                                    font-weight: 600 ;
-                                    transform: none ;
-                                    font-size: 16px ;
-                                    margin-bottom: 7px ;
+                
+                        .field_description_below{
+                            .termtexts-small{
+                                h3{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin-top: 0;
+                                    margin-bottom: 5px;
                                 }
                             }
-                            .gfield_description{
-                                position: relative;
-                                top: -30px;
+
+                        
+                            h3{
+                                font-size: 28px;
                                 font-family: $arial;
                                 color: $dgray;
-                            }
-                            .termtexts{
-                                ul{
+                                font-weight: 500;
+                                display: flex;
+                                flex-direction: column;
+                                .ver-num {
+                                    font-size: 14px;
+                                    color: #707070;
+                                    font-weight: 400;
+                                    font-family: system-ui;
+                                }
+                            }  
+                                p{
+                                    font-size: 15px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                    margin-top: 0;
+                                    line-height: 1.5;
+                                }
+                                
+                                ol{
                                     li{
-                                        font-size: 15px;
+                                        font-size: 16px;
                                         font-family: $arial;
                                         color: $dgray;
                                         line-height: 1.5;
                                     }
                                 }
-                            }
-                        &#field_3_57{
-                            legend{
-                                display: none;
+                                .gfield_label{
+                                    position: absolute;
+                                    left: 13px;
+                                    top: 0px;
+                                    line-height: 48px;
+                                    transform-origin: left top;
+                                    transition: transform .2s ease-in-out;
+                                    pointer-events: none;
+                                    transform: translateY(-6px) scale(.8);
+                                    width: 100%;
+                                    color: $dgray;
+                                    font-family: $arial;
+                                }
+                                .ginput_container {
+                                    
+                                    input{
+                                        padding: 25px 10px 5px 10px;
+                                        font-size: 16px;
+                                        color: black;
+                                        border: 1px solid #e0e0dd;
+                                        &#input_3_129{
+                                            color: transparent;
+                                        }
+                                        &#input_3_121{
+                                            color: transparent;
+                                        }
+                                        &#field_3_122{
+                                            color: transparent;
+                                        }
+                                        &#input_3_123{
+                                            color: transparent;
+                                        }
+                                    
+                                    }
+                                    select{
+                                        padding: 25px 10px 5px 10px;
+                                        font-size: 16px;
+                                        color: black;
+                                        border: 1px solid #e0e0dd;
+                                    }
+                                    .gform_fileupload_rules{
+                                        position: absolute;
+                                        top: 13px;
+                                        left: 125px;
+                                        font-size: 13px;
+                                        color: #c1c1c1;
+                                        font-family: $arial;
+                                    }
+                                
+                                    .gfield_radio{
+                                        .gchoice{
+                                            label{
+                                                font-size: 15px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                line-height: 1.5;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .gfield_checkbox{
+                                        .gchoice{
+                                            label{
+                                                font-size: 15px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                line-height: 1.5;
+                                            }
+                                        }
+                                    }
+                            
+                                }
+                            
+                                &.field_sublabel_below{
+                                    position: relative;
+                                }
+
+                                legend{
+                                    &.gfield_label{
+                                        position: relative ;
+                                        left: 0 ;
+                                        font-weight: 600 ;
+                                        transform: none ;
+                                        font-size: 16px ;
+                                        margin-bottom: 7px ;
+                                    }
+                                }
+                                .gfield_description{
+                                    position: relative;
+                                    top: -30px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                }
+                                .termtexts{
+                                    ul{
+                                        li{
+                                            font-size: 15px;
+                                            font-family: $arial;
+                                            color: $dgray;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                }
+                            &#field_3_57{
+                                legend{
+                                    display: none;
+                                }
+
                             }
 
                         }
-
                     }
-                }
 
-                .gv-list-container{
-                    .gv-list-view{
-                        .gv-list-view-title{
-                            .form-entry-data{
-                                border: 1px solid grey;
-                                margin: 10px 0px 10px 0px;
-                                display: flex;
-                                .gv-field-label{
-                                    font-size: 15px;
-                                    font-weight: 700;
-                                    padding: 10px;
-                                    width: 50%;
+                    .gv-list-container{
+                        .gv-list-view{
+                            .gv-list-view-title{
+                                .form-entry-data{
+                                    border: 1px solid grey;
+                                    margin: 10px 0px 10px 0px;
                                     display: flex;
-                                    align-items: center;
+                                    .gv-field-label{
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        padding: 10px;
+                                        width: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        color: $dgray;
+                                        font-family: $arial;
+                                    }
+                                    p{
+                                        font-size: 15px;
+                                        padding: 10px;
+                                        margin: 0;
+                                        width: 50%;
+                                        display: inline-block;
+                                        border-left: 1px solid;
+                                        color: $dgray;
+                                        font-family: $arial;
+                                        img{
+                                            height: auto;
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    .gv-field-3-121{
+                                        .gv-field-label{
+                                        
+                                            font-weight: 700;
+                                        
+                                        }
+                                    
+                                    }
+                        
+                                }
+                                .html-entry{
+                                    margin-top: 35px;
+                            
+                                    .termtexts{
+                                        h3{
+                                            font-size: 28px;
+                                            font-family: $arial;
+                                            color: $dgray;
+                                            margin-top: 0;
+                                            margin-bottom: 8px;
+                                            font-weight: 500;
+                                            br{
+                                                display: block;
+                                            }
+                                            .ver-num{
+                                                font-size: 14px;
+                                                color: #707070;
+                                                font-weight: 400;
+                                                font-family: system-ui;
+                                            
+                                            }
+                                        }
+                                        li{
+                                            font-size: 16px;
+                                            color: $dgray;
+                                            font-family: $arial;   
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                }
+                                .gv-field-3-121{
+                                    .gv-field-label{
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                        color: $dgray;
+                                        font-family: $arial;   
+                                    }
+                                
+                                }
+                                .gv-field-3-123{
+                                    .gv-field-label{
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                        color: $dgray;
+                                        font-family: $arial;   
+                                    }
+                                
+                                }
+                                h3{
+                                    font-size: 28px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                    margin-top: 0;
+                                    margin-bottom: 8px;
+                                    font-weight: 500;
+                                    br{
+                                        display: block;
+                                    }
+                                    .ver-num{
+                                        font-size: 14px;
+                                        color: #707070;
+                                        font-weight: 400;
+                                        font-family: system-ui;
+                                    
+                                    }
+                                }
+                                li{
+                                    font-size: 16px;
+                                    color: $dgray;
+                                    font-family: $arial;   
+                                    line-height: 1.5;
+                                }
+
+                            }
+                        }
+                    }
+                        
+                }
+            }
+        }
+    }
+ }
+
+
+#field_3_24 .ginput_container_text {
+    display: none;
+}
+.gfield_visibility_hidden{
+    display: none;
+}
+
+
+//My account Template Responsive
+
+.mobile-responsive{
+    .page-id-9{
+        min-width: auto;
+        .woocommerce{
+            .container{
+                    .dashboard-page-title{
+                        width: 100%;
+                        font-size: 25px;
+                        font-family: $arial;
+                        font-weight: 400;
+                        margin: 30px 0 10px 0;
+                        text-transform: capitalize;
+                        color: #677279;
+                    }
+                    .woocommerce-MyAccount-navigation{
+                        width: 100%;
+                        ul{
+                            padding: 0;
+                            border-top: 1px solid #eee;
+                            margin-top: 0;
+                            .woocommerce-MyAccount-navigation-link{
+                                list-style: none;
+                                border-bottom: 1px solid #eee;
+                                padding-bottom: 0;
+                                &.is-active{
+                                    a{
+                                        &:before{
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                                a{
+                                    padding: 13px 5px;
+                                    display: flex;
+                                    font-size: 15px;
+                                    text-decoration: none;
+                                    color: #df7800;
+                                    font-family: $arial;
+                                
+                                    &:before{
+                                        content: "\f3fd";
+                                        opacity: .25;
+                                        font-family: FontAwesome;
+                                        font-weight: 700;
+                                        width: 20px;
+                                        margin-right: 40px;
+                                    
+                                    
+                                    }
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                }
+                    
+                            }
+
+                            // my account icon css
+                            .woocommerce-MyAccount-navigation-link--dashboard{
+                                a{
+                                    &:before{
+                                        content: "\f0e4";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--orders{
+                                a{
+                                    &:before{
+                                        content: "\f291";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--downloads{
+                                a{
+                                    &:before{
+                                        content: "\f1c6";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--edit-address{
+                                a{
+                                    &:before{
+                                        content: "\f015";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--payment-methods{
+                                a{
+                                    &:before{
+                                        content: "\f09d";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--log-history{
+                                a{
+                                    &:before{
+                                        content: "\f02d";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--boarding-info{
+                                a{
+                                    &:before{
+                                        content: "\f044";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--edit-account{
+                                a{
+                                    &:before{
+                                        content: "\f007";
+                                    }
+                                }
+                            }
+                            .woocommerce-MyAccount-navigation-link--customer-logout{
+                                a{
+                                    &:before{
+                                        content: "\f08b";
+                                    }
+                                }
+                            }
+
+                            // my account icon css end
+                        }
+                    }
+                    .woocommerce-MyAccount-content{
+                            
+                                br{
+                                    display: none;
+                                }
+                                
+                        
+                                width: 100%;
+                                margin-top: 30px;
+                                .dash-wrapper{
+                                    font-size: 15px;
+                                    font-family: $arial;
+                                    font-weight: 400;
+                                    color: #fff;
+                                    background-color: #df7800;
+                                    text-align: center;
+                                    padding: 10px 0px;
+                                    margin-bottom: 30px;
+                                    margin-top: 0;
+                                    a{
+                                        color: #fff;
+                                        text-decoration: none;
+                                        &:hover{
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                p{
+                                    font-size: 15px;
+                                    font-family: $arial;
+                                    color: #677279;
+                                    margin-top: 0;
+                                    line-height: 1.5;
+                                    a{
+                                        text-decoration: none;
+                                        color: #df7800;
+                                        &:hover{
+                                            color: #5d5e5e;
+                                        }
+                                    }
+                                }
+                                .woocommerce-orders-table {
+                                    border: 1px solid rgba(0,0,0,.1);
+                                    margin: 0 -1px 24px 0;
+                                    text-align: left;
+                                    width: 100%;
+                                    border-collapse: separate;
+                                    border-radius: 5px;
+                                    font-size: 15px;
+                                    thead{
+                                        display: none;
+                                        tr{
+                                            display: block;
+                                        }
+                                    }
+                                    tbody{
+                                        .woocommerce-orders-table__row{
+                                            display: block;
+                                            .woocommerce-orders-table__cell{
+                                                text-align: right;
+                                                font-family: $arial;
+                                                color: #677279;
+                                                border-top: 1px solid rgba(0,0,0,.1);
+                                                padding: 8px 8px;
+                                                font-size: 14px;
+                                                display: block;
+                                                &:before{
+                                                    content: attr(data-title) "";
+                                                    font-weight: 700;
+                                                    float: left;
+                                                }
+                                                a{
+                                                    text-decoration: none;
+                                                    color: #df7800;
+                                                }
+                                                .woocommerce-button {
+                                                    border-radius: 0;
+                                                    background: #df7800;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    font-weight: 400;
+                                                    padding: 10px 15px;
+                                                    display: inline-block;
+                                                    cursor: pointer;
+                                                    height: 50px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    width: 70px;
+                                                    margin-left: auto;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .woocommerce-Message{
+                                    font-size: 16px;
+                                    margin-top: 0;
+                                    border-radius: 3px;
+                                    border-top-color: #222222;
+                                    padding: 1em;
+                                    margin: 0 0 2em;
+                                    position: relative;
+                                    background-color: #f7f6f7;
+                                    color: #515151;
+                                    border-top: 3px solid #222222;
+                                    list-style: none outside;
+                                    font-family: $arial;
+                                    width: auto;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+
+                                    .woocommerce-Button{
+                                        border-radius: 0;
+                                        background: #df7800;
+                                        font-family: $arial;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        font-weight: 400;
+                                        padding: 10px 15px;
+                                        display: inline-block;
+                                        text-decoration: none;
+                                        cursor: pointer;
+                                        margin-bottom: 15px;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            text-decoration: none;
+                                            background-image: none;
+                                            color: #515151;
+                                        }
+                                    }
+                                }
+                                p{
+                                    &.woocommerce-info{
+                                        color: #fff;
+                                        background-color: #df7800;
+                                    }
+                                }
+                                .col2-set{
+                                    display: none;
+                                }
+                                .wc-notice{
+                                    border: 2px solid #f1f1f1;
+                                    padding: 20px;
+                                    margin-bottom: 20px;
+                                    .text-wrap{
+                                        .instruct-text{
+                                            color: red;
+                                            font-size: 15px;
+                                            font-family: $arial;
+                                            line-height: 1.5;
+                                            padding-right: 25px;
+                                        }
+                                    }
+                                    .button-wrap{
+                                        a{
+                                            border-radius: 0;
+                                            line-height: 1.5;
+                                            background: #df7800;
+                                            font-family: $arial;
+                                            color: #fff;
+                                            text-transform: uppercase;
+                                            font-weight: 400;
+                                            padding: 8px 10px;
+                                            display: inline-block;
+                                            text-decoration: none;
+                                            border: 0;
+                                            cursor: pointer;
+                                            &:hover{
+                                                background-color: #dfdcde;
+                                                text-decoration: none;
+                                                background-image: none;
+                                                color: #515151;
+                                            }
+                                        }
+                                    }
+                                }
+                                .ocwma_table_custom{
+                                    margin-bottom: 50px;
+                                    .billing-button-wrap{
+                                        margin-bottom: 10px;
+                                        button{
+                                            border: 0;
+                                            cursor: pointer;
+                                            background-color: $orange;
+                                            font-size: 15px;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 8px 10px;
+                                            &:hover{
+                                                background-color: #dfdcde;
+                                                color: #515151;
+                                            }
+                                        }
+    
+                                    }
+                                    .ocwma_table_bill{
+                                        width: 100%;
+                                        padding: 10px;
+                                        background-color: white;
+                                        border: 2px solid #f1f1f1;
+                                        margin-bottom: 10px;
+                                        .billing-heading{
+                                            font-size: 25px;
+                                            font-family: $arial;
+                                            color: #000000;
+                                            font-weight: 500;
+                                            margin-top: 0;
+                                            margin-bottom: 10px;
+                                        }
+                                        .billing_addresses_wrap{
+                                            display: table;
+                                            width: 100%;
+                                            .billing_address{
+                                                padding: 0px;
+                                                background: transparent;
+                                                margin-bottom: 0;
+                                                position: relative;
+                                                &.active{
+                                                    display: table-header-group;
+                                                }
+                                                .inner-wrap{
+                                                    padding: 15px;
+                                                    background-color: #f1f1f1;
+                                                    margin-bottom: 10px;
+                                                    .default-add-wrap{
+                                                        button{
+                                                            opacity: 1;
+                                                            color: $dgray;
+                                                            position: static;
+                                                            font-size: 11px;
+                                                            visibility: hidden;
+                                                            padding: 0px;
+                                                            font-weight: 400;
+                                                            line-height: 100%;
+                                                            margin-bottom:-10px;
+                                                            border: 0;
+                                                            display: flex;
+                                                            flex-direction: column-reverse;
+                                                            cursor: pointer;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                            &.checkeddd{
+                                                                color: $orange;
+                                                                visibility: visible;
+                                                                position: static;
+                                                                font-weight: 700;
+                                                                font-size: 13px;
+                                                                margin-bottom: 15px;
+                                                                display: inline-block;
+                                                            }
+                                                            &.checkeddd:after{
+                                                                content:"";
+                                                            }
+                                                            &:after{
+                                                                content: "Make Default";
+                                                                visibility: visible;
+                                                            }
+                                                        }
+                                                    }
+                                                    .billing-btn-wrapper{
+                                                        display: inline-grid;
+                                                        float: none;
+                                                        width: 100%;
+                                                        border-bottom: 1px solid #cacaca;
+                                                        line-height: 100%;
+                                                        margin-bottom: 8px;
+                                                        padding-bottom: 10px;
+                                                        .form_option_edit{
+                                                            font-size: 11px;
+                                                            font-family: $arial;
+                                                            color: $dgray;
+                                                            border: 0;
+                                                            cursor: pointer;
+                                                            text-align: left;
+                                                            margin-bottom: 3px;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                        }
+                                                        .delete_bill_address{
+                                                            a{
+                                                                font-size: 11px;
+                                                                font-family: $arial;
+                                                                color: $dgray;
+                                                                text-decoration: none;
+                                                                &:hover{
+                                                                    color: $orange;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .billing_address_inner{
+                                                            font-size: 13px;
+                                                            color: #677279;
+                                                            font-family: $arial;
+                                                            line-height: 1.5;
+                                                        .reference{ 
+                                                            margin-bottom: 0px;
+                                                            strong{
+                                                                font-size: 13px;
+                                                                font-family: $arial;
+                                                                color: $dgray;
+                                                            }
+                                                        }    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .ocwma_table_ship{
+                                        width: 100%;
+                                        padding: 10px;
+                                        background-color: white;
+                                        border: 2px solid #f1f1f1;
+                                        margin-bottom: 10px;
+                                        .shipping-heading{
+                                            font-size: 25px;
+                                            font-family: $arial;
+                                            color: #000000;
+                                            font-weight: 500;
+                                            margin-top: 0;
+                                            margin-bottom: 10px;
+                                        }
+                                        .shipping-addresses-wrap{
+                                            display: table;
+                                            width: 100%;
+                                            .shipping_address{
+                                                padding: 0px;
+                                                background: transparent;
+                                                margin-bottom: 0;
+                                                position: relative;
+                                                &.active{
+                                                    display: table-header-group;
+                                                }
+                                                .inner-wrap{
+                                                    padding: 15px;
+                                                    background-color: #f1f1f1;
+                                                    margin-bottom: 10px;
+                                                    .default-add-wrap{
+                                                        button{
+                                                            opacity: 1;
+                                                            color: #677279;
+                                                            position: static;
+                                                            font-size: 11px;
+                                                            visibility: hidden;
+                                                            padding: 0px;
+                                                            font-weight: 400;
+                                                            line-height: 100%;
+                                                            margin-bottom: -10px;
+                                                            border: 0;
+                                                            display: flex;
+                                                            flex-direction: column-reverse;
+                                                            cursor: pointer;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                            &.checkeddd{
+                                                                color: $orange;
+                                                                visibility: visible;
+                                                                position: static;
+                                                                margin-right: 5px;
+                                                                font-weight: 700;
+                                                                font-size: 13px;
+                                                                margin-bottom: 15px;
+                                                                display: inline-block;
+                                                            }
+                                                            &.checkeddd:after{
+                                                                content:"";
+                                                            }
+                                                            &:after{
+                                                                content: "Make Default";
+                                                                visibility: visible;
+                                                            }
+                                                            &.checkeddd ~ .fa-question-circle{
+                                                                visibility: visible;
+                                                                display: inline-grid;
+                                                            }
+                                                            &.defalt_addd_shipping ~ .fa{
+                                                                display: none;
+                                                            }
+                                                        }
+                                                        .fa-question-circle{
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            visibility: hidden;
+                                                            color: #c1c1c1;
+                                                            &:before{
+                                                                background-color: #677279;
+                                                                border-radius: 50%;
+                                                                font-size: 14px;
+                                                                width: 11px;
+                                                                height: 11px;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                            }
+                                                            .tooltiptext {
+                                                                visibility: hidden;
+                                                                width: 400px;
+                                                                background-color: #555;
+                                                                color: #fff;
+                                                                text-align: left;
+                                                                border-radius: 6px;
+                                                                padding: 15px 15px;
+                                                                position: absolute;
+                                                                z-index: 1;
+                                                                bottom: 125%;
+                                                                left: 50%;
+                                                                margin-left: -200px;
+                                                                margin-bottom: 5px;
+                                                                opacity: 0;
+                                                                transition: opacity 0.3s;
+                                                                font-weight: 500;
+                                                                font-family: $arial;
+                                                                font-size: 13px;
+                                                                &:after {
+                                                                    content: "";
+                                                                    position: absolute;
+                                                                    top: 100%;
+                                                                    left: 50%;
+                                                                    margin-left: -5px;
+                                                                    border-width: 5px;
+                                                                    border-style: solid;
+                                                                    border-color: #555 transparent transparent transparent;
+                                                                }
+                                                            }
+                                                            &:hover .tooltiptext {
+                                                                visibility: visible;
+                                                                opacity: 1;
+                                                            }
+                                                        }
+                                                    }
+                                                    .shipping-btn-wrapper{
+                                                        display: inline-grid;
+                                                        float: none;
+                                                        width: 100%;
+                                                        border-bottom: 1px solid #cacaca;
+                                                        line-height: 100%;
+                                                        margin-bottom: 8px;
+                                                        padding-bottom: 10px;
+                                                        .form_option_ship_edit{
+                                                            font-size: 11px;
+                                                            font-family: "arial";
+                                                            color: #677279;
+                                                            border: 0;
+                                                            cursor: pointer;
+                                                            text-align: left;
+                                                            margin-bottom: 3px;
+                                                            &:hover{
+                                                                color: $orange;
+                                                            }
+                                                        }
+                                                        .delete_ship_address{
+                                                            a{
+                                                                font-size: 11px;
+                                                                font-family: $arial;
+                                                                color: $dgray;
+                                                                text-decoration: none;
+                                                                &:hover{
+                                                                    color: $orange;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .shipping_address_inner{
+                                                        font-size: 13px;
+                                                        color: #677279;
+                                                        font-family: $arial;
+                                                        line-height: 1.5;
+                                                        .reference{
+                                                            strong{
+                                                                font-size: 13px;
+                                                                font-family: $arial;
+                                                                color: $dgray;
+                                                            }
+                                                        }    
+                                                    }
+                                                }
+                                            }    
+                                        }
+                                    }
+                                    .cus_menu{
+                                        margin-bottom: 10px;
+                                        .shipping-button{
+                                            width: 100%;
+                                            padding: 0px;
+                                            
+                                            .form_option_shipping{
+                                                border: 0;
+                                                cursor: pointer;
+                                                background-color: $orange;
+                                                font-size: 15px;
+                                                text-transform: uppercase;
+                                                color: #ffffff;
+                                                padding: 8px 10px;
+                                                &:hover{
+                                                    background-color: #dfdcde;
+                                                    color: #515151;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .wrap-important-information{
+                                h2{
+                                    text-align: center;
+                                    font-size: 25px;
+                                    font-weight: 600;
+                                    margin: 15px 0;
                                     color: $dgray;
                                     font-family: $arial;
                                 }
                                 p{
                                     font-size: 15px;
-                                    padding: 10px;
-                                    margin: 0;
-                                    width: 50%;
-                                    display: inline-block;
-                                    border-left: 1px solid;
-                                    color: $dgray;
                                     font-family: $arial;
-                                    img{
-                                        height: auto;
-                                        max-width: 100%;
+                                    color: $dgray;
+                                    margin-top: 0;
+                                    line-height: 1.5;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 16px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        line-height: 1.5;
                                     }
                                 }
-                                .gv-field-3-121{
-                                    .gv-field-label{
-                                      
-                                        font-weight: 700;
-                                     
-                                    }
-                                 
+
                                 }
-                       
+                            #gform_wrapper_3{
+                                .gform_heading{
+                                    display: none;
+                                }
+                        
+                        
+                                #gform_3{
+                                    .gf_page_steps{
+                                        display: flex;
+                                    
+                                        .gf_step_label{
+                                            font-size: 12px;
+                                            font-family: $arial;
+                                            color: $dgray;
+                                        }
+                                    }
+                                    .gf_step_active{
+                                        .gf_step_number{
+                                            border-color: $orange;
+                                        }
+                                        .gf_step_number{
+                                            background: #cfd3d9;
+                                            color: #607382;
+                                        }
+                                    }
+                                    #field_3_24 {
+                                        .gfield_label {
+                                            position: static;
+                                            left: 0;
+                                            transform: none;
+                                            font-size: 16px;
+                                            line-height: 1.5;
+                                            font-weight: 300;
+                                            margin: 15px 0px 0px;
+                                        }
+                                    }
+                                    #field_3_124 {
+                                        margin: 10px 0 30px;
+                                        .gfield_label {
+                                            margin: 0px;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                }
+                                    
+                                .gform_page_footer{
+                                    input{
+                                        background: #df7800;
+                                        border: 0;
+                                        color: #fff;
+                                        padding: 0 50px;
+                                        border-radius: 2px;
+                                        height: 48px;
+                                        font-size: 18px;
+                                        transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                        }
+                                    }
+                                }
+                                .field_description_above{
+
+                                    legend{
+                                        &.gfield_label{
+                                            position: relative ;
+                                            left: 0 ;
+                                            font-weight: 600 ;
+                                            transform: none ;
+                                            font-size: 16px ;
+                                            margin-bottom: 7px ;
+                                            font-family: $arial;
+                                            color: $dgray;
+                                            line-height: 48px;
+                                        }
+                                    }
+                                    .gfield_checkbox{
+                                        .gchoice{
+                                            label{
+                                                font-size: 15px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                line-height: 1.5;
+                                            }
+                                        }
+                                    }
+                                    &#field_3_43{
+                                        .gfield_label_before_complex{
+                                            visibility: hidden;
+                                        }
+                                    }
+                                
+                                }
+
+                    
+                            .field_description_below{
+                                .termtexts-small{
+                                    h3{
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+
+                            
+                                h3{
+                                    font-size: 28px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                    font-weight: 500;
+                                    .ver-num {
+                                        font-size: 14px;
+                                        color: #707070;
+                                        font-weight: 400;
+                                        font-family: system-ui;
+                                    }
+                                }  
+                                    p{
+                                        font-size: 15px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        margin-top: 0;
+                                        line-height: 1.5;
+                                    }
+                                    
+                                    ol{
+                                        li{
+                                            font-size: 16px;
+                                            font-family: $arial;
+                                            color: $dgray;
+                                            line-height: 1.5;
+                                        }
+                                    }
+                                    .gfield_label{
+                                        position: absolute;
+                                        left: 13px;
+                                        top: 0px;
+                                        line-height: 48px;
+                                        transform-origin: left top;
+                                        transition: transform .2s ease-in-out;
+                                        pointer-events: none;
+                                        transform: translateY(-6px) scale(.8);
+                                        width: 100%;
+                                        color: $dgray;
+                                        font-family: $arial;
+                                    }
+                                    .ginput_container {
+                                        
+                                        input{
+                                            padding: 25px 10px 5px 10px;
+                                            font-size: 16px;
+                                            color: black;
+                                            border: 1px solid #e0e0dd;
+                                            &#input_3_129{
+                                                color: transparent;
+                                            }
+                                            &#input_3_121{
+                                                color: transparent;
+                                            }
+                                            &#field_3_122{
+                                                color: transparent;
+                                            }
+                                            &#input_3_123{
+                                                color: transparent;
+                                            }
+                                        
+                                        }
+                                        select{
+                                            padding: 25px 10px 5px 10px;
+                                            font-size: 16px;
+                                            color: black;
+                                            border: 1px solid #e0e0dd;
+                                        }
+                                        .gform_fileupload_rules{
+                                            position: absolute;
+                                            top: 13px;
+                                            left: 125px;
+                                            font-size: 13px;
+                                            color: #c1c1c1;
+                                            font-family: $arial;
+                                        }
+                                    
+                                        .gfield_radio{
+                                            .gchoice{
+                                                label{
+                                                    font-size: 15px;
+                                                    font-family: $arial;
+                                                    color: $dgray;
+                                                    line-height: 1.5;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .gfield_checkbox{
+                                            .gchoice{
+                                                label{
+                                                    font-size: 15px;
+                                                    font-family: $arial;
+                                                    color: $dgray;
+                                                    line-height: 1.5;
+                                                }
+                                            }
+                                        }
+                                
+                                    }
+                                
+                                    &.field_sublabel_below{
+                                        position: relative;
+                                    }
+
+                                    legend{
+                                        &.gfield_label{
+                                            position: relative ;
+                                            left: 0 ;
+                                            font-weight: 600 ;
+                                            transform: none ;
+                                            font-size: 16px ;
+                                            margin-bottom: 7px ;
+                                        }
+                                    }
+                                    .gfield_description{
+                                        position: relative;
+                                        top: -30px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                    }
+                                    .termtexts{
+                                        ul{
+                                            li{
+                                                font-size: 15px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                line-height: 1.5;
+                                            }
+                                        }
+                                    }
+                                &#field_3_57{
+                                    legend{
+                                        display: none;
+                                    }
+
+                                }
+
                             }
-                            .html-entry{
-                                margin-top: 35px;
-                           
-                                .termtexts{
+                        }
+
+                        .gv-list-container{
+                            .gv-list-view{
+                                .gv-list-view-title{
+                                    .form-entry-data{
+                                        border: 1px solid grey;
+                                        margin: 10px 0px 10px 0px;
+                                        display: flex;
+                                        .gv-field-label{
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            padding: 10px;
+                                            width: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            color: $dgray;
+                                            font-family: $arial;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                            padding: 10px;
+                                            margin: 0;
+                                            width: 50%;
+                                            display: inline-block;
+                                            border-left: 1px solid;
+                                            color: $dgray;
+                                            font-family: $arial;
+                                            img{
+                                                height: auto;
+                                                max-width: 100%;
+                                            }
+                                        }
+                                        .gv-field-3-121{
+                                            .gv-field-label{
+                                            
+                                                font-weight: 700;
+                                            
+                                            }
+                                        
+                                        }
+                            
+                                    }
+                                    .html-entry{
+                                        margin-top: 35px;
+                                
+                                        .termtexts{
+                                            h3{
+                                                font-size: 28px;
+                                                font-family: $arial;
+                                                color: $dgray;
+                                                margin-top: 0;
+                                                margin-bottom: 8px;
+                                                font-weight: 500;
+                                                br{
+                                                    display: block;
+                                                }
+                                                .ver-num{
+                                                    font-size: 14px;
+                                                    color: #707070;
+                                                    font-weight: 400;
+                                                    font-family: system-ui;
+                                                
+                                                }
+                                            }
+                                            li{
+                                                font-size: 16px;
+                                                color: $dgray;
+                                                font-family: $arial;   
+                                                line-height: 1.5;
+                                            }
+                                        }
+                                    }
+                                    .gv-field-3-121{
+                                        .gv-field-label{
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            color: $dgray;
+                                            font-family: $arial;   
+                                        }
+                                    
+                                    }
+                                    .gv-field-3-123{
+                                        .gv-field-label{
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            color: $dgray;
+                                            font-family: $arial;   
+                                        }
+                                    
+                                    }
                                     h3{
                                         font-size: 28px;
                                         font-family: $arial;
@@ -813,196 +2028,296 @@
                                         font-family: $arial;   
                                         line-height: 1.5;
                                     }
-                                }
-                            }
-                            .gv-field-3-121{
-                                .gv-field-label{
-                                    font-size: 15px;
-                                    font-weight: 500;
-                                    color: $dgray;
-                                    font-family: $arial;   
-                                }
-                             
-                            }
-                            .gv-field-3-123{
-                                .gv-field-label{
-                                    font-size: 15px;
-                                    font-weight: 500;
-                                    color: $dgray;
-                                    font-family: $arial;   
-                                }
-                             
-                            }
-                            h3{
-                                font-size: 28px;
-                                font-family: $arial;
-                                color: $dgray;
-                                margin-top: 0;
-                                margin-bottom: 8px;
-                                font-weight: 500;
-                                br{
-                                    display: block;
-                                }
-                                .ver-num{
-                                    font-size: 14px;
-                                    color: #707070;
-                                    font-weight: 400;
-                                    font-family: system-ui;
-                                
-                                }
-                            }
-                            li{
-                                font-size: 16px;
-                                color: $dgray;
-                                font-family: $arial;   
-                                line-height: 1.5;
-                            }
 
+                                }
+                            }
+                        }
+                            
+                    }
+                }
+        }
+        .woocommerce table.shop_table_responsive tbody tr:first-child td:first-child, .woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
+            border-top: 0 !important;
+        }
+        .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+            background-color: rgba(0,0,0,.025);
+        }
+    } 
+
+}
+
+//My account Template Responsive end
+
+
+.tablet-desktop-responsive{
+    .woocommerce-edit-account{
+        .woocommerce-MyAccount-content{
+            display: flex;
+            flex-wrap: wrap;
+            .woocommerce-EditAccountForm{
+                flex: 50%;
+                padding-right: 5%;
+                margin-bottom: 5%;
+                .woocommerce-form-row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    .wrap-label{
+                        flex: 100%;
+                        margin-bottom: 10px;
+                        label{
+                            font-size: 15px;
+                            font-family: $arial;
+                            color: $dgray;
+                        
+                        }
+                    }
+                    .wrap-input-field{
+                        flex: 100%;
+                        .woocommerce-Input{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            font-size: 16px;
+                            padding: 15px 10px;
+                            border-radius: 5px;
+                        }
+                        span{
+                            color: $dgray;
+                            font-family: $arial;
+                            font-size: 15px;
+                            line-height: 1.5;
                         }
                     }
                 }
+                fieldset{
+                    border: 0;
+                    padding: 0;
+                    margin-top: 20px;
+                    legend{
+                        font-size: 24px;
+                        font-family: $arial;
+                        color: $dgray;
+                        margin-bottom: 20px;
+                    }
+                }
+                .save-changes-btn{
+                    .wrap-button{
+                        .button{
+                            border-radius: 0;
+                            background: #df7800;
+                            font-family: $arial;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            text-decoration: none;
+                            border: 0;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #dfdcde;
+                                text-decoration: none;
+                                background-image: none;
+                                color: #515151;
+                            }
+                        }
                     
+                    }
+                }
             }
-        }
-    }
-}
-
-#field_3_24 .ginput_container_text {
-    display: none;
-}
-.gfield_visibility_hidden{
-    display: none;
-}
-
-
-.woocommerce-edit-account{
-    .woocommerce-MyAccount-content{
-        display: flex;
-        flex-wrap: wrap;
-        .woocommerce-EditAccountForm{
-            flex: 50%;
-            padding-right: 5%;
-            margin-bottom: 5%;
             .woocommerce-form-row{
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 10px;
-                .wrap-label{
-                    flex: 100%;
+                flex: 50%;
+                .profile-pic-heading{
                     margin-bottom: 10px;
-                    label{
-                        font-size: 15px;
-                        font-family: $arial;
-                        color: $dgray;
-                       
-                    }
-                }
-                .wrap-input-field{
-                    flex: 100%;
-                    .woocommerce-Input{
-                        width: 100%;
-                        border: 1px solid #ddd;
-                        font-size: 16px;
-                        padding: 15px 10px;
-                        border-radius: 5px;
-                    }
-                    span{
-                        color: $dgray;
-                        font-family: $arial;
-                        font-size: 15px;
-                        line-height: 1.5;
-                    }
-                }
-            }
-            fieldset{
-                border: 0;
-                padding: 0;
-                margin-top: 20px;
-                legend{
-                    font-size: 24px;
+                    font-size: 16px;
                     font-family: $arial;
                     color: $dgray;
-                    margin-bottom: 20px;
                 }
-            }
-            .save-changes-btn{
-                .wrap-button{
-                    .button{
-                        border-radius: 0;
-                        background: #df7800;
-                        font-family: $arial;
-                        color: #fff;
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        padding: 10px 15px;
-                        display: inline-block;
-                        text-decoration: none;
-                        border: 0;
+                .profile-pictures-wrap{
+                    display: flex;
+                    .profile-image-wrap{
+                        flex: 0 0 auto;
+                        width: calc(20% - 5px);
+                        margin-right: 5px;
+                        margin-bottom: 10px;
+                        position: relative;
                         cursor: pointer;
-                        &:hover{
-                            background-color: #dfdcde;
-                            text-decoration: none;
-                            background-image: none;
-                            color: #515151;
+                        img{
+                            height: auto;
+                            max-width: 100%;
                         }
                     }
-                   
                 }
-            }
-        }
-        .woocommerce-form-row{
-            flex: 50%;
-            .profile-pic-heading{
-                margin-bottom: 10px;
-                font-size: 16px;
-                font-family: $arial;
-                color: $dgray;
-            }
-            .profile-pictures-wrap{
-                display: flex;
-                .profile-image-wrap{
-                    flex: 0 0 auto;
-                    width: calc(20% - 5px);
-                    margin-right: 5px;
-                    margin-bottom: 10px;
-                    position: relative;
-                    cursor: pointer;
-                    img{
-                        height: auto;
-                        max-width: 100%;
-                    }
-                }
-            }
-            #acf-form{
-                #acf-form-data{
-                    display: none;
-                }
-                .acf-form-fields{
-                    position: relative;
-                    .acf-field-619c056ba4305{
+                #acf-form{
+                    #acf-form-data{
                         display: none;
                     }
-                }
-                .acf-form-submit{
-                    .acf-button{
-                        border-radius: 0;
-                        background: #df7800;
-                        color: #fff;
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        padding: 10px 15px;
-                        display: inline-block;
-                        border: 0;
-                        cursor: pointer;
+                    .acf-form-fields{
+                        position: relative;
+                        .acf-field-619c056ba4305{
+                            display: none;
+                        }
                     }
-                  
+                    .acf-form-submit{
+                        .acf-button{
+                            border-radius: 0;
+                            background: #df7800;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            border: 0;
+                            cursor: pointer;
+                        }
+                    
+                    }
                 }
+            
             }
-           
-        }
 
+        }
     }
 }
+
+
+
+// Account Details Responsive
+
+.mobile-responsive{
+    .woocommerce-edit-account{
+        .woocommerce-MyAccount-content{
+            display: flex;
+            flex-wrap: wrap;
+            .woocommerce-EditAccountForm{
+                flex: 100%;
+                margin-bottom: 5%;
+                .woocommerce-form-row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    .wrap-label{
+                        flex: 100%;
+                        margin-bottom: 10px;
+                        label{
+                            font-size: 15px;
+                            font-family: $arial;
+                            color: $dgray;
+                        
+                        }
+                    }
+                    .wrap-input-field{
+                        flex: 100%;
+                        .woocommerce-Input{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            font-size: 16px;
+                            padding: 15px 10px;
+                            border-radius: 5px;
+                        }
+                        span{
+                            color: $dgray;
+                            font-family: $arial;
+                            font-size: 15px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                fieldset{
+                    border: 0;
+                    padding: 0;
+                    margin-top: 20px;
+                    legend{
+                        font-size: 24px;
+                        font-family: $arial;
+                        color: $dgray;
+                        margin-bottom: 20px;
+                    }
+                }
+                .save-changes-btn{
+                    .wrap-button{
+                        .button{
+                            border-radius: 0;
+                            background: #df7800;
+                            font-family: $arial;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            text-decoration: none;
+                            border: 0;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #dfdcde;
+                                text-decoration: none;
+                                background-image: none;
+                                color: #515151;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+            .woocommerce-form-row{
+                flex: 100%;
+                margin-bottom: 50px;
+                .profile-pic-heading{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-family: $arial;
+                    color: $dgray;
+                }
+                .profile-pictures-wrap{
+                    display: flex;
+                    .profile-image-wrap{
+                        flex: 0 0 auto;
+                        width: calc(20% - 5px);
+                        margin-right: 5px;
+                        margin-bottom: 10px;
+                        position: relative;
+                        cursor: pointer;
+                        img{
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                #acf-form{
+                    #acf-form-data{
+                        display: none;
+                    }
+                    .acf-form-fields{
+                        position: relative;
+                        .acf-field-619c056ba4305{
+                            display: none;
+                        }
+                    }
+                    .acf-form-submit{
+                        .acf-button{
+                            border-radius: 0;
+                            background: #df7800;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            border: 0;
+                            cursor: pointer;
+                        }
+                    
+                    }
+                }
+            
+            }
+
+        }
+    }
+}
+
+// Account Details Responsive end
+
+
 
 
 // location billing popup css
