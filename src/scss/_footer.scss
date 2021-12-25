@@ -123,6 +123,7 @@
     .footer-top-wrapper{ 
         padding:70px 0px 20px 0px; 
         min-width: 1024px;
+        display: flex;
         &.is_mobile{
             display: none;
         }

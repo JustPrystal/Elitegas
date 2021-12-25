@@ -1,199 +1,238 @@
-.woocommerce{
-    .woocommerce-notices-wrapper{
-        display: none;
-    }
-    .container{
-
-        .main-heading{
-            .heading{
-                font-size: 35px;
-                font-weight: 400;
-                margin: 30px 0 10px 0;
-                text-transform: capitalize;
-                color: $dgray;
-                font-family: $arial;
-            }
+.tablet-desktop-responsive{
+    .woocommerce{
+        min-width: 1024px;
+        .woocommerce-notices-wrapper{
+            display: none;
         }
+        .container{
 
-        .woocommerce-cart-form{
-            width: 100%;
-            .shop_table{
-                border: 1px solid rgba(0,0,0,.1);
-                margin: 0 -1px 24px 0;
-                text-align: left;
+            .main-heading{
+                .heading{
+                    font-size: 35px;
+                    font-weight: 400;
+                    margin: 30px 0 10px 0;
+                    text-transform: capitalize;
+                    color: $dgray;
+                    font-family: $arial;
+                }
+            }
+
+            .woocommerce-cart-form{
                 width: 100%;
-                border-collapse: separate;
-                border-radius: 0px;
-                td{
-                    border-top: 1px solid rgba(0,0,0,.1);
-                    padding: 9px 12px;
-                }
-                thead{
-                    tr{
-                        th{
-                         
-                            font-weight: 700;
-                            padding: 9px 12px;
-                            line-height: 1.5em;
-                            font-size: 15px;
-                            font-family: $arial;
-                            color: $dgray;
-                            &.product-thumbnail{
-                                visibility: hidden;
-                                width: 22%;
-                            }
-                            &.product-quantity{
-                                width: 160px;
-                                text-align: center;
-                            }
-                        }
+                .shop_table{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 0px;
+                    td{
+                        border-top: 1px solid rgba(0,0,0,.1);
+                        padding: 9px 12px;
                     }
-                }
-                tbody{
-                 
-                    .woocommerce-cart-form__cart-item{
-                        td{
-                            &.product-remove{
-                             
-                                  .remove{
-                                    display: block;
-                                    font-size: 1.5em;
-                                    height: 1em;
-                                    width: 1em;
-                                    text-align: center;
-                                    line-height: 1;
-                                    border-radius: 100%;
-                                    color: red;
-                                    text-decoration: none;
-                                    font-weight: 700;
-                                    border: 0;
-                                    margin: 0 auto;
-                                    &:hover{
-                                        color: #fff;
-                                        background-color: red;
-                                    }
-                                }
-                                  
-                              
-                            }
-                            &.product-thumbnail{
-                                position: relative;
-                                a{
-                                    font-family: $arial;
-                                    text-decoration: none;
-                                    color: #df7800;
-                                    img{
-                                        width: 70px;
-                                        margin-right: 10px;
-                                        height: auto;
-                                    }
-                                    .item-sku{
-                                        font-size: 15px;
-                                        position: absolute;
-                                        top: 25px;
-                                    }
-                                }
-                                .cart-upc{
-                                    display: flex;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 94px;
-                                    font-size: 11px;
-                                    color: $dgray;
-                                    font-family: $arial;
-                                }
-                            }
-                            &.product-name{
-                                a{
-                                    font-family: $arial;
-                                    text-decoration: none;
-                                    color: #df7800;
-                                    font-size: 15px;
-                                }
-                            }
-                            &.product-price{
-                                .woocommerce-Price-amount{
-                                    font-size: 15px;
-                                    font-family: $arial;
-                                    color: $dgray;
-                                }
-                            }
-                            &.product-quantity{
-                                .quantity{
-                                    border: 1px solid #ddd;
-                                    button{
-                                        height: 50px;
-                                        font-size: 26px;
-                                        border: 0;
-                                        background: none;
-                                        width: 40px;
-                                        font-family: $arial;
-                                        font-weight: 400;
-                                        padding: 0;
-                                        color: #c7c7c7;
-                                        margin: 0;
-                                        &.minus{
-                                            float: left;
-                                            height: 45px;
-                                        }
-                                        &.plus{
-                                            float: right;
-                                        }
-                                    }
-                               
-                                    input{
-                                        height: 50px;
-                                        padding: 0;
-                                        margin: 0;
-                                        width: 50px;
-                                        font-size: 18px;
-                                        color: $dgray;
-                                        border: 0;
-                                        text-align: center;
-                                        -moz-appearance: textfield;
-                                        &::-webkit-outer-spin-button{
-                                            -webkit-appearance: none;
-                                        }
-                                        &::-webkit-inner-spin-button{
-                                            -webkit-appearance: none;
-                                        }
-
-                                    
-                                    }
-                                }
-                            }
-                            &.product-subtotal{
-                                text-align: left ;
-                                padding-left: 30px ;
-                                .woocommerce-Price-amount{
-                                    font-size: 15px;
-                                    font-family: $arial;
-                                    color: $dgray;
-                                }
-                            }
+                    thead{
+                        tr{
+                            th{
                             
+                                font-weight: 700;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                font-size: 15px;
+                                font-family: $arial;
+                                color: $dgray;
+                                &.product-thumbnail{
+                                    visibility: hidden;
+                                    width: 22%;
+
+                                }
+                                &.product-quantity{
+                                    width: 160px;
+                                    text-align: center;
+                                }
+                            }
                         }
                     }
-                    tr{
-                        .actions{
-                            .coupon{
-                                float: left;
-                                label{
-                                    display: none;
+                    tbody{
+                    
+                        .woocommerce-cart-form__cart-item{
+                            td{
+                                &.product-remove{
+                                
+                                    .remove{
+                                        display: block;
+                                        font-size: 1.5em;
+                                        height: 1em;
+                                        width: 1em;
+                                        text-align: center;
+                                        line-height: 1;
+                                        border-radius: 100%;
+                                        color: red;
+                                        text-decoration: none;
+                                        font-weight: 700;
+                                        border: 0;
+                                        margin: 0 auto;
+                                        &:hover{
+                                            color: #fff;
+                                            background-color: red;
+                                        }
+                                    }
+                                    
+                                
                                 }
-                                .input-text{
-                                    width: 190px;
-                                    height: 50px;
+                                &.product-thumbnail{
+                                    position: relative;
+                                    a{
+                                        font-family: $arial;
+                                        text-decoration: none;
+                                        color: #df7800;
+                                        display: flex;
+                                        align-items: center;
+                                        img{
+                                            width: 70px;
+                                            margin-right: 10px;
+                                            height: auto;
+                                        }
+                                        .item-sku{
+                                            font-size: 15px;
+                                            margin-bottom: 20px;
+                                            @include responsive(lg){
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                    .cart-upc{
+                                        display: flex;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 93px;
+                                        font-size: 10px;
+                                        color: $dgray;
+                                        font-family: $arial;
+                                        @include responsive(lg){
+                                            left: 90px
+                                        }
+                                    }
+                                }
+                                &.product-name{
+                                    a{
+                                        font-family: $arial;
+                                        text-decoration: none;
+                                        color: #df7800;
+                                        font-size: 15px;
+                                        @include responsive(lg){
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                &.product-price{
+                                    .woocommerce-Price-amount{
+                                        font-size: 15px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        @include responsive(lg){
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                &.product-quantity{
+                                    .quantity{
+                                        border: 1px solid #ddd;
+                                        button{
+                                            height: 50px;
+                                            font-size: 26px;
+                                            border: 0;
+                                            background: none;
+                                            width: 40px;
+                                            font-family: $arial;
+                                            font-weight: 400;
+                                            padding: 0;
+                                            color: #c7c7c7;
+                                            margin: 0;
+                                            &.minus{
+                                                float: left;
+                                                height: 45px;
+                                            }
+                                            &.plus{
+                                                float: right;
+                                            }
+                                        }
+                                
+                                        input{
+                                            height: 50px;
+                                            padding: 0;
+                                            margin: 0;
+                                            width: 50px;
+                                            font-size: 18px;
+                                            color: $dgray;
+                                            border: 0;
+                                            text-align: center;
+                                            -moz-appearance: textfield;
+                                            &::-webkit-outer-spin-button{
+                                                -webkit-appearance: none;
+                                            }
+                                            &::-webkit-inner-spin-button{
+                                                -webkit-appearance: none;
+                                            }
+                                            @include responsive(lg){
+                                                font-size: 15px;
+                                            }
+                                        
+                                        }
+                                    }
+                                }
+                                &.product-subtotal{
+                                    text-align: left ;
+                                    padding-left: 30px ;
+                                    .woocommerce-Price-amount{
+                                        font-size: 15px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        @include responsive(lg){
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                        tr{
+                            .actions{
+                                .coupon{
                                     float: left;
-                                    box-sizing: border-box;
-                                    border: 1px solid #d3ced2;
-                                    padding: 6px 6px 5px;
-                                    margin: 0 4px 0 0;
-                                    outline: 0;
-                                    color: #677279;
-                                    font-size: 13px;
+                                    label{
+                                        display: none;
+                                    }
+                                    .input-text{
+                                        width: 190px;
+                                        height: 50px;
+                                        float: left;
+                                        box-sizing: border-box;
+                                        border: 1px solid #d3ced2;
+                                        padding: 6px 6px 5px;
+                                        margin: 0 4px 0 0;
+                                        outline: 0;
+                                        color: #677279;
+                                        font-size: 13px;
+                                    }
+                                    button{
+                                        border-radius: 0;
+                                        line-height: 50px;
+                                        background: #df7800;
+                                        color: #fff;
+                                        height: 50px;
+                                        text-transform: uppercase;
+                                        font-weight: 400;
+                                        padding: 0 15px;
+                                        border: 0;
+                                        font-family: $arial;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                        }
+                                    }
                                 }
-                                button{
+                                .update_cart{
                                     border-radius: 0;
                                     line-height: 50px;
                                     background: #df7800;
@@ -203,144 +242,126 @@
                                     font-weight: 400;
                                     padding: 0 15px;
                                     border: 0;
+                                    float: right;
                                     font-family: $arial;
                                     cursor: pointer;
+                                
                                     &:hover{
                                         background-color: #dfdcde;
                                         color: #515151;
                                     }
+                                
                                 }
-                            }
-                            .update_cart{
-                                border-radius: 0;
-                                line-height: 50px;
-                                background: #df7800;
-                                color: #fff;
-                                height: 50px;
-                                text-transform: uppercase;
-                                font-weight: 400;
-                                padding: 0 15px;
-                                border: 0;
-                                float: right;
-                                font-family: $arial;
-                                cursor: pointer;
-                               
-                                &:hover{
-                                    background-color: #dfdcde;
-                                    color: #515151;
-                                }
-                            
                             }
                         }
                     }
                 }
-            }
+            }  
         }
-      
-    }
-    .cart-collaterals{
-        display: flex;
-        justify-content: right;
-        .cart_totals{
-            width: 55%;
-            text-align: center;
-            .shop_table{
-                .cart-subtotal{
-                    display: flex;
-                    flex-wrap: wrap;
-                    border: 1px solid #ebe9eb;
-                    border-bottom: 0;
-                    padding: 10px 12px;
-                    .subtotal-text{
-                        flex: 70%;
-                        text-align: left;
-                        font-size: 13px;
-                        color: $dgray;
-                        font-family: $arial;
-                    }
-                    .subtotal-price{
-                        flex: 30%;
-                        text-align: right;
-                        font-size: 13px;
-                        font-family: $arial;
-                   
-                        .woocommerce-Price-amount{
-                            color:$dgray;
+        .cart-collaterals{
+            width: 730px;
+            float: right;
+            .cart_totals{
+                width: 100%;
+                text-align: center;
+                .shop_table{
+                    .cart-subtotal{
+                        display: flex;
+                        flex-wrap: wrap;
+                        border: 1px solid #ebe9eb;
+                        border-bottom: 0;
+                        padding: 10px 12px;
+                        .subtotal-text{
+                            flex: 70%;
+                            text-align: left;
+                            font-size: 13px;
+                            color: $dgray;
+                            font-family: $arial;
+                        }
+                        .subtotal-price{
+                            flex: 30%;
+                            text-align: right;
+                            font-size: 13px;
+                            font-family: $arial;
+                    
+                            .woocommerce-Price-amount{
+                                color:$dgray;
+                            }
                         }
                     }
-                }
 
-                .calculated-text{
-                    border: 1px solid #ebe9eb;
-                    border-bottom: 0;
-                    padding: 9px 12px;
-                    text-align: left;
-                    font-size: 13px;
-                    color: $dgray;
-                    font-family: $arial;
-                   
-                }
-                .order-total{
-                    display: flex;
-                    flex-wrap: wrap;
-                    border: 1px solid #ebe9eb;
-                    padding: 9px 12px;
-                    .total-text{
-                        flex: 70%;
+                    .calculated-text{
+                        border: 1px solid #ebe9eb;
+                        border-bottom: 0;
+                        padding: 9px 12px;
                         text-align: left;
                         font-size: 13px;
                         color: $dgray;
                         font-family: $arial;
+                    
                     }
-                    .total-price{
-                        flex: 30%;
-                        text-align: right;
-                        font-size: 13px;
+                    .order-total{
+                        display: flex;
+                        flex-wrap: wrap;
+                        border: 1px solid #ebe9eb;
+                        padding: 9px 12px;
+                        .total-text{
+                            flex: 70%;
+                            text-align: left;
+                            font-size: 13px;
+                            color: $dgray;
+                            font-family: $arial;
+                        }
+                        .total-price{
+                            flex: 30%;
+                            text-align: right;
+                            font-size: 13px;
+                            font-family: $arial;
+                            .woocommerce-Price-amount{
+                                color:$dgray;
+                            }
+                        }
+                    }
+                }
+                .wc-proceed-to-checkout{
+                    padding-top: 1em;   
+                    .ltl-notice {
+                        padding-bottom: 20px;
+                        font-size: 16px;
                         font-family: $arial;
-                        .woocommerce-Price-amount{
-                            color:$dgray;
-                        }
-                    }
-                }
-            }
-            .wc-proceed-to-checkout{
-                padding-top: 1em;   
-                .ltl-notice {
-                    padding-bottom: 20px;
-                    font-size: 16px;
-                    font-family: $arial;
-                    color: $dgray;
-                    line-height: 1.5;
-                }
-                .checkout-button{
-                    display: block;
-                    text-align: center;
-                    margin-bottom: 1em;
-                    background: #df7800;
-                    font-size: 16px;
-                    padding: 0 15px;
-                    line-height: 50px;
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-family: $arial;
-                    font-weight: 400;
-                    font-family: $dgray;
-                    text-decoration: none;
-                    &:hover{
-                        &:hover{
-                            background-color: #dfdcde;
-                            color: #515151;
-                        }
-                    }
-                }
-            }
-            .securemtnemin{
-                p{
-                    font-size: 16px;
-                    font-family: $arial;
-                    color: $dgray;
-                    i{
                         color: $dgray;
+                        line-height: 1.5;
+                    }
+                    .checkout-button{
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 1em;
+                        background: #df7800;
+                        font-size: 16px;
+                        padding: 0 15px;
+                        line-height: 50px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: $arial;
+                        font-weight: 400;
+                        font-family: $dgray;
+                        text-decoration: none;
+                        &:hover{
+                            &:hover{
+                                background-color: #dfdcde;
+                                color: #515151;
+                            }
+                        }
+                    }
+                }
+                .securemtnemin{
+                    p{
+                        font-size: 16px;
+                        font-family: $arial;
+                        color: $dgray;
+                        i{
+                            color: $dgray;
+                        }
                     }
                 }
             }
@@ -348,3 +369,378 @@
     }
 }
 
+
+
+// Cart Mobile Responsive
+
+.mobile-responsive{
+    .woocommerce{
+        min-width: auto;
+        .woocommerce-notices-wrapper{
+            display: none;
+        }
+        .container{
+
+            .main-heading{
+                .heading{
+                    font-size: 35px;
+                    font-weight: 400;
+                    margin: 30px 0 10px 0;
+                    text-transform: capitalize;
+                    color: $dgray;
+                    font-family: $arial;
+                }
+            }
+
+            .woocommerce-cart-form{
+                width: 100%;
+                .shop_table{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 0px;
+                    td{
+                        border-top: 1px solid rgba(0,0,0,.1);
+                        padding: 9px 12px;
+                    }
+                    thead{
+                        display: none;
+                    }
+                    tbody{        
+                        .woocommerce-cart-form__cart-item{
+                            display: block;
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                padding: 9px 12px;
+                                text-align: right;
+                                vertical-align: middle;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 100%;
+                                &::before{
+                                    content: attr(data-title) " ";
+                                    font-weight: 700;
+                                    float: left;
+                                    font-size: 13px;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                }
+                                &.product-remove{      
+                                    padding: 0;
+                                    border-top: 0px;    
+                                    .remove{
+                                        display: block;
+                                        font-size: 1.5em;
+                                        height: 1em;
+                                        width: 1em;
+                                        line-height: 1;
+                                        border-radius: 100%;
+                                        color: red;
+                                        text-decoration: none;
+                                        font-weight: 700;
+                                        border: 0;
+                                        margin: 0 auto;
+                                        &:hover{
+                                            color: #fff;
+                                            background-color: red;
+                                        }
+                                    }
+                                    
+                                
+                                }
+                                &.product-thumbnail{
+                                    position: relative;
+                                    a{
+                                        font-family: $arial;
+                                        text-decoration: none;
+                                        color: #df7800;
+                                        display: flex;
+                                        flex-direction: row-reverse;
+                                        flex-wrap: wrap;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 100%;
+                                        img{
+                                            width: 70px;
+                                            margin-right: 10px;
+                                            height: auto;
+                                        }
+                                        .item-sku{
+                                            margin-bottom: 15px;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    .cart-upc{
+                                        display: flex;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 13px;
+                                        font-size: 11px;
+                                        color: $dgray;
+                                        font-family: $arial;
+                                    }
+                                }
+                                &.product-name{
+                                    a{
+                                        font-family: $arial;
+                                        text-decoration: none;
+                                        color: #df7800;
+                                        font-size: 13px;
+                                        padding-left: 50px;
+                                    }
+                                }
+                                &.product-price{
+                                    .woocommerce-Price-amount{
+                                        font-size: 13px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                    }
+                                }
+                                &.product-quantity{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .quantity{
+                                        border: 1px solid #ddd;
+                                        button{
+                                            height: 50px;
+                                            font-size: 26px;
+                                            border: 0;
+                                            background: none;
+                                            width: 40px;
+                                            font-family: $arial;
+                                            font-weight: 400;
+                                            padding: 0;
+                                            color: #c7c7c7;
+                                            margin: 0;
+                                            &.minus{
+                                                float: left;
+                                                height: 45px;
+                                            }
+                                            &.plus{
+                                                float: right;
+                                            }
+                                        }
+                                
+                                        input{
+                                            height: 50px;
+                                            padding: 0;
+                                            margin: 0;
+                                            width: 50px;
+                                            font-size: 18px;
+                                            color: $dgray;
+                                            border: 0;
+                                            text-align: center;
+                                            -moz-appearance: textfield;
+                                            &::-webkit-outer-spin-button{
+                                                -webkit-appearance: none;
+                                            }
+                                            &::-webkit-inner-spin-button{
+                                                -webkit-appearance: none;
+                                            }
+                                            @include responsive(lg){
+                                                font-size: 15px;
+                                            }
+                                        
+                                        }
+                                    }
+                                }
+                                &.product-subtotal{
+                                    text-align: left ;
+                                    .woocommerce-Price-amount{
+                                        font-size: 13px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        tr{
+                            .actions{
+                                .coupon{
+                                    float: left;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 10px;
+                                    width: 100%;
+                                    label{
+                                        display: none;
+                                    }
+                                    .input-text{
+                                        width: 190px;
+                                        height: 50px;
+                                        float: left;
+                                        box-sizing: border-box;
+                                        border: 1px solid #d3ced2;
+                                        padding: 6px 6px 5px;
+                                        margin: 0 10px 0 0;
+                                        outline: 0;
+                                        color: #677279;
+                                        font-size: 13px;
+                                    }
+                                    button{
+                                        border-radius: 0;
+                                        line-height: 50px;
+                                        background: #df7800;
+                                        color: #fff;
+                                        height: 50px;
+                                        text-transform: uppercase;
+                                        font-weight: 400;
+                                        padding: 0 15px;
+                                        border: 0;
+                                        font-family: $arial;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                        }
+                                    }
+                                }
+                                .update_cart{
+                                    border-radius: 0;
+                                    line-height: 50px;
+                                    background: #df7800;
+                                    color: #fff;
+                                    height: 50px;
+                                    text-transform: uppercase;
+                                    font-weight: 400;
+                                    padding: 0 15px;
+                                    border: 0;
+                                    float: right;
+                                    font-family: $arial;
+                                    cursor: pointer;
+                                    width: 100%;
+                                
+                                    &:hover{
+                                        background-color: #dfdcde;
+                                        color: #515151;
+                                    }
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        .cart-collaterals{
+            width: 100%;
+            float: right;
+            margin-bottom: 50px;
+            .cart_totals{
+                width: 100%;
+                text-align: center;
+                .shop_table{
+                    .cart-subtotal{
+                        display: flex;
+                        flex-wrap: wrap;
+                        border: 1px solid #ebe9eb;
+                        border-bottom: 0;
+                        padding: 10px 12px;
+                        .subtotal-text{
+                            flex: 70%;
+                            text-align: left;
+                            font-size: 13px;
+                            color: $dgray;
+                            font-family: $arial;
+                        }
+                        .subtotal-price{
+                            flex: 30%;
+                            text-align: right;
+                            font-size: 13px;
+                            font-family: $arial;
+                    
+                            .woocommerce-Price-amount{
+                                color:$dgray;
+                            }
+                        }
+                    }
+
+                    .calculated-text{
+                        border: 1px solid #ebe9eb;
+                        border-bottom: 0;
+                        padding: 9px 12px;
+                        text-align: left;
+                        font-size: 13px;
+                        color: $dgray;
+                        font-family: $arial;
+                    
+                    }
+                    .order-total{
+                        display: flex;
+                        flex-wrap: wrap;
+                        border: 1px solid #ebe9eb;
+                        padding: 9px 12px;
+                        .total-text{
+                            flex: 70%;
+                            text-align: left;
+                            font-size: 13px;
+                            color: $dgray;
+                            font-family: $arial;
+                        }
+                        .total-price{
+                            flex: 30%;
+                            text-align: right;
+                            font-size: 13px;
+                            font-family: $arial;
+                            .woocommerce-Price-amount{
+                                color:$dgray;
+                            }
+                        }
+                    }
+                }
+                .wc-proceed-to-checkout{
+                    padding-top: 1em;   
+                    .ltl-notice {
+                        padding-bottom: 20px;
+                        font-size: 16px;
+                        font-family: $arial;
+                        color: $dgray;
+                        line-height: 1.5;
+                        @include responsive(sm){
+                            font-size: 14px;
+                        }
+                    }
+                    .checkout-button{
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 1em;
+                        background: #df7800;
+                        font-size: 14px;
+                        padding: 0 15px;
+                        line-height: 50px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-family: $arial;
+                        font-weight: 400;
+                        font-family: $dgray;
+                        text-decoration: none;
+                        &:hover{
+                            &:hover{
+                                background-color: #dfdcde;
+                                color: #515151;
+                            }
+                        }
+                    }
+                }
+                .securemtnemin{
+                    p{
+                        font-size: 16px;
+                        font-family: $arial;
+                        color: $dgray;
+                        i{
+                            color: $dgray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Cart Mobile Responsive END
