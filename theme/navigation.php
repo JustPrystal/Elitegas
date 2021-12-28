@@ -65,9 +65,25 @@
     <div class="inner-wrap-bottom">
         <div class="container">
             <?php foreach($nav as $nav_item){?>
-                <div class="nav-link">
-                    <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
-                </div>
+                <?php if($nav_item['choose_type'] == "normal"){?>
+                    <div class="nav-link">
+                        <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
+                    </div>
+
+                <?php }?>
+                <?php if($nav_item['choose_type'] == "dropdown"){?>
+                    <div class="nav-link dropdown">
+                        <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
+                        <div class="dropdown_wrapper">
+                            <?php foreach($nav_item['sublinks'] as $sub){?>
+                                <div class="child-link">
+                                    <a href="<?php echo $sub['sublink']['url'] ?>"><?php echo $sub['sublink']['title'] ?></a>
+                                </div>
+                            <?php }?>
+                        </div>
+                    </div>
+
+                <?php }?>
             <?php }?>
         </div>
     </div>
@@ -82,7 +98,8 @@
         <div class="container">
             <div class="logo-ham-wrap">
                 <div class="hamburger-menu">
-                    <span class="btn" style="font-size:30px;cursor:pointer">&#9776;</span>
+                    <span class="btn hamburger-open" style="font-size:30px;cursor:pointer">&#9776;</span>
+                    <span class="btn hamburger-close" style="font-size:30px;cursor:pointer">&#9747;</span>
                 </div>
                 <div class="logo-wrap">
                    <a href="<?php echo get_site_url(); ?>"><div class="logo"><img src="<?php echo $logo['url'] ?>"> </div></a>
@@ -141,13 +158,38 @@
                <?php echo do_shortcode('[searchandfilter id="48"]'); ?>
         </div>
     </div>
-    <div class="inner-wrap-bottom hide-before">
+    <div class="inner-wrap-bottom hide-before Header-nav">
         <div class="mobile-menu-wrap">
             <?php foreach($nav as $nav_item){?>
                 <div class="nav-link">
                     <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
                 </div>
             <?php }?>
+        </div>
+        <div class="header-contact-container">
+            <div class="inner-contact-container">
+                <h2>Need help?</h2>
+                <span class="header-icon-contact">
+                    <svg focusable="false" class="icon icon--bi-phone" viewBox="0 0 24 24" role="presentation">
+                        <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <path d="M17 15l-3 3-8-8 3-3-5-5-3 3c0 9.941 8.059 18 18 18l3-3-5-5z" stroke="#4b4b4b"></path>
+                            <path d="M14 1c4.971 0 9 4.029 9 9m-9-5c2.761 0 5 2.239 5 5" stroke="#df7800"></path>
+                        </g>
+                    </svg>
+                    <p>Call us <a href="tel:(800) 901-0403">(800) 901-0403</a></p>
+                </span>
+                <span class="header-icon-contact">
+                    <svg focusable="false" class="icon icon--bi-email" viewBox="0 0 22 22" role="presentation">
+                        <g fill="none" fill-rule="evenodd">
+                            <path stroke="#df7800" d="M.916667 10.08333367l3.66666667-2.65833334v4.65849997zm20.1666667 0L17.416667 7.42500033v4.65849997z"></path>
+                            <path stroke="#4b4b4b" stroke-width="2" d="M4.58333367 7.42500033L.916667 10.08333367V21.0833337h20.1666667V10.08333367L17.416667 7.42500033"></path>
+                            <path stroke="#4b4b4b" stroke-width="2" d="M4.58333367 12.1000003V.916667H17.416667v11.1833333m-16.5-2.01666663L21.0833337 21.0833337m0-11.00000003L11.0000003 15.5833337"></path>
+                            <path d="M8.25000033 5.50000033h5.49999997M8.25000033 9.166667h5.49999997" stroke="#df7800" stroke-width="2" stroke-linecap="square"></path>
+                        </g>
+                    </svg>
+                    <p>Call us <a href="mailto:support@elitegas.com">support@elitegas.com</a></p>
+                </span>
+            </div>
         </div>
     </div>
 </header>

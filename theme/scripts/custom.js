@@ -106,13 +106,37 @@ $(".search-wrap").click(function () {
   if ( $( ".search-drop" ).first().is( ":hidden" ) ) {
     $( ".search-drop" ).slideDown( "slow" );
   } else {
-    $( ".search-drop" ).hide();
+    $( ".search-drop" ).slideUp("slow");
   }
 });
 
 // Header mobile search dropdown end
 
+
+
+// Checkout credit card form drop down
+
+$('li.payment_method_authorize_net_cim_credit_card').click(function(e) { 
+  if($("input#payment_method_authorize_net_cim_credit_card[name=payment_method]:checked").val() == 'authorize_net_cim_credit_card'){
+    $( "div.payment_method_authorize_net_cim_credit_card" ).slideToggle( "slow" );
+  }
+  });
+
+// Checkout Credit card drop down end
+
+
 // Header Hamburger
 
+$(".hamburger-open").click(function () {
+     $(".Header-nav").addClass("nav-close");
+    $( ".Header-nav" ).slideDown( "slow" );
+    $(".hamburger-open").css("display", "none");
+    $(".hamburger-close").css("display", "block");
+});
+$(".hamburger-close").click(function () {
+ $( ".nav-close" ).slideUp( "slow" );
+ $(".hamburger-open").css("display", "block");
+ $(".hamburger-close").css("display", "none");
+});
 
 //Header hamburger end

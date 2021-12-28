@@ -26,6 +26,7 @@
                                     display: flex;
                                     .woocommerce-product-gallery{
                                         border-right: 1px solid #ECECEA;
+                                        width: 50%;
                                         img{
                                             @include responsive(xl){
                                                 width: 550px;
@@ -44,6 +45,7 @@
                                     .summary{
                                         padding: 30px 30px 30px 30px;
                                         margin: 0;
+                                        width: 50%;
                                         h3{
                                             font-size: 28px;
                                             color: $dgray;

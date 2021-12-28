@@ -1,537 +1,1158 @@
-.container{
- 
+.tablet-desktop-responsive{    
+    .woocommerce{
+        min-width: 1024px; 
+        .container{
+        
 
-    .main-heading{
-        .heading{
-            font-size: 35px;
-            font-weight: 400;
-            margin: 30px 0 10px 0;
-            text-transform: capitalize;
-            color: $dgray;
-            font-family: $arial;
-        }
-    }
-
-    .woocommerce-checkout{
-        *{
-            font-family: $arial;
-            font-size: 16px;
-        }
-        .wrap-checkout-box{
-            display: flex;
-            flex-wrap: wrap;
-
-            .wrap-shipping-billing-details{
-                flex: 50%;
-                .billing-address-details{
-                    display: inline-block;
-                    .woocommerce-billing-fields{
-                        h3{
-                            font-size: 18px;
-                            margin: 20px 0 10px 0;
-                            font-family: $arial;
-                            color: $dgray;
-                        } 
-                        .ocwma_select{
-                            width: 100%;
-                            margin-bottom: 5px;
-                            line-height: 49px;
-                            color: #4e4e4e;
-                            font-weight: bold;
-                            padding: 15px;
-                            border: 1px solid lightgrey;
-                            border-radius: 5px;
-                        }  
-                        .form_option_billing{
-                            background-color: #df7800;
-                            color: #ffffff;
-                            padding: 8px 10px;
-                            font-size: 15px;
-                            border: 0px;
-                            &:hover{
-                                background-color: #dfdcde;
-                                color: #515151;
-                            }
-                        }
-                        .woocommerce-billing-fields__field-wrapper{
-                            .form-row{
-                                padding: 3px;
-                                margin: 0 0 6px;
-                                width: 50%;
-                                float: left;
-                                &.form-row-wide{
-                                    width: 100%;
-                                }
-                                &#billing_company_field
-                                
-                                {
-                                    width: 50%;
-                                   
-                                }
-
-                                &#billing_location_contact_name_field
-                                {
-                                    width: 50%;
-                                   
-                                }
-                                &#billing_city_field
-                                {
-                                    width: 50%;
-                                   
-                                }
-                                &#billing_state_field
-                                {
-                                    width: 50%;
-                                   .select2-selection--single{
-                                       height: 50px;
-                                       line-height: 50px;
-                                       border: 1px solid #ddd;
-                                       span{
-                                        line-height: 50px;
-                                        height: 50px;
-                                    }
-                                   }
-                                }
-                                &#billing_country_field
-                                {
-                                    width: 50%;
-                                    .select2-selection--single{
-                                        height: 50px;
-                                        line-height: 50px;
-                                        border: 1px solid #ddd;
-                                         span{
-                                            line-height: 50px;
-                                            height: 50px;
-                                        }
-                                    }
-                                   
-                                }
-                                &#billing_loading_dock_field
-                                {
-                                    width: 50%;
-                                    .select2-selection--single{
-                                        height: 50px;
-                                        line-height: 50px;
-                                        border: 1px solid #ddd;
-                                        span{
-                                            line-height: 50px;
-                                            height: 50px;
-                                        }
-                                    }
-                                    .select2-container--default{
-                                        width: 100% !important;
-                                        line-height: 50px;
-                                        span{
-                                            line-height: 50px;
-                                            height: 50px;
-                                        }
-                                    }
-                                   
-                                }
-                                label{
-                                    font-size: 16px;
-                                    color: $dgray;
-                                    display: block;
-                                    .required{
-                                        color: red;
-                                        font-weight: 700;
-                                    }
-                                }
-                                .input-text {
-                                    border-radius: 5px;
-                                    padding: 15px;
-                                    border: 1px solid #ddd;
-                                    width: 100%;
-                                }
-                             
-                            }
-                        }
-                    }
-                }
-                .shipping-address-details{
-                    display: inline-block;
-
-                
-                    .woocommerce-shipping-fields{
-                        h3{
-                            font-size: 18px;
-                            margin: 20px 0 10px 0;
-                            font-family: $arial;
-                            color: $dgray;
-                        } 
-
-                        .shipping_address{
-                            .ocwma_select_shipping{
-                                width: 100%;
-                                margin-bottom: 5px;
-                                line-height: 49px;
-                                color: #4e4e4e;
-                                font-weight: bold;
-                                padding: 15px;
-                                border: 1px solid lightgrey;
-                                border-radius: 5px;
-                            }  
-                            .form_option_shipping{
-                                background-color: #df7800;
-                                color: #ffffff;
-                                padding: 8px 10px;
-                                font-size: 15px;
-                                border: 0px;
-                                &:hover{
-                                    background-color: #dfdcde;
-                                    color: #515151;
-                                }
-                            }
-                            .woocommerce-shipping-fields__field-wrapper{
-                                .form-row{
-                                    padding: 3px;
-                                    margin: 0 0 6px;
-                                    width: 50%;
-                                    float: left;
-                                    &.form-row-wide{
-                                        width: 100%;
-                                    }
-                                    &#shipping_company_field
-                                    
-                                    {
-                                        width: 50%;
-                                    
-                                    }
-
-                                    &#shipping_contact_name_field
-                                    {
-                                        width: 50%;
-                                    
-                                    }
-                                    &#shipping_city_field
-                                    {
-                                        width: 50%;
-                                    
-                                    }
-                                    &#shipping_state_field
-                                    {
-                                        width: 50%;
-                                    .select2-selection--single{
-                                        height: 50px;
-                                        line-height: 50px;
-                                        border: 1px solid #ddd;
-                                        span{
-                                            line-height: 50px;
-                                            height: 50px;
-                                        }
-                                    }
-                                    }
-                                    &#shipping_country_field
-                                    {
-                                        width: 50%;
-                                        .select2-selection--single{
-                                            height: 50px;
-                                            line-height: 50px;
-                                            border: 1px solid #ddd;
-                                            span{
-                                                line-height: 50px;
-                                                height: 50px;
-                                            }
-                                        }
-                                    
-                                    }
-                                    &#shipping_loading_dock_field
-                                    {
-                                        width: 50%;
-                                        .select2-selection--single{
-                                            height: 50px;
-                                            line-height: 50px;
-                                            border: 1px solid #ddd;
-                                            span{
-                                                line-height: 50px;
-                                                height: 50px;
-                                            }
-                                        }
-                                        .select2-container--default{
-                                            width: 100% !important;
-                                            line-height: 50px;
-                                            span{
-                                                line-height: 50px;
-                                                height: 50px;
-                                            }
-                                        }
-                                    
-                                    }
-                                    label{
-                                        font-size: 16px;
-                                        color: $dgray;
-                                        display: block;
-                                        .required{
-                                            color: red;
-                                            font-weight: 700;
-                                        }
-                                    }
-                                    .input-text {
-                                        border-radius: 5px;
-                                        padding: 15px;
-                                        border: 1px solid #ddd;
-                                        width: 100%;
-                                    }
-                                
-                                }
-                            }
-                        }
-
-                    }
-
-                    .woocommerce-additional-fields{
-                        display: inline-block;
-                        width: 100%;
-                        .woocommerce-additional-fields__field-wrapper{
-                            width: 100%;
-                            .notes{
-                                label{
-                                    font-size: 16px;
-                                    color: $dgray;
-                                    display: block;
-                                }
-                                .input-text {
-                                    width: 100%;
-                                    border: 1px solid #ddd;
-                                    border-radius: 5px;
-                                    padding: 15px;
-                                }
-                            }
-                        }
-                 
-                    }
-                }
-
-
-
-            }
-            .wrap-order-details{
-                width: calc(50% - 5%);
-                margin-left: 5%;
-
-                #order_review_heading{
-                    font-family: $arial;
+            .main-heading{
+                .heading{
+                    font-size: 35px;
+                    font-weight: 400;
+                    margin: 30px 0 10px 0;
+                    text-transform: capitalize;
                     color: $dgray;
+                    font-family: $arial;
                 }
-                #order_review{
-                    .shop_table{
-                        *{
-                            font-size: 13px;
-                            color: $dgray;
-                        }
-                        border: 1px solid rgba(0,0,0,.1);
-                        margin: 0 -1px 24px 0;
-                        text-align: left;
-                        width: 100%;
-                        border-collapse: separate;
-                        border-radius: 5px;
-                        th{
-                            font-weight: 700;
-                            padding: 9px 12px;
-                            line-height: 1.5em;
-                        }
-                        tr{
-                            border-top: 1px solid rgba(0,0,0,.1);
-                            &.woocommerce-shipping-totals{
-                                display: flex;
-                                flex-wrap: wrap;
-                                th{
-                                    flex: 50%;
-                                }
-                                td{
-                                    flex: 50%;
-                                    text-align: right;
-                                }
-                            }
-                        }
+            }
 
-                        td{
-                            
-                            // border-top: 1px solid rgba(0,0,0,.1);
-                            padding: 9px 12px;
-                            vertical-align: middle;
-                            line-height: 1.5em;
-                            .woocommerce-Price-amount{
-                               
-                               bdi{
-                                font-size: 20px;
-                               } 
-                            }
-                        }
-                        thead{
-                            .product-name{
-                                width: 85%;
-                            }
-                            .product-quantity{
-                                width: 15%;
-                            }
-                            .product-total{
-                                width: 22%;
-                            }
-                        }
-                    }
+            .woocommerce-checkout{
+                *{
+                    font-family: $arial;
+                    font-size: 16px;
+                }
+                .wrap-checkout-box{
+                    display: flex;
+                    flex-wrap: wrap;
 
-                    .coupon-wrap{
-                        .woocommerce-form-coupon-toggle{
-                            .woocommerce-info{
-                                font-size: 16px;
-                                margin-top: 0;
-                                padding: 1em 2em 1em 3.5em;
-                                margin: 0 0 2em;
-                                position: relative;
-                                background-color: #f7f6f7;
-                                color: #515151;
-                                border-top: 3px solid #222222;
-                                border-radius: 3px;
-                                &:before{
-                                    font-family: 'FontAwesome';
-                                    content: "\f06b";
-                                    display: inline-block;
-                                    position: absolute;
-                                    top: 1em;
-                                    left: 1.5em;
-                                }
-                                a{
-                                    text-decoration: none;
-                                   color: #df7800;
-                                   &:hover{
-                                    color: #5d5e5e;
-                                   }
-                                }
-                            }
-                        }
-                        .wrap-coupan-field{
-                           
-                        border: 1px solid #d3ced2;
-                        padding: 20px;
-                        margin: 2em 0;
-                        text-align: left;
-                        border-radius: 5px;
-                        display: none;
-                        width: 100%;
-                            .form-row{
-                                padding: 3px;
-                                margin: 0 0 6px;
-                                &.form-row-first{
-                                    float: left;
-                                    width: 50%;
-                                    overflow: visible;   
-                                    .input-text{
-                                        height: 49px;
-                                        border-radius: 5px;
-                                        padding: 0 15px;
-                                        border: 1px solid #ddd;
-                                        width: 100%;
+                    .wrap-shipping-billing-details{
+                        flex: 50%;
+                        .billing-address-details{
+                            display: inline-block;
+                            .woocommerce-billing-fields{
+                                h3{
+                                    font-size: 18px;
+                                    margin: 20px 0 10px 0;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                } 
+                                .ocwma_select{
+                                    width: 100%;
+                                    margin-bottom: 5px;
+                                    line-height: 49px;
+                                    color: #4e4e4e;
+                                    font-weight: bold;
+                                    padding: 15px;
+                                    border: 1px solid lightgrey;
+                                    border-radius: 5px;
+                                }  
+                                .form_option_billing{
+                                    background-color: #df7800;
+                                    color: #ffffff;
+                                    padding: 8px 10px;
+                                    font-size: 15px;
+                                    border: 0px;
+                                    &:hover{
+                                        background-color: #dfdcde;
+                                        color: #515151;
                                     }
                                 }
-                                &.form-row-last{
-                                    float: right;
-                                    width: 50%;
-                                    text-align: center;
-                                    button{
+                                .woocommerce-billing-fields__field-wrapper{
+                                    .form-row{
+                                        padding: 3px;
+                                        margin: 0 0 6px;
+                                        width: 50%;
+                                        float: left;
+                                        &.form-row-wide{
+                                            width: 100%;
+                                        }
+                                        &#billing_company_field
+                                        
+                                        {
+                                            width: 50%;
+                                        
+                                        }
+
+                                        &#billing_location_contact_name_field
+                                        {
+                                            width: 50%;
+                                        
+                                        }
+                                        &#billing_city_field
+                                        {
+                                            width: 50%;
+                                        
+                                        }
+                                        &#billing_state_field
+                                        {
+                                            width: 50%;
+                                        .select2-selection--single{
+                                            height: 50px;
+                                            line-height: 50px;
+                                            border: 1px solid #ddd;
+                                            span{
+                                                line-height: 50px;
+                                                height: 50px;
+                                            }
+                                        }
+                                        }
+                                        &#billing_country_field
+                                        {
+                                            width: 50%;
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                        
+                                        }
+                                        &#billing_loading_dock_field
+                                        {
+                                            width: 50%;
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                            .select2-container--default{
+                                                width: 100% !important;
+                                                line-height: 50px;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                        
+                                        }
+                                        label{
+                                            font-size: 16px;
+                                            color: $dgray;
+                                            display: block;
+                                            .required{
+                                                color: red;
+                                                font-weight: 700;
+                                                display: contents;
+                                            }
+                                        }
+                                        .input-text {
+                                            border-radius: 5px;
+                                            padding: 15px;
+                                            border: 1px solid #ddd;
+                                            width: 100%;
+                                        }
+                                    
+                                    }
+                                }
+                            }
+                        }
+                        .shipping-address-details{
+                            display: inline-block;
+
+                        
+                            .woocommerce-shipping-fields{
+                                h3{
+                                    font-size: 18px;
+                                    margin: 20px 0 10px 0;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                } 
+
+                                .shipping_address{
+                                    .ocwma_select_shipping{
+                                        width: 100%;
+                                        margin-bottom: 5px;
+                                        line-height: 49px;
+                                        color: #4e4e4e;
+                                        font-weight: bold;
+                                        padding: 15px;
+                                        border: 1px solid lightgrey;
+                                        border-radius: 5px;
+                                    }  
+                                    .form_option_shipping{
                                         background-color: #df7800;
                                         color: #ffffff;
-                                        padding: 15px 15px;
+                                        padding: 8px 10px;
                                         font-size: 15px;
                                         border: 0px;
-                                        text-transform: uppercase;
                                         &:hover{
                                             background-color: #dfdcde;
                                             color: #515151;
                                         }
                                     }
-                                }
-                            }
+                                    .woocommerce-shipping-fields__field-wrapper{
+                                        .form-row{
+                                            padding: 3px;
+                                            margin: 0 0 6px;
+                                            width: 50%;
+                                            float: left;
+                                            &.form-row-wide{
+                                                width: 100%;
+                                            }
+                                            &#shipping_company_field
+                                            
+                                            {
+                                                width: 50%;
+                                            
+                                            }
 
-
-                        }
-                    }
-
-
-                    .woocommerce-checkout-payment{
-                        .wc_payment_methods{
-                            padding: 0;
-                            list-style: none;
-                            .wc_payment_method{
-                                font-size: 15px;
-                                line-height: 3;
-                                text-align: left;
-                                margin: 0;
-                                font-weight: 400;
-                                label{
-                                    font-size: 15px;
-                                    color: $dgray;
-                                }
-                                .payment_box{
-                                    position: relative;
-                                    box-sizing: border-box;
-                                    width: 100%;
-                                    padding: 1em;
-                                    margin: 1em 0;
-                                    font-size: .92em;
-                                    border-radius: 2px;
-                                    line-height: 1.5;
-                                    background-color: #dfdcde;
-                                    color: #515151;
-                                    &:before{
-                                        content: "";
-                                        display: block;
-                                        border: 1em solid #dfdcde;
-                                        border-right-color: transparent;
-                                        border-left-color: transparent;
-                                        border-top-color: transparent;
-                                        position: absolute;
-                                        top: -0.75em;
-                                        left: 0;
-                                        margin: -1em 0 0 2em;
-                                    }
-                             
-                                }
-                            }
-                        }
-                        .place-order{
-                            padding: 25px 0 0 0;
-                            width: 100%;
-                            text-align: left;
-                            .woocommerce-terms-and-conditions-wrapper{
-                                .woocommerce-privacy-policy-text{
-                                   p{
-                                    color: $dgray;
-                                    font-size: 14px;
-                                    line-height: 1.5;
-                                    a{
-                                        color: $orange;
-                                        text-decoration: none;
+                                            &#shipping_contact_name_field
+                                            {
+                                                width: 50%;
+                                            
+                                            }
+                                            &#shipping_city_field
+                                            {
+                                                width: 50%;
+                                            
+                                            }
+                                            &#shipping_state_field
+                                            {
+                                                width: 50%;
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                            }
+                                            &#shipping_country_field
+                                            {
+                                                width: 50%;
+                                                .select2-selection--single{
+                                                    height: 50px;
+                                                    line-height: 50px;
+                                                    border: 1px solid #ddd;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                            
+                                            }
+                                            &#shipping_loading_dock_field
+                                            {
+                                                width: 50%;
+                                                .select2-selection--single{
+                                                    height: 50px;
+                                                    line-height: 50px;
+                                                    border: 1px solid #ddd;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                                .select2-container--default{
+                                                    width: 100% !important;
+                                                    line-height: 50px;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                            
+                                            }
+                                            label{
+                                                font-size: 16px;
+                                                color: $dgray;
+                                                display: block;
+                                                .required{
+                                                    color: red;
+                                                    font-weight: 700;
+                                                    display: contents;
+                                                }
+                                            }
+                                            .input-text {
+                                                border-radius: 5px;
+                                                padding: 15px;
+                                                border: 1px solid #ddd;
+                                                width: 100%;
+                                            }
                                         
+                                        }
                                     }
-                                   }
+                                }
+
+                            }
+
+                            .woocommerce-additional-fields{
+                                display: inline-block;
+                                width: 100%;
+                                .woocommerce-additional-fields__field-wrapper{
+                                    width: 100%;
+                                    .notes{
+                                        label{
+                                            font-size: 16px;
+                                            color: $dgray;
+                                            display: block;
+                                        }
+                                        .input-text {
+                                            width: 100%;
+                                            border: 1px solid #ddd;
+                                            border-radius: 5px;
+                                            padding: 15px;
+                                        }
+                                    }
+                                }
+                        
+                            }
+                        }
+
+
+
+                    }
+                    .wrap-order-details{
+                        width: calc(50% - 5%);
+                        margin-left: 5%;
+
+                        #order_review_heading{
+                            font-family: $arial;
+                            color: $dgray;
+                        }
+                        #order_review{
+                            .shop_table{
+                                *{
+                                    font-size: 13px;
+                                    color: $dgray;
+                                }
+                                border: 1px solid rgba(0,0,0,.1);
+                                margin: 0 -1px 24px 0;
+                                text-align: left;
+                                width: 100%;
+                                border-collapse: separate;
+                                border-radius: 5px;
+                                th{
+                                    font-weight: 700;
+                                    padding: 9px 12px;
+                                    line-height: 1.5em;
+                                }
+                                tr{
+                                    border-top: 1px solid rgba(0,0,0,.1);
+                                    &.woocommerce-shipping-totals{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        th{
+                                            flex: 50%;
+                                        }
+                                        td{
+                                            flex: 50%;
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+
+                                td{
                                     
+                                    // border-top: 1px solid rgba(0,0,0,.1);
+                                    padding: 9px 12px;
+                                    vertical-align: middle;
+                                    line-height: 1.5em;
+                                    .woocommerce-Price-amount{
+                                    
+                                    bdi{
+                                        font-size: 20px;
+                                    } 
+                                    }
+                                }
+                                thead{
+                                    .product-name{
+                                        width: 85%;
+                                    }
+                                    .product-quantity{
+                                        width: 15%;
+                                    }
+                                    .product-total{
+                                        width: 22%;
+                                    }
                                 }
                             }
-                            #place_order{
-                               
-                                line-height: 50px;
-                                padding: 0 50px;
-                                display: block;
-                                margin: 30px 0px;
-                                background: $orange;
-                                text-transform: uppercase;
-                                letter-spacing: 1px;
-                                border:0px;
-                                color: #ffffff;
-                                float: right;
-                                &:hover{
-                                    background-color: #dfdcde;
-                                    color: #515151;   
+
+                            .coupon-wrap{
+                                .woocommerce-form-coupon-toggle{
+                                    .woocommerce-info{
+                                        font-size: 16px;
+                                        margin-top: 0;
+                                        padding: 1em 2em 1em 3.5em;
+                                        margin: 0 0 2em;
+                                        position: relative;
+                                        background-color: #f7f6f7;
+                                        color: #515151;
+                                        border-top: 3px solid #222222;
+                                        border-radius: 3px;
+                                        &:before{
+                                            font-family: 'FontAwesome';
+                                            content: "\f06b";
+                                            display: inline-block;
+                                            position: absolute;
+                                            top: 1em;
+                                            left: 1.5em;
+                                        }
+                                        a{
+                                            text-decoration: none;
+                                        color: #df7800;
+                                        &:hover{
+                                            color: #5d5e5e;
+                                        }
+                                        }
+                                    }
+                                }
+                                .wrap-coupan-field{
+                                
+                                border: 1px solid #d3ced2;
+                                padding: 20px;
+                                margin: 2em 0;
+                                text-align: left;
+                                border-radius: 5px;
+                                display: none;
+                                width: 100%;
+                                    .form-row{
+                                        padding: 3px;
+                                        margin: 0 0 6px;
+                                        &.form-row-first{
+                                            float: left;
+                                            width: 50%;
+                                            overflow: visible;   
+                                            .input-text{
+                                                height: 49px;
+                                                border-radius: 5px;
+                                                padding: 0 15px;
+                                                border: 1px solid #ddd;
+                                                width: 100%;
+                                            }
+                                        }
+                                        &.form-row-last{
+                                            float: right;
+                                            width: 50%;
+                                            text-align: center;
+                                            button{
+                                                background-color: #df7800;
+                                                color: #ffffff;
+                                                padding: 15px 15px;
+                                                font-size: 15px;
+                                                border: 0px;
+                                                text-transform: uppercase;
+                                                &:hover{
+                                                    background-color: #dfdcde;
+                                                    color: #515151;
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+
+                            .woocommerce-checkout-payment{
+                                .wc_payment_methods{
+                                    padding: 0;
+                                    list-style: none;
+                                    .wc_payment_method{
+                                        font-size: 15px;
+                                        line-height: 3;
+                                        text-align: left;
+                                        margin: 0;
+                                        font-weight: 400;
+                                        label{
+                                            font-size: 15px;
+                                            color: $dgray;
+                                        }
+                                        .payment_box{
+                                            position: relative;
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            padding: 1em;
+                                            margin: 1em 0;
+                                            font-size: .92em;
+                                            border-radius: 2px;
+                                            line-height: 1.5;
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                            &:before{
+                                                content: "";
+                                                display: block;
+                                                border: 1em solid #dfdcde;
+                                                border-right-color: transparent;
+                                                border-left-color: transparent;
+                                                border-top-color: transparent;
+                                                position: absolute;
+                                                top: -0.75em;
+                                                left: 0;
+                                                margin: -1em 0 0 2em;
+                                            }
+                                            &.payment_method_authorize_net_cim_credit_card{
+                                                fieldset{
+                                                    border: 0px;
+                                                    padding: 0px;
+                                                    .wc-authorize-net-cim-credit-card-new-payment-method-form{
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-between;
+                                                        .validate-required{
+                                                            display: grid;
+                                                            width: 100%;
+                                                            &#wc-authorize-net-cim-credit-card-expiry_field{
+                                                                width: 45%;
+                                                            }
+                                                            &#wc-authorize-net-cim-credit-card-csc_field{
+                                                                width: 45%;
+                                                            }
+                                                            input{
+                                                                width: 100%;
+                                                                border: 1px solid #cacaca;
+                                                                border-radius: 5px;
+                                                            }
+                                                            .required{
+                                                                display: contents;
+                                                                color: red;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.payment_method_authorize_net_cim_echeck{
+                                                fieldset{
+                                                    border: 0px;
+                                                    padding: 0px;
+                                                    .wc-authorize-net-cim-echeck-new-payment-method-form{
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-between;
+                                                        .validate-required{
+                                                            display: grid;
+                                                            width: 100%;
+                                                            input{
+                                                                width: 100%;
+                                                                border: 1px solid #cacaca;
+                                                                border-radius: 5px;
+                                                            }
+                                                            .required{
+                                                                display: contents;
+                                                                color: red;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .place-order{
+                                    padding: 25px 0 0 0;
+                                    width: 100%;
+                                    text-align: left;
+                                    .woocommerce-terms-and-conditions-wrapper{
+                                        .woocommerce-privacy-policy-text{
+                                        p{
+                                            color: $dgray;
+                                            font-size: 14px;
+                                            line-height: 1.5;
+                                            a{
+                                                color: $orange;
+                                                text-decoration: none;
+                                                
+                                            }
+                                        }
+                                            
+                                        }
+                                    }
+                                    #place_order{
+                                    
+                                        line-height: 50px;
+                                        padding: 0 50px;
+                                        display: block;
+                                        margin: 30px 0px;
+                                        background: $orange;
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+                                        border:0px;
+                                        color: #ffffff;
+                                        float: right;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;   
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 }
+            
             }
+
+
         }
-       
     }
-
-
 }
+
+
+
+
+// checkout responsive 
+
+.mobile-responsive{    
+    .woocommerce{
+        min-width: auto; 
+        .container{
+        
+
+            .main-heading{
+                .heading{
+                    font-size: 35px;
+                    font-weight: 400;
+                    margin: 30px 0 10px 0;
+                    text-transform: capitalize;
+                    color: $dgray;
+                    font-family: $arial;
+                }
+            }
+
+            .woocommerce-checkout{
+                *{
+                    font-family: $arial;
+                    font-size: 16px;
+                }
+                .wrap-checkout-box{
+                    .wrap-shipping-billing-details{
+                        flex: 50%;
+                        .billing-address-details{
+                            display: inline-block;
+                            .woocommerce-billing-fields{
+                                h3{
+                                    font-size: 18px;
+                                    margin: 20px 0 10px 0;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                } 
+                                .ocwma_select{
+                                    width: 100%;
+                                    margin-bottom: 5px;
+                                    line-height: 49px;
+                                    color: #4e4e4e;
+                                    font-weight: bold;
+                                    padding: 15px;
+                                    border: 1px solid lightgrey;
+                                    border-radius: 5px;
+                                }  
+                                .form_option_billing{
+                                    background-color: #df7800;
+                                    color: #ffffff;
+                                    padding: 8px 10px;
+                                    font-size: 15px;
+                                    border: 0px;
+                                    &:hover{
+                                        background-color: #dfdcde;
+                                        color: #515151;
+                                    }
+                                }
+                                .woocommerce-billing-fields__field-wrapper{
+                                    .form-row{
+                                        padding: 3px;
+                                        margin: 0 0 6px;
+                                        width: 100%;
+                                        float: left;
+                                        &.form-row-wide{
+                                            width: 100%;
+                                        }
+                                        &#billing_state_field
+                                        {
+                                        .select2-selection--single{
+                                            height: 50px;
+                                            line-height: 50px;
+                                            border: 1px solid #ddd;
+                                            span{
+                                                line-height: 50px;
+                                                height: 50px;
+                                            }
+                                        }
+                                        }
+                                        &#billing_country_field
+                                        {
+                                        
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                        
+                                        }
+                                        &#billing_loading_dock_field
+                                        {
+                                      
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                            .select2-container--default{
+                                                width: 100% !important;
+                                                line-height: 50px;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                        
+                                        }
+                                        label{
+                                            font-size: 16px;
+                                            color: $dgray;
+                                            display: block;
+                                            .required{
+                                                color: red;
+                                                font-weight: 700;
+                                                display: contents;
+                                            }
+                                        }
+                                        .input-text {
+                                            border-radius: 5px;
+                                            padding: 15px;
+                                            border: 1px solid #ddd;
+                                            width: 100%;
+                                        }
+                                    
+                                    }
+                                }
+                            }
+                        }
+                        .shipping-address-details{
+                            display: inline-block;
+
+                        
+                            .woocommerce-shipping-fields{
+                                h3{
+                                    font-size: 18px;
+                                    margin: 20px 0 10px 0;
+                                    font-family: $arial;
+                                    color: $dgray;
+                                } 
+
+                                .shipping_address{
+                                    .ocwma_select_shipping{
+                                        width: 100%;
+                                        margin-bottom: 5px;
+                                        line-height: 49px;
+                                        color: #4e4e4e;
+                                        font-weight: bold;
+                                        padding: 15px;
+                                        border: 1px solid lightgrey;
+                                        border-radius: 5px;
+                                    }  
+                                    .form_option_shipping{
+                                        background-color: #df7800;
+                                        color: #ffffff;
+                                        padding: 8px 10px;
+                                        font-size: 15px;
+                                        border: 0px;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                        }
+                                    }
+                                    .woocommerce-shipping-fields__field-wrapper{
+                                        .form-row{
+                                            padding: 3px;
+                                            margin: 0 0 6px;
+                                            width: 100%;
+                                            float: left;
+                                            &.form-row-wide{
+                                                width: 100%;
+                                            }
+                                            &#shipping_state_field
+                                            {
+                                            .select2-selection--single{
+                                                height: 50px;
+                                                line-height: 50px;
+                                                border: 1px solid #ddd;
+                                                span{
+                                                    line-height: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                            }
+                                            &#shipping_country_field
+                                            {
+                                                .select2-selection--single{
+                                                    height: 50px;
+                                                    line-height: 50px;
+                                                    border: 1px solid #ddd;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                            
+                                            }
+                                            &#shipping_loading_dock_field
+                                            {
+                                                .select2-selection--single{
+                                                    height: 50px;
+                                                    line-height: 50px;
+                                                    border: 1px solid #ddd;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                                .select2-container--default{
+                                                    width: 100% !important;
+                                                    line-height: 50px;
+                                                    span{
+                                                        line-height: 50px;
+                                                        height: 50px;
+                                                    }
+                                                }
+                                            
+                                            }
+                                            label{
+                                                font-size: 16px;
+                                                color: $dgray;
+                                                display: block;
+                                                .required{
+                                                    color: red;
+                                                    font-weight: 700;
+                                                    display: contents;
+                                                }
+                                            }
+                                            .input-text {
+                                                border-radius: 5px;
+                                                padding: 15px;
+                                                border: 1px solid #ddd;
+                                                width: 100%;
+                                            }
+                                        
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .woocommerce-additional-fields{
+                                display: inline-block;
+                                width: 100%;
+                                .woocommerce-additional-fields__field-wrapper{
+                                    width: 100%;
+                                    .notes{
+                                        label{
+                                            font-size: 16px;
+                                            color: $dgray;
+                                            display: block;
+                                        }
+                                        .input-text {
+                                            width: 100%;
+                                            border: 1px solid #ddd;
+                                            border-radius: 5px;
+                                            padding: 15px;
+                                        }
+                                    }
+                                }
+                        
+                            }
+                        }
+
+
+
+                    }
+                    .wrap-order-details{
+                        width: 100%;
+
+                        #order_review_heading{
+                            font-family: $arial;
+                            color: $dgray;
+                        }
+                        #order_review{
+                            .shop_table{
+                                *{
+                                    font-size: 12px;
+                                    color: $dgray;
+                                }
+                                border: 1px solid rgba(0,0,0,.1);
+                                margin: 0 -1px 24px 0;
+                                text-align: left;
+                                width: 100%;
+                                border-collapse: separate;
+                                border-radius: 5px;
+                                th{
+                                    font-weight: 700;
+                                    padding: 9px 12px;
+                                    line-height: 1.5em;
+                                }
+                                tr{
+                                    border-top: 1px solid rgba(0,0,0,.1);
+                                    &.woocommerce-shipping-totals{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        th{
+                                            flex: 50%;
+                                        }
+                                        td{
+                                            flex: 50%;
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+
+                                td{
+                                    
+                                    // border-top: 1px solid rgba(0,0,0,.1);
+                                    padding: 9px 12px;
+                                    vertical-align: middle;
+                                    line-height: 1.5em;
+                                    .woocommerce-Price-amount{
+                                    
+                                    bdi{
+                                        font-size: 12px;
+                                    } 
+                                    }
+                                }
+                                thead{
+                                    .product-name{
+                                        width: 85%;
+                                    }
+                                    .product-quantity{
+                                        width: 15%;
+                                    }
+                                    .product-total{
+                                        width: 22%;
+                                    }
+                                }
+                            }
+
+                            .coupon-wrap{
+                                .woocommerce-form-coupon-toggle{
+                                    .woocommerce-info{
+                                        font-size: 16px;
+                                        margin-top: 0;
+                                        padding: 1em 2em 1em 3.5em;
+                                        margin: 0 0 2em;
+                                        position: relative;
+                                        background-color: #f7f6f7;
+                                        color: #515151;
+                                        border-top: 3px solid #222222;
+                                        border-radius: 3px;
+                                        &:before{
+                                            font-family: 'FontAwesome';
+                                            content: "\f06b";
+                                            display: inline-block;
+                                            position: absolute;
+                                            top: 1em;
+                                            left: 1.5em;
+                                        }
+                                        a{
+                                            text-decoration: none;
+                                        color: #df7800;
+                                        &:hover{
+                                            color: #5d5e5e;
+                                        }
+                                        }
+                                    }
+                                }
+                                .wrap-coupan-field{
+                                
+                                border: 1px solid #d3ced2;
+                                padding: 20px;
+                                margin: 2em 0;
+                                text-align: left;
+                                border-radius: 5px;
+                                display: none;
+                                width: 100%;
+                                    .form-row{
+                                        padding: 3px;
+                                        margin: 0 0 6px;
+                                        &.form-row-first{
+                                            float: left;
+                                            width: 50%;
+                                            overflow: visible;   
+                                            .input-text{
+                                                height: 49px;
+                                                border-radius: 5px;
+                                                padding: 0 15px;
+                                                border: 1px solid #ddd;
+                                                width: 100%;
+                                            }
+                                        }
+                                        &.form-row-last{
+                                            float: right;
+                                            width: 50%;
+                                            text-align: center;
+                                            button{
+                                                background-color: #df7800;
+                                                color: #ffffff;
+                                                padding: 15px 15px;
+                                                font-size: 15px;
+                                                border: 0px;
+                                                text-transform: uppercase;
+                                                &:hover{
+                                                    background-color: #dfdcde;
+                                                    color: #515151;
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+
+                            .woocommerce-checkout-payment{
+                                .wc_payment_methods{
+                                    padding: 0;
+                                    list-style: none;
+                                    .wc_payment_method{
+                                        font-size: 15px;
+                                        line-height: 3;
+                                        text-align: left;
+                                        margin: 0;
+                                        font-weight: 400;
+                                        label{
+                                            font-size: 15px;
+                                            color: $dgray;
+                                        }
+                                        .payment_box{
+                                            position: relative;
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            padding: 1em;
+                                            margin: 1em 0;
+                                            font-size: .92em;
+                                            border-radius: 2px;
+                                            line-height: 1.5;
+                                            background-color: #dfdcde;
+                                            color: #515151;
+                                            &:before{
+                                                content: "";
+                                                display: block;
+                                                border: 1em solid #dfdcde;
+                                                border-right-color: transparent;
+                                                border-left-color: transparent;
+                                                border-top-color: transparent;
+                                                position: absolute;
+                                                top: -0.75em;
+                                                left: 0;
+                                                margin: -1em 0 0 2em;
+                                            }
+                                            &.payment_method_authorize_net_cim_credit_card{
+                                                fieldset{
+                                                    border: 0px;
+                                                    padding: 0px;
+                                                    .wc-authorize-net-cim-credit-card-new-payment-method-form{
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-between;
+                                                        .validate-required{
+                                                            display: grid;
+                                                            width: 100%;
+                                                            input{
+                                                                width: 100%;
+                                                                border: 1px solid #cacaca;
+                                                                border-radius: 5px;
+                                                            }
+                                                            .required{
+                                                                display: contents;
+                                                                color: red;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.payment_method_authorize_net_cim_echeck{
+                                                fieldset{
+                                                    border: 0px;
+                                                    padding: 0px;
+                                                    .wc-authorize-net-cim-echeck-new-payment-method-form{
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-between;
+                                                        .validate-required{
+                                                            display: grid;
+                                                            width: 100%;
+                                                            input{
+                                                                width: 100%;
+                                                                border: 1px solid #cacaca;
+                                                                border-radius: 5px;
+                                                            }
+                                                            .required{
+                                                                display: contents;
+                                                                color: red;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .place-order{
+                                    padding: 25px 0 0 0;
+                                    width: 100%;
+                                    text-align: left;
+                                    .woocommerce-terms-and-conditions-wrapper{
+                                        .woocommerce-privacy-policy-text{
+                                        p{
+                                            color: $dgray;
+                                            font-size: 14px;
+                                            line-height: 1.5;
+                                            a{
+                                                color: $orange;
+                                                text-decoration: none;
+                                                
+                                            }
+                                        }
+                                            
+                                        }
+                                    }
+                                    #place_order{
+                                    
+                                        line-height: 50px;
+                                        padding: 0 50px;
+                                        display: block;
+                                        margin: 30px 0px;
+                                        background: $orange;
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+                                        border:0px;
+                                        color: #ffffff;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;   
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+
+
+        }
+    }
+}
+
+
+// checkout responsive end

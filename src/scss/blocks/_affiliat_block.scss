@@ -1,36 +1,42 @@
-.Affiliate-Page {
-  margin: 40px 0;
-  .container {
-    .main-heading {
-      text-align: center;
-      font-size: 29px;
-      color: #4b4b4b;
-      font-weight: 800;
-      font-family: $arial;
-    }
-    .wrapper-main {
-      display: flex;
-      .box-first,
-      .box-last {
-        flex: 0 0 25%;
+.tablet-desktop-responsive{   
+  .Affiliate-Page {
+    min-width: 1024px;
+    margin: 40px 0;
+    .container {
+      .main-heading {
+        text-align: center;
+        font-size: 30px;
+        color: #4b4b4b;
+        font-weight: 800;
+        font-family: $arial;
       }
-      .box-main {
-        .wrapper {
-          .content-wrapper {
-            margin: 40px 0px;
-            .heading {
-              font-family: $arial;
-              line-height: 1.5;
-              font-size: 16px;
-              font-weight: 700;
-              color: #677279;
-            }
-            .content {
-              font-family: $arial;
-              line-height: 1.5;
-              font-size: 16px;
-              font-weight: 400;
-              color: #677279;
+      .wrapper-main {
+        display: flex;
+        .box-first,
+        .box-last {
+          flex: 0 0 25%;
+          @include responsive(lg){
+            flex: 0 0 15%;
+          }
+        }
+        .box-main {
+          .wrapper {
+            .content-wrapper {
+              margin: 40px 0px;
+              .heading {
+                font-family: $arial;
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: 700;
+                color: #677279;
+              }
+              .content {
+                font-family: $arial;
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: 400;
+                color: #677279;
+              }
             }
           }
         }
@@ -38,3 +44,51 @@
     }
   }
 }
+
+
+// Affiliate mobile responsive
+
+.mobile-responsive{ 
+  .Affiliate-Page {
+    min-width: auto;
+    margin: 40px 0;
+    .container {
+      .main-heading {
+        text-align: center;
+        font-size: 25px;
+        color: #4b4b4b;
+        font-weight: 800;
+        font-family: $arial;
+      }
+      .wrapper-main {
+        .box-first,
+        .box-last {
+          flex: 0 0 25%;
+        }
+        .box-main {
+          .wrapper {
+            .content-wrapper {
+              margin: 40px 0px;
+              .heading {
+                font-family: $arial;
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: 700;
+                color: #677279;
+              }
+              .content {
+                font-family: $arial;
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: 400;
+                color: #677279;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Affiliate Mobiel responsive end

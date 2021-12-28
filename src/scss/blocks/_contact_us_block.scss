@@ -1,22 +1,203 @@
-.Contact-Us-Page{
+.tablet-desktop-responsive{ 
+  .Contact-Us-Page{
+      margin: 40px 0;
+      min-width: 1024px;
+      .container {
+        .wrapper{
+            max-width: 1100px;
+            margin: auto;
+          .heading{
+              text-align: center;
+              font-size: 30px;
+              color: #4b4b4b;
+              font-weight: 800;
+              font-family: $arial;
+            }
+            .section-wrap{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 25px 0px 40px;
+                .form{
+                    flex:0 0 65%;
+                    h2{
+                      color: #4b4b4b;
+                      font-weight: 800;
+                      font-size: 22px;
+                      margin: 0 0 10px 0;
+                      font-family: $arial;
+                      line-height: 100%;
+                    }
+                    .wpforms-field{
+                      position: relative;
+                      label{
+                        position: absolute;
+                        left: 13px;
+                        top: 10px;
+                        line-height: 48px;
+                        font-size: 14px;
+                        transform: scale(1);
+                        transform-origin: left top;
+                        transition: transform .2s ease-in-out;
+                        pointer-events: none;
+                        margin: 0;
+                        font-weight: 400;
+                        transform: translateY(-6px) scale(.8);
+                        font-family: $arial;
+                        color: #677279;
+                      }
+                      input{
+                        height: 48px;
+                        border: 1px solid #e0e0dd;
+                        border-radius: 2px;
+                        padding: 15px 13px 0;
+                        font-size: 16px;
+                      }
+                    }
+                    #wpforms-69-field_4-container{
+                      label{
+                        display: none;
+                      }
+                      select{
+                        height: 50px;
+                      }
+                    }
+                    button{
+                      background: #df7800;
+                      border: 0;
+                      color: #fff;
+                      padding: 0 50px;
+                      border-radius: 2px;
+                      height: 48px;
+                      font-size: 18px;
+                      transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                      text-transform: uppercase;
+                      &:hover{
+                        background-color: #dfdcde;
+                        color: #515151;
+                      }
+                    }
+                }
+                .side-bar{
+                    flex: 0 0 35%;
+                    padding-left: 30px;
+                    img{
+                        width: 100%;
+                    }
+                    .content{
+                        margin: 30px 0px;
+                        .heading{
+                          font-family: $arial;
+                          font-weight: 700;
+                          font-size: 16px;
+                          text-align: left;
+                          color: #677279;
+                        }
+                        .text a{
+                          font-family: $arial;
+                          font-weight: 400;
+                          font-size: 16px;
+                          text-align: left;
+                          color: #df7800;
+                        }
+                        .text{
+                          font-family: $arial;
+                          font-weight: 400;
+                          font-size: 16px;
+                          text-align: left;
+                          color: #677279;
+                        }
+                    }
+                }
+            }
+        }
+      }
+  }
+}
+
+
+
+
+// Contact us Responsive 
+
+.mobile-responsive{ 
+  .Contact-Us-Page{
     margin: 40px 0;
+    min-width: auto;
     .container {
       .wrapper{
           max-width: 1100px;
           margin: auto;
         .heading{
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
             color: #4b4b4b;
             font-weight: 800;
             font-family: $arial;
           }
           .section-wrap{
-              display: flex;
-              flex-wrap: wrap;
-              margin: 40px 0px;
+              margin: 25px 0px 40px;
               .form{
                   flex:0 0 65%;
+                  h2{
+                    color: #4b4b4b;
+                    font-weight: 800;
+                    font-size: 18px;
+                    margin: 0 0 10px 0;
+                    font-family: $arial;
+                    line-height: 100%;
+                    text-align: center;
+                  }
+                  .wpforms-field{
+                    position: relative;
+                    width: 100%;
+                    margin: 0px;
+                    label{
+                      position: absolute;
+                      left: 13px;
+                      top: 10px;
+                      line-height: 48px;
+                      font-size: 14px;
+                      transform: scale(1);
+                      transform-origin: left top;
+                      transition: transform .2s ease-in-out;
+                      pointer-events: none;
+                      margin: 0;
+                      font-weight: 400;
+                      transform: translateY(-6px) scale(.8);
+                      font-family: $arial;
+                      color: #677279;
+                    }
+                    input{
+                      height: 48px;
+                      border: 1px solid #e0e0dd;
+                      border-radius: 2px;
+                      padding: 15px 13px 0;
+                      font-size: 16px;
+                    }
+                  }
+                  #wpforms-69-field_4-container{
+                    label{
+                      display: none;
+                    }
+                    select{
+                      height: 50px;
+                    }
+                  }
+                  button{
+                    background: #df7800;
+                    border: 0;
+                    color: #fff;
+                    padding: 0 50px;
+                    border-radius: 2px;
+                    height: 48px;
+                    font-size: 18px;
+                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                    text-transform: uppercase;
+                    &:hover{
+                      background-color: #dfdcde;
+                      color: #515151;
+                    }
+                  }
               }
               .side-bar{
                   flex: 0 0 35%;
@@ -51,4 +232,8 @@
           }
       }
     }
+  }
 }
+
+
+// Contact us Responsive end
