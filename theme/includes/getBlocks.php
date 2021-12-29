@@ -44,7 +44,12 @@
             case 'featured_product_block':
               include 'blocks/featured_product_block.php';
               break;
-                
+            case 'request_quote':
+              include 'blocks/request_quote_block.php';
+              break;
+              case 'order_tracking':
+                include 'blocks/order_track.php';
+                break;     
           }
         }
       }

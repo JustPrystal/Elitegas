@@ -1,0 +1,141 @@
+.tablet-desktop-responsive{
+    .request-quote-block{
+        min-width: 1024px;
+        .container{
+            .quote-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 50px 0;
+                padding: 0 100px;
+                .heading{
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: $dgray;
+                    font-family: $arial;
+                    padding-bottom: 20px;
+                }
+                .form-wrapper{
+                    .gform_heading{
+                        display: none;
+                    }
+                    form{
+                        .gfield{
+                            position: relative;
+                            label{
+                                position: absolute;
+                                left: 13px;
+                                top: 0px;
+                                line-height: 48px;
+                                font-size: 14px;
+                                transform-origin: left top;
+                                transition: transform .2s ease-in-out;
+                                pointer-events: none;
+                                margin: 0;
+                                font-weight: 400;
+                                transform: translateY(-6px) scale(.8);
+                                width: 100%;
+                                color: $dgray;
+                                font-family: $arial;
+                            }
+                            input{
+                                padding: 20px 10px 5px 10px;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                            }
+                            select{
+                                border: 1px solid #e0e0dd;
+                                padding: 25px 10px 5px 8px;
+                            }
+                        }
+                        button{
+                            margin-bottom: 8px;
+                            background: #df7800;
+                            border: 0;
+                            color: #fff;
+                            padding: 0 50px;
+                            border-radius: 2px;
+                            height: 48px;
+                            font-size: 18px;
+                            transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                        }    
+                    }
+                }    
+            }
+        }
+    }
+}
+
+
+
+// Request quote responsive
+
+.mobile-responsive{
+    .request-quote-block{
+        min-width: auto;
+        margin: 120px 0 0px;
+        .container{
+            .quote-wrapper{
+                .heading{
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: $dgray;
+                    font-family: $arial;
+                    padding-bottom: 20px;
+                }
+                .form-wrapper{
+                    .gform_heading{
+                        display: none;
+                    }
+                    form{
+                        .gfield{
+                            position: relative;
+                            label{
+                                position: absolute;
+                                left: 13px;
+                                top: 0px;
+                                line-height: 48px;
+                                font-size: 14px;
+                                transform-origin: left top;
+                                transition: transform .2s ease-in-out;
+                                pointer-events: none;
+                                margin: 0;
+                                font-weight: 400;
+                                transform: translateY(-6px) scale(.8);
+                                width: 100%;
+                                color: $dgray;
+                                font-family: $arial;
+                            }
+                            input{
+                                padding: 20px 10px 5px 10px;
+                                font-size: 16px;
+                                color: black;
+                                border: 1px solid #e0e0dd;
+                            }
+                            select{
+                                border: 1px solid #e0e0dd;
+                                padding: 25px 10px 5px 8px;
+                            }
+                        }
+                        button{
+                            margin-bottom: 8px;
+                            background: #df7800;
+                            border: 0;
+                            color: #fff;
+                            padding: 0 50px;
+                            border-radius: 2px;
+                            height: 48px;
+                            font-size: 18px;
+                            transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                        }    
+                    }
+                }    
+            }
+        }
+    }
+}
+
+// Request quote Responsive end

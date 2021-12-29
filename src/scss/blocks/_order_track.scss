@@ -1,0 +1,142 @@
+.tablet-desktop-responsive{
+    .order-tracking{
+        min-width: 1024px;
+        .container{
+            .main-heading{
+                color: #4b4b4b;
+                font-weight: 800;
+                font-size: 30px;
+                margin: 50px 0 50px 0;
+                font-family: $arial;
+                text-align: center;
+            }
+            .orderform-wrap{
+                width: 70%;
+                margin: 0 auto;
+                form{    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    p{
+                        color: #677279;
+                        font-family: $arial;
+                        font-size: 16px;
+                        text-align: center;
+                        margin: 0 0 40px 0;
+                    }
+                    .form-row{
+                        padding: 3px;
+                        margin: 0 0 6px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        &.form-row-first{
+                            float: left;
+                            width: 48%;
+                        }
+                        &.form-row-last{
+                            width: 48%;
+                        }
+                        label{
+                            color: #677279;
+                            font-family: $arial;
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                        input{
+                            height: 50px;
+                            border-radius: 5px;
+                            padding: 0 15px;
+                            border: 1px solid #ddd;
+                            width: 100%;
+                        }
+                        button{
+                            border-radius: 0;
+                            line-height: 50px;
+                            background: #df7800;
+                            color: #fff;
+                            height: 50px;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 0 15px;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Order Track responsive 
+
+.mobile-responsive{
+    .order-tracking{
+        min-width: auto;
+        margin-top: 120px;
+        .container{
+            .main-heading{
+                color: #4b4b4b;
+                font-weight: 800;
+                font-size: 30px;
+                margin: 50px 0 20px 0;
+                font-family: $arial;
+                text-align: center;
+            }
+            .orderform-wrap{
+                margin: 0 auto;
+                form{    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    p{
+                        color: #677279;
+                        font-family: $arial;
+                        font-size: 16px;
+                        text-align: center;
+                        margin: 0 0 40px 0;
+                    }
+                    .form-row{
+                        padding: 3px;
+                        margin: 0 0 6px;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        label{
+                            color: #677279;
+                            font-family: $arial;
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                            margin-top: 20px;
+                        }
+                        input{
+                            height: 50px;
+                            border-radius: 5px;
+                            padding: 0 15px;
+                            border: 1px solid #ddd;
+                            width: 100%;
+                        }
+                        button{
+                            border-radius: 0;
+                            line-height: 50px;
+                            background: #df7800;
+                            color: #fff;
+                            height: 50px;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 0 15px;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// Order Track Responsive End
