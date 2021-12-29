@@ -70,7 +70,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                         <?php if(!(is_user_logged_in())){ ?>
                         <div class="Product-Pricing-Box">
                             <div class="Not-Logined-Box-Wrap">
-                            <div class="image"><img src="http://elite-gas.local/wp-content/uploads/2021/12/LockKey.png" alt=""></div>
+                            <div class="image"><img src="/wp-content/uploads/2021/12/LockKey.png" alt=""></div>
                                 <div class="content">
                                     <div class="heading">PRODUCT PRICES & ORDERING LOCKED</div>
                                     <div class="text">Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.  To view our price breakdowns and to place orders, please log in or create an account and complete our authorized seller application process.</div>

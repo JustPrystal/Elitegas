@@ -3,7 +3,7 @@
         <div class="wrapper">
             <div class="heading"><?php echo $block['main_heading'] ?></div>
             <div class="section-wrap">
-                <div class="form"><h2>Leave your message</h2><?php echo do_shortcode('[wpforms id="69"]');?></div>
+                <div class="form"><h2>Leave your message</h2><?php echo do_shortcode('[gravityform id="7"]');?></div>
                 <div class="side-bar">
                     <img src="<?php echo $block['image']['url'] ?>" alt="">
                     <div class="content">

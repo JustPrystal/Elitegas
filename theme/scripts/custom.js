@@ -127,6 +127,8 @@ $('li.payment_method_authorize_net_cim_credit_card').click(function(e) {
 
 // Header Hamburger
 
+$(document).ready(function(){
+  
 $(".hamburger-open").click(function () {
      $(".Header-nav").addClass("nav-close");
     $( ".Header-nav" ).slideDown( "slow" );
@@ -137,6 +139,12 @@ $(".hamburger-close").click(function () {
  $( ".nav-close" ).slideUp( "slow" );
  $(".hamburger-open").css("display", "block");
  $(".hamburger-close").css("display", "none");
+});
+
+
+$(".dropdown").click(function(){
+  $(".dropdown_wrapper").slideToggle("slow");
+})
 });
 
 //Header hamburger end

@@ -23,45 +23,54 @@
                       color: #4b4b4b;
                       font-weight: 800;
                       font-size: 22px;
-                      margin: 0 0 10px 0;
+                      margin: 0 0 20px 0;
                       font-family: $arial;
                       line-height: 100%;
                     }
-                    .wpforms-field{
-                      position: relative;
-                      label{
-                        position: absolute;
-                        left: 13px;
-                        top: 10px;
-                        line-height: 48px;
-                        font-size: 14px;
-                        transform: scale(1);
-                        transform-origin: left top;
-                        transition: transform .2s ease-in-out;
-                        pointer-events: none;
-                        margin: 0;
-                        font-weight: 400;
-                        transform: translateY(-6px) scale(.8);
-                        font-family: $arial;
-                        color: #677279;
-                      }
-                      input{
-                        height: 48px;
-                        border: 1px solid #e0e0dd;
-                        border-radius: 2px;
-                        padding: 15px 13px 0;
-                        font-size: 16px;
-                      }
+                    .gform_heading{
+                      display: none;
                     }
-                    #wpforms-69-field_4-container{
+                      .gfield{
+                        position: relative;
+                        label{
+                          position: absolute;
+                          left: 13px;
+                          top: 13px;
+                          line-height: 15px;
+                          font-size: 14px;
+                          transform: scale(1);
+                          transform-origin: left top;
+                          transition: transform .2s ease-in-out;
+                          pointer-events: none;
+                          margin: 0;
+                          font-weight: 400;
+                          transform: translateY(-6px) scale(.8);
+                          font-family: $arial;
+                          color: #677279;
+                        }
+                        input{
+                          height: 48px;
+                          border: 1px solid #e0e0dd;
+                          border-radius: 2px;
+                          padding: 20px 12px 5px;
+                          font-size: 16px;
+                        }
+                        textarea{
+                          border: 1px solid #e0e0dd;
+                          border-radius: 2px;
+                          font-size: 16px;
+                        }
+                      }
+                    #field_7_3{
                       label{
                         display: none;
                       }
                       select{
                         height: 50px;
+                        border: 1px solid #e0e0dd;
                       }
                     }
-                    button{
+                    .gform_button{
                       background: #df7800;
                       border: 0;
                       color: #fff;
@@ -147,7 +156,10 @@
                     line-height: 100%;
                     text-align: center;
                   }
-                  .wpforms-field{
+                  .gform_heading{
+                    display: none;
+                  }
+                  .gfield{
                     position: relative;
                     width: 100%;
                     margin: 0px;
@@ -155,7 +167,7 @@
                       position: absolute;
                       left: 13px;
                       top: 10px;
-                      line-height: 48px;
+                      line-height: 25px;
                       font-size: 14px;
                       transform: scale(1);
                       transform-origin: left top;
@@ -171,19 +183,23 @@
                       height: 48px;
                       border: 1px solid #e0e0dd;
                       border-radius: 2px;
-                      padding: 15px 13px 0;
+                      padding: 20px 12px 5px;
                       font-size: 16px;
+                      &#input_7_4{
+                        padding: 7px 12px 5px;
+                      }
                     }
                   }
-                  #wpforms-69-field_4-container{
+                  #field_7_3{
                     label{
                       display: none;
                     }
                     select{
                       height: 50px;
+                      border: 1px solid #e0e0dd;
                     }
                   }
-                  button{
+                  .gform_button{
                     background: #df7800;
                     border: 0;
                     color: #fff;

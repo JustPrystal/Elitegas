@@ -479,9 +479,6 @@
                                                             visibility: visible;
                                                             display: inline-grid;
                                                         }
-                                                        &.defalt_addd_shipping ~ .fa{
-                                                            display: none;
-                                                        }
                                                     }
                                                     .fa-question-circle{
                                                         position: relative;
@@ -1044,6 +1041,142 @@
             }
         }
     }
+    .woocommerce-view-order{
+        .woocommerce-MyAccount-content{
+            p{
+                font-size: 15px !important;
+                font-weight: 400;
+                color: #fff !important;
+                background-color: #df7800;
+                text-align: center;
+                padding: 10px 0px;
+                margin-bottom: 0px;
+                .order-number{
+                    background-color: #df7800;
+                }
+                .order-date{
+                    background-color: #df7800;
+                }
+                .order-status{
+                    background-color: #df7800;
+                }
+            }
+            .woocommerce-order-details{
+                h2{
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: $dgray;
+                    font-family: $arial;
+                }
+                .woocommerce-table--order-details{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    thead{
+                        tr{
+                            th{
+                                font-weight: 700;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                font-size: 15px;
+                                text-align: left;
+                                color: $dgray;
+                                font-family: $arial;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                padding: 9px 12px;
+                                vertical-align: middle;
+                                line-height: 1.5em;
+                                font-size: 15px;
+                                font-family: $arial;
+                                color: $dgray;
+                                a{
+                                    text-decoration: none;
+                                    color: #df7800;
+                                }
+                                .sub_item{
+                                    color: #bdbdbd;
+                                    font-size: 11px;
+                                    margin-bottom: 0px;                              
+                                }
+                            }
+                        }
+                    }
+                    tfoot{
+                        tr{
+                            th{
+                                font-weight: 700;
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 15px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                            }
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 15px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                            }
+                        }
+                    }
+                }
+                .woocommerce-table--custom-fields{
+                    border: 1px solid rgba(0,0,0,.1);
+                    border-top: 0px;
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    tbody{
+                        width: 100%;
+                        tr{
+                            display: flex;
+                            th{
+                                font-weight: 700;
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 15px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                                width: 50%;
+                            }
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 15px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                                width: 50%; 
+                                text-align: right;
+                                &:first-child{
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
  }
 
 
@@ -1565,9 +1698,6 @@
                                                                 visibility: visible;
                                                                 display: inline-grid;
                                                             }
-                                                            &.defalt_addd_shipping ~ .fa{
-                                                                display: none;
-                                                            }
                                                         }
                                                         .fa-question-circle{
                                                             position: relative;
@@ -1586,7 +1716,7 @@
                                                             }
                                                             .tooltiptext {
                                                                 visibility: hidden;
-                                                                width: 400px;
+                                                                width: 250px;
                                                                 background-color: #555;
                                                                 color: #fff;
                                                                 text-align: left;
@@ -1596,7 +1726,7 @@
                                                                 z-index: 1;
                                                                 bottom: 125%;
                                                                 left: 50%;
-                                                                margin-left: -200px;
+                                                                margin-left: -125px;
                                                                 margin-bottom: 5px;
                                                                 opacity: 0;
                                                                 transition: opacity 0.3s;
@@ -2150,6 +2280,161 @@
         }
         .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
             background-color: rgba(0,0,0,.025);
+        }
+    }
+    .woocommerce-view-order{
+        .woocommerce-MyAccount-content{
+            p{
+                font-size: 14px !important;
+                font-weight: 400;
+                color: #fff !important;
+                background-color: #df7800;
+                text-align: center;
+                padding: 10px 20px;
+                margin-bottom: 0px;
+                .order-number{
+                    background-color: #df7800;
+                }
+                .order-date{
+                    background-color: #df7800;
+                }
+                .order-status{
+                    background-color: #df7800;
+                }
+            }
+            .woocommerce-order-details{
+                h2{
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: $dgray;
+                    font-family: $arial;
+                }
+                .woocommerce-table--order-details{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    thead{
+                        tr{
+                            th{
+                                font-weight: 700;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                font-size: 12px;
+                                text-align: left;
+                                color: $dgray;
+                                font-family: $arial;
+                                &.product-name{
+                                    width: 60% !important;
+                                }
+                                &.product-quantity{
+                                    width: 20% !important;
+                                    text-align: end;
+                                }
+                                &.product-total{
+                                    width: 25% !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                padding: 9px 12px;
+                                vertical-align: middle;
+                                line-height: 1.5em;
+                                font-size: 12px;
+                                font-family: $arial;
+                                color: $dgray;
+                                a{
+                                    text-decoration: none;
+                                    color: #df7800;
+                                }
+                                .sub_item{
+                                    color: #bdbdbd;
+                                    font-size: 10px;
+                                    margin-bottom: 0px;                              
+                                }
+                                &.order_item{
+                                    width: 55% !important;
+                                }
+                                &.product-quantity{
+                                    width: 20% !important;
+                                }
+                                &.product-total{
+                                    width: 25% !important;
+                                }
+                            }
+                        }
+                    }
+                    tfoot{
+                        tr{
+                            th{
+                                font-weight: 700;
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 12px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                            }
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 12px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                            }
+                        }
+                    }
+                }
+                .woocommerce-table--custom-fields{
+                    border: 1px solid rgba(0,0,0,.1);
+                    border-top: 0px;
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    tbody{
+                        width: 100%;
+                        tr{
+                            display: flex;
+                            th{
+                                font-weight: 700;
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 12px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                                width: 50%;
+                            }
+                            td{
+                                border-top: 1px solid rgba(0,0,0,.1);
+                                font-family: $arial;
+                                font-size: 12px;
+                                padding: 9px 12px;
+                                line-height: 1.5em;
+                                color: $dgray;
+                                width: 50%; 
+                                text-align: right;
+                                &:first-child{
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     } 
 

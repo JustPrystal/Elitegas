@@ -241,6 +241,12 @@
                         &:hover .dropdown_wrapper{
                             visibility: visible;
                         }
+                        &:after{
+                            font-family: 'FontAwesome';
+                            content: "\f107";
+                            vertical-align: bottom;
+                            color: $dgray;
+                        }
                         .dropdown_wrapper{
                             background-color: white;
                             padding: 10px;
@@ -251,11 +257,26 @@
                             transition: all 0.3s ease;
                             display: flex;
                             justify-content: space-between;
-                            width: 290px;
+                            width: 350px;
                             .child-link{
                                 color: #4b4b4b;
                                 font-weight: 700;
                                 font-size: 18px;
+                            }
+                            .subchild-dropdown{
+                                a{
+                                    color: #4b4b4b;
+                                    font-size: 18px;
+                                }
+                                .sub-child-wrap{
+                                    .sub-child-link{
+                                        margin-top: 10px;
+                                        a{
+                                            color: $dgray;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -284,6 +305,11 @@
     .header{
         &.is_mobile{
             display: block;
+        &:before{
+            display: block;
+            content: "";
+            height: 61px;
+        }    
         }
         &.is_desktop{
             display: none;
@@ -545,6 +571,26 @@
             }
             .mobile-menu-wrap{
                 .nav-link{
+                    &.dropdown{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        flex-direction: row-reverse;
+                        &:before{
+                            font-family: 'FontAwesome';
+                            content: "\f0d7";
+                        }
+                        .dropdown_wrapper{
+                            width: 100%;
+                            display: none;
+                            padding-left: 25px;
+                            padding-top: 20px;
+                            a{
+                                line-height: 30px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
                     padding: 15px 0px ;
                     &:last-child{
                         padding-right:0;

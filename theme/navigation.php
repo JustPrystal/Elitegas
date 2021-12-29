@@ -76,9 +76,23 @@
                         <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
                         <div class="dropdown_wrapper">
                             <?php foreach($nav_item['sublinks'] as $sub){?>
+                                <?php if($nav_item['choose_subchild_type'] == "normal"){?>
                                 <div class="child-link">
                                     <a href="<?php echo $sub['sublink']['url'] ?>"><?php echo $sub['sublink']['title'] ?></a>
                                 </div>
+                                <?php }?>
+                                <?php if($sub['choose_subchild_type'] == "dropdown"){?>
+                                    <div class="child-link subchild-dropdown">
+                                        <a href="<?php echo $sub['sublink']['url'] ?>"><?php echo $sub['sublink']['title'] ?></a>
+                                        <div class="sub-child-wrap">
+                                             <?php foreach($sub['subchild'] as $sublink){?>
+                                                <div class="sub-child-link">
+                                                    <a href="<?php echo $sublink['subchild_links']['url'] ?>"><?php echo $sublink['subchild_links']['title'] ?></a>
+                                                </div>
+                                             <?php }?>
+                                        </div>
+                                    </div>
+                                <?php }?>
                             <?php }?>
                         </div>
                     </div>
@@ -160,10 +174,40 @@
     </div>
     <div class="inner-wrap-bottom hide-before Header-nav">
         <div class="mobile-menu-wrap">
-            <?php foreach($nav as $nav_item){?>
-                <div class="nav-link">
-                    <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
-                </div>
+           <?php foreach($nav as $nav_item){?>
+                <?php if($nav_item['choose_type'] == "normal"){?>
+                    <div class="nav-link">
+                        <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
+                    </div>
+
+                <?php }?>
+                <?php if($nav_item['choose_type'] == "dropdown"){?>
+                    <div class="nav-link dropdown">
+                        <a href="<?php echo $nav_item['link']['url'] ?>"><?php echo $nav_item['link']['title'] ?></a>
+                        <div class="dropdown_wrapper">
+                            <?php foreach($nav_item['sublinks'] as $sub){?>
+                                <?php if($nav_item['choose_subchild_type'] == "normal"){?>
+                                <div class="child-link">
+                                    <a href="<?php echo $sub['sublink']['url'] ?>"><?php echo $sub['sublink']['title'] ?></a>
+                                </div>
+                                <?php }?>
+                                <?php if($sub['choose_subchild_type'] == "dropdown"){?>
+                                    <div class="child-link subchild-dropdown">
+                                        <a href="<?php echo $sub['sublink']['url'] ?>"><?php echo $sub['sublink']['title'] ?></a>
+                                        <div class="sub-child-wrap">
+                                             <?php foreach($sub['subchild'] as $sublink){?>
+                                                <div class="sub-child-link">
+                                                    <a href="<?php echo $sublink['subchild_links']['url'] ?>"><?php echo $sublink['subchild_links']['title'] ?></a>
+                                                </div>
+                                             <?php }?>
+                                        </div>
+                                    </div>
+                                <?php }?>
+                            <?php }?>
+                        </div>
+                    </div>
+
+                <?php }?>
             <?php }?>
         </div>
         <div class="header-contact-container">
