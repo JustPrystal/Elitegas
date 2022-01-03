@@ -1,30 +1,11 @@
 {
-    "key": "group_61b917a0e92b0",
-    "title": "Feature Brand Block",
+    "key": "group_61b125196ceff",
+    "title": "My Account",
     "fields": [
         {
-            "key": "field_61b917bef7305",
-            "label": "Heading",
-            "name": "heading",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61b917e1f7306",
-            "label": "Image Container",
-            "name": "image_container",
+            "key": "field_61b12524834a5",
+            "label": "Default Profile Pictures",
+            "name": "default_profile_pictures",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -41,7 +22,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_61b917f3f7307",
+                    "key": "field_61b12547834a6",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
@@ -70,9 +51,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "page",
                 "operator": "==",
-                "value": ""
+                "value": "9"
             }
         ]
     ],
@@ -82,7 +63,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
-    "modified": 1640813822
+    "modified": 1640813823
 }

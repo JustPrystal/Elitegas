@@ -1,0 +1,390 @@
+.tablet-desktop-responsive{
+    .woocommerce{
+        .woocommerce-order{
+            margin: 50px auto;
+            max-width: 1460px;
+            @include responsive(xl){
+                padding: 0 30px;
+                max-width: 100%;
+            }
+            .woocommerce-thankyou-order-received{
+                font-family: $arial;
+                margin-bottom: 20px;
+                color: $dgray;
+            }
+            .order_details{
+                margin: 0 0 3em;
+                list-style: none;
+                display: flex;
+                &:before{
+                    content: " ";
+                    display: table;
+                }
+                li{
+                    float: left;
+                    margin-right: 2em;
+                    text-transform: uppercase;
+                    font-size: .715em;
+                    line-height: 1;
+                    border-right: 1px dashed #d3ced2;
+                    padding-right: 2em;
+                    margin-left: 0;
+                    padding-left: 0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    color: #677279;
+                    font-family: $arial;
+                    strong{
+                        display: block;
+                        font-size: 1.4em;
+                        text-transform: none;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            .woocommerce-bacs-bank-details{
+                .wc-bacs-bank-details-heading{
+                    font-size: 2rem;
+                    font-family: $arial;
+                    color: $dgray;
+                }
+                .wc-bacs-bank-details-account-name{
+                    display: none;
+                }
+            }
+            .woocommerce-order-details{
+                margin-bottom: 2em;
+                .woocommerce-order-details__title{
+                    font-size: 2rem;
+                    font-family: $arial;
+                    color: $dgray;
+                }
+                table{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    thead{
+                        tr{
+                            &:nth-child(1){
+                                border: none;
+                            }
+                            .product-quantity{
+                                text-align: center;
+                            }
+                        }
+                    }
+                    tr{
+                        border-top: 1px solid rgba(0,0,0,.1);
+                        vertical-align: middle;
+                        line-height: 1.5em;
+                        th{
+                            font-weight: 700;
+                            line-height: 1.5em;
+                            font-family: $arial;
+                            color: $dgray;
+                            font-size: 13px;
+                            padding: 9px 12px;
+                        }
+                        td{
+                            font-weight: 400;
+                            line-height: 1.5em;
+                            font-family: $arial;
+                            color: $dgray;
+                            font-size: 13px;
+                            padding: 9px 12px;
+                            a{
+                                color: $orange;
+                                text-decoration: none;
+                                font-weight: 400;
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+                            .sub_item{
+                                color: #bdbdbd;
+                                font-size: 11px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                .custom-fields{
+                    tr{
+                        vertical-align: middle;
+                        line-height: 1.5em;
+
+                        td{
+                            text-align: right;
+                            font-weight: 400;
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        th{
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+            }
+            .col2-set{
+                display: flex;
+                justify-content: space-between;
+                .col-1{
+                    width: 48%;
+                    h2{
+                        font-size: 2rem;
+                        font-family: $arial;
+                        color: $dgray;
+                    }
+                    address{
+                        font-style: normal;
+                        margin-bottom: 0;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-bottom-width: 2px;
+                        border-right-width: 2px;
+                        text-align: left;
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: 6px 12px;
+                        font-family: $arial;
+                        color: $dgray;
+                        font-weight: 400;
+                        line-height: 1.5em;
+                    }
+                }    
+                .col-2{
+                    width: 48%;
+                    h2{
+                        font-size: 2rem;
+                        font-family: $arial;
+                        color: $dgray;
+                    }
+                    address{
+                        font-style: normal;
+                        font-family: $arial;
+                        color: $dgray;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-bottom-width: 2px;
+                        border-right-width: 2px;
+                        text-align: left;
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: 6px 12px;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// order-detail-responsive 
+
+.mobile-responsive{
+    .woocommerce{
+        min-width: auto;
+        .woocommerce-order{
+                padding: 0 15px;
+                max-width: 100%;
+            .woocommerce-thankyou-order-received{
+                font-family: $arial;
+                margin-bottom: 20px;
+                color: $dgray;
+            }
+            .order_details{
+                margin: 0;
+                list-style: none;
+                padding: 0px;
+                &:before{
+                    content: " ";
+                    display: table;
+                }
+                li{
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    line-height: 1;
+                    border-bottom: 2px dashed #d3ced2;
+                    padding-right: 2em;
+                    padding-left: 0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    color: #677279;
+                    font-family: "arial";
+                    margin: 20px 0px;
+                    strong{
+                        display: block;
+                        font-size: 1.4em;
+                        text-transform: none;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            .woocommerce-bacs-bank-details{
+                .wc-bacs-bank-details-heading{
+                    font-size: 25px;
+                    font-family: $arial;
+                    color: $dgray;
+                    margin: 50px 0 0;
+                }
+                .wc-bacs-bank-details-account-name{
+                    display: none;
+                }
+            }
+            .woocommerce-order-details{
+                margin-bottom: 2em;
+                .woocommerce-order-details__title{
+                    font-size: 25px;
+                    font-family: $arial;
+                    color: $dgray;
+                }
+                table{
+                    border: 1px solid rgba(0,0,0,.1);
+                    margin: 0 -1px 24px 0;
+                    text-align: left;
+                    width: 100%;
+                    border-collapse: separate;
+                    border-radius: 5px;
+                    thead{
+                        tr{
+                            &:nth-child(1){
+                                border: none;
+                            }
+                            .product-quantity{
+                                text-align: center;
+                                width: 15% !important;
+                            }
+                            .product-name{
+                                width: 55% !important;
+                            }
+                            .product-total{
+                                width: 30% !important;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            border-top: 1px solid rgba(0,0,0,.1);
+                            vertical-align: middle;
+                            line-height: 1.5em;
+                            .product-quantity{
+                                width: 15% !important;
+                            }
+                            .product-name{
+                                width: 65% !important;
+                            }
+                            .product-total{
+                                width: 30% !important;
+                            }
+                        }
+                    }
+                        tr{
+                            border-top: 1px solid rgba(0,0,0,.1);
+                            vertical-align: middle;
+                            line-height: 1.5em;
+                            th{
+                                font-weight: 700;
+                                line-height: 1.5em;
+                                font-family: $arial;
+                                color: $dgray;
+                                font-size: 13px;
+                                padding: 9px 12px;
+                            }
+                            td{
+                                font-weight: 400;
+                                line-height: 1.5em;
+                                font-family: $arial;
+                                color: $dgray;
+                                font-size: 13px;
+                                padding: 9px 12px;
+                                a{
+                                    color: $orange;
+                                    text-decoration: none;
+                                    font-weight: 400;
+                                    &:hover{
+                                        color: black;
+                                    }
+                                }
+                                .sub_item{
+                                    color: #bdbdbd;
+                                    font-size: 11px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                }
+                .custom-fields{
+                    tr{
+                        vertical-align: middle;
+                        line-height: 1.5em;
+
+                        td{
+                            text-align: right;
+                            font-weight: 400;
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        th{
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+            }
+            .col2-set{
+                .col-1{
+                    h2{
+                        font-size: 2rem;
+                        font-family: $arial;
+                        color: $dgray;
+                    }
+                    address{
+                        font-style: normal;
+                        margin-bottom: 0;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-bottom-width: 2px;
+                        border-right-width: 2px;
+                        text-align: left;
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: 6px 12px;
+                        font-family: $arial;
+                        color: $dgray;
+                        font-weight: 400;
+                        line-height: 1.5em;
+                    }
+                }    
+                .col-2{
+                    h2{
+                        font-size: 2rem;
+                        font-family: $arial;
+                        color: $dgray;
+                    }
+                    address{
+                        font-style: normal;
+                        font-family: $arial;
+                        color: $dgray;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-bottom-width: 2px;
+                        border-right-width: 2px;
+                        text-align: left;
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: 6px 12px;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// order-detail responsive end

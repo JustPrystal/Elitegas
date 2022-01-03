@@ -116,11 +116,14 @@ $(".search-wrap").click(function () {
 
 // Checkout credit card form drop down
 
-$('li.payment_method_authorize_net_cim_credit_card').click(function(e) { 
-  if($("input#payment_method_authorize_net_cim_credit_card[name=payment_method]:checked").val() == 'authorize_net_cim_credit_card'){
-    $( "div.payment_method_authorize_net_cim_credit_card" ).slideToggle( "slow" );
-  }
+$(document).ready(function(){
+  $('input[type="radio"]').click(function(){
+      var inputValue = $(this).attr("value");
+      var targetBox = $(".payment_method_" + inputValue);
+      $(".payment_box").not(targetBox).hide();
+      $(targetBox).slideDown();
   });
+});
 
 // Checkout Credit card drop down end
 

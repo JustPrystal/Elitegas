@@ -1,11 +1,34 @@
 {
-    "key": "group_61b7e845c401c",
-    "title": "Contact Us Block",
+    "key": "group_6148bdf550ff8",
+    "title": "Per Unit Price",
     "fields": [
         {
-            "key": "field_61b7e8945f82f",
-            "label": "Main Heading",
-            "name": "main_heading",
+            "key": "field_6148bdf55935a",
+            "label": "Distributor Unit Price",
+            "name": "unit_price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "user_roles": [
+                "administrator",
+                "VIP_Distributor"
+            ],
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6181d4583b67d",
+            "label": "VIP Distributor Unit Price",
+            "name": "vip_unit_price",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,33 +45,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b7e8fd5f830",
-            "label": "Image",
-            "name": "image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_61b7e9235f831",
-            "label": "Heading",
-            "name": "heading",
+            "key": "field_6181e88484451",
+            "label": "VIP Silver Unit Price",
+            "name": "vip_silver_price",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -65,9 +64,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b7e9395f832",
-            "label": "Number",
-            "name": "number",
+            "key": "field_6181e93ea824a",
+            "label": "VIP Gold Unit Price",
+            "name": "vip_gold_price",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -84,9 +83,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b7e95d5f833",
-            "label": "Email Heading",
-            "name": "email_heading",
+            "key": "field_6181e952d413b",
+            "label": "VIP Platinum Unit Price",
+            "name": "vip_platinum_price",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -101,31 +100,14 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_61b7e9655f834",
-            "label": "Email",
-            "name": "email",
-            "type": "email",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
         }
     ],
     "location": [
         [
             {
-                "param": "block",
-                "operator": "=="
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
             }
         ]
     ],
@@ -135,7 +117,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
-    "modified": 1640813822
+    "modified": 1640813823
 }

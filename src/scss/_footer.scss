@@ -14,7 +14,7 @@
                     flex: 0 0 20%; 
                     &:first-child{ 
                         flex: 0 0 30%; 
-                        padding-left:15px; 
+                        padding-left:0px; 
                     } 
                     &:last-child{ 
                         flex: 0 0 30%; 
@@ -100,7 +100,7 @@
                     font-family: $arial; 
                     font-size: 14px; 
                     color: #fff; 
-                    padding: 0px 15px; 
+                    padding: 0px 15px 0 0; 
                 } 
                 .payments-wrap{ 
                     flex: 20%; 

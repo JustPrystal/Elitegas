@@ -1,0 +1,51 @@
+{
+    "key": "group_619c0471086fa",
+    "title": "User Details",
+    "fields": [
+        {
+            "key": "field_619c056ba4305",
+            "label": "User Profile Image",
+            "name": "user_profile_image",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "profile-img",
+                "id": ""
+            },
+            "choices": {
+                "a": "Option A",
+                "b": "Option B",
+                "c": "Option C",
+                "d": "Option D",
+                "e": "Option E"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1640813824
+}

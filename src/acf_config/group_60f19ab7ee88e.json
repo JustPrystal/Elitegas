@@ -1,0 +1,43 @@
+{
+    "key": "group_60f19ab7ee88e",
+    "title": "Portfolio Price",
+    "fields": [
+        {
+            "key": "field_60f19ac5a9f39",
+            "label": "Portfolio Price",
+            "name": "portfolio_price",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "saaaaaa asasa as asasa sfd dfdfasdwew adasdas as asasdas das",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "9"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1640813823
+}

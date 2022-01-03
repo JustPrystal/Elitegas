@@ -319,10 +319,16 @@
                                     .billing-heading{
                                         font-size: 28px;
                                         font-family: $arial;
-                                        color: #000000;
+                                        color: $dgray;
                                         font-weight: 500;
                                         margin-top: 0;
-                                        
+                                    }
+                                    h3{
+                                        font-size: 28px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        font-weight: 500;
+                                        margin-top: 0;
                                     }
                                     .billing_addresses_wrap{
                                         display: table;
@@ -422,10 +428,17 @@
                                     .shipping-heading{
                                         font-size: 28px;
                                         font-family: $arial;
-                                        color: #000000;
+                                        color: $dgray;
                                         font-weight: 500;
                                         margin-top: 0;
                                         
+                                    }
+                                    h3{
+                                        font-size: 28px;
+                                        font-family: $arial;
+                                        color: $dgray;
+                                        font-weight: 500;
+                                        margin-top: 0;
                                     }
                                     .shipping-addresses-wrap{
                                         display: table;
@@ -573,29 +586,28 @@
                                         }    
                                     }
                                 }
-                                .cus_menu{
-                                    margin-bottom: 10px;
-                                    .shipping-button{
-                                        width: 100%;
-                                        padding: 0px;
-                                        
-                                        .form_option_shipping{
-                                            border: 0;
-                                            cursor: pointer;
-                                            background-color: $orange;
-                                            font-size: 15px;
-                                            text-transform: uppercase;
-                                            color: #ffffff;
-                                            padding: 8px 10px;
-                                            &:hover{
-                                                background-color: #dfdcde;
-                                                color: #515151;
-                                            }
+                            }
+                            .cus_menu{
+                                margin-bottom: 10px;
+                                .shipping-button{
+                                    width: 100%;
+                                    padding: 0px;
+                                    
+                                    .form_option_shipping{
+                                        border: 0;
+                                        cursor: pointer;
+                                        background-color: $orange;
+                                        font-size: 15px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        padding: 8px 10px;
+                                        &:hover{
+                                            background-color: #dfdcde;
+                                            color: #515151;
                                         }
                                     }
                                 }
                             }
-
                             .wrap-important-information{
                             h2{
                                 text-align: center;
@@ -1497,7 +1509,6 @@
                                     }
                                 }
                                 .ocwma_table_custom{
-                                    margin-bottom: 50px;
                                     .billing-button-wrap{
                                         margin-bottom: 10px;
                                         button{
@@ -1524,7 +1535,15 @@
                                         .billing-heading{
                                             font-size: 25px;
                                             font-family: $arial;
-                                            color: #000000;
+                                            color: $dgray;
+                                            font-weight: 500;
+                                            margin-top: 0;
+                                            margin-bottom: 10px;
+                                        }
+                                        h3{
+                                            font-size: 25px;
+                                            font-family: $arial;
+                                            color: $dgray;
                                             font-weight: 500;
                                             margin-top: 0;
                                             margin-bottom: 10px;
@@ -1639,7 +1658,15 @@
                                         .shipping-heading{
                                             font-size: 25px;
                                             font-family: $arial;
-                                            color: #000000;
+                                            color: $dgray;
+                                            font-weight: 500;
+                                            margin-top: 0;
+                                            margin-bottom: 10px;
+                                        }
+                                        h3{
+                                            font-size: 25px;
+                                            font-family: $arial;
+                                            color: $dgray;
                                             font-weight: 500;
                                             margin-top: 0;
                                             margin-bottom: 10px;
@@ -1799,24 +1826,24 @@
                                             }    
                                         }
                                     }
-                                    .cus_menu{
-                                        margin-bottom: 10px;
-                                        .shipping-button{
-                                            width: 100%;
-                                            padding: 0px;
-                                            
-                                            .form_option_shipping{
-                                                border: 0;
-                                                cursor: pointer;
-                                                background-color: $orange;
-                                                font-size: 15px;
-                                                text-transform: uppercase;
-                                                color: #ffffff;
-                                                padding: 8px 10px;
-                                                &:hover{
-                                                    background-color: #dfdcde;
-                                                    color: #515151;
-                                                }
+                                }
+                                .cus_menu{
+                                    margin-bottom: 10px;
+                                    .shipping-button{
+                                        width: 100%;
+                                        padding: 0px;
+                                        
+                                        .form_option_shipping{
+                                            border: 0;
+                                            cursor: pointer;
+                                            background-color: $orange;
+                                            font-size: 15px;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            padding: 8px 10px;
+                                            &:hover{
+                                                background-color: #dfdcde;
+                                                color: #515151;
                                             }
                                         }
                                     }

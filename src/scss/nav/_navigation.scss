@@ -308,7 +308,10 @@
         &:before{
             display: block;
             content: "";
-            height: 61px;
+            height: 80px;
+            @include responsive(sm){
+                height: 62px;
+            }
         }    
         }
         &.is_desktop{

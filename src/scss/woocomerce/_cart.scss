@@ -264,6 +264,36 @@
             .cart_totals{
                 width: 100%;
                 text-align: center;
+                .dropdown-text{
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: 1px solid #ebe9eb;
+                    border-bottom: 0;
+                    padding: 15px 12px;
+                    justify-content: space-between;
+                    font-family: $arial;
+                    display: none;
+                    .fa-plus{
+                        &:before{
+                            font-family: 'FontAwesome';
+                            font-style: initial;                        
+                        }
+                    }
+                }
+                .discount-body{
+                    display: none;
+                }
+                .cart_notice_wrapper{
+                    .notice_upsell{
+                        border: 1px solid #ededed;
+                        border-bottom: 0px;
+                        padding: 10px 13px;
+                        text-align: left;
+                        font-family: $arial;
+                        font-size: 13px;
+                        color: #677279;
+                    }
+                }
                 .shop_table{
                     .cart-subtotal{
                         display: flex;
