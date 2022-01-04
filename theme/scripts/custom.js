@@ -121,7 +121,7 @@ $(document).ready(function(){
       var inputValue = $(this).attr("value");
       var targetBox = $(".payment_method_" + inputValue);
       $(".payment_box").not(targetBox).hide();
-      $(targetBox).slideDown();
+      $(targetBox).slideDown("slow");
   });
 });
 

@@ -1,212 +1,224 @@
-.pmpro_checkout_gateway-none{
+.tablet-desktop-responsive{   
+    .pmpro-checkout{
+      min-width: 1024px;
+      .pmpro_checkout_gateway-none{
 
-    margin-top: 60px;
-    .container{
-        .pmpro_form{
-            max-width: 730px;
-            margin: 0 auto;
-            text-align: center;
-            .cra_wrap_text{
-                margin-bottom: 2em;
-                .heading{
-                    color: #4B4B4B;
-                    font-family: $arial;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                    font-size: 36px;
-                    font-weight: 800;
-                }
-                .text{
-                    font-family: $algrey;
-                    color: #000000;
-                    font-size: 18px;
-                    margin-top: 0;
-                    margin-bottom: 8px;
-                }
-            }
-            #pmpro_pricing_fields{
-                display: none;
-            }
-            #pmpro_user_fields{
-                display: inline-block;
-                .pmpro_checkout-field{
-                    width: 50%;
-                    float: left;
-                    label{
-                        font-size: 16px;
-                        font-weight: 700;
-                        font-family: $algrey;
-                        color: $dgray;
-                        display: block;
-                    }
-                    input{
-                        width: 100%;
-                        border: 1px solid #ddd;
-                        padding: 12px 15px;
-                        font-size: 16px;
-                        max-width: 100%;
-                    
-                    }
-                    .pmpro_asterisk{
-                        position: absolute;
-                        top: 2px;
-                        left: 85px;
-                        abbr{
-                            color: #df7800;
-                        }
-                    }
-
-                    &.pmpro_checkout-field-username{
-                
-                        width: 100%;
-                    }
-                    &.pmpro_checkout-field-password{
-                        top: 30px;
-                        .pmpro_asterisk{
-                            left: 78px;
-                            abbr{
-                                color: #df7800;
-                            }
-                        }
-                    
-                    }
-                    &.pmpro_checkout-field-password2{
-                        .pmpro_asterisk{
-                            left: 135px;
-                            abbr{
-                                color: #df7800;
-                            }
-                        }
-                    
-                    }
-                    &.pmpro_checkout-field-bemail{
-                        .pmpro_asterisk{
-                            left: 110px;
-                            abbr{
-                                color: #df7800;
-                            }
-                        }
-                        
-                    }
-                    &.pmpro_checkout-field-bconfirmemail{
-                        .pmpro_asterisk{
-                            left: 165px;
-                            abbr{
-                                color: #df7800;
-                            }
-                        }
-                        
-                    }
-                    .hide-show-password{
-                        position: absolute ;
-                        bottom: 20%;
-                        transform: translateY(-15%);
-                        right: 25px;
-                        color: #df7800;
-                    }
-            
-                }
-                .pmprosp-container{
-                    .pmprosp-progressbar{
-                        top: 8px;
-                    }
-                }
-        
-            }
-            #pmpro_checkout_box-checkout_boxes{
-                display: inline-block;
-                .pmpro_checkout-field{
-                    width: 50%;
-                    float: left;
-                    label{
-                        font-size: 16px;
-                        font-weight: 700;
-                        font-family: $algrey;
-                        color: $dgray;
-                        display: block;
-                    }
-                    input{
-                        width: 100%;
-                        border: 1px solid #ddd;
-                        padding: 12px 15px;
-                        font-size: 16px;
-                        max-width: 100%;
-                    
-                    }
-                    .pmpro_asterisk{
-                        position: absolute;
-                        top: 2px;
-                        left: 120px;
-                        abbr{
-                            color: #df7800;
-                        }
-                    }
-
-                }
-                .pmpro_checkout-field-select{
-                    label{
-                        font-size: 16px;
-                        font-weight: 700;
-                        font-family: $algrey;
-                        color: $dgray;
-                        display: block;
-                    }
-                    select{
-                        width: 100%;
-                        border: 1px solid #ddd;
-                        padding: 12px 15px;
-                        font-size: 16px;
-                        max-width: 100%;
-                        color: #677279;
-                        font-family: $arial;
-                    }
-                }
-            }
-            .pmpro_submit{
-                margin-top: 30px;
-                text-align: center;
-                display: inline-block;
-                width:100%;
-            
-                #pmpro_submit_span{
-                    #pmpro_btn-submit{
-                        background: #df7800;
-                        border: 0;
-                        color: #fff;
-                        padding: 0 70px;
-                        border-radius: 2px;
-                        height: 48px;
-                        font-size: 18px;
-                        transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
-                    }
-                }
-                .pmpro_checkout-h3-msg{
-                    font-size: 18px;
-                    display: block;
+            margin-top: 60px;
+            .container{
+                .pmpro_form{
+                    max-width: 730px;
                     margin: 0 auto;
-                    width: 100%;
-                    color: $dgray;
                     text-align: center;
-                    font-style: italic;
-                    font-weight: normal;
-                    letter-spacing: normal;
-                    font-family: $arial;
-                    a{
-                        text-decoration: none;
-                        color: #df7800;
-                        &:hover{
-                            color: #515151;
+                    .cra_wrap_text{
+                        margin-bottom: 2em;
+                        .heading{
+                            color: #4B4B4B;
+                            font-family: $arial;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            font-size: 36px;
+                            font-weight: 800;
                         }
+                        .text{
+                            font-family: $algrey;
+                            color: #000000;
+                            font-size: 18px;
+                            margin-top: 0;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    #pmpro_pricing_fields{
+                        display: none;
+                    }
+                    #pmpro_user_fields{
+                        display: inline-block;
+                        .pmpro_checkout-field{
+                            width: 50%;
+                            float: left;
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            input{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                            
+                            }
+                            .pmpro_asterisk{
+                                position: absolute;
+                                top: 2px;
+                                left: 85px;
+                                abbr{
+                                    color: #df7800;
+                                }
+                            }
 
+                            &.pmpro_checkout-field-username{
+                        
+                                width: 100%;
+                            }
+                            &.pmpro_checkout-field-password{
+                                top: 30px;
+                                .pmpro_asterisk{
+                                    left: 78px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                            
+                            }
+                            &.pmpro_checkout-field-password2{
+                                .pmpro_asterisk{
+                                    left: 135px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                            
+                            }
+                            &.pmpro_checkout-field-bemail{
+                                .pmpro_asterisk{
+                                    left: 110px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                                
+                            }
+                            &.pmpro_checkout-field-bconfirmemail{
+                                .pmpro_asterisk{
+                                    left: 165px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                                
+                            }
+                            .hide-show-password{
+                                position: absolute ;
+                                bottom: 20%;
+                                transform: translateY(-15%);
+                                right: 25px;
+                                color: #df7800;
+                            }
+                    
+                        }
+                        .pmprosp-container{
+                            .pmprosp-progressbar{
+                                top: 8px;
+                            }
+                        }
+                
+                    }
+                    #pmpro_checkout_box-checkout_boxes{
+                        display: inline-block;
+                        hr{
+                            display: none;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        .pmpro_checkout-field{
+                            width: 50%;
+                            float: left;
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            input{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                            
+                            }
+                            .pmpro_asterisk{
+                                position: absolute;
+                                top: 2px;
+                                left: 120px;
+                                abbr{
+                                    color: #df7800;
+                                }
+                            }
+
+                        }
+                        .pmpro_checkout-field-select{
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            select{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                                color: #677279;
+                                font-family: $arial;
+                            }
+                        }
+                    }
+                    .pmpro_submit{
+                        margin-top: 30px;
+                        text-align: center;
+                        display: inline-block;
+                        width:100%;
+                    
+                        #pmpro_submit_span{
+                            #pmpro_btn-submit{
+                                background: #df7800;
+                                border: 0;
+                                color: #fff;
+                                padding: 0 70px;
+                                border-radius: 2px;
+                                height: 48px;
+                                font-size: 18px;
+                                transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                                &:hover{
+                                    background:#ececea;
+                                    color: $dgray;
+                                }
+                            }
+                        }
+                        .pmpro_checkout-h3-msg{
+                            font-size: 18px;
+                            display: block;
+                            margin: 0 auto;
+                            width: 100%;
+                            color: $dgray;
+                            text-align: center;
+                            font-style: italic;
+                            font-weight: normal;
+                            letter-spacing: normal;
+                            font-family: $arial;
+                            a{
+                                text-decoration: none;
+                                color: #df7800;
+                                &:hover{
+                                    color: #515151;
+                                }
+
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-
-
-
 
 form.pmpro_form .pmpro_checkout-fields div{
     width: 50%;
@@ -215,3 +227,226 @@ form.pmpro_form .pmpro_checkout-fields div{
     margin: 0 0 10px;
     position: relative;
 }
+
+// Responsive
+.mobile-responsive{
+    .pmpro-checkout{
+        min-width: auto;
+        .pmpro_checkout_gateway-none{
+            margin-top: 60px;
+            .container{
+                .pmpro_form{
+                    max-width: 730px;
+                    margin: 0 auto;
+                    text-align: center;
+                    .cra_wrap_text{
+                        margin-bottom: 2em;
+                        .heading{
+                            color: #4B4B4B;
+                            font-family: $arial;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                            font-size: 36px;
+                            font-weight: 800;
+                        }
+                        .text{
+                            font-family: $algrey;
+                            color: #000000;
+                            font-size: 18px;
+                            margin-top: 0;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    #pmpro_pricing_fields{
+                        display: none;
+                    }
+                    #pmpro_user_fields{
+                        display: inline-block;
+                        .pmpro_checkout-field{
+                            width: 50%;
+                            float: left;
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            input{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                            
+                            }
+                            .pmpro_asterisk{
+                                position: absolute;
+                                top: 2px;
+                                left: 85px;
+                                abbr{
+                                    color: #df7800;
+                                }
+                            }
+
+                            &.pmpro_checkout-field-username{
+                        
+                                width: 100%;
+                            }
+                            &.pmpro_checkout-field-password{
+                                top: 30px;
+                                .pmpro_asterisk{
+                                    left: 78px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                            
+                            }
+                            &.pmpro_checkout-field-password2{
+                                .pmpro_asterisk{
+                                    left: 135px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                            
+                            }
+                            &.pmpro_checkout-field-bemail{
+                                .pmpro_asterisk{
+                                    left: 110px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                                
+                            }
+                            &.pmpro_checkout-field-bconfirmemail{
+                                .pmpro_asterisk{
+                                    left: 165px;
+                                    abbr{
+                                        color: #df7800;
+                                    }
+                                }
+                                
+                            }
+                            .hide-show-password{
+                                position: absolute ;
+                                bottom: 20%;
+                                transform: translateY(-15%);
+                                right: 25px;
+                                color: #df7800;
+                            }
+                    
+                        }
+                        .pmprosp-container{
+                            .pmprosp-progressbar{
+                                top: 8px;
+                            }
+                        }
+                
+                    }
+                    #pmpro_checkout_box-checkout_boxes{
+                        display: inline-block;
+                        hr{
+                            display: none;
+                        }
+                        h3{
+                            display: none;
+                        }
+                        .pmpro_checkout-field{
+                            width: 50%;
+                            float: left;
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            input{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                            
+                            }
+                            .pmpro_asterisk{
+                                position: absolute;
+                                top: 2px;
+                                left: 120px;
+                                abbr{
+                                    color: #df7800;
+                                }
+                            }
+
+                        }
+                        .pmpro_checkout-field-select{
+                            label{
+                                font-size: 16px;
+                                font-weight: 700;
+                                font-family: $algrey;
+                                color: $dgray;
+                                display: block;
+                            }
+                            select{
+                                width: 100%;
+                                border: 1px solid #ddd;
+                                padding: 12px 15px;
+                                font-size: 16px;
+                                max-width: 100%;
+                                color: #677279;
+                                font-family: $arial;
+                            }
+                        }
+                    }
+                    .pmpro_submit{
+                        margin-top: 30px;
+                        text-align: center;
+                        display: inline-block;
+                        width:100%;
+                    
+                        #pmpro_submit_span{
+                            #pmpro_btn-submit{
+                                background: #df7800;
+                                border: 0;
+                                color: #fff;
+                                padding: 0 70px;
+                                border-radius: 2px;
+                                height: 48px;
+                                font-size: 18px;
+                                transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                                &:hover{
+                                    background:#ececea;
+                                    color: $dgray;
+                                }
+                            }
+                        }
+                        .pmpro_checkout-h3-msg{
+                            font-size: 18px;
+                            display: block;
+                            margin: 0 auto;
+                            width: 100%;
+                            color: $dgray;
+                            text-align: center;
+                            font-style: italic;
+                            font-weight: normal;
+                            letter-spacing: normal;
+                            font-family: $arial;
+                            a{
+                                text-decoration: none;
+                                color: #df7800;
+                                &:hover{
+                                    color: #515151;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End

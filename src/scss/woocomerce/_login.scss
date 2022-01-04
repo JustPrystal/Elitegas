@@ -1,73 +1,204 @@
-.pmpro_login_wrap{
-    margin: 60px 0;
-        #loginform{
-            max-width: 350px;
-            margin: 0 auto 15px;
-            .login-username,
-            .login-password{
-                font-family: $arial;
-                font-weight: 700;
-                display: block;
-                font-size: 16px;
-                color: $dgray;
-            }
-            
-            .input{
-                max-width: 100%;
-                border: 1px solid #ddd;
-                padding: 15px 10px;
-                font-size: 16px;
-                color: $dgray;
-                width: 100%;
-               
-
-            }
-            .login-remember{
-                label{
-                    font-family: $arial;
-                    font-weight: 700;
-                    display: block;
-                    font-size: 16px;
-                    color: $dgray;
-                }
-            }
-            .login-submit{
-                .button{
-                    border-radius: 0;
-                    background: #df7800;
-                    font-family: $arial;
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    padding: 10px 15px;
-                    display: inline-block;
-                    text-decoration: none;
-                    width: 100%;
-                    border: 0;
-                    &:hover{
-                        background-color: #dfdcde;
-                        text-decoration: none;
-                        background-image: none;
-                        color: #515151;
+.tablet-desktop-responsive{   
+    .container{ 
+        h2{
+            font-family: $arial;
+            color: black;
+            margin-top: 50px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .pmpro_login_wrap{
+            margin: 60px 0;
+            min-width: 1024px;
+                #loginform{
+                    max-width: 350px;
+                    margin: 0 auto 15px;
+                    .login-username,
+                    .login-password{
+                        font-family: $arial;
+                        font-weight: 700;
+                        display: block;
+                        font-size: 16px;
+                        color: $dgray;
                     }
-                }   
-            }
-        }
-        hr{
-            display: none;
-        }
-        .pmpro_actions_nav{
-            a{
-                text-decoration: none;
-                color: #df7800;
-                font-size: 16px;
-                font-family: $arial;
-                &:hover{
-                    color: #5d5e5e;   
+                    
+                    .input{
+                        max-width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 15px 10px;
+                        font-size: 16px;
+                        color: $dgray;
+                        width: 100%;
+                    
+
+                    }
+                    .login-remember{
+                        label{
+                            font-family: $arial;
+                            font-weight: 700;
+                            display: block;
+                            font-size: 16px;
+                            color: $dgray;
+                        }
+                    }
+                    .login-submit{
+                        .button{
+                            border-radius: 0;
+                            background: #df7800;
+                            font-family: $arial;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            text-decoration: none;
+                            width: 100%;
+                            border: 0;
+                            &:hover{
+                                background-color: #dfdcde;
+                                text-decoration: none;
+                                background-image: none;
+                                color: #515151;
+                            }
+                        }   
+                    }
                 }
-            }
+                hr{
+                    display: none;
+                }
+                .pmpro_actions_nav{
+                    a{
+                        text-decoration: none;
+                        color: #df7800;
+                        font-size: 16px;
+                        font-family: $arial;
+                        &:hover{
+                            color: #5d5e5e;   
+                        }
+                    }
+                }
+            
         }
-    
+    }
 }
 
 
+// login -responsive
+
+.mobile-responsive{   
+    .container{ 
+        h2{
+            font-family: $arial;
+            color: black;
+            margin-top: 50px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .pmpro_login_wrap{
+            margin: 60px 0;
+            min-width: auto;
+                #loginform{
+                    max-width: 350px;
+                    margin: 0 auto 15px;
+                    .login-username,
+                    .login-password{
+                        font-family: $arial;
+                        font-weight: 700;
+                        display: block;
+                        font-size: 16px;
+                        color: $dgray;
+                    }
+                    
+                    .input{
+                        max-width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 15px 10px;
+                        font-size: 16px;
+                        color: $dgray;
+                        width: 100%;
+                    
+
+                    }
+                    .login-remember{
+                        label{
+                            font-family: $arial;
+                            font-weight: 700;
+                            display: block;
+                            font-size: 16px;
+                            color: $dgray;
+                        }
+                    }
+                    .login-submit{
+                        .button{
+                            border-radius: 0;
+                            background: #df7800;
+                            font-family: $arial;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding: 10px 15px;
+                            display: inline-block;
+                            text-decoration: none;
+                            width: 100%;
+                            border: 0;
+                            &:hover{
+                                background-color: #dfdcde;
+                                text-decoration: none;
+                                background-image: none;
+                                color: #515151;
+                            }
+                        }   
+                    }
+                }
+                hr{
+                    display: none;
+                }
+                .pmpro_actions_nav{
+                    a{
+                        text-decoration: none;
+                        color: #df7800;
+                        font-size: 16px;
+                        font-family: $arial;
+                        &:hover{
+                            color: #5d5e5e;   
+                        }
+                    }
+                }
+            
+        }
+    }
+}
+
+
+
+// login responsive end
+
+
+
+
+.mobile-responsive{
+    .pmpro-checkout{
+        min-width: auto;
+        .container{
+            p{
+                width: 60%;
+                color: $dgray;
+                font-family: $arial;
+            }  
+            #pmpro_level-1{
+                h3{
+                    display: none;
+                }
+                hr{
+                    display: none;
+                }
+                .pmpro_btn{
+                    &:hover{
+                        background-color:#ececea;
+                        color: $dgray;
+                    }
+                }
+            } 
+        }
+    }
+}

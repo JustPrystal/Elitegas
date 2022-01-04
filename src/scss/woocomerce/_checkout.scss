@@ -323,6 +323,7 @@
                                 *{
                                     font-size: 13px;
                                     color: $dgray;
+                                    list-style: none;
                                 }
                                 border: 1px solid rgba(0,0,0,.1);
                                 margin: 0 -1px 24px 0;
@@ -342,6 +343,11 @@
                                         flex-wrap: wrap;
                                         th{
                                             flex: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            span{
+                                                margin: 0 5px;
+                                            }
                                         }
                                         td{
                                             flex: 50%;
