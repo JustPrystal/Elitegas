@@ -21,5 +21,11 @@
          // add_theme_support( 'wc-product-gallery-zoom' );
          // add_theme_support( 'wc-product-gallery-lightbox' );
          
-         /*
+         //Remove prices from google search
+        add_filter( 'woocommerce_structured_data_product_offer', '__return_empty_array' );
+
+        //Remove Unique sku function
+        add_filter( 'wc_product_has_unique_sku', '__return_false' );
+
+        
 ?>

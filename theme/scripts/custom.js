@@ -2,9 +2,11 @@
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 var body = document.body;
 if (isMobile) {
+      body.classList.remove('tablet-desktop-responsive');
       body.classList.add('mobile-responsive');
 } else {
-    body.classList.add('tablet-desktop-responsive');
+      body.classList.remove('mobile-responsive');
+      body.classList.add('tablet-desktop-responsive');
 }
 
 //adding class mobile version end

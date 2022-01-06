@@ -7,7 +7,17 @@
 
     <?php include_once INCLUDES_DIR . 'google-tag-manager.php'; ?>
     <?php include_once INCLUDES_DIR . 'google-analytics.php'; ?>
-
+    <title>
+      <?php
+        global $page, $paged;
+        wp_title( '|', true, 'right' );
+        // Add the blog name.
+        bloginfo( 'name' );
+        // Add a page number if necessary:
+        if ( $paged >= 2 || $page >= 2 )
+          echo ' | ' . sprintf( __( 'Page %s', 'dsk' ), max( $paged, $page ) );
+      ?>
+    </title>
   	<!--FAVICON-->
     <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/favicon.png" type="image/x-icon" />
@@ -30,7 +40,7 @@
         echo ' adminbar';
     }
 
-  ?>">
+  ?> tablet-desktop-responsive">
 
   <div <?php body_class('all'); ?> class="all">
   <?php require_once( get_template_directory() . '/navigation.php' ); ?>
