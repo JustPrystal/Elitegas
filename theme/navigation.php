@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="cart-icon">
-                <a class="header__action-item-link header__cart-toggle cart-contents" href="<?php echo get_site_url();?>zee/cart/" >
+                <a class="header__action-item-link header__cart-toggle cart-contents" href="<?php echo get_site_url();?>/cart/" >
 				    <div class="header__action-item-content">
                         <div class="header__cart-icon icon-state" aria-expanded="false">
                             <span class="icon-state__primary"><svg focusable="false" class="icon icon--cart" viewBox="0 0 27 24" role="presentation">
@@ -151,7 +151,7 @@
 		            </svg> 
                 </div>
                 <div class="cart-icon">
-                    <a class="header__action-item-link header__cart-toggle cart-contents" href="<?php echo get_site_url();?>zee/cart/" >
+                    <a class="header__action-item-link header__cart-toggle cart-contents" href="<?php echo get_site_url();?>/cart/" >
 				        <div class="header__action-item-content">
                             <div class="header__cart-icon icon-state" aria-expanded="false">
                                 <span class="icon-state__primary"><svg focusable="false" class="icon icon--cart" viewBox="0 0 27 24" role="presentation">

@@ -116,14 +116,14 @@ $(".search-wrap").click(function () {
 
 // Checkout credit card form drop down
 
-$(document).ready(function(){
-  $('input[type="radio"]').click(function(){
-      var inputValue = $(this).attr("value");
-      var targetBox = $(".payment_method_" + inputValue);
-      $(".payment_box").not(targetBox).hide();
-      $(targetBox).slideDown("slow");
-  });
-});
+// $(document).ready(function(){
+//   $('input[type="radio"]').click(function(){
+//       var inputValue = $(this).attr("value");
+//       var targetBox = $(".payment_method_" + inputValue);
+//       $(".payment_box").not(targetBox).hide();
+//       $(targetBox).slideDown("slow");
+//   });
+// });
 
 // Checkout Credit card drop down end
 
@@ -151,3 +151,12 @@ $(".dropdown").click(function(){
 });
 
 //Header hamburger end
+
+
+// Coupon slide down
+
+$(".showcoupon").click(function(){
+  $(".wrap-coupan-field").slideToggle("slow");
+})
+
+// End

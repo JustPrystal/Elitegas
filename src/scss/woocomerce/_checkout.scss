@@ -365,7 +365,7 @@
                                     .woocommerce-Price-amount{
                                     
                                     bdi{
-                                        font-size: 20px;
+                                        font-size: 14px;
                                     } 
                                     }
                                 }
@@ -423,6 +423,7 @@
                                     .form-row{
                                         padding: 3px;
                                         margin: 0 0 6px;
+                                        display: flex;
                                         &.form-row-first{
                                             float: left;
                                             width: 50%;
@@ -436,7 +437,6 @@
                                             }
                                         }
                                         &.form-row-last{
-                                            float: right;
                                             width: 50%;
                                             text-align: center;
                                             button{
