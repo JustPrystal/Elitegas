@@ -819,7 +819,6 @@
                                 .ginput_container {
                                     margin-right: 15px;
                                     &.ginput_container_date{
-                                        display: block;
                                     }
                                     &.ginput_container_radio{
                                         margin-left: -5px;
@@ -1225,8 +1224,24 @@
 .gfield_visibility_hidden{
     display: none;
 }
-
-
+.ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default{
+    border: 1px solid $orange !important;
+    font-family: $arial;
+}
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-default{
+    font-family: $arial;
+}
+.ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default:hover{
+    background-color: $orange !important;
+    border-color: $orange !important;
+    opacity: 0.6;
+}
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-default{
+    background-color: $orange !important;
+}
+.gfield .iti.iti--allow-dropdown input{
+    padding: 14px 10px 15px 45px !important;
+}
 //My account Template Responsive
 
 .mobile-responsive{
@@ -2089,10 +2104,24 @@
                                         .ginput_container {
                                             margin-right: 0px;
                                             &.ginput_container_date{
-                                                display: block;
+
                                             }
                                             &.ginput_container_radio{
                                                 margin-left: -5px;
+                                            }
+                                            &.ginput_container_fileupload{
+                                                .active-input{
+                                                    color: #c1c1c1 !important;
+                                                    &:after{
+                                                        font-family: 'FontAwesome';
+                                                        content: "\f058";
+                                                        color: #72d932;
+                                                        margin-left: 5px;
+                                                    }
+                                                    & ~ .gform_fileupload_rules{
+                                                        display: none;
+                                                    }
+                                                }
                                             }
                                             #input_3_65{
                                                 margin-top: 10px;
