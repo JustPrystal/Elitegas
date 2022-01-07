@@ -27,5 +27,16 @@
         //Remove Unique sku function
         add_filter( 'wc_product_has_unique_sku', '__return_false' );
 
-        
+        // add_filter( 'wp_enqueue_scripts', 'change_default_jquery', PHP_INT_MAX );
+
+        // function change_default_jquery( ){
+        //     wp_dequeue_script( 'jquery');
+        //     wp_deregister_script( 'jquery');   
+        // }
+        add_action('wp_enqueue_scripts', 'my_register_script_method');
+
+        function my_register_script_method () {
+            wp_deregister_script('jquery');
+            wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
+        }
 ?>

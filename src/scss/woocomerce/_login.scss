@@ -79,6 +79,66 @@
                 }
             
         }
+        .pmpro_lost_password_wrap{
+            .pmpro_lost_password-instructions{
+                text-align:center;
+                font-family:$arial;
+                font-size: 16px;
+                color: #677279;
+            }
+            .pmpro_lost_password-fields{
+                margin-top:20px;
+                margin-bottom:20px;
+                .pmpro_lost_password-field{
+                    label{
+                        font-size: 16px;
+                        color: #677279;
+                        font-family:$algrey;
+                        font-weight:700;
+                    }
+                    input{
+                        height: 48px;
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        max-width: 100%;
+                        font-family:$arial;
+                    }
+                } 
+            }
+            .pmpro_submit{
+                text-align: center;
+                margin-bottom:1em;
+                input{
+                    display: inline-block;
+                    padding: 0 30px;
+                    line-height: 48px;
+                    border-radius: 0px;
+                    text-align: center;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                    font-size: 16px;
+                    border: 0;
+                    background: #df7800;
+                    color: white;
+                }
+            }
+            hr{
+                opacity:0.4;
+            }
+            .pmpro_actions_nav{
+                a{
+                    color: #df7800;
+                    font-family:$arial;
+                    text-decoration:none;
+                    &:hover{
+                        color: #5d5e5e;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -165,6 +225,66 @@
                     }
                 }
             
+        }
+        .pmpro_lost_password_wrap{
+            .pmpro_lost_password-instructions{
+                text-align:center;
+                font-family:$arial;
+                font-size: 16px;
+                color: #677279;
+            }
+            .pmpro_lost_password-fields{
+                margin-top:20px;
+                margin-bottom:20px;
+                .pmpro_lost_password-field{
+                    label{
+                        font-size: 16px;
+                        color: #677279;
+                        font-family:$algrey;
+                        font-weight:700;
+                    }
+                    input{
+                        height: 48px;
+                        width: 100%;
+                        border: 1px solid #ddd;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        max-width: 100%;
+                        font-family:$arial;
+                    }
+                } 
+            }
+            .pmpro_submit{
+                text-align: center;
+                margin-bottom:1em;
+                input{
+                    display: inline-block;
+                    padding: 0 30px;
+                    line-height: 48px;
+                    border-radius: 0px;
+                    text-align: center;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
+                    font-size: 16px;
+                    border: 0;
+                    background: #df7800;
+                    color: white;
+                }
+            }
+            hr{
+                opacity:0.4;
+            }
+            .pmpro_actions_nav{
+                a{
+                    color: #df7800;
+                    font-family:$arial;
+                    text-decoration:none;
+                    &:hover{
+                        color: #5d5e5e;
+                    }
+                }
+            }
         }
     }
 }
