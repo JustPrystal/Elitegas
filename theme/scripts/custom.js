@@ -162,3 +162,15 @@ $(".showcoupon").click(function(){
 })
 
 // End
+
+// Onboarding upload field add class
+
+$(document).ready(function() {
+  $('.ginput_container_fileupload .large').change(function(evt) {
+      $(this).addClass('active-input').val();
+  });
+});
+
+// End
+
+$(".pmpro_actions_nav a:nth-child(1)").attr('href','/membership-account/membership-checkout/?level=1' );

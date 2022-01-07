@@ -157,6 +157,7 @@
                                 line-height: 1.5;
                                 &.instruct-text{
                                     color: red;
+                                    margin-top: -45px;
                                 }
                                 a{
                                     text-decoration: none;
@@ -260,6 +261,7 @@
                                 border: 2px solid #f1f1f1;
                                 padding: 20px;
                                 margin-bottom: 20px;
+                                margin-top: -45px;
                                 .text-wrap{
                                     .instruct-text{
                                         color: red;
@@ -267,6 +269,7 @@
                                         font-family: $arial;
                                         line-height: 1.5;
                                         padding-right: 25px;
+                                        margin: 0px;
                                     }
                                 }
                                 .button-wrap{
@@ -635,6 +638,9 @@
 
                             }
                         #gform_wrapper_3{
+                            .gform_submission_error{
+                                font-size: 16px;
+                            }
                             .gform_heading{
                                 display: none;
                             }
@@ -645,9 +651,9 @@
                                     display: flex;
                                     padding-bottom: 15px;
                                     .gf_step{
-                                        flex: 20%;
                                         display: flex;
                                         align-items: center;
+                                        margin: 8px 50px 8px 0;
                                         .gf_step_label{
                                             font-size: 12px;
                                             font-family: $arial;
@@ -656,7 +662,6 @@
                                             padding-top: 5px;
                                             padding-left: 5px;
                                             display: flex;
-                                            width: 50%;
                                             @include responsive(lg){
                                                 font-size: 10px;
                                             }
@@ -665,6 +670,7 @@
                                             align-items: center;
                                             display: flex;
                                             justify-content: center;
+                                            font-family: $arial;
                                             @include responsive(lg){
                                                 height: 35px;
                                                 width: 35px;
@@ -758,10 +764,10 @@
 
                         
                             h3{
-                                font-size: 28px;
+                                font-size: 30px;
                                 font-family: $arial;
                                 color: $dgray;
-                                font-weight: 500;
+                                font-weight: 600;
                                 margin: 0px;
                                 br{
                                     display: block;
@@ -773,6 +779,12 @@
                                     font-family: system-ui;
                                 }
                             }  
+                            .policies-wrap {
+                                height: 200px;
+                                overflow: auto;
+                                border: 1px solid #e5e7eb;
+                                padding: 10px 20px;
+                                margin-right: 15px;
                                 p{
                                     font-size: 15px;
                                     font-family: $arial;
@@ -789,6 +801,7 @@
                                         line-height: 1.5;
                                     }
                                 }
+                            }
                                 .gfield_label{
                                     position: absolute;
                                     left: 13px;
@@ -820,6 +833,20 @@
                                         .gchoice{
                                             width: 30%;
                                         }   
+                                    }
+                                    &.ginput_container_fileupload{
+                                        .active-input{
+                                            color: #c1c1c1 !important;
+                                            &:after{
+                                                font-family: 'FontAwesome';
+                                                content: "\f058";
+                                                color: #72d932;
+                                                margin-left: 5px;
+                                            }
+                                            & ~ .gform_fileupload_rules{
+                                                display: none;
+                                            }
+                                        }
                                     }
                                     input{
                                         padding: 23px 10px 5px 13px;

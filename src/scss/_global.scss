@@ -28,12 +28,36 @@ body {
         &:before {
             height:0;
         }
-    }
-    .all {
-        
-    }    
+    }   
+}
+::-webkit-scrollbar {
+	background: #ececea;
+	width: 10px;
 }
 
+::-webkit-scrollbar-button {
+	display: none;
+}
+
+::-webkit-scrollbar-track {
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #df7800;
+	background-clip: content-box;
+	border-radius: 9px;
+	border: 2px solid #df7800;
+	transition: all ease .4s
+}
+
+::-webkit-scrollbar-corner {
+	display: none;
+}
 // normal h1-h6 styles etc
 @import 'general';
 
