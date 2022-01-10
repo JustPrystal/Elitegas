@@ -1298,10 +1298,10 @@ function filter_woocommerce_get_availability_text( $availability, $product ) {
  			$availability = __( 'In Stock', 'woocommerce' ); 
 			break;
         case 'pre_order':
-            $availability = __( 'Product that has been manufactured and is on the water heading to US.', 'woocommerce' );
+            $availability = __( '<div class="stock-wrapper"><div class="stock-icon"></div> Product has been manufactured and is on the water heading to US.</div>', 'woocommerce' );
         break;
         case 'coming_soon':
-            $availability = __( 'Products in the pipeline not yet manufactured.', 'woocommerce' );
+            $availability = __( '<div class="stock-wrapper"><div class="stock-icon"></div> Coming soon</div>', 'woocommerce' );
         break;
 		
 		

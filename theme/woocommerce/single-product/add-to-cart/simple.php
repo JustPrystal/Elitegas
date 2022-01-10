@@ -30,10 +30,12 @@ if ( $product->is_in_stock() ) : ?>
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6') ) ) { ?>
-
+	<?php if($product->stock_status == "coming_soon" || $product->stock_status == "pre_order"){
+		//return empty
+	} else{?>
 	<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-
+		
 		<?php
 		do_action( 'woocommerce_before_add_to_cart_quantity' );
 
@@ -52,7 +54,7 @@ if ( $product->is_in_stock() ) : ?>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
-<?php } else { ?>
+<?php } } else { ?>
 <div class="not_active_text ">
   <div class="not_active_image">
     <img src="<?php bloginfo('template_directory'); ?>/images/LockKey.png" alt="">
