@@ -36,14 +36,13 @@ global $product;
 
 		<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
 	
-		&emsp;<?php if(get_field('product_upc')) { ?><span class="product-upc"><strong>UPC:</strong> <?php the_field('product_upc'); ?></span><?php } ?>
+		&emsp;<?php if(get_field('product_upc')) { ?><span id="test" class="product-upc"><strong>UPC:</strong> <?php the_field('product_upc'); ?></span><?php } ?>
 	
 	
 	<?php endif; ?>
-
+	<span class="stock <?php echo esc_attr( $class ); ?>"><?php echo wp_kses_post( $availability['availability'] ); ?></span>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
-
 </div>
 <!-- <div class="product-share-items">
 <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fab fa-facebook-f"></i></a>

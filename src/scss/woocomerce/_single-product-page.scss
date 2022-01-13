@@ -24,6 +24,9 @@
                                     position: relative;
                                     margin-bottom: 0;
                                     display: flex;
+                                    .onsale{
+                                        position: absolute;
+                                    }
                                     .woocommerce-product-gallery{
                                         border-right: 1px solid #ECECEA;
                                         width: 50%;
@@ -113,7 +116,7 @@
                                                 font-weight: 700;
                                                 letter-spacing: -1px;
                                                 line-height: 100%;
-                                                margin: 20px 0 10px;
+                                                margin: 7px 0 10px;
                                                 font-family: $arial;
                                             }
                                         }
@@ -147,7 +150,52 @@
                                             }
                                         }
                                         .cart{
-                                            display: flex;
+                                            display: inline-flex;
+                                            flex-direction: column-reverse;
+                                            width: 60%;
+                                            .price-rules-table-wrapper{
+                                                table{
+                                                    width: 100%;
+                                                    border: 1px solid #ececea;
+                                                    border-spacing: 0px;
+                                                    margin-bottom: 30px;
+                                                    thead{
+                                                        tr{
+                                                            th{
+                                                             text-align: left;
+                                                             padding: 10px 15px;
+                                                             width: 50%;
+                                                             font-family: "Roboto", sans-serif;
+                                                             color: #677279;
+                                                             font-weight: 600;
+                                                            }
+                                                        }
+                                                    }
+                                                    tbody{
+                                                        tr{
+                                                            td{
+                                                                padding: 10px 15px;
+                                                                width: 50%;
+                                                                font-family: "Roboto", sans-serif;
+                                                                color: #677279;
+                                                                font-weight: 400;
+                                                                border-top: 1px solid #ececea;
+                                                            }
+                                                            &.price-rule-active{
+                                                                td{
+                                                                    color: #df7800;
+                                                                    background-color: transparent !important;
+                                                                    span{
+                                                                        
+                                                                    color: #df7800;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
                                             .quantity{
                                                 border: 1px solid #ddd;
                                                 height: auto;
@@ -175,7 +223,7 @@
                                                 }
                                                 input{
                                                     height: 50px;
-                                                    padding-left: 15px;
+                                                    // padding-left: 15px;
                                                     float: left;
                                                     margin: 0;
                                                     width: 50px;
@@ -203,10 +251,14 @@
                                             border: 0;
                                             font-family: $arial;
                                             cursor: pointer;
+                                            padding: 16px 15px;
                                             &:hover{
                                                 background-color: #dfdcde;
                                                 color: #515151;
                                             }
+                                        }
+                                        .tier-pricing-summary-table{
+                                            display: none;
                                         }
                                         .woocommerce-product-details__short-description{
                                             margin: 30px 0 0;
@@ -422,7 +474,7 @@
                                                 font-weight: 700;
                                                 letter-spacing: -1px;
                                                 line-height: 100%;
-                                                margin: 20px 0 10px;
+                                                margin: 5px 0 10px;
                                                 font-family: $arial;
                                             }
                                         }

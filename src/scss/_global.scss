@@ -23,7 +23,7 @@ html, body {
 }
 body {
     position:relative;
-   
+    font-family: "Roboto", sans-serif;
     &.hide_nav {
         &:before {
             height:0;

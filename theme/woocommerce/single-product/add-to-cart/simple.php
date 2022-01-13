@@ -35,7 +35,7 @@ if ( $product->is_in_stock() ) : ?>
 	} else{?>
 	<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-		
+		<div class="wrap-quantity-btn">
 		<?php
 		do_action( 'woocommerce_before_add_to_cart_quantity' );
 
@@ -49,9 +49,9 @@ if ( $product->is_in_stock() ) : ?>
 
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
 		?>
-
+	
 		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt">ADD TO CART</button>
-
+	</div>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
 <?php } } else { ?>

@@ -391,6 +391,7 @@
                                                         border: 0;
                                                         cursor: pointer;
                                                         text-align: right;
+                                                        text-transform: capitalize;
                                                         &:hover{
                                                             color: $orange;
                                                         }
@@ -552,6 +553,7 @@
                                                     float: right;
                                                     .form_option_ship_edit{
                                                         font-size: 11px;
+                                                        text-transform: capitalize;
                                                         font-family: $arial;
                                                         color: $dgray;
                                                         cursor: pointer;
@@ -1652,6 +1654,7 @@
                                                         .form_option_edit{
                                                             font-size: 11px;
                                                             font-family: $arial;
+                                                            text-transform: capitalize;
                                                             color: $dgray;
                                                             border: 0;
                                                             cursor: pointer;
@@ -1831,6 +1834,7 @@
                                                             font-size: 11px;
                                                             font-family: "arial";
                                                             color: #677279;
+                                                            text-transform: capitalize;
                                                             border: 0;
                                                             cursor: pointer;
                                                             text-align: left;
@@ -2801,7 +2805,9 @@
 
 #ocwma_billing_popup{
     .ocwma_modal-content{
-        #oc_add_billing_form{
+        #oc_add_billing_form,
+        #oc_edit_billing_form
+        {
             .ocwma_woocommerce-address-fields{
                 .ocwma_woocommerce-address-fields_field-wrapper{
                     .form-row{
@@ -2845,7 +2851,7 @@
                         }
                     }
                 }
-                .wrap-btn{
+               
                     .button{
                         border-radius: 0;
                         background: #df7800;
@@ -2865,7 +2871,7 @@
                             color: #515151;
                         }
                     }
-                }
+                
             }
         }
     }
@@ -2876,7 +2882,8 @@
 
 #ocwma_shipping_popup{
     .ocwma_modal-content{
-        #oc_add_shipping_form{
+        #oc_add_shipping_form,
+        #oc_edit_shipping_form{
             .ocwma_woocommerce-address-fields{
                 .ocwma_woocommerce-address-fields_field-wrapper{
                     .form-row{
@@ -2920,7 +2927,7 @@
                         }
                     }
                 }
-                .wrap-btn{
+               
                     .button{
                         border-radius: 0;
                         background: #df7800;
@@ -2940,7 +2947,7 @@
                             color: #515151;
                         }
                     }
-                }
+                
             }
         }
     }
