@@ -54,6 +54,9 @@ if ( $product->is_in_stock() ) : ?>
 	</div>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
+	
+	<p class="cases_per_pallet"><?php echo get_field('cases_per_pallet')?> </p>
+
 <?php } } else { ?>
 <div class="not_active_text ">
   <div class="not_active_image">
