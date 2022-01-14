@@ -5,7 +5,9 @@
             <div class="image-container">
                 <?php foreach($block['image_container'] as $image){?>
                     <div class="image">
-                        <img src="<?php echo $image['image']['url']?>" alt="">
+						<a href="<?php echo $image['link']['url']?>">
+                        	<img src="<?php echo $image['image']['url']?>" alt="">
+						</a>
                     </div>
                 <?php } ?>
             </div>
