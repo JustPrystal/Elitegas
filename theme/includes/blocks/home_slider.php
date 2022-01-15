@@ -1,10 +1,23 @@
 <section class="Home-Page-Slider is_desktop">
     <div class="wrapper">
         <div class="slider-main">
-            <?php 
+            <?php
                 foreach($block['image_container'] as $image){ ?>
+                  
                 <div class="image-wrapper">
+                <?php 
+               
+                if ($image['choose_type'] == 'image') {?>
                     <img src="<?php echo $image['image']['url'] ?>">
+                   
+                <?php } else { ?>
+                    <video width="100%" height="635" autoplay muted>
+                    <source src="<?php echo $image['video']['url']?>" type="video/mp4">
+                    </video>
+
+                   <?php  }
+              ?>
+                    <!-- <img src="<?php echo $image['image']['url'] ?>"> -->
                 </div>
             <?php
                 }
@@ -12,6 +25,7 @@
         </div>
     </div>
 </section>
+
 <section class="Home-Page-Slider is_mobile">
     <div class="wrapper">
         <div class="slider-main">
