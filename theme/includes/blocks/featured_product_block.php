@@ -39,6 +39,9 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                         <div class="upc-wrapper">
                             <p><strong>UPC: <span><?php echo $upc ?></span></strong><?php ?></p>
                         </div>
+                        <div class="stock-status">
+                            <p class="stock <?php echo $product->get_availability()['class']; ?>"><?php echo $product->get_availability()['availability'];?></p>
+                        </div>
                     </div>
                     <?php if(is_user_logged_in()){ ?>
                             <div class="Logined-Box-Wrap">
@@ -49,9 +52,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                             </div>
                         <?php }  ?>
                         
-                        <div class="stock-status">
-                        <?php echo $product->get_stock_status() ?>
-                        </div>
+                        
                         
                         <?php if(is_user_logged_in()){ ?>
                             <form class="cart" method="post" enctype="multipart/form-data">

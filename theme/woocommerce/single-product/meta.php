@@ -40,7 +40,7 @@ global $product;
 	
 	
 	<?php endif; ?>
-	<span class="stock <?php echo esc_attr( $class ); ?>"><?php echo wp_kses_post( $availability['availability'] ); ?></span>
+	<span class="stock <?php echo $product->get_availability()['class']; ?>"><?php echo $product->get_availability()['availability'];?></span>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 </div>
