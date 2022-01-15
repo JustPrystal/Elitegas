@@ -1,0 +1,53 @@
+.tablet-desktop-responsive{
+    .pmpro_container{
+        max-width:1460px;
+        margin:0 auto;
+        min-width:1024px;
+        color:#677279;
+        @media(max-width:1460px){
+            padding:0px 30px;
+            max-width:100%;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 400;
+            margin: 30px 0 10px 0;
+            text-transform: capitalize;
+           
+        }
+        .View-membership-url{
+            margin-top: 50px;
+            text-align:center;
+            a{
+                color:$orange;
+                &:hover{
+                    color:#5d5e5e;
+                }
+            }
+        }
+    }
+}
+.mobile-responsive{
+    .pmpro_container{
+        padding:0px 20px;
+        color:#677279;
+        
+        h2{
+            font-size: 35px;
+            font-weight: 400;
+            margin: 30px 0 10px 0;
+            text-transform: capitalize;
+           
+        }
+        .View-membership-url{
+            margin-top: 50px;
+            text-align:center;
+            a{
+                color:$orange;
+                &:hover{
+                    color:#5d5e5e;
+                }
+            }
+        }
+    }
+}
