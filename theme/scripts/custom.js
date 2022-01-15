@@ -174,3 +174,4 @@ $(document).ready(function() {
 // End
 
 $(".pmpro_actions_nav a:nth-child(1)").attr('href','/membership-account/membership-checkout/?level=1' );
+

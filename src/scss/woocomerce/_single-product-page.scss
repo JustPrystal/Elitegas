@@ -36,22 +36,35 @@
                                     .woocommerce-product-gallery{
                                         border-right: 1px solid #ECECEA;
                                         width: 50%;
-                                        img{
-                                            @include responsive(xl){
-                                                width: 550px;
-                                                height: 550px;
-                                            }
-                                            @include responsive(lg){
-                                                width: 500px;
-                                                height: 500px;
-                                            }
-                                            @media (max-width: 1150px){
-                                                width: 450px;
-                                                height: 450px;
+                                        .woocommerce-product-gallery__wrapper{
+                                            pointer-events: none;
+                                            img{
+                                                @include responsive(xl){
+                                                    width: 550px;
+                                                    height: 550px;
+                                                }
+                                                @include responsive(lg){
+                                                    width: 500px;
+                                                    height: 500px;
+                                                }
+                                                @media (max-width: 1150px){
+                                                    width: 450px;
+                                                    height: 450px;
+                                                }
                                             }
                                         }
                                         .flex-control-thumbs{
-                                            display: none;
+                                            display: flex;
+                                            justify-content: center;
+                                            margin-top: 50px;
+                                            padding: 0px;
+                                            list-style: none;
+                                            li{
+                                                border: 1px solid #ececea;
+                                                padding: 10px;
+                                                margin: 0 8px;
+                                                cursor: pointer;
+                                            }
                                         }
                                     }
                                     .summary{
@@ -128,7 +141,7 @@
                                                 font-family: $arial;
                                             }
                                         }
-                                        .in-stock{
+                                        .stock{
                                             font-family: $arial;
                                             color: #999;
                                             font-size: 14px;
@@ -140,21 +153,32 @@
                                             margin-top: 20px;
                                             margin-bottom: 10px;
                                             border: 1px solid #ececea;
+                                            display: flex;
+                                            .not_active_image{
+                                                img{
+                                                    width: 70%;
+                                                }
+                                            }
                                             .not_active_content{
+                                                width: 100%;
                                                 span{
                                                     font-weight: 800;
                                                     text-transform: uppercase;
                                                     font-size: 26px;
                                                     color: #df7800;
                                                     line-height: 1.5;
-                                                    font-family: "arial";
+                                                    font-family: $arial;
                                                 }
                                                     p{
                                                         font-size: 14px;
                                                         font-weight: 600;
                                                         color: #df7800;
-                                                        font-family: "arial";
+                                                        font-family: $arial;
                                                         line-height: 1.5;
+                                                        margin: 0px;
+                                                        a{
+                                                            color: $orange;
+                                                        }
                                                 }    
                                             }
                                         }
@@ -409,11 +433,24 @@
                                     margin-bottom: 0;
                                     display: flex;
                                     flex-wrap: wrap;
+                                    .up-sells{
+                                        display: none;
+                                    }
                                     .woocommerce-product-gallery{
                                         border-right: 0px solid #ECECEA;
-                                        img{
-                                            width: 100%;
+                                        display: contents;
+                                        .woocommerce-product-gallery__wrapper{
                                             height: 100%;
+                                            width: 100%;
+                                            margin: 0px;
+                                            .woocommerce-product-gallery__image{
+                                                width: 100%;
+                                                margin: 0px;
+                                                img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
                                         }
                                         .flex-control-thumbs{
                                             display: none;
@@ -494,14 +531,77 @@
                                                 font-family: $arial;
                                             }
                                         }
-                                        .in-stock{
+                                        .stock{
                                             font-family: $arial;
                                             color: #999;
                                             font-size: 14px;
                                             margin-bottom: 15px;
+                                            &.in-stock{
+                                                font-family: $arial;
+                                                color: #999;
+                                                font-size: 14px;
+                                                margin-bottom: 15px;
+                                            }
                                         }
                                         .cart{
                                             display: flex;
+                                            flex-wrap: wrap;
+                                            .price-rules-table-wrapper{
+                                                width: 100%;
+                                                table{
+                                                    width: 100%;
+                                                    border: 1px solid #ececea;
+                                                    border-spacing: 0px;
+                                                    margin-bottom: 30px;
+                                                    thead{
+                                                        tr{
+                                                            text-align: left;
+                                                            position: relative;
+                                                            // &:hover{
+                                                            //     background-color: #ececea;
+                                                            // }
+                                                            // &:after{
+                                                            //     content: "\f078";
+                                                            //     font-family: FontAwesome;
+                                                            //     position: absolute;
+                                                            //     right: 15px;
+                                                            //     top: 0;
+                                                            //     bottom: 5px;
+                                                            //     display: flex;
+                                                            //     align-items: center;
+                                                            //     color: #677279;
+                                                            // }
+                                                            th{
+                                                                padding: 10px 15px;
+                                                                border-bottom: 1px solid #ececea;
+                                                                width: 50%;
+                                                                font-family: $arial;
+                                                                color: #677279;
+                                                                font-weight: 700;
+                                                            }
+                                                        }
+                                                    }
+                                                    tbody{
+                                                        tr{
+                                                            &.price-rule-active{
+                                                                td{
+                                                                    color: white;
+                                                                }
+                                                            }
+                                                            td{
+                                                                padding: 10px 15px;
+                                                                width: 50%;
+                                                                font-family: $arial;
+                                                                color: #677279;
+                                                                font-weight: 400;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .tier-pricing-summary-table{
+                                                display: none;
+                                            }
                                             .quantity{
                                                 border: 1px solid #ddd;
                                                 height: auto;

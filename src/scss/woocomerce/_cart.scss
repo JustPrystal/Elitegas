@@ -4,6 +4,37 @@
         .woocommerce-notices-wrapper{
             display: none;
         }
+        .cart-empty{
+            font-family: $arial;
+            font-size: 30px;
+            color:#677279;
+            max-width: 1460px;
+            margin: 70px auto 0;
+            padding: 0px 0px;
+            @include responsive(xl){
+                padding: 0 30px;
+            }
+        }
+        .return-to-shop{
+            max-width: 1460px;
+            margin: 30px auto 60px;
+            padding: 0px 0px;
+            @include responsive(xl){
+                padding: 0 30px;
+            }
+            a{
+                font-family: $arial;
+                font-size: 18px;
+                background-color: $orange;
+                padding: 12px 35px;
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    background-color: #ededed;
+                    color: #677279;
+                }
+            }
+        }
         .container{
 
             .main-heading{
@@ -408,6 +439,37 @@
         min-width: auto;
         .woocommerce-notices-wrapper{
             display: none;
+        }
+        .cart-empty{
+            font-family: $arial;
+            font-size: 30px;
+            color:#677279;
+            max-width: 1460px;
+            margin: 70px auto 0;
+            padding: 0px 0px;
+            @include responsive(xl){
+                padding: 0 30px;
+            }
+        }
+        .return-to-shop{
+            max-width: 1460px;
+            margin: 30px auto 60px;
+            padding: 0px 0px;
+            @include responsive(xl){
+                padding: 0 30px;
+            }
+            a{
+                font-family: $arial;
+                font-size: 18px;
+                background-color: $orange;
+                padding: 12px 35px;
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    background-color: #ededed;
+                    color: #677279;
+                }
+            }
         }
         .container{
 

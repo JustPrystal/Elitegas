@@ -1416,7 +1416,8 @@ function custom_shortcode() {
 	} else {
 	//What to do if they have not submitted the form.  
 	  	
-	    echo the_field('instruct'); 
+	    echo the_field('instruct');
+		echo the_field('pdf_form');  
 		echo do_shortcode('[gravityform id="3" title="true" description="true"]');
 	} }
 	

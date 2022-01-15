@@ -71,6 +71,5 @@ if ( $product->is_in_stock() ) : ?>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
-<div class="showdcheck"><?php echo do_shortcode('[woocommerce_checkout]');?></div>
 
 <?php endif; ?>

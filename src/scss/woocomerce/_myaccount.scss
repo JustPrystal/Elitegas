@@ -126,6 +126,7 @@
                     }
                 }
                 .woocommerce-MyAccount-content{
+                    position: relative;
                             br{
                                 display: none;
                             }
@@ -158,6 +159,20 @@
                                 &.instruct-text{
                                     color: red;
                                     margin-top: -45px;
+                                }
+                                .pdf-form{
+                                    float: right;
+                                    position: absolute;
+                                    top: 60px;
+                                    right: 0;
+                                    border: 0;
+                                    color: #df7800;
+                                    text-decoration: underline;
+                                    font-weight: 700;
+                                    cursor: pointer;
+                                    line-height: 100%;
+                                    font-size: 14px;
+                                    padding-right: 5px;
                                 }
                                 a{
                                     text-decoration: none;
@@ -1371,7 +1386,7 @@
                         }
                     }
                     .woocommerce-MyAccount-content{
-                            
+                        position: relative;
                                 br{
                                     display: none;
                                 }
@@ -1405,6 +1420,16 @@
                                     line-height: 1.5;
                                     &.instruct-text{
                                         color: red;
+                                    }
+                                    .pdf-form{
+                                        border: 0;
+                                        color: #df7800;
+                                        text-decoration: underline;
+                                        font-weight: 700;
+                                        cursor: pointer;
+                                        line-height: 100%;
+                                        font-size: 14px;
+                                        padding-right: 5px;
                                     }
                                     a{
                                         text-decoration: none;
