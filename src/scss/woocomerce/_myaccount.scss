@@ -166,9 +166,9 @@
                                     top: 60px;
                                     right: 0;
                                     border: 0;
-                                    color: #df7800;
-                                    text-decoration: underline;
-                                    font-weight: 700;
+                                    color: #e3e3e3;
+                                    text-decoration: none;
+                                    font-weight: 600;
                                     cursor: pointer;
                                     line-height: 100%;
                                     font-size: 14px;
@@ -177,9 +177,7 @@
                                 a{
                                     text-decoration: none;
                                     color: #df7800;
-                                    &:hover{
-                                        color: #5d5e5e;
-                                    }
+                                    
                                 }
                             }
                             .woocommerce-orders-table {
