@@ -1,12 +1,12 @@
 {
-    "key": "group_61e0bec840aa6",
-    "title": "Product Per Pallet",
+    "key": "group_61df495e0f978",
+    "title": "pdf vendor form",
     "fields": [
         {
-            "key": "field_61e0bedfee2ea",
-            "label": "Cases per pallet",
-            "name": "cases_per_pallet",
-            "type": "text",
+            "key": "field_61df496b65846",
+            "label": "pdf form",
+            "name": "pdf_form",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,19 +15,19 @@
                 "class": "",
                 "id": ""
             },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page",
                 "operator": "==",
-                "value": "product"
+                "value": "9"
             }
         ]
     ],
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1642196323
+    "modified": 1642023288
 }

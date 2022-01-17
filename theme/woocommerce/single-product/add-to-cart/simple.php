@@ -60,7 +60,7 @@ if ( $product->is_in_stock() ) : ?>
 <?php } } else { ?>
 <div class="not_active_text ">
   <div class="not_active_image">
-    <img src="<?php bloginfo('template_directory'); ?>/images/LockKey.png" alt="">
+    <img src="/wp-content/uploads/2022/01/LockKey.png" alt="">
   </div>
   <div class="not_active_content">
     <span>Product Prices &amp; Ordering Locked</span>

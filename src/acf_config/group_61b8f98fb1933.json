@@ -22,7 +22,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_61e1d9647dfce",
+                    "key": "field_61e1ef886c983",
                     "label": "choose type",
                     "name": "choose_type",
                     "type": "radio",
@@ -55,7 +55,7 @@
                     "conditional_logic": [
                         [
                             {
-                                "field": "field_61e1d9647dfce",
+                                "field": "field_61e1ef886c983",
                                 "operator": "==",
                                 "value": "image"
                             }
@@ -78,7 +78,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_61e1d9937dfcf",
+                    "key": "field_61e1ef7b6c982",
                     "label": "Video",
                     "name": "video",
                     "type": "file",
@@ -87,7 +87,7 @@
                     "conditional_logic": [
                         [
                             {
-                                "field": "field_61e1d9647dfce",
+                                "field": "field_61e1ef886c983",
                                 "operator": "==",
                                 "value": "video"
                             }
@@ -169,5 +169,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1642195045
+    "modified": 1642199842
 }
