@@ -36,11 +36,13 @@ defined( 'ABSPATH' ) || exit;
 				?>
 				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>" style="display: flex;">
 					<td class="product-name" style="width: 70%;">
-						<?php echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;'; ?>
+						<?php echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) ) . '&nbsp;'; if(array_key_exists("eg_product_subtitle",$cart_item)){ echo $cart_item['eg_product_subtitle']; } ?>
+						<div class="checkout_variations">
+							<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						</div>
 						<br>
 						<div class="sub_item"><?php echo $cart_item['data']->sku ?> - UPC: <?php echo get_field("product_upc", $cart_item["product_id"])?></div>
 						<div class="sub_item"></div>
-						<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					</td>
 					<td class="product-quantity" style="width: 15%; border-right: 1px solid #ededed; border-left: 1px solid #ededed; display: flex; justify-content: center; align-items: center;" >
 						<?php echo $cart_item['quantity'] ?>

@@ -154,6 +154,21 @@
                                             font-size: 12px;
                                         }
                                     }
+                                    dl.variation{
+                                        margin:0;
+                                        dt.variation-subtitle{
+                                            display:none;
+                                        }
+                                        dd.variation-subtitle{
+                                            margin:0;
+                                            p{
+                                                margin:0;
+                                                font-size: 10px;
+                                                color: #677279;
+                                                font-family:$arial;
+                                            }
+                                        }
+                                    }
                                 }
                                 &.product-price{
                                     .woocommerce-Price-amount{

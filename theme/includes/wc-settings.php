@@ -34,7 +34,33 @@
             wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js');
         }
 
-		//pass order meta on checkout
+		//pass meta to cart object
+        add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
+        
+        function wdm_add_item_data($cart_item_data, $product_id, $variation_id){
+
+            $subtitle = get_field("subtitle",$product_id);
+            if($subtitle){
+                $cart_item_data['eg_product_subtitle'] = $subtitle;
+            }
+            return $cart_item_data;
+        }
+        //create keys and display cart meta on cart
+        add_filter('woocommerce_get_item_data','wdm_add_item_meta',10 , 2);
+        function wdm_add_item_meta($item_data, $cart_item ){
+            if(array_key_exists('eg_product_subtitle', $cart_item))
+            {   
+                $custom_details = $cart_item['eg_product_subtitle'];
+
+                $item_data[] = array(
+                    'key'   => 'subtitle',
+                    'value' => $custom_details
+                );
+                
+            }
+            return $item_data;
+        }
+        //pass order meta on checkout
 		add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_custom_checkout_create_order_line_item', 20, 4 );
 
 		function wdm_custom_checkout_create_order_line_item( $item, $cart_item_key, $values, $order ) {  
@@ -43,5 +69,4 @@
 			 $item->update_meta_data( 'Product UPC', $upc );
 			}
 		}
-
 ?>
