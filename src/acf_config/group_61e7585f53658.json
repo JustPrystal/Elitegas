@@ -1,0 +1,74 @@
+{
+    "key": "group_61e7585f53658",
+    "title": "Brand Product Block",
+    "fields": [
+        {
+            "key": "field_61e758fa8e5b1",
+            "label": "Brand Product Heading",
+            "name": "brand_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61e7590b8e5b2",
+            "label": "Brand Products",
+            "name": "brand_products",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": [
+                "pa_nitrous-oxide-brand:nitrous-mafia",
+                "pa_nitrous-oxide-brand:jumbo-whip",
+                "pa_nitrous-oxide-brand:xl-whip"
+            ],
+            "filters": [
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": ""
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642555688
+}

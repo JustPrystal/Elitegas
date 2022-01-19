@@ -1,9 +1,79 @@
 .tablet-desktop-responsive{    
     .woocommerce{
         min-width: 1024px; 
-        .container{
-        
+            .woocommerce-form-coupon-toggle{
+                margin-top: 50px;
+                .woocommerce-info{
+                    font-size: 16px;
+                    margin-top: 0;
+                    padding: 1em 2em 1em 3.5em;
+                    margin: 0 0 2em;
+                    position: relative;
+                    background-color: #f7f6f7;
+                    color: #515151;
+                    border-top: 3px solid #222222;
+                    border-radius: 3px;
+                    &:before{
+                        font-family: 'FontAwesome';
+                        content: "\f06b";
+                        display: inline-block;
+                        position: absolute;
+                        top: 1em;
+                        left: 1.5em;
+                    }
+                    a{
+                        text-decoration: none;
+                    color: #df7800;
+                    &:hover{
+                        color: #5d5e5e;
+                    }
+                    }
+                }
+            }
+            .checkout_coupon{          
+            border: 1px solid #d3ced2;
+            padding: 20px;
+            margin: 2em 0;
+            text-align: left;
+            border-radius: 5px;
+            display: none;
+            width: 100%;
+                .form-row{
+                    padding: 3px;
+                    margin: 0 0 6px;
+                    display: flex;
+                    &.form-row-first{
+                        float: left;
+                        width: 50%;
+                        overflow: visible;   
+                        .input-text{
+                            height: 49px;
+                            border-radius: 5px;
+                            padding: 0 15px;
+                            border: 1px solid #ddd;
+                            width: 100%;
+                        }
+                    }
+                    &.form-row-last{
+                        width: 50%;
+                        text-align: center;
+                        button{
+                            background-color: #df7800;
+                            color: #ffffff;
+                            padding: 15px 15px;
+                            font-size: 15px;
+                            border: 0px;
+                            text-transform: uppercase;
+                            &:hover{
+                                background-color: #dfdcde;
+                                color: #515151;
+                            }
+                        }
+                    }
+                }
+            }
 
+        .container{
             .main-heading{
                 .heading{
                     font-size: 35px;
@@ -382,83 +452,6 @@
                                     }
                                 }
                             }
-
-                            .coupon-wrap{
-                                .woocommerce-form-coupon-toggle{
-                                    .woocommerce-info{
-                                        font-size: 16px;
-                                        margin-top: 0;
-                                        padding: 1em 2em 1em 3.5em;
-                                        margin: 0 0 2em;
-                                        position: relative;
-                                        background-color: #f7f6f7;
-                                        color: #515151;
-                                        border-top: 3px solid #222222;
-                                        border-radius: 3px;
-                                        &:before{
-                                            font-family: 'FontAwesome';
-                                            content: "\f06b";
-                                            display: inline-block;
-                                            position: absolute;
-                                            top: 1em;
-                                            left: 1.5em;
-                                        }
-                                        a{
-                                            text-decoration: none;
-                                        color: #df7800;
-                                        &:hover{
-                                            color: #5d5e5e;
-                                        }
-                                        }
-                                    }
-                                }
-                                .wrap-coupan-field{
-                                
-                                border: 1px solid #d3ced2;
-                                padding: 20px;
-                                margin: 2em 0;
-                                text-align: left;
-                                border-radius: 5px;
-                                display: none;
-                                width: 100%;
-                                    .form-row{
-                                        padding: 3px;
-                                        margin: 0 0 6px;
-                                        display: flex;
-                                        &.form-row-first{
-                                            float: left;
-                                            width: 50%;
-                                            overflow: visible;   
-                                            .input-text{
-                                                height: 49px;
-                                                border-radius: 5px;
-                                                padding: 0 15px;
-                                                border: 1px solid #ddd;
-                                                width: 100%;
-                                            }
-                                        }
-                                        &.form-row-last{
-                                            width: 50%;
-                                            text-align: center;
-                                            button{
-                                                background-color: #df7800;
-                                                color: #ffffff;
-                                                padding: 15px 15px;
-                                                font-size: 15px;
-                                                border: 0px;
-                                                text-transform: uppercase;
-                                                &:hover{
-                                                    background-color: #dfdcde;
-                                                    color: #515151;
-                                                }
-                                            }
-                                        }
-                                    }
-
-
-                                }
-                            }
-
 
                             .woocommerce-checkout-payment{
                                 .wc_payment_methods{

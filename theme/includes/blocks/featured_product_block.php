@@ -28,7 +28,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                     </div>
                 </div>
                 <div class="content-wrap">
-                    <div class="heading"><?php echo $product->get_name() ?></div>
+                    <div class="heading"><?php echo $product->get_title(); echo " ".get_field('subtitle',$productID); ?></div>
                     <div class="info">
                         <div class="tag-wrapper">
                         <a href="/product-tag/<?php echo $current_tag[0]->slug ?>"><?php echo $current_tag[0]->name ?></a>
@@ -67,7 +67,7 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                                 <button type="submit" class="single_add_to_cart_button button alt"> Add to cart</button>
                             </form>
                         <?php }  ?>
-                        
+                        <p class="cases_per_pallet"><?php echo get_field('cases_per_pallet', $productID)?> </p>
                         <?php if(!(is_user_logged_in())){ ?>
                         <div class="Product-Pricing-Box">
                             <div class="Not-Logined-Box-Wrap">

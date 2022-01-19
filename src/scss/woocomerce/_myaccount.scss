@@ -173,6 +173,40 @@
                                     line-height: 100%;
                                     font-size: 14px;
                                     padding-right: 5px;
+                                    .tooltiptext {
+                                        visibility: hidden;
+                                        width: 200px;
+                                        background-color: #555;
+                                        color: #fff;
+                                        text-align: left;
+                                        border-radius: 6px;
+                                        padding: 15px 15px;
+                                        position: absolute;
+                                        z-index: 1;
+                                        bottom: 125%;
+                                        left: 50%;
+                                        margin-left: -175px;
+                                        margin-bottom: 5px;
+                                        opacity: 0;
+                                        transition: opacity 0.3s;
+                                        font-weight: 500;
+                                        font-family: $arial;
+                                        font-size: 13px;
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            top: 100%;
+                                            right: 10%;
+                                            margin-left: -5px;
+                                            border-width: 5px;
+                                            border-style: solid;
+                                            border-color: #555 transparent transparent transparent;
+                                        }
+                                    }
+                                    &:hover .tooltiptext {
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
                                 }
                                 a{
                                     text-decoration: none;
@@ -830,9 +864,39 @@
                                     color: $dgray;
                                     font-family: $arial;
                                     font-size: 16px;
+                                    z-index: 10;
                                 }
                                 .ginput_container {
                                     margin-right: 15px;
+                                    &.ginput_container_select{
+                                        position: relative;
+                                        &:before{
+                                            content: "\f078";
+                                            font-family: FontAwesome;
+                                            position: absolute;
+                                            right: 10px;
+                                            top: 18px;
+                                            font-size: 11px;
+                                            color: #a09e94;
+                                        }
+                                        select{
+                                            padding: 25px 10px 5px 10px;
+                                            font-size: 16px;
+                                            color: black;
+                                            border: 1px solid #e0e0dd;
+                                            height: 48px;
+                                            border-radius: 0px;
+                                            -webkit-appearance: none;
+                                        }
+                                    }
+                                    &.ginput_container_phone{
+                                        .iti__selected-flag{
+                                            padding: 15px 6px 0 12px;
+                                        }
+                                        .iti__country-list{
+                                            z-index: 20;
+                                        }
+                                    }
                                     &.ginput_container_date{
                                     }
                                     &.ginput_container_radio{
@@ -888,12 +952,6 @@
                                             padding-left: 4px;
                                         }
                                     
-                                    }
-                                    select{
-                                        padding: 25px 10px 5px 10px;
-                                        font-size: 16px;
-                                        color: black;
-                                        border: 1px solid #e0e0dd;
                                     }
                                     .gform_fileupload_rules{
                                         position: absolute;
@@ -1255,7 +1313,7 @@
     background-color: $orange !important;
 }
 .gfield .iti.iti--allow-dropdown input{
-    padding: 14px 10px 15px 45px !important;
+    padding: 21px 10px 7px 50px !important;
 }
 //My account Template Responsive
 
@@ -2126,10 +2184,31 @@
                                             color: $dgray;
                                             font-family: $arial;
                                             font-size: 14px;
-
+                                            z-index: 10;
                                         }
                                         .ginput_container {
                                             margin-right: 0px;
+                                            &.ginput_container_select{
+                                                position: relative;
+                                                &:before{
+                                                    content: "\f078";
+                                                    font-family: FontAwesome;
+                                                    position: absolute;
+                                                    right: 10px;
+                                                    top: 18px;
+                                                    font-size: 11px;
+                                                    color: #a09e94;
+                                                }
+                                                select{
+                                                    padding: 25px 10px 5px 10px;
+                                                    font-size: 16px;
+                                                    color: black;
+                                                    border: 1px solid #e0e0dd;
+                                                    height: 48px;
+                                                    border-radius: 0px;
+                                                    -webkit-appearance: none;
+                                                }
+                                            }
                                             &.ginput_container_date{
 
                                             }
@@ -2182,12 +2261,6 @@
                                                     padding-left: 4px;
                                                 }
                                             
-                                            }
-                                            select{
-                                                padding: 25px 10px 5px 10px;
-                                                font-size: 16px;
-                                                color: black;
-                                                border: 1px solid #e0e0dd;
                                             }
                                             .gform_fileupload_rules{
                                                 font-size: 11px;

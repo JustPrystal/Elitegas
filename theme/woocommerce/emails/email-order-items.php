@@ -34,6 +34,8 @@ foreach ( $items as $item_id => $item ) :
 		$sku           = $product->get_sku();
 		$purchase_note = $product->get_purchase_note();
 		$image         = $product->get_image( $image_size );
+		$upc = get_field("product_upc",$product->get_id());
+		$subtitle = get_field("subtitle",$product->get_id());
 	}
 
 	?>
@@ -48,11 +50,18 @@ foreach ( $items as $item_id => $item ) :
 
 		// Product name.
 		echo wp_kses_post( apply_filters( 'woocommerce_order_item_name', $item->get_name(), $item, false ) );
-
+		if($subtitle){
+			echo wp_kses_post( ' ' . $subtitle  );
+		}	
 		// SKU.
 		if ( $show_sku && $sku ) {
-			echo wp_kses_post( ' (#' . $sku . ')' );
+			echo "<br/>";
+			echo wp_kses_post( 'SKU :' . $sku  );
 		}
+		if($upc){
+			echo " - ";
+			echo wp_kses_post( 'UPC :' . $upc  );
+		}	
 
 		// allow other plugins to add additional product information here.
 		do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order, $plain_text );

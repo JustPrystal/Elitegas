@@ -47,9 +47,12 @@
             case 'request_quote':
               include 'blocks/request_quote_block.php';
               break;
-              case 'order_tracking':
-                include 'blocks/order_track.php';
-                break;     
+            case 'order_tracking':
+              include 'blocks/order_track.php';
+              break;   
+            case 'brand_product':
+              include 'blocks/brand_block.php';
+              break;       
           }
         }
       }

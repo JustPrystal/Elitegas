@@ -354,6 +354,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_61e759b9cda60": {
+                    "key": "layout_61e759b9cda60",
+                    "name": "brand_product",
+                    "label": "Brand Product",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61e759c2cda61",
+                            "label": "Brand Product Field",
+                            "name": "brand_product_field",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61e7585f53658"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -389,5 +420,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1640813824
+    "modified": 1642551824
 }

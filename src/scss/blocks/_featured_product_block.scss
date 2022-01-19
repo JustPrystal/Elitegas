@@ -116,7 +116,7 @@
             padding: 30px;            
             .heading {
               font-size: 1.75rem;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 1.2;
               font-family: $arial;
               color: #677279;
@@ -142,6 +142,9 @@
                 text-transform: capitalize;
                 font-size: 14px;
                 margin: 8px 0px 8px 12px;
+                &.stock{
+                  color: #999;
+                }
                 strong {
                   span {
                     font-weight: 400;
@@ -152,13 +155,13 @@
             }
             .stock-status {
               font-family: $arial;
-              color: #677279;
+              color: #999;
               text-transform: capitalize;
               font-size: 14px;
             }
             .cart {
               display: flex;
-              margin: 16px 0px 20px 0px;
+              margin: 15px 0px 15px 0px;
               column-gap: 4px;
               .quantity {
                 flex: 0 0 18%;
@@ -168,20 +171,22 @@
                   cursor: pointer;
                   background: none;
                   border: none;
-                  width: 65px;
                   font-size: 26px;
-                  width: 40px;
+                  font-family: 'WooCommerce';
                   font-weight: 700;
+                  width: 40px;
                   color: #c7c7c7;
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  -webkit-touch-callout: none;
                   -webkit-user-select: none;
                   -khtml-user-select: none;
                   -moz-user-select: none;
                   -ms-user-select: none;
                   user-select: none;
+                  &.Minus{
+                    height: 47px;
+                  }
                 }
                 input {
                   width: 50%;
@@ -189,6 +194,8 @@
                   border: none;
                   text-align: center;
                   font-family: $arial;
+                  font-size: 18px;
+                  color: #677279;
                   &::-webkit-inner-spin-button {
                     -webkit-appearance: none;
                     margin: 0;
@@ -213,6 +220,11 @@
                   color: #515151;
                 }
               }
+            }
+            .cases_per_pallet{
+              font-family: "Roboto", sans-serif;
+              color: #999;
+              font-size: 14px;
             }
             .Logined-Box-Wrap {
               margin-top: 30px;
@@ -441,7 +453,7 @@
             padding: 30px 15px;
             .heading {
               font-size: 25px;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 1.2;
               font-family: $arial;
               color: #677279;
@@ -479,7 +491,7 @@
             }
             .cart {
               display: flex;
-              margin: 16px 0px 20px 0px;
+              margin: 15px 0px 15px 0px;
               column-gap: 4px;
               .quantity {
                 flex: 0 0 18%;
@@ -489,19 +501,22 @@
                   cursor: pointer;
                   background: none;
                   border: none;
-                  width: 50px;
                   font-size: 26px;
+                  font-family: 'WooCommerce';
                   font-weight: 700;
+                  width: 40px;
                   color: #c7c7c7;
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  -webkit-touch-callout: none;
                   -webkit-user-select: none;
                   -khtml-user-select: none;
                   -moz-user-select: none;
                   -ms-user-select: none;
                   user-select: none;
+                  &.Minus{
+                    height: 47px;
+                  }
                 }
                 input {
                   width: 50%;
@@ -535,6 +550,11 @@
                   color: #515151;
                 }
               }
+            }
+            .cases_per_pallet{
+              font-family: "Roboto", sans-serif;
+              color: #999;
+              font-size: 14px;
             }
             .Logined-Box-Wrap {
               margin-top: 15px;
