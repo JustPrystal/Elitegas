@@ -591,12 +591,28 @@
                                     }
                                 }
                                 &.product-name{
+                                    padding: 20px 12px 40px;
+                                    position: relative;
                                     a{
                                         font-family: $arial;
                                         text-decoration: none;
                                         color: #df7800;
                                         font-size: 13px;
                                         padding-left: 50px;
+                                    }
+                                    .variation{
+                                        display: flex;
+                                        position: absolute;
+                                        bottom: 0px;
+                                        right: 14px;
+                                        font-size: 11px;
+                                        color: #677279;
+                                        font-family: "Roboto", sans-serif;
+                                        align-items: center;
+                                        .variation-subtitle{
+                                            margin-left: 10px;
+                                            line-height: 100%;
+                                        }
                                     }
                                 }
                                 &.product-price{
@@ -766,7 +782,17 @@
                             }
                         }
                     }
-
+                    .cart_notice_wrapper{
+                        .notice_upsell{
+                            border: 1px solid #ededed;
+                            border-bottom: 0px;
+                            padding: 10px 13px;
+                            text-align: left;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 13px;
+                            color: #677279;
+                        }
+                    }
                     .calculated-text{
                         border: 1px solid #ebe9eb;
                         border-bottom: 0;

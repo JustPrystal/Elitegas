@@ -69,4 +69,18 @@
 			 $item->update_meta_data( 'Product UPC', $upc );
 			}
 		}
+
+        add_filter( 'gform_entries_column_filter', 'change_column_data', 10, 5 );
+
+		function change_column_data( $value, $form_id, $field_id, $entry, $query_string ) {
+			
+			//only change the data when form id is 1 and field id is 2
+			if ( $form_id == 3 && $field_id == 148){
+				$user_id = rgar($entry,'created_by');
+ 				$newdata = pmpro_getMembershipLevelForUser($user_id);
+ 				return $newdata->name;
+			}
+			return $value;
+				
+		}
 ?>

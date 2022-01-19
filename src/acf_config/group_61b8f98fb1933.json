@@ -22,7 +22,6 @@
             "button_label": "",
             "sub_fields": [
                 {
-<<<<<<< Updated upstream
                     "key": "field_61e1ef886c983",
                     "label": "choose type",
                     "name": "choose_type",
@@ -47,15 +46,12 @@
                     "save_other_choice": 0
                 },
                 {
-=======
->>>>>>> Stashed changes
                     "key": "field_61b8f9bcdeceb",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-<<<<<<< Updated upstream
                     "conditional_logic": [
                         [
                             {
@@ -65,9 +61,6 @@
                             }
                         ]
                     ],
-=======
-                    "conditional_logic": 0,
->>>>>>> Stashed changes
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -83,7 +76,6 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
-<<<<<<< Updated upstream
                 },
                 {
                     "key": "field_61e1ef7b6c982",
@@ -111,8 +103,6 @@
                     "min_size": "",
                     "max_size": "",
                     "mime_types": ""
-=======
->>>>>>> Stashed changes
                 }
             ]
         },
@@ -179,9 +169,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-<<<<<<< Updated upstream
     "modified": 1642199842
-=======
-    "modified": 1640813822
->>>>>>> Stashed changes
 }
