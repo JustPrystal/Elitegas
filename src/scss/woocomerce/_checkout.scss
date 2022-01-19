@@ -433,6 +433,11 @@
                                     padding: 9px 12px;
                                     vertical-align: middle;
                                     line-height: 1.5em;
+                                    &.product-name{
+                                       .checkout_variations{
+                                           display:none;
+                                       } 
+                                    }
                                     .woocommerce-Price-amount{
                                     
                                     bdi{
