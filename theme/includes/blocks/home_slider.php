@@ -3,7 +3,7 @@
         <div class="slider-main">
             <?php
                 foreach($block['image_container'] as $image){ ?>
-                  
+                 <a href="<?php echo $image['link']['url'] ?>"> 
                 <div class="image-wrapper">
                 <?php 
                
@@ -19,6 +19,7 @@
               ?>
                     <!-- <img src="<?php echo $image['image']['url'] ?>"> -->
                 </div>
+                </a>
             <?php
                 }
             ?>

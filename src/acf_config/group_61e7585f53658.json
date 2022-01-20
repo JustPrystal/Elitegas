@@ -22,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_61e7590b8e5b2",
+            "key": "field_61e9c3bf9269c",
             "label": "Brand Products",
             "name": "brand_products",
-            "type": "relationship",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,23 +34,14 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "product"
-            ],
-            "taxonomy": [
-                "pa_nitrous-oxide-brand:nitrous-mafia",
-                "pa_nitrous-oxide-brand:jumbo-whip",
-                "pa_nitrous-oxide-brand:xl-whip"
-            ],
-            "filters": [
-                "taxonomy"
-            ],
-            "elements": [
-                "featured_image"
-            ],
-            "min": "",
-            "max": "",
-            "return_format": "id"
+            "taxonomy": "product_tag",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0
         }
     ],
     "location": [
@@ -70,5 +61,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1642555688
+    "modified": 1642710092
 }

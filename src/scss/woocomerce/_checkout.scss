@@ -90,15 +90,31 @@
                     font-family: $arial;
                     font-size: 16px;
                 }
+
                 .wrap-checkout-box{
                     display: flex;
                     flex-wrap: wrap;
 
                     .wrap-shipping-billing-details{
                         flex: 50%;
+                        select{
+                            &.select2-hidden-accessible{
+                                -webkit-appearance: none;
+                            }
+                        }
                         .billing-address-details{
                             display: inline-block;
                             .woocommerce-billing-fields{
+                                position: relative;
+                                &:before{
+                                    content: "\f078";
+                                    font-family: FontAwesome;
+                                    position: absolute;
+                                    right: 15px;
+                                    top: 50px;
+                                    font-size: 11px;
+                                    color: #4e4e4e;
+                                }
                                 h3{
                                     font-size: 18px;
                                     margin: 20px 0 10px 0;
@@ -108,13 +124,14 @@
                                 .ocwma_select{
                                     width: 100%;
                                     margin-bottom: 5px;
-                                    line-height: 49px;
+                                    height: 48px;
                                     color: #4e4e4e;
                                     font-weight: bold;
                                     padding: 15px;
                                     border: 1px solid lightgrey;
                                     border-radius: 5px;
-                                }  
+                                    -webkit-appearance: none;
+                                } 
                                 .form_option_billing{
                                     background-color: #df7800;
                                     color: #ffffff;
@@ -205,6 +222,7 @@
                                             font-size: 16px;
                                             color: $dgray;
                                             display: block;
+                                            padding: 10px 0 5px;
                                             .required{
                                                 color: red;
                                                 font-weight: 700;
@@ -235,15 +253,26 @@
                                 } 
 
                                 .shipping_address{
+                                    position: relative;
+                                    &:before{
+                                        content: "\f078";
+                                        font-family: FontAwesome;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 20px;
+                                        font-size: 11px;
+                                        color: #4e4e4e;
+                                    }
                                     .ocwma_select_shipping{
                                         width: 100%;
                                         margin-bottom: 5px;
-                                        line-height: 49px;
+                                        height: 48px;
                                         color: #4e4e4e;
                                         font-weight: bold;
                                         padding: 15px;
                                         border: 1px solid lightgrey;
                                         border-radius: 5px;
+                                        -webkit-appearance: none;
                                     }  
                                     .form_option_shipping{
                                         background-color: #df7800;
@@ -335,6 +364,7 @@
                                                 font-size: 16px;
                                                 color: $dgray;
                                                 display: block;
+                                                padding: 10px 0 5px;
                                                 .required{
                                                     color: red;
                                                     font-weight: 700;
@@ -423,6 +453,16 @@
                                         td{
                                             flex: 50%;
                                             text-align: right;
+                                            #shipping_method{
+                                                li{
+                                                    &:nth-child(2){
+                                                        display: none;
+                                                    }
+                                                    input{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }

@@ -103,6 +103,21 @@
                     "min_size": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_61e9c95ebea4f",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
                 }
             ]
         },
@@ -169,5 +184,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1642199842
+    "modified": 1642711476
 }

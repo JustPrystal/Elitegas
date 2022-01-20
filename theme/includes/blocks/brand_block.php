@@ -1,3 +1,21 @@
+
+<?php 
+$all_ids = get_posts( array(
+      'post_type' => 'product',
+      'numberposts' => -1,
+      'post_status' => 'publish',
+      'fields' => 'ids',
+      'tax_query' => array(
+         array(
+            'taxonomy' => 'product_tag',
+            'field' => 'slug',
+            'terms' => $block['brand_products']->name,
+            'operator' => 'IN',
+         )
+      ),
+   ) );
+?>
+
 <section class="brand-block">
     <div class="container">
         <div class="inline">
@@ -6,7 +24,8 @@
         <div class="wrapper">
             <div class="brand-container">
                 <div class="brand-wrapper">
-                <?php foreach($block['brand_products'] as $product_id){
+                
+                <?php foreach($all_ids as $product_id){
                 $_product = wc_get_product($product_id);
                 $product_meta = get_post_meta($product_id);?>
                 
@@ -22,7 +41,7 @@
                 <?php }?>
                 </div>
             </div>
-            <div class="sidebar-right"><?php get_sidebar( 'sidebar-widget-area' ); ?></div>
+            <div class="sidebar-right"><?php echo do_shortcode('[yith_wcan_filters slug="draft-preset-5"]'); ?></div>
         </div>
     </div>
 </section>

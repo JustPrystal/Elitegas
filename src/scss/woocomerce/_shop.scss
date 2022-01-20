@@ -60,7 +60,7 @@
                           }
                           .mainloopproducts{
                               border: 1px solid #ededed;
-                              padding: 0px 10px;
+                              padding: 0px 10px 50px;
                               display: flex;
                               flex-wrap: wrap;
                               width: 100%;
@@ -70,8 +70,17 @@
                                 height: 470px;
                                 margin: 0;
                                 display: block;
+                                position: relative;
                                 a{
                                     text-decoration: none;
+                                      .onsale{
+                                        background-color: $orange;
+                                        color: white;
+                                        padding: 10px;
+                                        display: inline-block;
+                                        box-shadow: 1px 1px 10px 0px #c1c1c1;
+                                        position: absolute;
+                                      }
                                       img{
                                           width: 100%;
                                           height: auto;

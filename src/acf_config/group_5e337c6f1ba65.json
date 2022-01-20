@@ -355,14 +355,14 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_61e759b9cda60": {
-                    "key": "layout_61e759b9cda60",
+                "layout_61e866297cd95": {
+                    "key": "layout_61e866297cd95",
                     "name": "brand_product",
                     "label": "Brand Product",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_61e759c2cda61",
+                            "key": "field_61e866347cd96",
                             "label": "Brand Product Field",
                             "name": "brand_product_field",
                             "type": "clone",
@@ -420,5 +420,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1642551824
+    "modified": 1642620501
 }
