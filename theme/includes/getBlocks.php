@@ -52,6 +52,9 @@
               break;   
             case 'brand_product':
               include 'blocks/brand_block.php';
+              break;
+            case 'champs_onboarding':
+              include 'blocks/champs_block.php';
               break;       
           }
         }

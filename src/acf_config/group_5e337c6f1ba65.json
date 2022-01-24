@@ -385,6 +385,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_61ef1fd19326d": {
+                    "key": "layout_61ef1fd19326d",
+                    "name": "champs_onboarding",
+                    "label": "Champs Onboarding",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61ef1fde9326e",
+                            "label": "Champs Onboarding fields",
+                            "name": "champs_onboarding_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_61ef1f52cebd3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -420,5 +451,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1642620501
+    "modified": 1643061263
 }

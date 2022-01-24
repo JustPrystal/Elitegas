@@ -1,12 +1,12 @@
 {
-    "key": "group_61e7585f53658",
-    "title": "Brand Product Block",
+    "key": "group_61ef1f52cebd3",
+    "title": "Champs OnBoarding",
     "fields": [
         {
-            "key": "field_61e758fa8e5b1",
-            "label": "Brand Product Heading",
-            "name": "brand_heading",
-            "type": "text",
+            "key": "field_61ef1f690022b",
+            "label": "champs instruction",
+            "name": "champs_instruction",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,16 +16,16 @@
                 "id": ""
             },
             "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "rows": ""
         },
         {
-            "key": "field_61e9e461eae97",
-            "label": "Brand Products",
-            "name": "brand_products",
-            "type": "taxonomy",
+            "key": "field_61ef1f8d0022c",
+            "label": "champs form call",
+            "name": "champs_form_call",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,22 +34,19 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "product_tag",
-            "field_type": "select",
-            "allow_null": 0,
-            "add_term": 1,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "object",
-            "multiple": 0
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": ""
+                "value": "post"
             }
         ]
     ],
@@ -61,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1642718806
+    "modified": 1643061570
 }

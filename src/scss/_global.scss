@@ -74,3 +74,45 @@ body {
       max-width: 100%;
     }
 }
+
+// 404 css
+
+.no-page-wrap{
+  padding: 22px 0;
+  text-align: center;
+  h2{
+    font-size: 70px !important;
+    color: $dgray;
+  }
+  p{
+    font-size: 24px;
+    color: $dgray;
+    margin-top: 10px;
+  }
+  .no-page-link{
+    font-size: 18px;
+    a{
+      text-decoration: none;
+      color: $orange;
+      transition: all 0.8s;
+      &:hover{
+        transform: translateX(-10px);
+      }
+      &::after{
+        content: "\f061";
+        font-weight: 100;
+        font-family: "FontAwesome";
+        margin: 0 0 0 10px;
+        transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+        right: 0;
+        opacity: 0;
+        position: relative;
+        display: none;
+      }
+      &:hover:after{
+        opacity: 1;
+        display: inline-block;
+      }
+    }
+  }
+}
