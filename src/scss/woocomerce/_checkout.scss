@@ -454,14 +454,6 @@
                                             flex: 50%;
                                             text-align: right;
                                             #shipping_method{
-                                                li{
-                                                    &:nth-child(2){
-                                                        display: none;
-                                                    }
-                                                    input{
-                                                        display: none;
-                                                    }
-                                                }
                                             }
                                         }
                                     }
