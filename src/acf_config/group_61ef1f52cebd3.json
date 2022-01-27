@@ -3,10 +3,10 @@
     "title": "Champs OnBoarding",
     "fields": [
         {
-            "key": "field_61ef1f690022b",
-            "label": "champs instruction",
-            "name": "champs_instruction",
-            "type": "textarea",
+            "key": "field_61f196a3e49ec",
+            "label": "champs heading",
+            "name": "champs_heading",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,16 +16,16 @@
                 "id": ""
             },
             "default_value": "",
-            "new_lines": "",
-            "maxlength": "",
             "placeholder": "",
-            "rows": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_61ef1f8d0022c",
-            "label": "champs form call",
-            "name": "champs_form_call",
-            "type": "wysiwyg",
+            "key": "field_61f195cd848ac",
+            "label": "champs image",
+            "name": "champs_image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,11 +34,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -58,5 +63,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1643061570
+    "modified": 1643223160
 }

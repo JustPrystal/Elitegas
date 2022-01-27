@@ -84,3 +84,56 @@
 				
 		}
 ?>
+
+<?php
+
+// gives role and membership once form is filled
+
+function my_gform_after_registration( $user_id, $feed, $entry ) {
+    if ( ! function_exists( 'pmpro_changeMembershipLevel' ) ) {
+        return;
+    }
+    pmpro_changeMembershipLevel( 8, $user_id );
+}
+add_action( 'gform_user_registered', 'my_gform_after_registration', 10, 3);
+
+// end
+
+
+
+function my_hide_shipping_when_free_is_available( $rates ) {
+    $free = array();
+
+        foreach ( $rates as $rate_id => $rate ) {
+            if ( 'free_shipping' === $rate->method_id ) {
+                $free[ $rate_id ] = $rate;
+                break;
+            }
+        }
+
+    return ! empty( $free ) ? $free : $rates;
+    }
+
+    add_filter( 'woocommerce_package_rates', 'my_hide_shipping_when_free_is_available', 100 );
+
+
+// Auto loging after filling champs form
+
+add_action( 'gform_user_registered', 'wpc_gravity_registration_autologin',  10, 4 );
+/**
+ * Auto login after registration.
+ */
+function wpc_gravity_registration_autologin( $user_id, $user_config, $entry, $password ) {
+	$user = get_userdata( $user_id );
+	$user_login = $user->user_login;
+	$user_password = $password;
+
+    wp_signon( array(
+		'user_login' => $user_login,
+		'user_password' =>  $user_password,
+		'remember' => false
+
+    ) );
+}
+
+// end
