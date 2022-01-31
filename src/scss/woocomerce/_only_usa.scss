@@ -1,0 +1,59 @@
+//absurd way of only allowing USA
+.select2-dropdown{
+    #select2-shipping_country-results{
+        .select2-results__option[aria-selected], .select2-results__option[data-selected]{
+            pointer-events:none;
+            background-color:#bbbaba;
+            opacity:0.4;
+            position:relative;
+            &:before{
+                content:'';
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                
+                
+            }
+            &:nth-child(235){
+                cursor:pointer;
+                pointer-events:all;
+                background-color:#fff;
+                opacity:1;
+                color:#000;
+                &:before{
+                    display:none;
+                }
+            }
+        }
+    }
+    #select2-billing_country-results{
+        @extend #select2-shipping_country-results;
+    }
+}
+//my account stuff;
+#oc_add_billing_form{
+    select#billing_country{
+        option{
+            display:none;
+            &:nth-child(236){
+                display:block;
+            }
+        }
+    }  
+}
+#oc_add_shipping_form{
+    select#shipping_country{
+        option{
+            display:none;
+            &:nth-child(236){
+                display:block;
+            }
+        }
+    }
+    
+}
+p{
+    overflow-wrap:normal;
+}

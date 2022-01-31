@@ -84,7 +84,12 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee" style="display: flex;">
-				<th style="width: 50%;"><?php echo esc_html( $fee->name ); ?></th>
+				<th style="width: 50%;"><?php if($fee->name == "Fee"){
+					echo "HAZMAT Shipping Surcharge";
+				}
+				else{
+					echo esc_html( $fee->name );
+				}	?></th>
 				<td style="width: 50%; text-align: right;"><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
