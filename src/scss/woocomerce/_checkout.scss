@@ -84,13 +84,62 @@
                     font-family: $arial;
                 }
             }
+            .woocommerce-error{
+                padding: 10px;
+                margin-top: 25px;
+                border: 1px solid #ededed;
+                &:before {
+                    content: "Error!";
+                    font-size: 20px;
+                    width: 100%;
+                    color: red;
+                }
+                li{
+                    list-style: none;
+                    font-weight: bold;
+                    color: #677279;
+                    display: flex;
+                    align-items: center;
+                    &:nth-child(1) {
+                        margin-top: 10px;
+                    }
+                    &:before {
+                        content: url(/wp-content/uploads/2022/01/exclaimation-1.png);
+                        padding-right: 10px;
+                    }
+                }
+            }
 
             .woocommerce-checkout{
                 *{
                     font-family: $arial;
                     font-size: 16px;
                 }
-
+                .woocommerce-error{
+                    padding: 10px;
+                    margin-top: 25px;
+                    border: 1px solid #ededed;
+                    &:before {
+                        content: "Error! Unable to process your order.";
+                        font-size: 20px;
+                        width: 100%;
+                        color: red;
+                    }
+                    li{
+                        list-style: none;
+                        font-weight: bold;
+                        color: #677279;
+                        display: flex;
+                        align-items: center;
+                        &:nth-child(1) {
+                            margin-top: 20px;
+                        }
+                        &:before {
+                            content: url(/wp-content/uploads/2022/01/exclaimation-1.png);
+                            padding-right: 10px;
+                        }
+                    }
+                }
                 .wrap-checkout-box{
                     display: flex;
                     flex-wrap: wrap;
@@ -638,6 +687,10 @@
 
 .select2-dropdown--below{
     margin-top: -30px;
+    border-color: #ddd;
+}
+.select2-dropdown--above{
+    margin-top: -32px;
     border-color: #ddd;
 }
 
