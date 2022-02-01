@@ -175,4 +175,25 @@ $(document).ready(function() {
 
 $(".pmpro_actions_nav a:nth-child(1)").attr('href','/membership-account/membership-checkout/?level=1' );
 
+// Login Show pass icon
 
+$(document).ready(function(){
+  $('#user_pass').after("<span toggle='#password-field' class='fa fa-fw fa-eye field-icon' id='toggle-password'></span>");
+})
+
+$(function () {
+  $("#toggle-password").click(function () {
+         $(this).toggleClass("fa-eye fa-eye-slash");
+        var type = $(this).hasClass("fa-eye-slash") ? "text" : "password";
+         $("#user_pass").attr("type", type);
+     });
+ });	
+
+
+// onboarding upload field ajax
+
+$('#field_13_123').click(function() {
+  $('#input_13_123').change(function(evt) {
+      $(this).addClass('active-input').val();
+  });
+});

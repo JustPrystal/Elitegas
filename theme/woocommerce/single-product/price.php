@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6') ) ) { ?>
+<?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6','8') ) ) { ?>
 
 <div class="wrap-social-price">
 	

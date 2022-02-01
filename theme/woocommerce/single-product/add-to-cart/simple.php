@@ -29,7 +29,7 @@ if ( $product->is_in_stock() ) : ?>
 
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6') ) ) { ?>
+<?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6','8') ) ) { ?>
 	<?php if($product->stock_status == "coming_soon" || $product->stock_status == "pre_order"){
 		//return empty
 	} else{?>
