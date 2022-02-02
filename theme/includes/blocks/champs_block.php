@@ -19,7 +19,7 @@
 
                             }else{
 
-                                echo do_shortcode('[gravityforms id="13" ajax=true]');
+                                echo do_shortcode('[gravityforms id="13"]');
 
                             }
 

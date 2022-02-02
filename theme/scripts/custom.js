@@ -197,3 +197,10 @@ $('#field_13_123').click(function() {
       $(this).addClass('active-input').val();
   });
 });
+
+
+// onboarding canvas width attr edit
+
+// $(document).ready(function() {
+//   $(".mobile-responsive #input_12_34").attr('width', 360);
+// }) ;

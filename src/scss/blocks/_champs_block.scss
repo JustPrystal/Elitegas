@@ -73,7 +73,7 @@
                     .gform_heading{
                         display: none;
                     }
-                    #gform_12{
+                    form{
                         .gf_page_steps{
                             display: flex;
                             padding-bottom: 15px;
@@ -196,347 +196,6 @@
                                     color: $dgray;
                                 }
                             }
-                            .termtexts{
-                                h3 {
-                                    font-size: 30px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    font-weight: 600;
-                                    margin: 0px;
-                                    .ver-num {
-                                        font-size: 14px;
-                                        color: #707070;
-                                        font-weight: 400;
-                                        font-family: system-ui;
-                                    }
-                                }
-                                p {
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    margin-top: 0;
-                                    line-height: 1.5;
-                                }
-                            }
-                            .termtexts-small{
-                                h3{
-                                    margin-bottom: 0px;
-                                    font-weight: 600;
-                                    transform: none;
-                                    font-size: 16px;
-                                    line-height: 100%;
-                                    color: $dgray;
-                                }
-                            }
-                            legend{
-                                position: relative !important;
-                                left: 0 !important;
-                                font-weight: 600 !important;
-                                transform: none !important;
-                                font-size: 16px !important;
-                                line-height: 100% !important;
-                                margin: 0px 0 5px !important;
-                            }
-                            .gfield_label{
-                                position: absolute;
-                                left: 13px;
-                                top: 0px;
-                                line-height: 48px;
-                                transform-origin: left top;
-                                transition: transform .2s ease-in-out;
-                                pointer-events: none;
-                                transform: translateY(-6px) scale(0.8);
-                                width: 100%;
-                                color: $orange;
-                                font-family: "Roboto", sans-serif;
-                                font-size: 16px;
-                                z-index: 10;
-                                .gfield_required{
-                                    color: $orange;
-                                    display: inline-block;
-                                    font-size: 13.008px;
-                                    padding-left: 0.125em;
-                                }
-                            }
-                            .ginput_container{
-                                input{
-                                    padding: 23px 10px 5px 13px;
-                                    font-size: 15px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                    &#input_12_37{
-                                        pointer-events: none;
-                                        color: #c1c1c1;
-                                        background-color: #fbfbfb;
-                                    }
-                                    &#input_12_38{
-                                        pointer-events: none;
-                                        color: #c1c1c1;
-                                        background-color: #fbfbfb;
-                                    }
-                                }
-                                .password_input_container{
-                                    .dashicons{
-                                        &::before{
-                                            color: $orange;
-                                        }
-                                    }
-                                }
-                                label{
-                                    position: absolute;
-                                    left: 13px;
-                                    top: -3px;
-                                    line-height: 48px;
-                                    transform-origin: left top;
-                                    transition: transform .2s ease-in-out;
-                                    pointer-events: none;
-                                    transform: translateY(-6px) scale(0.8);
-                                    width: 100%;
-                                    color: $orange;
-                                    font-family: "Roboto", sans-serif;
-                                    font-size: 16px;
-                                    z-index: 10;
-                                    font-weight: 600;
-                                    &:after {
-                                        content: "*";
-                                        color: #df7800;
-                                        display: inline-block;
-                                        font-size: 13.008px;
-                                        padding-left: 0.225em;
-                                    }
-                                }
-                                span{
-                                    &#input_12_151_2_container{
-                                        margin-left: 10px;
-                                        padding: 0;
-                                        span{
-                                            padding: 0px;
-                                        }
-                                    }
-                                }
-                                .iti__flag-container{
-                                    .iti__selected-flag{
-                                        padding: 15px 6px 0 12px;
-                                    }
-                                }
-                            }
-                            .ginput_container_fileupload{
-                                input{
-                                    color: transparent;
-                                    &.active-input {
-                                        color: #c1c1c1 !important;
-                                        &:after {
-                                            font-family: 'FontAwesome';
-                                            content: "\f058";
-                                            color: #72d932;
-                                            margin-left: 5px;
-                                        }
-                                        & ~ .gform_fileupload_rules {
-                                            display: none;
-                                        }
-                                    }
-                                }
-                                .gform_fileupload_rules {
-                                    position: absolute;
-                                    top: 13px;
-                                    left: 125px;
-                                    font-size: 13px;
-                                    color: #c1c1c1;
-                                    font-family: "Roboto", sans-serif;
-                                }
-                            }
-                            .ginput_container_select{
-                                position: relative;
-                                &:before {
-                                    content: "\f078";
-                                    font-family: FontAwesome;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 18px;
-                                    font-size: 11px;
-                                    color: #a09e94;
-                                }
-                                select {
-                                    padding: 25px 10px 5px 13px;
-                                    font-size: 15px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                    height: 48px;
-                                    border-radius: 0px;
-                                    -webkit-appearance: none;
-                                }
-                            }
-                            .ginput_container_radio{
-                                margin-left: -5px;
-                                label{
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    line-height: 1.5;
-                                    position: relative;
-                                    transform: none;
-                                    left: 0;
-                                    margin-top: 5px;
-                                    font-weight: 400;
-                                    &::after{
-                                        content: "";
-                                    }
-                                }
-                            }
-                            .ginput_container_checkbox{
-                                .gfield_checkbox{
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    .gchoice{
-                                        width: 33.3%; 
-                                        label{
-                                            font-size: 15px;
-                                            font-family: "Roboto", sans-serif;
-                                            color: #677279;
-                                            line-height: 1.5;
-                                            position: relative;
-                                            transform: none;
-                                            left: 0;
-                                            margin-top: 5px;
-                                            font-weight: 400;
-                                            &::after{
-                                                content: "";
-                                            }
-                                            &#label_12_57_1{
-                                                font-size: 18px;
-                                                font-weight: 500;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .gfield_password_strength{
-                                &.short{
-                                    background-color: #d52020;
-                                    border-bottom: 3px solid red;
-                                    color: white;
-                                    border-color: #d52020;
-                                }
-                                &.bad{
-                                    background-color: #d52020;
-                                    border-bottom: 3px solid red;
-                                    color: white;
-                                    border-color: #d52020;
-                                }
-                                &.good{
-                                    background-color: #ffdd6f;
-                                    border-bottom: 3px solid yellow;
-                                    color: black;
-                                    border-color: yellow;
-                                }
-                                &.strong{
-                                    background-color: #0cfd3b;
-                                    border-bottom: 3px solid #0cfd3b;
-                                    color: black;
-                                    border-color: #0cfd3b;
-                                }
-                            }
-                        }
-                        .field_description_below{
-                            h3{
-                                font-size: 30px;
-                                font-family: "Roboto", sans-serif;
-                                color: #677279;
-                                font-weight: 600;
-                                margin: 0px;
-                            }
-                            p{
-                                font-size: 15px;
-                                font-family: "Roboto", sans-serif;
-                                color: #677279;
-                                margin-top: 0;
-                                line-height: 1.5;
-                            }
-                            .policies-wrap{
-                                height: 200px;
-                                overflow: auto;
-                                border: 1px solid #e5e7eb;
-                                padding: 10px 20px;
-                                margin-right: 15px;
-                                ol{
-                                    li{
-                                        font-size: 16px;
-                                        font-family: "Roboto", sans-serif;
-                                        color: #677279;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                p{
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    margin-top: 0;
-                                    line-height: 1.5;
-                                }
-                            }
-                        }
-                        .gform_page_footer{
-                            input{
-                                background: #df7800;
-                                border: 0;
-                                color: #fff;
-                                padding: 0 50px;
-                                border-radius: 2px;
-                                height: 48px;
-                                font-size: 18px;
-                                transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                    #gform_13{
-                        .gf_page_steps{
-                            display: flex;
-                            padding-bottom: 15px;
-                            .gf_step{
-                                display: flex;
-                                align-items: center;
-                                margin: 8px 50px 8px 0;
-                                .gf_step_label{
-                                    font-size: 12px;
-                                    font-family: $arial;
-                                    color: $dgray;
-                                    line-height: 100%;
-                                    padding-top: 5px;
-                                    padding-left: 5px;
-                                    display: flex;
-                                    @include responsive(lg){
-                                        font-size: 10px;
-                                    }
-                                }
-                                .gf_step_number{
-                                    align-items: center;
-                                    display: flex;
-                                    justify-content: center;
-                                    font-family: $arial;
-                                    @include responsive(lg){
-                                        height: 35px;
-                                        width: 35px;
-                                    }
-                                    &::before{
-                                        @include responsive(lg){
-                                            height: 35px;
-                                            width: 35px;
-                                        }
-                                    }
-                                }
-                            } 
-                        }
-                        .gf_step_active{
-                            .gf_step_number{
-                                border-color: $orange;
-                                background: #cfd3d9;
-                                color: #607382;
-                            }
-                        }
-                        .gfield{
-                            position: relative;
-                            margin-right: 15px;
                             &#field_13_18{
                                 label{
                                     color: $dgray;
@@ -646,6 +305,16 @@
                                     font-size: 15px;
                                     color: black;
                                     border: 1px solid #e0e0dd;
+                                    &#input_12_37{
+                                        pointer-events: none;
+                                        color: #c1c1c1;
+                                        background-color: #fbfbfb;
+                                    }
+                                    &#input_12_38{
+                                        pointer-events: none;
+                                        color: #c1c1c1;
+                                        background-color: #fbfbfb;
+                                    }
                                     &#input_13_37{
                                         pointer-events: none;
                                         color: #c1c1c1;
@@ -688,6 +357,13 @@
                                     }
                                 }
                                 span{
+                                    &#input_12_151_2_container{
+                                        margin-left: 10px;
+                                        padding: 0;
+                                        span{
+                                            padding: 0px;
+                                        }
+                                    }
                                     &#input_13_151_2_container{
                                         margin-left: 10px;
                                         padding: 0;
@@ -700,11 +376,15 @@
                                     .iti__selected-flag{
                                         padding: 15px 6px 0 12px;
                                     }
+                                    .iti__country-list{
+                                        z-index: 20;
+                                    }
                                 }
                             }
                             .ginput_container_fileupload{
                                 input{
                                     color: transparent;
+                                    font-size: 16px;
                                     &.active-input {
                                         color: #c1c1c1 !important;
                                         &:after {
@@ -720,7 +400,7 @@
                                 }
                                 .gform_fileupload_rules {
                                     position: absolute;
-                                    top: 13px;
+                                    top: 15px;
                                     left: 125px;
                                     font-size: 13px;
                                     color: #c1c1c1;
@@ -784,6 +464,10 @@
                                             &::after{
                                                 content: "";
                                             }
+                                            &#label_12_57_1{
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                            }
                                             &#label_13_57_1{
                                                 font-size: 18px;
                                                 font-weight: 500;
@@ -839,8 +523,15 @@
                                 overflow: auto;
                                 border: 1px solid #e5e7eb;
                                 padding: 10px 20px;
-                                margin-right: 15px;
                                 ol{
+                                    li{
+                                        font-size: 16px;
+                                        font-family: "Roboto", sans-serif;
+                                        color: #677279;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                ul{
                                     li{
                                         font-size: 16px;
                                         font-family: "Roboto", sans-serif;
@@ -902,11 +593,38 @@
                         }
                     }
                 }
+                .after-form-redirect{
+                    text-decoration: none;
+                    color: $orange;
+                    transition: all 0.8s;
+                    font-size: 18px;
+                    span{
+                        color: $dgray;
+                    }
+                    &:hover{
+                      transform: translateX(-10px);
+                    }
+                    &::after{
+                      content: "\f061";
+                      font-weight: 100;
+                      font-family: "FontAwesome";
+                      margin: 0 0 0 10px;
+                      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+                      right: 0;
+                      opacity: 0;
+                      position: relative;
+                      display: none;
+                    }
+                    &:hover:after{
+                      opacity: 1;
+                      display: inline-block;
+                    }
+                }
                  .champs-form-wrap{
                      .gform_heading{
                          display: none;
                      }
-                     #gform_12{
+                     form{
                          .gf_page_steps{
                              display: flex;
                              padding-bottom: 15px;
@@ -997,6 +715,60 @@
                                      color: $dgray;
                                  }
                              }
+                             &#field_13_18{
+                                label{
+                                    color: $dgray;
+                                }
+                            }
+                            &#field_13_28{
+                                legend{
+                                    color: $dgray;
+                                }
+                            }
+                            &#field_13_134{
+                                label{
+                                    color: $dgray;
+                                }
+                            }
+                            &#field_13_135{
+                                label{
+                                    color: $dgray;
+                                }
+                            }
+                            &#field_13_37{
+                                label{
+                                    color: #c1c1c1;
+                                    .gfield_required{
+                                        color: #c1c1c1;
+                                    }
+                                }
+                            }
+                            &#field_13_38{
+                                label{
+                                    color: #c1c1c1;
+                                    .gfield_required{
+                                        color: #c1c1c1;
+                                    }
+                                }  
+                            }
+                            &#field_13_44{
+                                legend{
+                                    color: $dgray;
+                                }
+                            }
+                            // &#field_12_34{
+                            //     #input_12_34_Container {
+                            //         width: 100% !important;
+                            //         height: 180px !important;
+                            //         border: 1px solid #ededed;
+                            //         #input_12_34 {
+                            //             width: auto !important;
+                            //             height: 180px !important;
+                            //             aspect-ratio: auto 360 / 180 !important;
+                            //             border: 0px !important;
+                            //         }
+                            //     }
+                            // }
                              .termtexts{
                                  h3 {
                                      font-size: 25px;
@@ -1075,6 +847,16 @@
                                          color: #c1c1c1;
                                          background-color: #fbfbfb;
                                      }
+                                     &#input_13_37{
+                                        pointer-events: none;
+                                        color: #c1c1c1;
+                                        background-color: #fbfbfb;
+                                    }
+                                    &#input_13_38{
+                                        pointer-events: none;
+                                        color: #c1c1c1;
+                                        background-color: #fbfbfb;
+                                    }
                                  }
                                  .password_input_container{
                                      .dashicons{
@@ -1114,6 +896,12 @@
                                              padding: 0px;
                                          }
                                      }
+                                     &#input_13_151_2_container{
+                                        padding: 0;
+                                        span{
+                                            padding: 0px;
+                                        }
+                                    }
                                  }
                                  .iti__flag-container{
                                      .iti__selected-flag{
@@ -1138,10 +926,8 @@
                                      }
                                  }
                                  .gform_fileupload_rules {
-                                     position: absolute;
-                                     top: 13px;
-                                     left: 125px;
-                                     font-size: 13px;
+                                     position: block;
+                                     font-size: 12px;
                                      color: #c1c1c1;
                                      font-family: "Roboto", sans-serif;
                                  }
@@ -1190,6 +976,9 @@
                                          &.gchoice_12_57_1{
                                              width: 100%;
                                          }
+                                         &.gchoice_13_57_1{
+                                            width: 100%;
+                                        }
                                          label{
                                              font-size: 15px;
                                              font-family: "Roboto", sans-serif;
@@ -1204,7 +993,11 @@
                                                  content: "";
                                              }
                                              &#label_12_57_1{
-                                                font-size: 18px;
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                            }
+                                            &#label_13_57_1{
+                                                font-size: 16px;
                                                 font-weight: 500;
                                             }
                                          }
@@ -1212,6 +1005,7 @@
                                  }
                              }
                              .gfield_password_strength{
+                                 margin-top: 0px;
                                  &.short{
                                      background-color: #d52020;
                                      border-bottom: 3px solid red;
@@ -1289,393 +1083,10 @@
                              }
                          }
                      }
-                     #gform_13{
-                        .gf_page_steps{
-                            display: flex;
-                            padding-bottom: 15px;
-                            @include responsive(sm){
-                                display: block;
-                            }
-                            .gf_step{
-                                display: flex;
-                                align-items: center;
-                                margin: 8px 50px 8px 0;
-                                .gf_step_label{
-                                    font-size: 12px;
-                                    font-family: $arial;
-                                    color: $dgray;
-                                    line-height: 100%;
-                                    padding-top: 5px;
-                                    padding-left: 5px;
-                                    display: flex;
-                                    @include responsive(lg){
-                                        font-size: 10px;
-                                    }
-                                }
-                                .gf_step_number{
-                                    align-items: center;
-                                    display: flex;
-                                    justify-content: center;
-                                    font-family: $arial;
-                                    @include responsive(lg){
-                                        height: 35px;
-                                        width: 35px;
-                                    }
-                                    &::before{
-                                        @include responsive(lg){
-                                            height: 35px;
-                                            width: 35px;
-                                        }
-                                    }
-                                }
-                            } 
-                        }
-                        .gf_step_active{
-                            .gf_step_number{
-                                border-color: $orange;
-                                background: #cfd3d9;
-                                color: #607382;
-                            }
-                        }
-                        .gfield{
-                            position: relative;
-                            &#field_13_18{
-                                label{
-                                    color: $dgray;
-                                }
-                            }
-                            &#field_13_28{
-                                legend{
-                                    color: $dgray;
-                                }
-                            }
-                            &#field_13_134{
-                                label{
-                                    color: $dgray;
-                                }
-                            }
-                            &#field_13_135{
-                                label{
-                                    color: $dgray;
-                                }
-                            }
-                            &#field_13_37{
-                                label{
-                                    color: #c1c1c1;
-                                    .gfield_required{
-                                        color: #c1c1c1;
-                                    }
-                                }
-                            }
-                            &#field_13_38{
-                                label{
-                                    color: #c1c1c1;
-                                    .gfield_required{
-                                        color: #c1c1c1;
-                                    }
-                                }  
-                            }
-                            &#field_13_44{
-                                legend{
-                                    color: $dgray;
-                                }
-                            }
-                            .termtexts{
-                                h3 {
-                                    font-size: 25px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    font-weight: 600;
-                                    margin: 0px;
-                                    .ver-num {
-                                        font-size: 14px;
-                                        color: #707070;
-                                        font-weight: 400;
-                                        font-family: system-ui;
-                                    }
-                                }
-                                p {
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    margin-top: 0;
-                                    line-height: 1.5;
-                                }
-                            }
-                            .termtexts-small{
-                                h3{
-                                    margin-bottom: 0px;
-                                    font-weight: 600;
-                                    transform: none;
-                                    font-size: 16px;
-                                    line-height: 100%;
-                                    color: $dgray;
-                                }
-                            }
-                            legend{
-                                position: relative !important;
-                                left: 0 !important;
-                                font-weight: 600 !important;
-                                transform: none !important;
-                                font-size: 16px !important;
-                                line-height: 100% !important;
-                                margin: 0px 0 5px !important;
-                            }
-                            .gfield_label{
-                                position: absolute;
-                                left: 13px;
-                                top: 0px;
-                                line-height: 48px;
-                                transform-origin: left top;
-                                transition: transform .2s ease-in-out;
-                                pointer-events: none;
-                                transform: translateY(-6px) scale(0.8);
-                                width: 100%;
-                                color: $orange;
-                                font-family: "Roboto", sans-serif;
-                                font-size: 16px;
-                                z-index: 10;
-                                .gfield_required{
-                                    color: $orange;
-                                    display: inline-block;
-                                    font-size: 13.008px;
-                                    padding-left: 0.125em;
-                                }
-                            }
-                            .ginput_container{
-                                input{
-                                    padding: 23px 10px 5px 13px;
-                                    font-size: 15px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                    &#input_13_37{
-                                        pointer-events: none;
-                                        color: #c1c1c1;
-                                        background-color: #fbfbfb;
-                                    }
-                                    &#input_13_38{
-                                        pointer-events: none;
-                                        color: #c1c1c1;
-                                        background-color: #fbfbfb;
-                                    }
-                                }
-                                .password_input_container{
-                                    .dashicons{
-                                        margin: 0px;
-                                        &::before{
-                                            color: $orange;
-                                        }
-                                    }
-                                }
-                                label{
-                                    position: absolute;
-                                    left: 13px;
-                                    top: -3px;
-                                    line-height: 48px;
-                                    transform-origin: left top;
-                                    transition: transform .2s ease-in-out;
-                                    pointer-events: none;
-                                    transform: translateY(-6px) scale(0.8);
-                                    width: 100%;
-                                    color: $orange;
-                                    font-family: "Roboto", sans-serif;
-                                    font-size: 16px;
-                                    z-index: 10;
-                                    font-weight: 600;
-                                    &:after {
-                                        content: "*";
-                                        color: #df7800;
-                                        display: inline-block;
-                                        font-size: 13.008px;
-                                        padding-left: 0.225em;
-                                    }
-                                }
-                                span{
-                                    &#input_13_151_2_container{
-                                        padding: 0;
-                                        span{
-                                            padding: 0px;
-                                        }
-                                    }
-                                }
-                                .iti__flag-container{
-                                    .iti__selected-flag{
-                                        padding: 15px 6px 0 12px;
-                                    }
-                                }
-                            }
-                            .ginput_container_fileupload{
-                                input{
-                                    color: transparent;
-                                    &.active-input {
-                                        color: #c1c1c1 !important;
-                                        &:after {
-                                            font-family: 'FontAwesome';
-                                            content: "\f058";
-                                            color: #72d932;
-                                            margin-left: 5px;
-                                        }
-                                        & ~ .gform_fileupload_rules {
-                                            display: none;
-                                        }
-                                    }
-                                }
-                                .gform_fileupload_rules {
-                                    position: absolute;
-                                    top: 13px;
-                                    left: 125px;
-                                    font-size: 13px;
-                                    color: #c1c1c1;
-                                    font-family: "Roboto", sans-serif;
-                                }
-                            }
-                            .ginput_container_select{
-                                position: relative;
-                                &:before {
-                                    content: "\f078";
-                                    font-family: FontAwesome;
-                                    position: absolute;
-                                    right: 10px;
-                                    top: 18px;
-                                    font-size: 11px;
-                                    color: #a09e94;
-                                }
-                                select {
-                                    padding: 25px 10px 5px 13px;
-                                    font-size: 15px;
-                                    color: black;
-                                    border: 1px solid #e0e0dd;
-                                    height: 48px;
-                                    border-radius: 0px;
-                                    -webkit-appearance: none;
-                                }
-                            }
-                            .ginput_container_radio{
-                                margin-left: -5px;
-                                label{
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    line-height: 1.5;
-                                    position: relative;
-                                    transform: none;
-                                    left: 0;
-                                    margin-top: 5px;
-                                    font-weight: 400;
-                                    &::after{
-                                        content: "";
-                                    }
-                                }
-                            }
-                            .ginput_container_checkbox{
-                                .gfield_checkbox{
-                                    .gchoice{
-                                        &.gchoice_13_57_1{
-                                            width: 100%;
-                                        }
-                                        label{
-                                            font-size: 15px;
-                                            font-family: "Roboto", sans-serif;
-                                            color: #677279;
-                                            line-height: 1.5;
-                                            position: relative;
-                                            transform: none;
-                                            left: 0;
-                                            margin-top: 5px;
-                                            font-weight: 400;
-                                            &::after{
-                                                content: "";
-                                            }
-                                            &#label_13_57_1{
-                                                font-size: 18px;
-                                                font-weight: 500;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .gfield_password_strength{
-                                &.short{
-                                    background-color: #d52020;
-                                    border-bottom: 3px solid red;
-                                    color: white;
-                                    border-color: #d52020;
-                                }
-                                &.bad{
-                                    background-color: #d52020;
-                                    border-bottom: 3px solid red;
-                                    color: white;
-                                    border-color: #d52020;
-                                }
-                                &.good{
-                                    background-color: #ffdd6f;
-                                    border-bottom: 3px solid yellow;
-                                    color: black;
-                                    border-color: yellow;
-                                }
-                                &.strong{
-                                    background-color: #0cfd3b;
-                                    border-bottom: 3px solid #0cfd3b;
-                                    color: black;
-                                    border-color: #0cfd3b;
-                                }
-                            }
-                        }
-                        .field_description_below{
-                            h3{
-                                font-size: 25px;
-                                font-family: "Roboto", sans-serif;
-                                color: #677279;
-                                font-weight: 600;
-                                margin: 0px;
-                            }
-                            p{
-                                font-size: 15px;
-                                font-family: "Roboto", sans-serif;
-                                color: #677279;
-                                margin-top: 0;
-                                line-height: 1.5;
-                            }
-                            .policies-wrap{
-                                height: 200px;
-                                overflow: auto;
-                                border: 1px solid #e5e7eb;
-                                padding: 10px 20px;
-                                ol{
-                                    li{
-                                        font-size: 16px;
-                                        font-family: "Roboto", sans-serif;
-                                        color: #677279;
-                                        line-height: 1.5;
-                                    }
-                                }
-                                p{
-                                    font-size: 15px;
-                                    font-family: "Roboto", sans-serif;
-                                    color: #677279;
-                                    margin-top: 0;
-                                    line-height: 1.5;
-                                }
-                            }
-                        }
-                        .gform_page_footer{
-                            input{
-                                background: #df7800;
-                                border: 0;
-                                color: #fff;
-                                padding: 0 50px;
-                                border-radius: 2px;
-                                height: 48px;
-                                font-size: 18px;
-                                transition: background .25s ease-in-out,color .25s ease-in-out,box-shadow .25s ease-in-out;
-                                cursor: pointer;
-                            }
-                        }
-                    }
                  }
              }
          }
      }
- }
+}
 
 // end

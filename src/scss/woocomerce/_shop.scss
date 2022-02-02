@@ -196,7 +196,6 @@
               .row{
                   .col-md-9{
                     flex: 100%;
-                    margin-top: -40px;
                     @include responsive(sm){
                       margin: 0px;
                     }
@@ -231,9 +230,9 @@
                           }
                           .woocommerce-result-count{
                               position: absolute;
-                              right: 200px;
+                              right: 0px;
                               margin: 0px;
-                              top: 10px;
+                              top: -45px;
                               font-size: 18px;
                               font-weight: 400;
                               text-transform: capitalize;
@@ -241,9 +240,6 @@
                               color: $dgray;
                               @include responsive(sm){
                                 font-size: 12px;
-                                right: 0;
-                                left: 0;
-                                top: 14px;
                               }
                           }
                           .woocommerce-ordering{
@@ -275,7 +271,7 @@
                               justify-content: center;
                               .elitegas-shop{
                                 width: 50%;
-                                padding: 40px;
+                                padding: 40px 20px;
                                 height: 470px;
                                 margin: 0;
                                 display: block;
@@ -284,6 +280,14 @@
                                 }
                                 a{
                                     text-decoration: none;
+                                    .onsale{
+                                      background-color: $orange;
+                                      color: white;
+                                      padding: 10px;
+                                      display: inline-block;
+                                      box-shadow: 1px 1px 10px 0px #c1c1c1;
+                                      position: absolute;
+                                    }
                                       img{
                                           width: 100%;
                                           height: auto;

@@ -29,9 +29,7 @@
                                         background-color:$orange;
                                         padding: 15px 20px;
                                         color: #fff;
-                                        z-index: 99;
-
-                                        
+                                        z-index: 99; 
                                     }
                                     .woocommerce-product-gallery{
                                         border-right: 1px solid #ECECEA;
@@ -439,6 +437,13 @@
                                     .up-sells{
                                         display: none;
                                     }
+                                    .onsale{
+                                        position: absolute;
+                                        background-color:$orange;
+                                        padding: 15px 20px;
+                                        color: #fff;
+                                        z-index: 99; 
+                                    }
                                     .woocommerce-product-gallery{
                                         border-right: 0px solid #ECECEA;
                                         display: contents;
@@ -512,6 +517,7 @@
                                             justify-content: space-between;
                                             align-items: start;
                                             margin-top: 20px;
+                                            margin-bottom: 10px;
                                             .price-wrap{
                                                 line-height: 100%;
                                                 .msrp-class{
@@ -522,6 +528,7 @@
                                                     line-height: 1;
                                                     color: $dgray;
                                                     font-family: $arial;
+                                                    margin-bottom: 20px;
                                                 }
                                             }
                                             .price{
@@ -538,12 +545,11 @@
                                             font-family: $arial;
                                             color: #999;
                                             font-size: 14px;
-                                            margin-bottom: 15px;
+                                            margin-top: 15px;
                                             &.in-stock{
                                                 font-family: $arial;
                                                 color: #999;
                                                 font-size: 14px;
-                                                margin-bottom: 15px;
                                             }
                                         }
                                         .cart{
@@ -605,44 +611,52 @@
                                             .tier-pricing-summary-table{
                                                 display: none;
                                             }
-                                            .quantity{
-                                                border: 1px solid #ddd;
-                                                height: auto;
-                                                overflow: hidden;
-                                                float: left;
-                                                margin: 0 4px 0 0;
-                                                button{
-                                                    height: 50px;
-                                                    font-size: 26px;
-                                                    border: 0;
-                                                    background: none;
-                                                    width: 40px;
-                                                    font-family: 'WooCommerce';
-                                                    font-weight: 700;
-                                                    padding: 0;
-                                                    color: #c7c7c7;
-                                                    margin: 0;
-                                                    &.plus{
-                                                        float: right;
-                                                    }
-                                                    &.minus{
-                                                        float: left;
-                                                        height: 45px;
-                                                    }
-                                                }
-                                                input{
-                                                    height: 50px;
-                                                    padding-left: 0px;
+                                            .wrap-quantity-btn{
+                                                display: flex;
+                                                .quantity{
+                                                    border: 1px solid #ddd;
+                                                    height: auto;
+                                                    overflow: hidden;
                                                     float: left;
-                                                    margin: 0;
-                                                    width: 50px;
-                                                    font-size: 18px;
-                                                    border: 0;
-                                                    text-align: center;
-                                                    color: #677279;
-                                                    pointer-events: none;
+                                                    margin: 0 4px 0 0;
+                                                    button{
+                                                        height: 50px;
+                                                        font-size: 26px;
+                                                        border: 0;
+                                                        background: none;
+                                                        width: 40px;
+                                                        font-family: 'WooCommerce';
+                                                        font-weight: 700;
+                                                        padding: 0;
+                                                        color: #c7c7c7;
+                                                        margin: 0;
+                                                        &.plus{
+                                                            float: right;
+                                                        }
+                                                        &.minus{
+                                                            float: left;
+                                                            height: 45px;
+                                                        }
+                                                    }
+                                                    input{
+                                                        height: 50px;
+                                                        padding-left: 0px;
+                                                        float: left;
+                                                        margin: 0;
+                                                        width: 50px;
+                                                        font-size: 18px;
+                                                        border: 0;
+                                                        text-align: center;
+                                                        color: #677279;
+                                                        pointer-events: none;
+                                                    }
                                                 }
                                             }
+                                        }
+                                        .cases_per_pallet{
+                                            font-family: "Roboto", sans-serif;
+                                            color: #999;
+                                            font-size: 14px;
                                         }
                                         .single_add_to_cart_button{
                                             background: #df7800;
@@ -658,7 +672,7 @@
                                             }
                                         }
                                         .woocommerce-product-details__short-description{
-                                            margin: 30px 0 0;
+                                            margin: 20px 0 0;
                                             font-size: 14px;
                                             line-height: 1.4;
                                             h3{
@@ -666,6 +680,7 @@
                                                 color: #444;
                                                 font-size: 18px;
                                                 font-family: $arial;
+                                                margin-bottom: 10px;
                                             }
                                             ul{
                                                 padding: 0 0 0 15px;
