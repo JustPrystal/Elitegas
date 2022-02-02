@@ -29,6 +29,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 <div class="container">
+
+<?php if ( pmpro_hasMembershipLevel(array('8') ) ) { ?>
+
+<div class="champs-coupon-ad">
+	<p>Please use this coupon code <span>champs22</span> at checkout to activate free shipping.</p>
+</div>
+
+<?php } ?>
+
 <div class="woocommerce-form-coupon-toggle">
 	<?php wc_print_notice( apply_filters( 'woocommerce_checkout_coupon_message', esc_html__( 'Have a coupon?', 'woocommerce' ) . ' <a href="#" class="showcoupon">' . esc_html__( 'Click here to enter your code', 'woocommerce' ) . '</a>' ), 'notice' ); ?>
 </div>

@@ -20,6 +20,25 @@
                     }
                 }
                 .champs-form-wrap{
+                    .champs-error{
+                        background: #fff9f9;
+                        border-radius: 5px;
+                        border: 1.5px solid #c02b0a;
+                        box-shadow: 0 1px 4px 4px #1219610a;
+                        margin-bottom: 8px;
+                        margin-top: 8px;
+                        padding: 2px 15px;
+                        position: relative;
+                        width: 100%;
+                        display: none;
+                        margin-bottom: 25px;
+                        p{
+                            color: #c02b0a;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 17.6px;
+                        }
+                    }
                     .after-form-wrap{
                         text-align: center;
                         h2{
@@ -101,6 +120,41 @@
                         }
                         .gfield{
                             position: relative;
+                            margin-right: 15px;
+                            #validation_message_12_154{
+                                font-size: 18px;
+                                padding: 15px;
+                                margin-right: 15px;
+                                a{
+                                    padding: 8px 20px;
+                                    color: white;
+                                    background-color: #df7800;
+                                    margin: 0 5px;
+                                    border-radius: 5px;
+                                    text-decoration: none;
+                                    &:hover{
+                                        background-color: #e0e0dd;
+                                        color: $dgray;
+                                    }
+                                }
+                            }
+                            #validation_message_12_150{
+                                font-size: 18px;
+                                padding: 15px;
+                                margin-right: 15px;
+                                a{
+                                    padding: 8px 20px;
+                                    color: white;
+                                    background-color: #df7800;
+                                    margin: 0 5px;
+                                    border-radius: 5px;
+                                    text-decoration: none;
+                                    &:hover{
+                                        background-color: #e0e0dd;
+                                        color: $dgray;
+                                    }
+                                }
+                            }
                             &#field_12_18{
                                 label{
                                     color: $dgray;
@@ -205,7 +259,6 @@
                                 }
                             }
                             .ginput_container{
-                                margin-right: 15px;
                                 input{
                                     padding: 23px 10px 5px 13px;
                                     font-size: 15px;
@@ -349,12 +402,15 @@
                                             &::after{
                                                 content: "";
                                             }
+                                            &#label_12_57_1{
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                            }
                                         }
                                     }
                                 }
                             }
                             .gfield_password_strength{
-                                margin-right: 15px;
                                 &.short{
                                     background-color: #d52020;
                                     border-bottom: 3px solid red;
@@ -480,6 +536,7 @@
                         }
                         .gfield{
                             position: relative;
+                            margin-right: 15px;
                             &#field_13_18{
                                 label{
                                     color: $dgray;
@@ -584,18 +641,17 @@
                                 }
                             }
                             .ginput_container{
-                                margin-right: 15px;
                                 input{
                                     padding: 23px 10px 5px 13px;
                                     font-size: 15px;
                                     color: black;
                                     border: 1px solid #e0e0dd;
-                                    &#input_12_37{
+                                    &#input_13_37{
                                         pointer-events: none;
                                         color: #c1c1c1;
                                         background-color: #fbfbfb;
                                     }
-                                    &#input_12_38{
+                                    &#input_13_38{
                                         pointer-events: none;
                                         color: #c1c1c1;
                                         background-color: #fbfbfb;
@@ -728,12 +784,15 @@
                                             &::after{
                                                 content: "";
                                             }
+                                            &#label_13_57_1{
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                            }
                                         }
                                     }
                                 }
                             }
                             .gfield_password_strength{
-                                margin-right: 15px;
                                 &.short{
                                     background-color: #d52020;
                                     border-bottom: 3px solid red;
@@ -1144,6 +1203,10 @@
                                              &::after{
                                                  content: "";
                                              }
+                                             &#label_12_57_1{
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                            }
                                          }
                                      }
                                  }
@@ -1522,6 +1585,10 @@
                                             font-weight: 400;
                                             &::after{
                                                 content: "";
+                                            }
+                                            &#label_13_57_1{
+                                                font-size: 18px;
+                                                font-weight: 500;
                                             }
                                         }
                                     }
