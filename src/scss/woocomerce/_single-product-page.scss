@@ -147,7 +147,7 @@
                                             margin-left:10px;
                                         }
                                         .not_active_text {
-                                            padding: 7px;
+                                            padding: 7px 7px 25px;
                                             margin-top: 20px;
                                             margin-bottom: 10px;
                                             border: 1px solid #ececea;
@@ -167,16 +167,32 @@
                                                     line-height: 1.5;
                                                     font-family: $arial;
                                                 }
-                                                    p{
-                                                        font-size: 14px;
-                                                        font-weight: 600;
-                                                        color: #df7800;
-                                                        font-family: $arial;
-                                                        line-height: 1.5;
-                                                        margin: 0px;
-                                                        a{
-                                                            color: $orange;
-                                                        }
+                                                p{
+                                                    font-size: 14px;
+                                                    font-weight: 600;
+                                                    color: #df7800;
+                                                    font-family: $arial;
+                                                    line-height: 1.5;
+                                                    margin: 0px 0 20px;
+                                                }
+                                                .join-now-btn{
+                                                    background-color: #df7827;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    padding: 10px;
+                                                    color: white;
+                                                    margin: 10px 0;
+                                                    font-family: 'Roboto';
+                                                    font-size: 16px;
+                                                    border: 1px solid $orange;
+                                                    cursor: pointer;
+                                                    transition: all 0.2s ease-in-out;
+                                                    text-decoration: none;
+                                                    &:hover{
+                                                      background-color: transparent;
+                                                      color: $orange;
+                                                      border: 1px solid $orange;
+                                                    }
                                                 }    
                                             }
                                         }
@@ -550,6 +566,55 @@
                                                 font-family: $arial;
                                                 color: #999;
                                                 font-size: 14px;
+                                            }
+                                        }
+                                        .not_active_text {
+                                            padding: 7px 7px 25px;
+                                            margin-top: 20px;
+                                            margin-bottom: 10px;
+                                            border: 1px solid #ececea;
+                                            .not_active_image{
+                                                img{
+                                                    width: 100px;
+                                                }
+                                            }
+                                            .not_active_content{
+                                                width: 100%;
+                                                span{
+                                                    font-weight: 800;
+                                                    text-transform: uppercase;
+                                                    font-size: 26px;
+                                                    color: #df7800;
+                                                    line-height: 1.5;
+                                                    font-family: $arial;
+                                                }
+                                                p{
+                                                    font-size: 14px;
+                                                    font-weight: 600;
+                                                    color: #df7800;
+                                                    font-family: $arial;
+                                                    line-height: 1.5;
+                                                    margin: 0px 0 20px;
+                                                }
+                                                .join-now-btn{
+                                                    background-color: #df7827;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    padding: 10px;
+                                                    color: white;
+                                                    margin: 10px 0;
+                                                    font-family: 'Roboto';
+                                                    font-size: 16px;
+                                                    border: 1px solid $orange;
+                                                    cursor: pointer;
+                                                    transition: all 0.2s ease-in-out;
+                                                    text-decoration: none;
+                                                    &:hover{
+                                                      background-color: transparent;
+                                                      color: $orange;
+                                                      border: 1px solid $orange;
+                                                    }
+                                                }    
                                             }
                                         }
                                         .cart{

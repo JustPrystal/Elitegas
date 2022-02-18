@@ -74,7 +74,9 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
                             <div class="image"><img src="/wp-content/uploads/2022/01/LockKey.png" alt=""></div>
                                 <div class="content">
                                     <div class="heading">PRODUCT PRICES & ORDERING LOCKED</div>
-                                    <div class="text">Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.  To view our price breakdowns and to place orders, please log in or create an account and complete our authorized seller application process.</div>
+                                    <div class="text">Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.  To view our price breakdowns and to place orders, please log in or create an account and complete our authorized seller application process. 
+                                    </div>
+                                    <a href="/account/login" class="join-now-btn">JOIN NOW!</a>
                                 </div>
                             </div>
                         </div>

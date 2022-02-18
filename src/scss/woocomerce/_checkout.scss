@@ -208,6 +208,30 @@
                                             margin: 0 0 6px;
                                             width: 50%;
                                             float: left;
+                                            .input-text {
+                                                    border-radius: 5px;
+                                                    padding: 15px;
+                                                    border: 1px solid #ddd;
+                                                    width: 100%;
+                                            }
+                                            .state-error{
+                                                color: red;
+                                                margin-top: 4px;
+                                                margin-left: 2px;
+                                                font-size: 12px;
+                                                margin-bottom: 0px;
+                                            }
+                                            &.woocommerce-invalid-required-field{
+                                                .input-text {
+                                                    border-radius: 5px;
+                                                    padding: 15px;
+                                                    border: 1px solid red;
+                                                    width: 100%;
+                                                }
+                                                .select2-selection--single{
+                                                    border: 1px solid red !important;
+                                                }
+                                            }
                                             &.form-row-wide{
                                                 width: 100%;
                                             }
@@ -287,14 +311,7 @@
                                                     font-weight: 700;
                                                     display: contents;
                                                 }
-                                            }
-                                            .input-text {
-                                                border-radius: 5px;
-                                                padding: 15px;
-                                                border: 1px solid #ddd;
-                                                width: 100%;
-                                            }
-                                        
+                                            }                                        
                                         }
                                     }
                                 }
@@ -350,6 +367,24 @@
                                                 margin: 0 0 6px;
                                                 width: 50%;
                                                 float: left;
+                                                &.woocommerce-invalid-required-field{
+                                                    .input-text {
+                                                        border-radius: 5px;
+                                                        padding: 15px;
+                                                        border: 1px solid red;
+                                                        width: 100%;
+                                                    }
+                                                    .select2-selection--single{
+                                                        border: 1px solid red !important;
+                                                    }
+                                                }
+                                                .state-error{
+                                                    color: red;
+                                                    margin-top: 4px;
+                                                    margin-left: 2px;
+                                                    font-size: 12px;
+                                                    margin-bottom: 0px;
+                                                }
                                                 &.form-row-wide{
                                                     width: 100%;
                                                 }
@@ -498,6 +533,19 @@
                                     }
                                     tr{
                                         border-top: 1px solid rgba(0,0,0,.1);
+                                        &.fee{
+                                            td{
+                                                .woocommerce-Price-amount{
+                                                    bdi{
+                                                        color: $orange !important;
+                                                        font-weight: 700 !important;
+                                                        .woocommerce-Price-currencySymbol{
+                                                            color: $orange !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                         &.woocommerce-shipping-totals{
                                             display: flex;
                                             flex-wrap: wrap;
@@ -559,6 +607,44 @@
                                             text-align: left;
                                             margin: 0;
                                             font-weight: 400;
+                                            position: relative;
+                                            &.payment_method_authorize_net_cim_credit_card{
+                                                .tooltiptext {
+                                                    visibility: hidden;
+                                                    width: 350px;
+                                                    background-color: #555;
+                                                    color: #fff;
+                                                    text-align: left;
+                                                    border-radius: 6px;
+                                                    padding: 15px 15px;
+                                                    position: absolute;
+                                                    z-index: 1;
+                                                    bottom: 100%;
+                                                    left: 0%;
+                                                    margin-left: -160px;
+                                                    margin-bottom: 0px;
+                                                    opacity: 0;
+                                                    transition: opacity 0.3s;
+                                                    font-weight: 500;
+                                                    font-family: "Roboto", sans-serif;
+                                                    font-size: 13px;
+                                                    line-height: 100%;
+                                                    &:after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 100%;
+                                                        right: 50%;
+                                                        margin-left: -5px;
+                                                        border-width: 5px;
+                                                        border-style: solid;
+                                                        border-color: #555 transparent transparent transparent;
+                                                    }
+                                                }
+                                                &:hover .tooltiptext {
+                                                    visibility: visible;
+                                                    opacity: 1;
+                                                }
+                                            }
                                             label{
                                                 font-size: 15px;
                                                 color: $dgray;
@@ -586,7 +672,31 @@
                                                     left: 0;
                                                     margin: -1em 0 0 2em;
                                                 }
+                                                &.payment_method_bacs{
+                                                    p{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        &:before{
+                                                            content: "The Direct Bank Transfer will provide you with the necessary Elite Gas account information for ACH/Wire transfers. You will need to initiate the ACH/Wire transfer. This is not an auto-draft.";
+                                                            margin-bottom: 30px;
+                                                            font-weight: 700;
+                                                            color: #df7800;
+                                                            font-size: 20px;
+                                                        }
+                                                    }
+                                                }
                                                 &.payment_method_authorize_net_cim_credit_card{
+                                                    p:nth-child(1){
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        &:before{
+                                                            content: "Please note, credit card payments will incur a 3% convenience charge. To avoid this fee, you can select the Direct Bank Transfer option. ";
+                                                            margin-bottom: 30px;
+                                                            font-weight: 700;
+                                                            color: #df7800;
+                                                            font-size: 20px;
+                                                        }
+                                                    }
                                                     fieldset{
                                                         border: 0px;
                                                         padding: 0px;
@@ -597,6 +707,11 @@
                                                             .validate-required{
                                                                 display: grid;
                                                                 width: 100%;
+                                                                &#wc-authorize-net-cim-credit-card-account-number_field{
+                                                                    &:before{
+                                                                     display: none !important;   
+                                                                    }
+                                                                }
                                                                 &#wc-authorize-net-cim-credit-card-expiry_field{
                                                                     width: 45%;
                                                                 }
@@ -618,6 +733,17 @@
                                                     }
                                                 }
                                                 &.payment_method_authorize_net_cim_echeck{
+                                                    p:nth-child(1){
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        &:before{
+                                                            content: "The e-check option will allow you to enter your account and routing numbers for immediate processing.";
+                                                            margin-bottom: 30px;
+                                                            font-weight: 700;
+                                                            color: #df7800;
+                                                            font-size: 20px;
+                                                        }
+                                                    }
                                                     fieldset{
                                                         border: 0px;
                                                         padding: 0px;
@@ -628,6 +754,11 @@
                                                             .validate-required{
                                                                 display: grid;
                                                                 width: 100%;
+                                                                &#wc-authorize-net-cim-echeck-routing-number_field{
+                                                                    &:before{
+                                                                        display: none !important;   
+                                                                       }
+                                                                }
                                                                 input{
                                                                     width: 100%;
                                                                     border: 1px solid #cacaca;
@@ -846,6 +977,17 @@
                                             margin: 0 0 6px;
                                             width: 100%;
                                             float: left;
+                                            &.woocommerce-invalid-required-field{
+                                                .input-text {
+                                                    border-radius: 5px;
+                                                    padding: 15px;
+                                                    border: 1px solid red;
+                                                    width: 100%;
+                                                }
+                                                .select2-selection--single{
+                                                    border: 1px solid red !important;
+                                                }
+                                            }
                                             &.form-row-wide{
                                                 width: 100%;
                                             }
@@ -958,6 +1100,17 @@
                                                 margin: 0 0 6px;
                                                 width: 100%;
                                                 float: left;
+                                                &.woocommerce-invalid-required-field{
+                                                    .input-text {
+                                                        border-radius: 5px;
+                                                        padding: 15px;
+                                                        border: 1px solid red;
+                                                        width: 100%;
+                                                    }
+                                                    .select2-selection--single{
+                                                        border: 1px solid red !important;
+                                                    }
+                                                }
                                                 &.form-row-wide{
                                                     width: 100%;
                                                 }

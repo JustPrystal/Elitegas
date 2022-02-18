@@ -199,8 +199,29 @@ $('#field_13_123').click(function() {
 });
 
 
-// onboarding canvas width attr edit
+// window.setTimeout(function(){
 
-// $(document).ready(function() {
-//   $(".mobile-responsive #input_12_34").attr('width', 360);
-// }) ;
+//     if($("#billing_state_field").hasClass("woocommerce-invalid-required-field")){
+//       $("input#billing_state").after("<p class='state-error'>Please Select a Country in order to choose State</p>")
+//     }else{
+//       $('.state-error').css('display','none');
+//     }
+//     if($("#shipping_state_field").hasClass("woocommerce-invalid-required-field")){
+//       $("input#shipping_state").after("<p class='state-error'>Please Select a Country in order to choose State</p>")
+//     }
+
+// }, 3400)
+
+// window.setInterval(function(){
+// if($("#shipping_state_field").hasClass("woocommerce-validated")){
+//   $(".state-error").css('display','none');
+// }
+// if($("#billing_state_field").hasClass("woocommerce-validated")){
+//   $(".state-error").css('display','none');
+// }
+
+// }, 500);
+
+// window.setTimeout(function(){
+// $( "#payment_method_authorize_net_cim_credit_card" ).after( "<span class='tooltiptext'>Please note, credit card payments will incur a 3% convenience charge. To avoid this fee, you can select either the Direct Bank Transfer or e-check option. </span>" );
+// }, 9000)
