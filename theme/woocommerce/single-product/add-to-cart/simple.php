@@ -65,7 +65,11 @@ if ( $product->is_in_stock() ) : ?>
   <div class="not_active_content">
     <span>Product Prices &amp; Ordering Locked</span>
     <p>Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.&nbsp; To view our price breakdowns and to place orders, please&nbsp;log in&nbsp;or create an account and complete our authorized seller application process.</p>
-	<a href="/account/login" class="join-now-btn">JOIN NOW!</a>
+	<?php if (is_user_logged_in()) { ?>
+        <a href="/my-account/boarding-info/" class="join-now-btn">JOIN NOW!</a>
+    <?php } else{ ?>
+        <a href="/membership-account/membership-checkout/?level=1" class="join-now-btn">JOIN NOW!</a>
+    <?php } ?>
   </div>
 </div>
 <?php }	?>
