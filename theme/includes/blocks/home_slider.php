@@ -1,28 +1,22 @@
 <section class="Home-Page-Slider is_desktop">
     <div class="wrapper">
         <div class="slider-main">
-            <?php
-                foreach($block['image_container'] as $image){ ?>
-                 <a href="<?php echo $image['link']['url'] ?>"> 
-                <div class="image-wrapper">
-                <?php 
-               
-                if ($image['choose_type'] == 'image') {?>
-                    <img src="<?php echo $image['image']['url'] ?>">
-                   
-                <?php } else { ?>
-                    <video width="100%" height="635" autoplay muted>
-                    <source src="<?php echo $image['video']['url']?>" type="video/mp4">
-                    </video>
-
-                   <?php  }
-              ?>
-                    <!-- <img src="<?php echo $image['image']['url'] ?>"> -->
-                </div>
-                </a>
-            <?php
-                }
-            ?>
+            <?php foreach($block['image_container'] as $image){ ?>
+                <?php if($image['select_link']){ ?>
+                    <a href="<?php echo $image['link']['url'] ?>"> 
+                <?php } ?>
+                        <div class="image-wrapper">
+                            <?php if ($image['choose_type'] == 'image') {?>
+                                <img src="<?php echo $image['image']['url'] ?>"> 
+                            <?php } else { ?>
+                                <video width="100%" height="635" autoplay muted>
+                                    <source src="<?php echo $image['video']['url']?>" type="video/mp4">
+                                </video>
+                            <?php } ?>
+                            <!-- <img src="<?php echo $image['image']['url'] ?>"> -->
+                        </div>
+                    </a>
+            <?php } ?>
         </div>
     </div>
 </section>

@@ -225,3 +225,5 @@ $('#field_13_123').click(function() {
 // window.setTimeout(function(){
 // $( "#payment_method_authorize_net_cim_credit_card" ).after( "<span class='tooltiptext'>Please note, credit card payments will incur a 3% convenience charge. To avoid this fee, you can select either the Direct Bank Transfer or e-check option. </span>" );
 // }, 9000)
+
+

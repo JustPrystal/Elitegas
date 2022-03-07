@@ -3,17 +3,17 @@
         min-width: 1024px;
         .woocommerce{
             .container{
-            display: flex;
-            flex-wrap: wrap;
-            .dashboard-page-title{
-                width: 100%;
-                font-size: 35px;
-                font-family: $arial;
-                font-weight: 400;
-                margin: 30px 0 10px 0;
-                text-transform: capitalize;
-                color: #677279;
-            }
+                display: flex;
+                flex-wrap: wrap;
+                .dashboard-page-title{
+                    width: 100%;
+                    font-size: 35px;
+                    font-family: $arial;
+                    font-weight: 400;
+                    margin: 30px 0 10px 0;
+                    text-transform: capitalize;
+                    color: #677279;
+                }
                 .woocommerce-MyAccount-navigation{
                     width: 20%;
                     ul{
@@ -62,6 +62,13 @@
                             a{
                                 &:before{
                                     content: "\f0e4";
+                                }
+                            }
+                        }
+                        .woocommerce-MyAccount-navigation-link--admin-dashboard{
+                            a{
+                                &:before{
+                                    content: "\f023";
                                 }
                             }
                         }
@@ -1145,7 +1152,31 @@
                             }
                         }
                     }
-                        
+                    .top-nav{
+                        padding: 0px 10px 10px;
+                        border-bottom: 1px solid #cacaca;
+                        .nav-container{
+                            display: flex;
+                            span{
+                                color: #707070;
+                                font-size: 20px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                margin-right: 30px;
+                                &.active-tab{
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }   
+                    .admin-tab{
+                        padding: 40px 0;
+                        margin-left: 10px;
+                        display: none !important;
+                        &.active{
+                            display: block !important;
+                        }
+                    }
                 }
             }
         }

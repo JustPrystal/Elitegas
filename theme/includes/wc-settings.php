@@ -137,3 +137,91 @@ function wpc_gravity_registration_autologin( $user_id, $user_config, $entry, $pa
 }
 
 // end
+
+// Admin panel in my account for elite gas support
+
+//  * My Dashboard Link Account menu
+// */
+
+
+
+add_filter ( 'woocommerce_account_menu_items', 'admin_dashboard', 40 );
+function admin_dashboard( $menu_link ){
+    if ( current_user_can('administrator') ) {
+        $menu_link = array_slice( $menu_link, 0, 5, true ) 
+        + array( 'admin-dashboard' => 'Admin Tools' )
+        + array_slice( $menu_link, 5, NULL, true );
+    }
+	return $menu_link;
+}
+
+add_action( 'init', 'admin_dashboard_add_endpoint' );
+function admin_dashboard_add_endpoint() {
+    if ( current_user_can('administrator') ) {
+        // WP_Rewrite is my Achilles' heel, so please do not ask me for detailed explanation
+        add_rewrite_endpoint( 'admin-dashboard', EP_PAGES );
+    }
+}
+
+add_action( 'woocommerce_account_admin-dashboard_endpoint', 'admin_my_account_endpoint_content' );
+function admin_my_account_endpoint_content() { 
+    if ( current_user_can('administrator') ) { ?>
+
+<div class="top-nav">
+    <div class="nav-container">
+        <span class="user-tab-btn active-tab">Create User</span>
+        <span class="ban-tab-btn">Ban List</span>
+    </div>
+</div>
+
+<section class="admin-tab create-custom-user active">
+    <div class="container">
+        <div class="shortcode"><?php echo do_shortcode('[gravityforms id="14"]') ?></div>
+    </div>
+</section>
+
+<section class="admin-tab ban-list">
+    Ban List will be Shown here
+</section>
+
+<script>
+
+jQuery(".ban-tab-btn").click(function(){
+    jQuery(".user-tab-btn").removeClass("active-tab");
+    jQuery('.ban-tab-btn').addClass("active-tab");
+
+  if(jQuery('.create-custom-user').hasClass("active")){
+    jQuery('.create-custom-user').removeClass("active");
+    jQuery('.ban-list').addClass("active");
+    }
+});
+
+jQuery(".user-tab-btn").click(function(){
+    jQuery(".ban-tab-btn").removeClass("active-tab");
+    jQuery('.user-tab-btn').addClass("active-tab");
+
+  if(jQuery('.ban-list').hasClass("active")){
+    jQuery('.ban-list').removeClass("active");
+    jQuery('.create-custom-user').addClass("active");
+    }
+});
+
+</script>
+
+<?php } 
+
+}
+
+add_filter('woocommerce_account_menu_items', 'filter_wc_my_account_menu');
+function filter_wc_my_account_menu($items) {
+    if ( current_user_can('administrator')) {
+        isset($items['admin-dashboard']);
+        return $items;
+    } elseif(!current_user_can('administrator')) {
+        echo '<style>.woocommerce-MyAccount-navigation-link--admin-dashboard { display:none;}</style>';
+    }
+    return $items;
+}
+
+
+// end

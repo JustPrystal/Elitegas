@@ -1165,7 +1165,7 @@ function dsk_get_gallery_images() {
 // /*
 //  * My Dashboard Link Account menu
 // */
-	 add_filter ( 'woocommerce_account_menu_items', 'distributor', 40 );
+add_filter ( 'woocommerce_account_menu_items', 'distributor', 40 );
 function distributor( $menu_link ){
 	
 	$menu_link = array_slice( $menu_link, 0, 5, true ) 
@@ -1350,12 +1350,13 @@ function my_admin_style() {
  function my_account_menu_order() {
  	$menuOrder = array(
 		'dashboard'          => __( 'Dashboard', 'woocommerce' ),
+		'admin-dashboard'    => __( 'Admin Tools', 'woocommerce' ),
  		'orders'             => __( 'Your Orders', 'woocommerce' ),
  		'downloads'          => __( 'Downloads', 'woocommerce' ),
  		'edit-address'       => __( 'My Locations', 'woocommerce' ),
-			'payment-methods'    => __( 'Payment Methods', 'woocommerce' ),
-			'log-history'		 => __( 'Important Information', 'woocommerce' ),
- 		'edit-account'    	=> __( 'Account Details', 'woocommerce' ),
+		'payment-methods'    => __( 'Payment Methods', 'woocommerce' ),
+		'log-history'		 => __( 'Important Information', 'woocommerce' ),
+ 		'edit-account'    	 => __( 'Account Details', 'woocommerce' ),
  		'customer-logout'    => __( 'Logout', 'woocommerce' )
 	
  	);

@@ -416,6 +416,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_621d14e351216": {
+                    "key": "layout_621d14e351216",
+                    "name": "create_user",
+                    "label": "Create User",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_621d14f651217",
+                            "label": "create user block",
+                            "name": "create_user_block",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_621d148b7b4c4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -451,5 +482,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1643061263
+    "modified": 1646073129
 }
