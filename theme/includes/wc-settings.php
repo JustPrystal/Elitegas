@@ -224,4 +224,35 @@ function filter_wc_my_account_menu($items) {
 }
 
 
+update_user_meta($user_id, 'change_role', time() + 60 * 60 * 24 * 0.0005);
+
+function change_expired_users_role(){
+    $args = array(
+        'meta_key' => 'change_role',
+        'meta_value' => time(),
+        'meta_compare' => `<=`,
+        'fields' => array('ID')
+    );
+
+    $users = get_users($args);
+
+    if(empty($users))
+        return;
+
+    foreach($users as $user){
+        if ( in_array( 'new_distributor', (array) $user->roles ) ) {
+            $user->set_role('member');
+        }
+    }
+}
+
 // end
+
+
+add_filter('woocommerce_checkout_fields', 'custom_billing_fields', 1000, 1);
+function custom_billing_fields( $fields ) {
+    $fields['billing']['billing_company']['required'] = true;
+    $fields['shipping']['shipping_company']['required'] = true;
+
+    return $fields;
+}

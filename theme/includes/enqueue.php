@@ -16,12 +16,11 @@
 				"path" => $templatedir . '/style.css',
 				"version" => filemtime(get_theme_file_path('/style.css'))
 			],
-			
 			[
 				"name" => 'slick.css', 
 				"type" => 'css',
 				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',
-				"version" => '1.0.0',
+				"version" => '1.0.0'
 			], 			
 			[
 				"name" => 'slick.js', 
@@ -35,7 +34,7 @@
 				"type" => 'js',
 				"path" => $templatedir . '/scripts/custom.js',
 				"version" => '1.0.0',
-				"loadInFooter" => true,
+				"loadInFooter" => true
 			]
 			// [
 			// 	"name" => 'TweenMax.js', 

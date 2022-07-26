@@ -53,3 +53,17 @@ $wrapper_classes   = apply_filters(
 		?>
 	</figure>
 </div>
+
+
+<script>
+
+$('.flex-control-nav').slick({
+        draggable: true,
+        arrows: true,
+		dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
+</script>

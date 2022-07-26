@@ -150,6 +150,18 @@ $(".hamburger-close").click(function () {
 $(".dropdown").click(function(){
   $(".dropdown_wrapper").slideToggle("slow");
 })
+
+$('.flex-control-nav').slick({
+  draggable: true,
+  arrows: true,
+  prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  dots: false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+
 });
 
 //Header hamburger end
@@ -225,5 +237,3 @@ $('#field_13_123').click(function() {
 // window.setTimeout(function(){
 // $( "#payment_method_authorize_net_cim_credit_card" ).after( "<span class='tooltiptext'>Please note, credit card payments will incur a 3% convenience charge. To avoid this fee, you can select either the Direct Bank Transfer or e-check option. </span>" );
 // }, 9000)
-
-

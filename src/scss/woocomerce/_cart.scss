@@ -60,6 +60,13 @@
                     td{
                         border-top: 1px solid rgba(0,0,0,.1);
                         padding: 9px 12px;
+                        &.product-quantity{
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 20px 10px;
+                            border: 1px solid #ededed;
+                        }
                     }
                     thead{
                         tr{
@@ -168,6 +175,22 @@
                                                 font-family:$arial;
                                             }
                                         }
+                                        dt.variation-Discount{
+                                            display: none;
+                                        }
+                                        dd.variation-Discount{
+                                            margin: 0px;
+                                            p{
+                                                margin: 5px 0;
+                                                .awdr_free_product_text {
+                                                    display: inline-block;
+                                                    padding: 0px 10px;
+                                                    background-color: #df7800;
+                                                    color: #fff;
+                                                    border-radius: 3px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                                 &.product-price{
@@ -182,7 +205,7 @@
                                 }
                                 &.product-quantity{
                                     .quantity{
-                                        border: 1px solid #ddd;
+                                        // border: 1px solid #ddd;
                                         button{
                                             height: 50px;
                                             font-size: 26px;

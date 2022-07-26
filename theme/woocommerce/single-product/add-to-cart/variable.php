@@ -25,7 +25,10 @@ $variations_attr = function_exists( 'wc_esc_json' ) ? wc_esc_json( $variations_j
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-
+<?php if ( pmpro_hasMembershipLevel(array('2','7','4','5','6','8') ) ) { ?>
+	<?php if($product->stock_status == "coming_soon" || $product->stock_status == "pre_order"){
+		//return empty
+	} else {?>
 <form class="variations_form cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->get_id() ); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 	
@@ -36,7 +39,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 					<tr>
-						<td class="label"><label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?></label></td>
+						<td class="label"><label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?>: </label></td>
 						<td class="value">
 							<?php
 								wc_dropdown_variation_attribute_options(
@@ -54,7 +57,6 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			</tbody>
 		</table>
 
-	<?php if ( pmpro_hasMembershipLevel('2') ) { ?>
 	<div class="single_variation_wrap">
 			<?php
 				/**
@@ -77,21 +79,26 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				do_action( 'woocommerce_after_single_variation' );
 			?>
 		</div>
-<?php } else { ?>
-<div class="not_active_text ">
-  <div class="not_active_image">
-    <img src="<?php bloginfo('template_directory'); ?>/images/LockKey.png" alt="">
-  </div>
-  <div class="not_active_content">
-    <span>Product Prices &amp; Ordering Locked</span>
-    <p>Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.&nbsp; To view our price breakdowns and to place orders, please&nbsp;<strong><a href="/account/login"><i>log in</i></a></strong>&nbsp;or create an account and complete our authorized seller application process.</p>
-  </div>
-</div>
-<?php }	?>
 	<?php endif; ?>
-
 	<?php do_action( 'woocommerce_after_variations_form' ); ?>
 </form>
 
+
+<?php } } else { ?>
+	<div class="not_active_text ">
+  <div class="not_active_image">
+    <img src="/wp-content/uploads/2022/01/LockKey.png" alt="">
+  </div>
+  <div class="not_active_content">
+    <span>Product Prices &amp; Ordering Locked</span>
+    <p>Product prices, quantity discounts, and ordering options are only available to customers with approved Elite Gas seller accounts.&nbsp; To view our price breakdowns and to place orders, please&nbsp;log in&nbsp;or create an account and complete our authorized seller application process.</p>
+	<?php if (is_user_logged_in()) { ?>
+        <a href="/my-account/boarding-info/" class="join-now-btn">JOIN NOW!</a>
+    <?php } else{ ?>
+        <a href="/membership-account/membership-checkout/?level=1" class="join-now-btn">JOIN NOW!</a>
+    <?php } ?>
+  </div>
+</div>
+<?php }	?>
+
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
-<div class="showdcheck"><?php echo do_shortcode('[woocommerce_one_page_checkout]');?></div>

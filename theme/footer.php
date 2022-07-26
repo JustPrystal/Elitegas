@@ -92,6 +92,11 @@
             <div class="container">
               <div class="copyright-wrap">
                   <?php echo $footer_b['copyright']?>
+                    <!-- (c) 2005, 2022. Authorize.Net is a registered trademark of CyberSource Corporation --> 
+                    <div class="AuthorizeNetSeal"> 
+                      <script type="text/javascript" language="javascript">var ANS_customer_id="c52dd1ac-4258-43da-8b83-b13a53783eff";</script>
+                      <script type="text/javascript" language="javascript" src="//verify.authorize.net:443/anetseal/seal.js" ></script> 
+                    </div>
               </div>
               <div class="payments-wrap">
                   <?php if($footer_b['supported_payments']){?>

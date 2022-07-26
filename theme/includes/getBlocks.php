@@ -59,6 +59,9 @@
             case 'create_user':
               include 'blocks/create_user.php';
               break;         
+            case 'two_column_section':
+              include 'blocks/two_column_block.php';
+              break;         
           }
         }
       }

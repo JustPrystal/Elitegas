@@ -46,7 +46,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_61f8446cd2c58",
+            "key": "field_61f85d4997bc9",
             "label": "Champs Content",
             "name": "champs_content",
             "type": "wysiwyg",
@@ -80,7 +80,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
-    "modified": 1643660422
+    "modified": 1644864468
 }
