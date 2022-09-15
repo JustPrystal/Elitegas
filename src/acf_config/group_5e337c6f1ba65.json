@@ -386,14 +386,14 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_61ef1fd19326d": {
-                    "key": "layout_61ef1fd19326d",
+                "layout_61f1c2b92a672": {
+                    "key": "layout_61f1c2b92a672",
                     "name": "champs_onboarding",
                     "label": "Champs Onboarding",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_61ef1fde9326e",
+                            "key": "field_61f1c2c32a673",
                             "label": "Champs Onboarding fields",
                             "name": "champs_onboarding_fields",
                             "type": "clone",
@@ -417,16 +417,16 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_621d14e351216": {
-                    "key": "layout_621d14e351216",
-                    "name": "create_user",
-                    "label": "Create User",
+                "layout_6226b865ae8b2": {
+                    "key": "layout_6226b865ae8b2",
+                    "name": "two_column_section",
+                    "label": "Two Column Section",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_621d14f651217",
-                            "label": "create user block",
-                            "name": "create_user_block",
+                            "key": "field_6226b86fae8b3",
+                            "label": "fields",
+                            "name": "fields",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -437,7 +437,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_621d148b7b4c4"
+                                "group_6226a6f3cd51a"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -482,5 +482,5 @@
     ],
     "active": true,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1646073129
+    "modified": 1646704767
 }
