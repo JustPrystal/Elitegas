@@ -676,13 +676,13 @@
                                                     p{
                                                         display: flex;
                                                         flex-direction: column;
-                                                        &:before{
-                                                            content: "The Direct Bank Transfer will provide you with the necessary Elite Gas account information for ACH/Wire transfers. You will need to initiate the ACH/Wire transfer. This is not an auto-draft.";
-                                                            margin-bottom: 30px;
-                                                            font-weight: 700;
-                                                            color: #df7800;
-                                                            font-size: 20px;
-                                                        }
+                                                        // &:before{
+                                                        //     content: "The Direct Bank Transfer will provide you with the necessary Elite Gas account information for ACH/Wire transfers. You will need to initiate the ACH/Wire transfer. This is not an auto-draft.";
+                                                        //     margin-bottom: 30px;
+                                                        //     font-weight: 700;
+                                                        //     color: #df7800;
+                                                        //     font-size: 20px;
+                                                        // }
                                                     }
                                                 }
                                                 &.payment_method_authorize_net_cim_credit_card{

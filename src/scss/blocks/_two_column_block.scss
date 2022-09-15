@@ -1,0 +1,126 @@
+.tablet-desktop-responsive{  
+    .two-column-section{
+        margin: 20px 0;
+        min-width: 1024px;
+        .container{
+            .wrapper {
+                .heading {
+                    text-align: center;
+                    font-size: 29px;
+                    color: #4b4b4b;
+                    font-weight: 800;
+                    font-family: $arial;
+                }
+                .wrapper-content{
+                    .section-parent{
+                        margin:60px 0;
+                        display:flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        &.reversed{
+                            flex-direction: row-reverse;
+                        }
+                        &:nth-child(even){
+                            .content-parent{
+                                padding-left: 0;
+                            }
+                        }
+                        .img-wrapper{
+                            width: 45%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .content-parent{
+                            width: 45%;
+                            h1, h2{
+                                font-family: $arial;
+                                color: #4b4b4b;
+                                font-weight: 800;
+                                font-size: 22px;
+                                margin-top: 0px;
+                            }
+                            p{
+                                font-family: $arial;
+                                line-height: 1.5;
+                                font-size: 16px;
+                                color: #677279;
+                                a{
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+  
+  
+  // Mobile About responsive
+  
+.mobile-responsive{ 
+    .two-column-section{
+      margin: 20px 0;
+      min-width: auto;
+        .container{
+            .wrapper{
+                .heading {
+                    text-align: center;
+                    font-size: 29px;
+                    color: #4b4b4b;
+                    font-weight: 800;
+                    font-family: $arial;
+                }
+                .wrapper-content{
+                    .section-parent{
+                            margin:50px 0;
+                            display:flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        &:nth-child(even){
+                            .content-parent{
+                                padding-left: 0;
+                            }
+                        }
+                        .img-wrapper{
+                            width: 100%;
+                            text-align: center;
+                            margin: 20px 0;
+                            img{
+                                width: 85%;
+                                @include responsive(sm){
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .content-parent{
+                            text-align: center;
+                            width: 85%;
+                            @include responsive(sm){
+                            width: 100%;
+                            }
+                            h1, h2{
+                                font-family: $arial;
+                                color: #4b4b4b;
+                                font-weight: 800;
+                                font-size: 22px;
+                                margin-top: 0px;
+                            }
+                            p{
+                                font-family: $arial;
+                                line-height: 1.5;
+                                font-size: 16px;
+                                color: #677279;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+  
+  // Mobile About responsive end

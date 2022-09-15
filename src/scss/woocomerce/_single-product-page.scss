@@ -24,6 +24,75 @@
                                     position: relative;
                                     margin-bottom: 0;
                                     display: flex;
+                                    &.product-type-variable{
+                                        .wrap-social-price{
+                                            display: none !important;
+                                        }
+                                        .variations_form{
+                                            width: 100% !important;
+                                            .single_variation_wrap{
+                                                margin: 20px 0;
+                                                .woocommerce-variation-description{
+                                                    display: none;
+                                                }
+                                                .woocommerce-variation-price{
+                                                    color: #df7800;
+                                                    font-size: 30px;
+                                                    font-weight: 700;
+                                                    letter-spacing: -1px;
+                                                    line-height: 100%;
+                                                    margin: 10px 0 20px;
+                                                    font-family: "Roboto", sans-serif;
+                                                }
+                                                .woocommerce-variation-add-to-cart{
+                                                    button{
+                                                        text-transform: uppercase;
+                                                    }
+                                                }
+                                            }
+                                            .variations{
+                                                tbody{
+                                                    display: flex;
+                                                    margin-bottom: 20px;
+                                                    tr{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        margin-right: 20px;
+                                                        width: 200px;
+                                                        position: relative;
+                                                        .label{
+                                                            font-size: 20px;
+                                                            color: #515151;
+                                                            font-weight: 500;
+                                                            font-family: roboto;
+                                                            margin-bottom: 5px;
+                                                        }
+                                                        .value{
+                                                            display: flex;
+                                                            select{
+                                                                width: 100%;
+                                                                border: 1px solid #df7800;
+                                                                border-radius: 5px;
+                                                                padding: 5px 0;
+                                                                color: #515151;
+                                                                font-size: 15px;
+                                                            }
+                                                            .reset_variations{
+                                                                margin-left: 20px;
+                                                                color: red;
+                                                                text-decoration: none;
+                                                                font-size: 15px;
+                                                                font-family: roboto;
+                                                                position: absolute;
+                                                                right: -50px;
+                                                                bottom: 10px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                     .onsale{
                                         position: absolute;
                                         background-color:$orange;
@@ -52,16 +121,41 @@
                                             }
                                         }
                                         .flex-control-thumbs{
-                                            display: flex;
-                                            justify-content: center;
                                             margin-top: 50px;
                                             padding: 0px;
                                             list-style: none;
-                                            li{
-                                                border: 1px solid #ececea;
-                                                padding: 10px;
-                                                margin: 0 8px;
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+                                            button{
+                                                background-color: transparent;
+                                                border: none;
                                                 cursor: pointer;
+                                                &.pull-left{
+                                                    position: absolute;
+                                                    left: 100px;
+                                                }
+                                                &.pull-right{
+                                                    position: absolute;
+                                                    right: 100px;
+                                                }
+                                                .fa{
+                                                    font-size: 30px;
+                                                }
+                                            }
+                                            .slick-list{
+                                                width: 60% !important;
+                                                margin: 0 auto;
+                                                .slick-track{
+                                                    li{
+                                                        border: 1px solid #ececea;
+                                                        padding: 10px;
+                                                        margin: 0 8px;
+                                                        cursor: pointer;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -453,6 +547,125 @@
                                     margin-bottom: 0;
                                     display: flex;
                                     flex-wrap: wrap;
+                                    &.product-type-variable{
+                                        .wrap-social-price{
+                                            display: none !important;
+                                        }
+                                        .variations_form{
+                                            width: 100% !important;
+                                            flex-direction: column-reverse !important;
+                                            .single_variation_wrap{
+                                                margin: 20px 0;
+                                                .woocommerce-variation-description{
+                                                    display: none;
+                                                }
+                                                .woocommerce-variation-price{
+                                                    color: #df7800;
+                                                    font-size: 30px;
+                                                    font-weight: 700;
+                                                    letter-spacing: -1px;
+                                                    line-height: 100%;
+                                                    margin: 10px 0 20px;
+                                                    font-family: "Roboto", sans-serif;
+                                                }
+                                                .woocommerce-variation-add-to-cart{
+                                                    display: flex;
+                                                    margin: 15px 0px 0px 0px;
+                                                    column-gap: 4px;
+                                                    button{
+                                                        cursor: pointer;
+                                                        padding: 15px;
+                                                        font-family: "Roboto", sans-serif;
+                                                        font-size: 16px;
+                                                        background: #df7800;
+                                                        color: #fff;
+                                                        border: none;
+                                                        text-transform: uppercase;
+                                                    }
+                                                    .quantity{
+                                                        border: 1px solid #ddd;
+                                                        height: auto;
+                                                        overflow: hidden;
+                                                        float: left;
+                                                        margin: 0 4px 0 0;
+                                                        button{
+                                                            height: 50px;
+                                                            font-size: 26px;
+                                                            border: 0;
+                                                            background: none;
+                                                            width: 40px;
+                                                            font-family: 'WooCommerce';
+                                                            font-weight: 700;
+                                                            padding: 0;
+                                                            color: #c7c7c7;
+                                                            margin: 0;
+                                                            &.plus{
+                                                                float: right;
+                                                            }
+                                                            &.minus{
+                                                                float: left;
+                                                                height: 45px;
+                                                            }
+                                                        }
+                                                        input{
+                                                            height: 50px;
+                                                            padding-left: 0px;
+                                                            float: left;
+                                                            margin: 0;
+                                                            width: 50px;
+                                                            font-size: 18px;
+                                                            border: 0;
+                                                            text-align: center;
+                                                            color: #677279;
+                                                            pointer-events: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .variations{
+                                                tbody{
+                                                    display: flex;
+                                                    width: 100%;
+                                                    margin-bottom: 30px;
+                                                    tr{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        margin-right: 20px;
+                                                        position: relative;
+                                                        width: 40%;
+                                                        .label{
+                                                            font-size: 20px;
+                                                            color: #515151;
+                                                            font-weight: 500;
+                                                            font-family: roboto;
+                                                            margin-bottom: 5px;
+                                                        }
+                                                        .value{
+                                                            display: flex;
+                                                            select{
+                                                                width: 100%;
+                                                                border: 1px solid #df7800;
+                                                                border-radius: 5px;
+                                                                padding: 5px 0;
+                                                                color: #515151;
+                                                                font-size: 15px;
+                                                            }
+                                                            .reset_variations{
+                                                                margin-left: 20px;
+                                                                color: red;
+                                                                text-decoration: none;
+                                                                font-size: 15px;
+                                                                font-family: roboto;
+                                                                position: absolute;
+                                                                right: -50px;
+                                                                bottom: 10px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                     .up-sells{
                                         display: none;
                                     }
@@ -518,7 +731,7 @@
                                                 .sku_wrapper{
                                                     font-weight: 700;
                                                     width: 100%;
-                                                    margin-left: -2px;
+                                                    margin-left: 0;
                                                     margin-top: 15px;
                                                     .sku{
                                                         font-weight: 400;
@@ -565,6 +778,7 @@
                                             color: #999;
                                             font-size: 14px;
                                             margin-top: 15px;
+                                            width: 100%;
                                             &.in-stock{
                                                 font-family: $arial;
                                                 color: #999;

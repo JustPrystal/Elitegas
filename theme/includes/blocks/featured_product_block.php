@@ -1,6 +1,13 @@
-<?php 
-$productID = $block['featured_product'];
-$tabs = get_field('all_tabs', $productID);
+<?php
+global $post;
+$post_id = get_post(89);
+if( is_user_logged_in() ){
+    $productID = $block['featured_product'];
+    $tabs = get_field('all_tabs', $productID);
+} else{
+    $productID = wc_get_product( $post_id );
+    $tabs = get_field('all_tabs', 89);
+}
 $product = wc_get_product($productID);
 $data = $product->get_data();
 $product_meta = get_post_meta($productID);
@@ -17,7 +24,11 @@ $current_tag = get_the_terms( $productID, 'product_tag' );
             </div>
             <div class="Product-Part">
                 <div class="image-wrap">
-                    <?php echo wp_get_attachment_image( $product_meta['_thumbnail_id'][0], 'full' ); ?>
+                    <?php if( is_user_logged_in() ){ ?>
+                        <img src="<?php echo get_the_post_thumbnail_url( $productID , 'large' ); ?>" alt="">
+                    <?php } else { ?>
+                        <img src="<?php echo get_the_post_thumbnail_url( 89 , 'large' ); ?>" alt="">
+                    <?php } ?>
                     <div class="social-icons">
                         <div class="facebook-icon"><i class="fab fa-facebook-f"></i></div>
                         <div class="Pinterest-icon"><i class="fab fa-pinterest"></i></div>
